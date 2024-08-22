@@ -23,11 +23,11 @@ Las señales biomédicas son señales que se originan en los sistemas biológico
 9. Electro-oculograma (EOG): Mide los movimientos oculares y la función de la retina.
     
 # Integrantes<a name="id3"></a>
-# **Leidy Yazmin Tairo Chambilla**
-# **Ingrid Licota Ocaña**
-# **Sofia Milagros Nieto Valencia**
-# **Marco Sebastian Ichillumpa Villena**
-# **Josue Taipe Callañaupa**
+- Leidy Yazmin Tairo Chambilla
+- Ingrid Licota Ocaña
+- Sofia Milagros Nieto Valencia
+- Marco Sebastian Ichillumpa Villena
+- Josue Taipe Callañaupa
 
 
 # Docentes del curso<a name="id4"></a>
