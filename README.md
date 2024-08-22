@@ -31,8 +31,8 @@ Las señales biomédicas son señales que se originan en los sistemas biológico
 
 
 # Docentes del curso<a name="id4"></a>
-- Umbert Lewis De La Cruz Rodriguez (umbert.de.la.cruz@upch.pe)
 - Moisés Stevend Meza Rodriguez (moises.meza@upch.pe)
+- Umbert Lewis De La Cruz Rodriguez (umbert.de.la.cruz@upch.pe)
 - Jose Alonso Cáceres del Aguila (jose.caceres.d@upch.pe)
 
 
