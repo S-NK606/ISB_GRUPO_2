@@ -28,6 +28,7 @@
 | 	(R)EVOLUTION						  |		Kit Bitalino   | 1  |
 | -  | Laptop  | 1  |
 
+</div>
 <p align="center"><img src="/ISB/Laboratorios/Lab4 - Adquisición de señal EMG/Imagenes/laptop.jpeg" width="400" height="266"></p>
 </p>
 
@@ -73,16 +74,25 @@ La primera prueba se realizo con el biceps braquial el cual se sometio a contra 
 
 - Señal de biceps en reposo
 
-inserto imagen
+<p align="center"><img src="/ISB/Laboratorios/Lab4 - Adquisición de señal EMG/Imagenes/bicepsrelajado.jpeg" width="400" height="266"></p>
+</p>
+
+<p align="center"><img src="/ISB/Laboratorios/Lab4 - Adquisición de señal EMG/Imagenes/bicepsrelajadofft.jpeg" width="400" height="266"></p>
+</p>
 
 - Señal de biceps en  leve contracción 
 
-inserto imagen
+<p align="center"><img src="/ISB/Laboratorios/Lab4 - Adquisición de señal EMG/Imagenes/bicepsleve.jpeg" width="400" height="266"></p>
+</p>
+<p align="center"><img src="/ISB/Laboratorios/Lab4 - Adquisición de señal EMG/Imagenes/bicepslevefft.jpeg" width="400" height="266"></p>
+</p>
 
 - Señal de biceps en contracción total
 
-inserto imagen
-
+<p align="center"><img src="/ISB/Laboratorios/Lab4 - Adquisición de señal EMG/Imagenes/bicepsfuerte.jpeg" width="400" height="266"></p>
+</p>
+<p align="center"><img src="/ISB/Laboratorios/Lab4 - Adquisición de señal EMG/Imagenes/bicepsfuertefft.jpeg" width="400" height="266"></p>
+</p>
 ##### Fundamento 1 
 
 El bíceps braquial es indispensable para nuestras actividades cotidianas y deportivas: levantar pesas, usar herramientas, lanzar objetos e incluso es importante para nuestras gesticulaciones al ser responsable de movimientos tan comunes como la flexión y extensión del codo, la supinación del antebrazo y la elevación del hombro [1, 2]. 
@@ -95,15 +105,17 @@ La segunda  prueba se realizo con el dedo pulgar en el cuál se tomaron muestras
 
 - Señal del dedo pulgar en reposo
 
-inserto imagen
+<p align="center"><img src="/ISB/Laboratorios/Lab4 - Adquisición de señal EMG/Imagenes/dedoreposo.jpeg" width="400" height="266"></p>
+</p>
 
 - Señal del dedo pulgar  leve contracción 
 
-inserto imagen
-
+<p align="center"><img src="/ISB/Laboratorios/Lab4 - Adquisición de señal EMG/Imagenes/opocisionleve.jpeg" width="400" height="266"></p>
+</p>
 - Señal del dedo pulgar contracción total
 
-inserto imagen
+<p align="center"><img src="/ISB/Laboratorios/Lab4 - Adquisición de señal EMG/Imagenes/opocisionfuerte.jpeg" width="400" height="266"></p>
+</p>
 
 ##### Fundamento 2
 En el estudio “Two-dimensional biomechanical thumb model for pipetting” consideraron solo los músculos que afectan la flexión del pulgar directamente, como el Adductor Pollicis Oblique Head (ADDo), Adductor Pollicis Transverse Head (ADDt), Flexor Pollicis Brevis (FPB) y Flexor Pollicis Longus (FPL). [3] El estudio se realizó ya que el pipeteo manual impone movimientos repetitivos, fuerza elevada y posturas incómodas en el pulgar, los dedos y la muñeca, lo que aumenta el riesgo de lesiones musculoesqueléticas. El objetivo del estudio es proporcionar un modelo de regresión lineal para estimar la altura óptima de agarre del pipeteo basado en el modelo bidimensional biomecánico estático desarrollado en este estudio.
@@ -115,15 +127,26 @@ En la tercera prueba, el usuario estuvo en posición sentado y parado, y de las 
 
 - Señal del gastrocnemio en reposo
 
-inserto imagen
+<p align="center"><img src="/ISB/Laboratorios/Lab4 - Adquisición de señal EMG/Imagenes/pantorrillareposo.jpeg" width="400" height="266"></p>
+</p>
+<p align="center"><img src="/ISB/Laboratorios/Lab4 - Adquisición de señal EMG/Imagenes/reposopanto.jpeg" width="400" height="266"></p>
+</p>
 
 - Señal del gastrocnemio  leve contracción 
 
-inserto imagen
+<p align="center"><img src="/ISB/Laboratorios/Lab4 - Adquisición de señal EMG/Imagenes/pantarrillalevecontra.jpeg" width="400" height="266"></p>
+</p>
+<p align="center"><img src="/ISB/Laboratorios/Lab4 - Adquisición de señal EMG/Imagenes/levepanto.jpeg" width="400" height="266"></p>
+</p>
+
 
 - Señal del gastrocnemio contracción total
 
-inserto imagen
+<p align="center"><img src="/ISB/Laboratorios/Lab4 - Adquisición de señal EMG/Imagenes/pantorrillamaxcontraccion.jpeg" width="400" height="266"></p>
+</p>
+<p align="center"><img src="/ISB/Laboratorios/Lab4 - Adquisición de señal EMG/Imagenes/fuertepanto.jpeg" width="400" height="266"></p>
+</p>
+
 
 ##### Fundamento 3
 
