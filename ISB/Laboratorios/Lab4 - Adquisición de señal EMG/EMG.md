@@ -153,6 +153,7 @@ En la gráfica de FFT para la señal EMG del gastrocnemio con oposición leve, s
 
 En la señal filtrada para el gastrocnemio con oposición fuerte, se puede observar que la amplitud de la señal aumenta significativamente a partir de los 5 segundos, alcanzando un pico máximo alrededor del segundo 15, lo que coincide con una contracción muscular intensa, desde ese punto la señal decrece gradualmente, lo que puede reflejar la relajación del músculo. En caso del gráfico para su FFT, se puede observan que los componentes entre las frecuencias de 0-50 Hz presentan magnitudes relativamente más altas en comparación con las frecuencias superiores
 </p>
+
 ##### Fundamento 3
 
 El gastrocnemio es un músculo clave en la biomecánica del cuerpo, especialmente para realizar movimientos como la flexión plantar, caminar, correr y saltar. Al ser un músculo superficial y grande, permite la fácil colocación de electrodos fácilmente colocándolos en lo que sería la "barriga" del músculo, que es la parte central y más gruesa con mínima interferencia de músculos adyacentes. La elección del centro del músculo y un espaciado adecuado entre los electrodos permite obtener señales específicas del gastrocnemio, minimizando la contaminación de otros músculos cercanos [4]. De esta manera se evita  la distorsión de las interpretaciones sobre la activación muscular y la magnitud de la fuerza generada. 
