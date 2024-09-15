@@ -28,7 +28,8 @@
 | 	(R)EVOLUTION						  |		Kit Bitalino   | 1  |
 | -  | Laptop  | 1  |
 
-
+<p align="center"><img src="/ISB/Laboratorios/Lab4 - Adquisición de señal EMG/Imagenes/laptop.jpeg" width="400" height="266"></p>
+</p>
 inserto imagen
 
 ## Resultados
