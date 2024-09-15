@@ -21,7 +21,7 @@
 
 ## Materiales y equipos
 
-
+<div align="center">
 
 |	Modelo									   |  	Descripción			 | 	Cantidad	  |
 | ------------ | ------------ | ------------ |
@@ -30,7 +30,6 @@
 
 <p align="center"><img src="/ISB/Laboratorios/Lab4 - Adquisición de señal EMG/Imagenes/laptop.jpeg" width="400" height="266"></p>
 </p>
-inserto imagen
 
 ## Resultados
 
@@ -39,8 +38,8 @@ inserto imagen
 Se utilizo la placa Bitalino para poder capturar y mostrar las señales EMG del usuario. Se usó 3 electrodos como se muestra en la imagen.
 
 
-inserto imagen
-
+<p align="center"><img src="/ISB/Laboratorios/Lab4 - Adquisición de señal EMG/Imagenes/electrodos.jpeg" width="400" height="266"></p>
+</p>
 
 Los siguientes procedimientos se basan en la colocación de los electrodos en el usuario para poder obtener las señales EMG. Para ello nos basamos en el proyecto SENIAM , este proyecto contiene una guia completa de las ubicaciones de los electrodos. 
 
