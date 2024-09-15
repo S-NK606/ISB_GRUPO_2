@@ -131,6 +131,8 @@ En la tercera prueba, el usuario estuvo en posición sentado y parado, y de las 
 </p>
 <p align="center"><img src="/ISB/Laboratorios/Lab4 - Adquisición de señal EMG/Imagenes/reposopanto.jpeg" width="400" height="266"></p>
 </p>
+En la gráfica, donde la señal EMG fue filtrada mediante un filtro Butterworth y un filtro Notch, la señal resultante tiene una amplitud más estable y un nivel de ruido mucho más bajo en comparación con la señal original, debido a la filtración de la interferencia de alta frecuencia. De esta manera, observamos una actividad eléctrica mínima, al verificar ell rango de amplitud en el gráfico, ya que la señal se mantiene mayormente entre una amplitud de -5 y 5 mV, lo cual es común en señales EMG filtradas en reposo. Cabe destacar, que para aplicar el filtro se utilizaron frecuencias de low pass y high pass de 18 y 499 Hz, respectivamente. Esto ha permitido limpiar la señal significativamente, eliminando tanto el ruido ambiental como la interferencia eléctrica para facilitar el análisis más preciso de la actividad muscular real.
+En la gráfica para la Transformada Rápida de Fourier (FFT) se muestran picos significativos en frecuencias bajas, en torno a los 50 Hz, que podrían estar relacionados con la actividad muscular de bajo nivel en reposo. Sin embargo, también se evidencian picos adicionales en las otras frecuencias, los cuales pueden estar relacionados con interferencias eléctricas y otros artefactos de alta frecuencia que contaminan la señal. 
 
 - Señal del gastrocnemio  leve contracción 
 
@@ -138,6 +140,8 @@ En la tercera prueba, el usuario estuvo en posición sentado y parado, y de las 
 </p>
 <p align="center"><img src="/ISB/Laboratorios/Lab4 - Adquisición de señal EMG/Imagenes/levepanto.jpeg" width="400" height="266"></p>
 </p>
+En la señal EMG filtrada del gastrocnemio con oposición leve se muestra una forma más clara, con menos ruido luego de aplicar los filtros, lo que permite observar mejor las fases de actividad muscular. De esta manera, se destaca que la mayor parte de la actividad muscular destacable se encuentra entre los 5 y 25 segundos, coincidiendo con las contracciones musculares observadas en las gráficas de FFT y RMS. 
+En la gráfica de FFT para la señal EMG del gastrocnemio con oposición leve, se observa cómo la energía de la señal se distribuye en las diferentes frecuencias, donde el rango más relevante se encontró entre los 20 y 150 Hz, ya que se observa una mayor concentración de la actividad muscular. A partir de este análisis, se recomendo aplicar un filtro notch en los 50 Hz para eliminar la interferencia de la red eléctrica y así mejorar la calidad de la señal.
 
 
 - Señal del gastrocnemio contracción total
@@ -147,6 +151,7 @@ En la tercera prueba, el usuario estuvo en posición sentado y parado, y de las 
 <p align="center"><img src="/ISB/Laboratorios/Lab4 - Adquisición de señal EMG/Imagenes/fuertepanto.jpeg" width="400" height="266"></p>
 </p>
 
+En la señal filtrada para el gastrocnemio con oposición fuerte, se puede observar que la amplitud de la señal aumenta significativamente a partir de los 5 segundos, alcanzando un pico máximo alrededor del segundo 15, lo que coincide con una contracción muscular intensa, desde ese punto la señal decrece gradualmente, lo que puede reflejar la relajación del músculo. En caso del gráfico para su FFT, se puede observan que los componentes entre las frecuencias de 0-50 Hz presentan magnitudes relativamente más altas en comparación con las frecuencias superiores
 
 ##### Fundamento 3
 
