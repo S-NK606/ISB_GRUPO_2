@@ -1,0 +1,160 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.signal import butter, filtfilt, iirnotch
+
+# Funciones para filtros
+def butter_bandpass(lowcut, highcut, fs, order=4):
+    nyq = 0.5 * fs  # Frecuencia de Nyquist
+    low = lowcut / nyq
+    high = highcut / nyq
+    print(f"Frecuencias normalizadas: low={low}, high={high}")  # Depuración
+    if low <= 0 or high >= 1:
+        raise ValueError("Las frecuencias de corte deben estar en el rango (0, 1).")
+    b, a = butter(order, [low, high], btype='band')
+    return b, a
+
+def butter_bandpass_filter(data, lowcut, highcut, fs, order=4):
+    b, a = butter_bandpass(lowcut, highcut, fs, order=order)
+    y = filtfilt(b, a, data)
+    return y
+
+def notch_filter(data, notch_freq, fs, Q=30.0):
+    nyq = 0.5 * fs
+    b, a = iirnotch(notch_freq / nyq, Q)
+    y = filtfilt(b, a, data)
+    return y
+
+# Función para RMS
+def moving_rms(signal, window_size, fs):
+    window = int(window_size * fs)  # Convertir tamaño de ventana a puntos
+    return np.sqrt(np.convolve(signal**2, np.ones(window)/window, mode='same'))
+
+# Función para plotear FFT
+def plot_fft(signal, fs, title="FFT"):
+    N = len(signal)
+    fft_values = np.fft.fft(signal)
+    fft_magnitude = np.abs(fft_values)[:N//2]
+    fft_frequencies = np.fft.fftfreq(N, 1/fs)[:N//2]
+    fft_magnitude_db = 20 * np.log10(fft_magnitude / np.max(fft_magnitude))  # Magnitud en decibelios
+
+    plt.figure(figsize=(10, 4))
+    plt.plot(fft_frequencies, fft_magnitude_db)
+    plt.grid(True)
+    plt.xlabel("Frecuencia (Hz)")
+    plt.ylabel("Magnitud (dB)")
+    plt.title(title)
+    plt.xlim([0, 200])  # Ajusta el límite de frecuencia según sea necesario
+    plt.xticks(np.arange(0, 200, 10))
+    plt.show()
+
+# Parámetros de muestreo
+Fs = 1000  # Frecuencia de muestreo
+Ts = 1 / Fs  # Período de muestreo
+
+# Lista de archivos a procesar
+file_paths = [
+    "C:\\Users\\Ingrid\\Downloads\\oposicion_leve.txt",
+    "C:\\Users\\Ingrid\\Downloads\\oposicion_fuerte.txt",
+    "C:\\Users\\Ingrid\\Downloads\\dedo_en_reposo.txt"
+]
+
+nombres = ["Dedo con oposición leve", "Dedo con oposición fuerte", "Dedo en reposo"]
+
+# Frecuencias de corte del filtro pasa banda y notch
+lowcut = 10.0
+highcut = 499.0
+notch_freq = 60.0
+
+# Procesar cada archivo
+for idx, file_path in enumerate(file_paths):
+    # Leer archivo, ignorando las líneas de encabezado
+    with open(file_path, 'r') as file:
+        lines = file.readlines()
+
+    # Buscar la línea que contiene 'EndOfHeader'
+    data_start = None
+    for i, line in enumerate(lines):
+        if 'EndOfHeader' in line:
+            data_start = i + 1
+            break
+
+    if data_start is None:
+        raise ValueError(f"No se encontró 'EndOfHeader' en el archivo {file_path}.")
+
+    # Extraer las líneas de datos
+    data_lines = lines[data_start:]
+
+    # Convertir las líneas de datos a un array de NumPy
+    data = np.array([list(map(float, line.strip().split('\t'))) for line in data_lines])
+
+    # Extraer la señal EMG (última columna en los datos)
+    signal1 = data[:, 5]
+
+    # Graficar la FFT de la señal original
+    plot_fft(signal1, Fs, title=f"FFT de Señal Original - {nombres[idx]}")
+
+    # Aplicar filtro pasa banda Butterworth
+    try:
+        signal_filtered = butter_bandpass_filter(signal1, lowcut, highcut, Fs)
+    except ValueError as e:
+        print(f"Error aplicando filtro pasa banda: {e}")
+        continue
+
+    # Aplicar filtro notch de 60 Hz
+    signal_filtered_notch = notch_filter(signal_filtered, notch_freq, Fs)
+
+    # Rectificación de onda completa
+    signal_rectified = np.abs(signal_filtered_notch)
+
+    # Potencia media
+    mean_power = np.mean(signal_rectified**2)
+
+    # RMS y promedio móvil
+    rms_envelope = moving_rms(signal_rectified, 0.05, Fs)  # Ventana de 50 ms
+
+    # Normalización usando la contracción máxima voluntaria (MVC)
+    mvc = np.max(rms_envelope)
+    rms_normalized = (rms_envelope / mvc) * 100  # Normalización con MVC
+
+    # Graficar señal original
+    time = np.arange(0, len(signal1)) / Fs  # Vector de tiempo
+
+    plt.figure(figsize=(10, 4))
+    plt.plot(time, signal1, label=f"Señal original - {nombres[idx]}")
+    plt.grid(True)
+    plt.xlabel("Tiempo (s)")
+    plt.ylabel("Amplitud")
+    plt.legend(loc="upper right")
+    plt.title(f"Señal original EMG - {nombres[idx]}")
+    plt.show()
+
+    # Graficar señal filtrada
+    plt.figure(figsize=(10, 4))
+    plt.plot(time, signal_filtered_notch, label=f"Señal filtrada - {nombres[idx]}")
+    plt.grid(True)
+    plt.xlabel("Tiempo (s)")
+    plt.ylabel("Amplitud")
+    plt.legend(loc="upper right")
+    plt.title(f"Señal EMG filtrada (Butterworth + Notch) - {nombres[idx]}")
+    plt.show()
+
+    # Graficar señal rectificada
+    plt.figure(figsize=(10, 4))
+    plt.plot(time, signal_rectified, label=f"Señal rectificada - {nombres[idx]}")
+    plt.grid(True)
+    plt.xlabel("Tiempo (s)")
+    plt.ylabel("Amplitud")
+    plt.legend(loc="upper right")
+    plt.title(f"Señal EMG rectificada - {nombres[idx]}")
+    plt.show()
+
+    # Graficar RMS y la señal normalizada
+    plt.figure(figsize=(10, 4))
+    plt.plot(time, rms_envelope, label="RMS Envelope")
+    plt.plot(time, rms_normalized, label="RMS Normalized (MVC)")
+    plt.grid(True)
+    plt.xlabel("Tiempo (s)")
+    plt.ylabel("Amplitud")
+    plt.legend(loc="upper right")
+    plt.title(f"RMS y RMS Normalizado - {nombres[idx]}")
+    plt.show()
