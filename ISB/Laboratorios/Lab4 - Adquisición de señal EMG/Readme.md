@@ -127,7 +127,9 @@ inserto imagen
 
 ##### Fundamento 3
 
-inserto texto
+El gastrocnemio es un músculo clave en la biomecánica del cuerpo, especialmente para realizar movimientos como la flexión plantar, caminar, correr y saltar. Al ser un músculo superficial y grande, permite la fácil colocación de electrodos fácilmente colocándolos en lo que sería la "barriga" del músculo, que es la parte central y más gruesa con mínima interferencia de músculos adyacentes. La elección del centro del músculo y un espaciado adecuado entre los electrodos permite obtener señales específicas del gastrocnemio, minimizando la contaminación de otros músculos cercanos [4]. De esta manera se evita  la distorsión de las interpretaciones sobre la activación muscular y la magnitud de la fuerza generada. 
+Sin embargo, no existe una relación directa entre la amplitud de la señal EMG y la fuerza ejercida debido a factores intrínsecos y extrínsecos, por lo que es necesario normalizar las grabaciones para realizar comparaciones entre sujetos o momentos. Las contracciones isométricas voluntarias máximas (MVIC) se utilizan frecuentemente para esta normalización[2].
+Aunque la mayoría de los estudios basan la normalización de señales EMG en una única posición de isométricas voluntarias máximas (MVIC) , algunos han demostrado que se necesitan varias posiciones para lograr una activación máxima, especialmente en el músculo del gastrocnemio. A pesar de esto, no se ha explorado suficientemente la efectividad de combinar varias posiciones de MVIC en la reproducibilidad entre sesiones para las extremidades inferiores [5]. 
 
 
 
@@ -139,7 +141,9 @@ inserto texto
 
 [3]	E. Kim y A. Freivalds, “Two-dimensional biomechanical thumb model for pipetting”, Int. J. Ind. Ergonom., vol. 68, pp. 165–175, noviembre de 2018. Accedido el 15 de septiembre de 2024. [En línea]. Disponible: https://doi.org/10.1016/j.ergon.2018.07.008
 
-[4]
+[4] De Luca, C. J., Kuznetsov, M., Gilmore, L. D., & Roy, S. H. (2012a). Inter-electrode spacing of surface EMG sensors: Reduction of crosstalk contamination during voluntary contractions. Journal of Biomechanics, 45(3), 555–561. https://doi.org/10.1016/j.jbiomech.2011.11.010
+
+[5] Schwartz, C., Wang, F.-C., Forthomme, B., Denoël, V., Brüls, O., & Croisier, J.-L. (2020). Normalizing gastrocnemius muscle EMG signal: An optimal set of maximum voluntary isometric contraction tests for young adults considering reproducibility. Gait & Posture, 82, 196–202. https://doi.org/10.1016/j.gaitpost.2020.08.129
 
 
 
