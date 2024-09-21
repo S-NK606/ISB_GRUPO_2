@@ -133,9 +133,41 @@ Para el análisis de la señal obtenida, se utilizó Python para filtrar y visua
       - Interpretaciones
    - 2da derivación
       - Imagenes obtenidas
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Ejercicio_(2da_derivación)_senal_original.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Ejercicio_(2da_derivación)_fft_senal_original.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Ejercicio_(2da_derivación)_senal_filtrada.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Ejercicio_(2da_derivación)_fft_senal_filtrada.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Ejercicio_(2da_derivación)_senal_original_enfocada.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Ejercicio_(2da_derivación)_fft_senal_original_enfocada.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Ejercicio_(2da_derivación)_senal_filtrada_enfocada.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Ejercicio_(2da_derivación)_fft_senal_filtrada_enfocada.png" width="700" height="266"></p>
+        </p>
       - Interpretaciones
    - 3ra derivación
       - Imagenes obtenidas
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Ejercicio_(3ra_derivación)_senal_original.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Ejercicio_(3ra_derivación)_fft_senal_original.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Ejercicio_(3ra_derivación)_senal_filtrada.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Ejercicio_(3ra_derivación)_fft_senal_filtrada.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Ejercicio_(3ra_derivación)_senal_original_enfocada.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Ejercicio_(3ra_derivación)_fft_senal_original_enfocada.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Ejercicio_(3ra_derivación)_senal_filtrada_enfocada.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Ejercicio_(3ra_derivación)_fft_senal_filtrada_enfocada.png" width="700" height="266"></p>
+        </p>
       - Interpretaciones
 - Simulaciones
    - 60 bpm
