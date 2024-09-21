@@ -35,3 +35,14 @@ Se utilizó la conexión estándar de BITalino con los siguientes pasos:
 1. Colocación de los electrodos en el pecho del sujeto para medir la actividad cardíaca.
 2. Conexión del dispositivo BITalino vía Bluetooth con la computadora.
 3. Uso de la aplicación **OpenSignals** para la visualización en tiempo real de las señales.
+
+### 3.2. Video de la señal
+
+Aquí puedes ver un video demostrando la señal de ECG capturada en tiempo real:
+
+# ![Video placeholder](https://example.com/video-link) <!-- Cambia este enlace por el video correcto si lo tienes o un GIF -->
+
+### 3.3. Ploteo de la señal en Python
+
+Para el análisis de la señal obtenida, se utilizó Python para filtrar y visualizar la señal:
+
