@@ -113,8 +113,35 @@ Para el análisis de la señal obtenida, se utilizó Python para filtrar y visua
    - Post-Respiración (3ra derivación)
 - Estado de ejercicio
    - 1ra derivación
+      - Imagenes obtenidas
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Ejercicio_(1ra_derivación)_senal_original.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Ejercicio_(1ra_derivación)_fft_senal_original.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Ejercicio_(1ra_derivación)_senal_filtrada.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Ejercicio_(1ra_derivación)_fft_senal_filtrada.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Ejercicio_(1ra_derivación)_senal_original_enfocada.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Ejercicio_(1ra_derivación)_fft_senal_original_enfocada.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Ejercicio_(1ra_derivación)_senal_filtrada_enfocada.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Ejercicio_(1ra_derivación)_fft_senal_filtrada_enfocada.png" width="700" height="266"></p>
+        </p>
+      - Interpretaciones
    - 2da derivación
+      - Imagenes obtenidas
+      - Interpretaciones
    - 3ra derivación
+      - Imagenes obtenidas
+      - Interpretaciones
+- Simulaciones
+   - 60 bpm
+   - 90 bpm
+   - 120 bpm
+   - 150 bpm
 
 ## Referencias
 
