@@ -46,3 +46,21 @@ Aquí puedes ver un video demostrando la señal de ECG capturada en tiempo real:
 
 Para el análisis de la señal obtenida, se utilizó Python para filtrar y visualizar la señal:
 
+- Estados de reposo
+   - 1ra derivación
+   - 2da derivación
+   - 3ra derivación
+- ECG durante la conteción de respiración
+   - Respiración (1ra derivación)
+   - Post-Respiración (1ra derivación)
+   - Respiración (2da derivación)
+   - Post-Respiración (2da derivación)
+   - Respiración (3ra derivación)
+   - Post-Respiración (3ra derivación)
+- Estado de ejercicio
+   - 1ra derivación
+   - 2da derivación
+   - 3ra derivación
+
+## Referencias
+
