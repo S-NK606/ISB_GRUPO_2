@@ -48,12 +48,28 @@ Para el análisis de la señal obtenida, se utilizó Python para filtrar y visua
 
 - Estados de reposo
    - 1ra derivación
-     <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Estado_con_respiración_(1ra_derivación)_fft_senal_filtrada.png" width="700" height="266"></p>
-     </p>
    - 2da derivación
    - 3ra derivación
 - ECG durante la conteción de respiración
    - Respiración (1ra derivación)
+      - Imagenes obtenidas
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Estado_con_respiración_(1ra_derivación)_senal_original.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Estado_con_respiración_(1ra_derivación)_fft_senal_original.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Estado_con_respiración_(1ra_derivación)_senal_filtrada.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Estado_con_respiración_(1ra_derivación)_fft_senal_filtrada.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Estado_con_respiración_(1ra_derivación)_senal_original_enfocada.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Estado_con_respiración_(1ra_derivación)_fft_senal_original_enfocada.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Estado_con_respiración_(1ra_derivación)_senal_filtrada_enfocada.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Estado_con_respiración_(1ra_derivación)_fft_senal_filtrada_enfocada.png" width="700" height="266"></p>
+        </p>
+      - Interpretaciones
    - Post-Respiración (1ra derivación)
    - Respiración (2da derivación)
    - Post-Respiración (2da derivación)
