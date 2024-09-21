@@ -48,7 +48,7 @@ Para el análisis de la señal obtenida, se utilizó Python para filtrar y visua
 
 - Estados de reposo
    - 1ra derivación
-     ![FFT de la señal filtrada](ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Estado_con_respiración_(1ra_derivación)_fft_senal_filtrada.png)
+     ![FFT de la señal filtrada](ISB/Laboratorios/Lab5-Adquisición-de-señal-ECG/Imagenes/ECG/Estado_con_respiración_1ra_derivación_fft_senal_filtrada.png)
    - 2da derivación
    - 3ra derivación
 - ECG durante la conteción de respiración
