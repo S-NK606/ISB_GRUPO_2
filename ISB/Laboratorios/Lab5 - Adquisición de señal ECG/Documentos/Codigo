@@ -1,0 +1,203 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.signal import butter, filtfilt, iirnotch, medfilt
+
+# Funciones para filtros
+def butter_bandpass(lowcut, highcut, fs, order=4):
+    nyq = 0.5 * fs  # Frecuencia de Nyquist
+    low = lowcut / nyq
+    high = highcut / nyq
+    print(f"Frecuencias normalizadas: low={low}, high={high}")  # Depuración
+    if low <= 0 or high >= 1:
+        raise ValueError("Las frecuencias de corte deben estar en el rango (0, 1).")
+    b, a = butter(order, [low, high], btype='band')
+    return b, a
+
+def butter_bandpass_filter(data, lowcut, highcut, fs, order=4):
+    b, a = butter_bandpass(lowcut, highcut, fs, order=order)
+    y = filtfilt(b, a, data)
+    return y
+
+def notch_filter(data, notch_freq, fs, Q=30.0):
+    nyq = 0.5 * fs
+    b, a = iirnotch(notch_freq / nyq, Q)
+    y = filtfilt(b, a, data)
+    return y
+
+# Filtro de mediana para eliminar artefactos
+def median_filter(data, kernel_size=5):
+    return medfilt(data, kernel_size)
+
+
+# Función para plotear FFT
+def plot_fft(signal, fs, title="FFT", save_name=None):
+    N = len(signal)
+    fft_values = np.fft.fft(signal)
+    fft_magnitude = np.abs(fft_values)[:N//2]
+    fft_frequencies = np.fft.fftfreq(N, 1/fs)[:N//2]
+    fft_magnitude_db = 20 * np.log10(fft_magnitude / np.max(fft_magnitude))  # Magnitud en decibelios
+
+    plt.figure(figsize=(10, 4))
+    plt.plot(fft_frequencies, fft_magnitude_db)
+    plt.grid(True)
+    plt.xlabel("Frecuencia (Hz)")
+    plt.ylabel("Magnitud (dB)")
+    plt.title(title)
+    plt.xlim([0, 200])  # Ajusta el límite de frecuencia según sea necesario
+    plt.xticks(np.arange(0, 200, 10))
+    
+    # Guardar gráfico si se proporciona un nombre de archivo
+    if save_name:
+        plt.savefig(save_name, format='png')
+    plt.close()
+
+# Parámetros de muestreo
+Fs = 1000  # Frecuencia de muestreo
+Ts = 1 / Fs  # Período de muestreo
+
+# Definir el intervalo de tiempo (en segundos) para enfocar
+start_time = 2  # Cambia este valor para el inicio del tiempo deseado
+end_time = 5    # Cambia este valor para el final del tiempo deseado
+
+# Lista de archivos a procesar
+file_paths = [
+    "C:\\Users\\Ingrid\\Downloads\\Señales_2\\Estado_con_Respiracion_I_deriv.txt",
+    "C:\\Users\\Ingrid\\Downloads\\Señales_2\\Estado_con_Respiracion_II_deriv.txt",
+    "C:\\Users\\Ingrid\\Downloads\\Señales_2\\Estado_con_Respiracion_III_deriv.txt",
+    "C:\\Users\\Ingrid\\Downloads\\Señales_2\\Ejercicio_I_deriv.txt",
+    "C:\\Users\\Ingrid\\Downloads\\Señales_2\\Ejercicio_II_deriv.txt",
+    "C:\\Users\\Ingrid\\Downloads\\Señales_2\\Ejercicio_III_deriv.txt",
+    "C:\\Users\\Ingrid\\Downloads\\Señales_2\\Simulacion_120bpm.txt",
+    "C:\\Users\\Ingrid\\Downloads\\Señales_2\\Simulacion_150bpm.txt"
+]
+
+nombres = ["Estado con respiración (1ra derivación)", "Estado con respiración (2da derivación)", "Estado con respiración (3ra derivación)",
+           "Ejercicio (1ra derivación)","Ejercicio (2da derivación)","Ejercicio (3ra derivación)",
+           "Simulación a 120 bpm","Simulación a 150 bpm"
+           ]
+
+# Frecuencias de corte del filtro pasa banda y notch
+lowcut = 0.05
+highcut = 149.0
+notch_freq = 60.0
+
+# Procesar cada archivo
+for idx, file_path in enumerate(file_paths):
+    # Leer archivo, ignorando las líneas de encabezado
+    with open(file_path, 'r') as file:
+        lines = file.readlines()
+
+    # Buscar la línea que contiene 'EndOfHeader'
+    data_start = None
+    for i, line in enumerate(lines):
+        if 'EndOfHeader' in line:
+            data_start = i + 1
+            break
+
+    if data_start is None:
+        raise ValueError(f"No se encontró 'EndOfHeader' en el archivo {file_path}.")
+
+    # Extraer las líneas de datos
+    data_lines = lines[data_start:]
+
+    # Convertir las líneas de datos a un array de NumPy
+    data = np.array([list(map(float, line.strip().split('\t'))) for line in data_lines])
+
+    # Extraer la señal EMG (última columna en los datos)
+    signal1 = data[:, 5]
+
+    # Aplicar filtro de mediana para eliminar artefactos
+    signal_median = median_filter(signal1, kernel_size=5)
+
+    # Aplicar filtro pasa banda Butterworth
+    try:
+        signal_filtered = butter_bandpass_filter(signal_median, lowcut, highcut, Fs)
+    except ValueError as e:
+        print(f"Error aplicando filtro pasa banda: {e}")
+        continue
+
+    # Aplicar filtro notch de 60 Hz
+    signal_filtered_notch = notch_filter(signal_filtered, notch_freq, Fs)
+
+     # Crear el vector de tiempo
+    time = np.arange(0, len(signal1)) / Fs  # Vector de tiempo completo
+
+    # Encontrar los índices correspondientes al rango de tiempo definido
+    start_idx = int(start_time * Fs)
+    end_idx = int(end_time * Fs)
+
+    # Recortar la señal y el vector de tiempo
+    signal1_focus = signal1[start_idx:end_idx]
+    signal_filtered_notch_focus = signal_filtered_notch[start_idx:end_idx]
+    time_focus = time[start_idx:end_idx]
+
+    # Nombres de archivo para guardar las imágenes
+    base_name = nombres[idx].replace(" ", "_")  # Reemplazar espacios por guiones bajos
+
+    # Graficar señal original
+    time = np.arange(0, len(signal1)) / Fs  # Vector de tiempo
+
+    plt.figure(figsize=(10, 4))
+    plt.plot(time, signal1, label=f"Señal original - {nombres[idx]}")
+    plt.grid(True)
+    plt.xlabel("Tiempo (s)")
+    plt.ylabel("Amplitud")
+    plt.legend(loc="upper right")
+    plt.title(f"Señal original ECG - {nombres[idx]}")
+    plt.savefig(f"{base_name}_senal_original.png", format='png')
+    plt.show()
+    plt.close()
+
+    # Graficar la FFT de la señal original
+    plot_fft(signal1, Fs, title=f"FFT de Señal Original - {nombres[idx]}", 
+            save_name=f"{base_name}_fft_senal_original.png")
+    
+
+    # Graficar señal filtrada
+    plt.figure(figsize=(10, 4))
+    plt.plot(time, signal_filtered_notch, label=f"Señal filtrada - {nombres[idx]}")
+    plt.grid(True)
+    plt.xlabel("Tiempo (s)")
+    plt.ylabel("Amplitud")
+    plt.legend(loc="upper right")
+    plt.title(f"Señal ECG filtrada (Mediana + Butterworth + Notch) - {nombres[idx]}")
+    plt.savefig(f"{base_name}_senal_filtrada.png", format='png')
+    plt.show()
+    plt.close()
+
+    # Graficar la FFT de la señal filtrada
+    plot_fft(signal_filtered_notch, Fs, title=f"FFT de Señal Filtrada - {nombres[idx]}", 
+            save_name=f"{base_name}_fft_senal_filtrada.png")
+
+    # Graficar señal original enfocada
+    plt.figure(figsize=(10, 4))
+    plt.plot(time_focus, signal1_focus, label=f"Señal original (enfocada) - {nombres[idx]}")
+    plt.grid(True)
+    plt.xlabel("Tiempo (s)")
+    plt.ylabel("Amplitud")
+    plt.legend(loc="upper right")
+    plt.title(f"Señal original ECG - {nombres[idx]} (Enfocada entre {start_time}s y {end_time}s)")
+    plt.savefig(f"{base_name}_senal_original_enfocada.png", format='png')
+    plt.show()
+    plt.close()
+
+    # Graficar la FFT de la señal original enfocada
+    plot_fft(signal1_focus, Fs, title=f"FFT de Señal Original (Enfocada) - {nombres[idx]}", 
+            save_name=f"{base_name}_fft_senal_original_enfocada.png")
+
+    # Graficar señal filtrada enfocada
+    plt.figure(figsize=(10, 4))
+    plt.plot(time_focus, signal_filtered_notch_focus, label=f"Señal filtrada (enfocada) - {nombres[idx]}")
+    plt.grid(True)
+    plt.xlabel("Tiempo (s)")
+    plt.ylabel("Amplitud")
+    plt.legend(loc="upper right")
+    plt.title(f"Señal ECG filtrada (Mediana + Butterworth + Notch) - {nombres[idx]} (Enfocada entre {start_time}s y {end_time}s)")
+    plt.savefig(f"{base_name}_senal_filtrada_enfocada.png", format='png')
+    plt.show()
+    plt.close()
+
+    # Graficar la FFT de la señal filtrada enfocada
+    plot_fft(signal_filtered_notch_focus, Fs, title=f"FFT de Señal Filtrada (Enfocada) - {nombres[idx]}", 
+            save_name=f"{base_name}_fft_senal_filtrada_enfocada.png")
+
