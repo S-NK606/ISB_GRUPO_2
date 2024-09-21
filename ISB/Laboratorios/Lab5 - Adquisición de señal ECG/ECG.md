@@ -44,7 +44,7 @@ Aquí puedes ver un video demostrando la señal de ECG capturada en tiempo real:
 
 ### 3.3. Ploteo de la señal en Python
 
-Para el análisis de la señal obtenida, se utilizó Python para filtrar y visualizar la señal:
+Para el análisis de la señal obtenida, se utilizó Python para filtrar las señales usando Mediana (Reduce el ruido []), Butterworth (0.05Hz - 150Hz), Notch (60Hz) y visualizar la señal:
 
 - Estados de reposo
    - 1ra derivación
@@ -213,4 +213,4 @@ Para el análisis de la señal obtenida, se utilizó Python para filtrar y visua
      
 
 ## Referencias
-
+[] J. Cheng, Q. Zou y Y. Zhao, “ECG signal classification based on deep CNN and BiLSTM”, BMC Med. Inform. Decis. Making, vol. 21, n.º 1, diciembre de 2021. Accedido el 21 de septiembre de 2024. [En línea]. Disponible: https://doi.org/10.1186/s12911-021-01736-y
