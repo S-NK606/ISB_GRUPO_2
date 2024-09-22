@@ -51,7 +51,7 @@ La conexión correcta de la PC con la placa BITalino, el reconocimiento del mode
 
 La guía: “HOME-GUIDE #2 ELECTROCARDIOGRAPHY (ECG) [2]” posee como contenido la ubicación de electrodos recomendadas siendo, la elegida, la siguiente:
 
-<p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/A.png" width="300" height="266"></p>
+<p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/A.png" width="800" height="266"></p>
 </p>
 Fig 2. Colocación de electrodos para la 1era derivación: IN+ (izquierda - rojo) e IN- (derecha - negro) en las muñecas y la REF (blanco) en la cresta ilíaca [1].
 
