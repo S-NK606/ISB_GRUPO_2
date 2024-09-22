@@ -64,26 +64,36 @@ Una vez puestos los electrodos superficiales en las zonas descritas se empieza a
 - **Estado Basal: **
 Estado de reposo evaluado donde el estudiante se mantiene calmado y relajado.
 
-[Video 1](https://youtu.be/eoxMC3BR_5U)
+<div style="display: flex; justify-content: center;">
+    <iframe width="560" height="315" src="https://youtu.be/eoxMC3BR_5U" frameborder="0" allowfullscreen></iframe>
+</div>
 Vid 1. Registro del EMG en estado basal.
 
 - **Estado de pausa respiratoria (durante y después):**
 El estudiante mantiene la respiración durante 10 segundos, mientras se registra su ECG en ese intervalo. Al concluir, se realiza un nuevo registro del ECG para observar las variaciones posteriores al ejercicio de contención de la respiración. Se repite este proceso tres veces, siendo seis registros en total.
 
-[Video 2](https://youtu.be/8n2kfjqa50U)
+<div style="display: flex; justify-content: center;">
+    <iframe width="560" height="315" src="https://youtu.be/8n2kfjqa50U" frameborder="0" allowfullscreen></iframe>
+</div>
 Vid 2. Registro de EMG conteniendo la respiración
 
-[Video 3](https://youtu.be/anY9URw1vs4)
+<div style="display: flex; justify-content: center;">
+    <iframe width="560" height="315" src="https://youtu.be/anY9URw1vs4" frameborder="0" allowfullscreen></iframe>
+</div>
 Vid 3. Registro de EMG tras la pausa respiratoria.
 
 - **Estado después de una actividad física:**
 Durante 5 minutos aproximadamente, el estudiante realiza ejercicios aeróbicos intensos hasta llegar al cansancio. En nuestro caso, el estudiante subió y bajó escaleras durante ese periodo de tiempo.
 Se busca registrar cada derivación lo más rápido posible para que no disipe el efecto del cansancio sobre el ECG.
 
-[Video 4](https://youtu.be/AYHTVNsGHok)
+<div style="display: flex; justify-content: center;">
+    <iframe width="560" height="315" src="https://youtu.be/AYHTVNsGHok" frameborder="0" allowfullscreen></iframe>
+</div>
 Vid 4. Estudiante realizando el ejercicio.
 
-[Video 5](https://youtu.be/aCMujE-tHtw)
+<div style="display: flex; justify-content: center;">
+    <iframe width="560" height="315" src="https://youtu.be/aCMujE-tHtw" frameborder="0" allowfullscreen></iframe>
+</div>
 Video 5. Registro de EMG tras el ejercicio.
 
 ### 4.5. Simulación - ProSim4:
@@ -95,7 +105,9 @@ Finalmente se puede observar señales patrón gracias al ProSim 4, un simulador 
    - Simulación de 150lpm - Haciendo ejercicio
    - Simulación de 90lpm - Reponiéndose 
 
-[Video 6](https://youtu.be/D4N19q_PkfQ)
+<div style="display: flex; justify-content: center;">
+    <iframe width="560" height="315" src="https://youtu.be/D4N19q_PkfQ" frameborder="0" allowfullscreen></iframe>
+</div>
 Video 6. Simulaciones del ProSim4
 
 ## Resultados
