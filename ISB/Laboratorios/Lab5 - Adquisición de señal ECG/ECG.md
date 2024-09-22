@@ -73,6 +73,7 @@ Para el análisis de la señal obtenida, se utilizó Python para filtrar las se�
       - Interpretaciones
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Respiracion_1d_24.png" width="700" height="266"></p>
         </p>
+        En el ECG, se puede observar un intervalo RR de 0.75 segundos. Al comparar esta distancia con la del estado basal, podemos indicar que mantener la respiración por un tiempo de 20 segundos no influye en el aumento de la frecuencia cardiaca. 
         
    - Sin Respiración (2da derivación)
    - Post-Respiración (2da derivación)
@@ -96,6 +97,7 @@ Para el análisis de la señal obtenida, se utilizó Python para filtrar las se�
       - Interpretaciones
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Respiracion_2d_24.png" width="700" height="266"></p>
         </p>
+        En el ECG, se puede observar un intervalo RR de 0.70 segundos.
       
    - Sin Respiración (3ra derivación)
    - Post-Respiración (3ra derivación)
@@ -119,6 +121,7 @@ Para el análisis de la señal obtenida, se utilizó Python para filtrar las se�
       - Interpretaciones
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Respiracion_3d_24.png" width="700" height="266"></p>
         </p>
+        En el ECG, se puede observar un intervalo RR de 0.75 segundos. Al comparar esta distancia con la del estado basal, podemos indicar que mantener la respiración por un tiempo de 20 segundos seguidamente no influye en el aumento de la frecuencia cardiaca. Esto se puede deber a que la persona participe acostumbra a ejercitarse seguidamente.
         
 - Estado de ejercicio
    - 1ra derivación
@@ -142,7 +145,7 @@ Para el análisis de la señal obtenida, se utilizó Python para filtrar las se�
       - Interpretaciones
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Ejercicio_1d_24.png" width="700" height="266"></p>
         </p>
-        A comparación del estado basal, en el que solo se ven 3 complejos QRS, en un estado ejercitado, en la 1ra derivación, se ver como hay 4 complejos QRS en un tiempo de 2 a 4 segundos y aparecen cada 0.5 segundos aproximadamente.
+        A comparación del estado basal, en el que solo se ven 3 complejos QRS, en un estado ejercitado, en la 1ra derivación, se ve como hay 4 complejos QRS en un tiempo de 2 a 4 segundos y aparecen cada 0.5 segundos aproximadamente.
         
    - 2da derivación
       - Imagenes obtenidas
@@ -214,7 +217,7 @@ Para el análisis de la señal obtenida, se utilizó Python para filtrar las se�
       - Interpretaciones
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/S120_24.png" width="700" height="266"></p>
         </p>
-        En el ECG del intervalo de 2 a 4 segundos, se puede observar un intervalo RR de 0.5 segundos. Esto podria indicar que en el estado de ejercicio, la persona alcanzo 120 bpm. Ademas, al ser una simulación se pueden ver mejor las caracteristicas del ECG.
+        En el ECG del intervalo de 2 a 4 segundos, se puede observar un intervalo RR de 0.5 segundos. Esto podria indicar que en el estado de ejercicio, la persona alcanzo 120 bpm. Además, al ser una simulación se pueden ver mejor las caracteristicas del ECG.
         
    - 150 bpm
      - Imagenes obtenidas
@@ -237,7 +240,7 @@ Para el análisis de la señal obtenida, se utilizó Python para filtrar las se�
       - Interpretaciones
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/S150_24.png" width="700" height="266"></p>
         </p>
-        En el ECG del intervalo de 2 a 4 segundos, se puede observar un intervalo RR de 0.4 segundos. Este rango es 0.1 segundos menor al del ECG a 120 bpm, lo cual puede indicar que a mayor bpms, mas corto es el intervalo RR. Ademas, al ser una simulación se pueden ver mejor las caracteristicas del ECG.
+        En el ECG del intervalo de 2 a 4 segundos, se puede observar un intervalo RR de 0.4 segundos. Este rango es 0.1 segundos menor al del ECG a 120 bpm, lo cual puede indicar que a mayor bpms, mas corto es el intervalo RR. Además, al ser una simulación se pueden ver mejor las caracteristicas del ECG.
      
 
 ## Referencias
