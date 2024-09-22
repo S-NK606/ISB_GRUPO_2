@@ -51,8 +51,9 @@ Para el análisis de la señal obtenida, se utilizó Python para filtrar las se�
    - 2da derivación
    - 3ra derivación
 - ECG durante la conteción de respiración
-   - Respiración (1ra derivación)
-      - Imagenes obtenidas
+   - Sin Respiración (1ra derivación)        
+   - Post-Respiración (1ra derivación)
+     - Imagenes obtenidas
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Estado_con_respiración_(1ra_derivación)_senal_original.png" width="700" height="266"></p>
         </p>
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Estado_con_respiración_(1ra_derivación)_fft_senal_original.png" width="700" height="266"></p>
@@ -70,8 +71,11 @@ Para el análisis de la señal obtenida, se utilizó Python para filtrar las se�
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Estado_con_respiración_(1ra_derivación)_fft_senal_filtrada_enfocada.png" width="700" height="266"></p>
         </p>
       - Interpretaciones
-   - Post-Respiración (1ra derivación)
-   - Respiración (2da derivación)
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Respiracion_1d_24.png" width="700" height="266"></p>
+        </p>
+        
+   - Sin Respiración (2da derivación)
+   - Post-Respiración (2da derivación)
       - Imagenes obtenidas
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Estado_con_respiración_(2da_derivación)_senal_original.png" width="700" height="266"></p>
         </p>
@@ -90,8 +94,11 @@ Para el análisis de la señal obtenida, se utilizó Python para filtrar las se�
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Estado_con_respiración_(2da_derivación)_fft_senal_filtrada_enfocada.png" width="700" height="266"></p>
         </p>
       - Interpretaciones
-   - Post-Respiración (2da derivación)
-   - Respiración (3ra derivación)
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Respiracion_2d_24.png" width="700" height="266"></p>
+        </p>
+      
+   - Sin Respiración (3ra derivación)
+   - Post-Respiración (3ra derivación)
       - Imagenes obtenidas
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Estado_con_respiración_(3ra_derivación)_senal_original.png" width="700" height="266"></p>
         </p>
@@ -110,7 +117,9 @@ Para el análisis de la señal obtenida, se utilizó Python para filtrar las se�
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Estado_con_respiración_(3ra_derivación)_fft_senal_filtrada_enfocada.png" width="700" height="266"></p>
         </p>
       - Interpretaciones
-   - Post-Respiración (3ra derivación)
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Respiracion_3d_24.png" width="700" height="266"></p>
+        </p>
+        
 - Estado de ejercicio
    - 1ra derivación
       - Imagenes obtenidas
@@ -131,6 +140,10 @@ Para el análisis de la señal obtenida, se utilizó Python para filtrar las se�
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Ejercicio_(1ra_derivación)_fft_senal_filtrada_enfocada.png" width="700" height="266"></p>
         </p>
       - Interpretaciones
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Ejercicio_1d_24.png" width="700" height="266"></p>
+        </p>
+        A comparación del estado basal, en el que solo se ven 3 complejos QRS, en un estado ejercitado, en la 1ra derivación, se ver como hay 4 complejos QRS en un tiempo de 2 a 4 segundos y aparecen cada 0.5 segundos aproximadamente.
+        
    - 2da derivación
       - Imagenes obtenidas
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Ejercicio_(2da_derivación)_senal_original.png" width="700" height="266"></p>
@@ -150,6 +163,10 @@ Para el análisis de la señal obtenida, se utilizó Python para filtrar las se�
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Ejercicio_(2da_derivación)_fft_senal_filtrada_enfocada.png" width="700" height="266"></p>
         </p>
       - Interpretaciones
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Ejercicio_2d_24.png" width="700" height="266"></p>
+        </p>
+        A comparación del estado basal, en la 2ra derivación, los complejos QRS y aparecen cada 0.45 segundos aproximadamente en un tiempo de 2 a 4 segundos. Es decir, se acorta la distancia el intervalo RR
+        
    - 3ra derivación
       - Imagenes obtenidas
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Ejercicio_(3ra_derivación)_senal_original.png" width="700" height="266"></p>
@@ -169,6 +186,10 @@ Para el análisis de la señal obtenida, se utilizó Python para filtrar las se�
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Ejercicio_(3ra_derivación)_fft_senal_filtrada_enfocada.png" width="700" height="266"></p>
         </p>
       - Interpretaciones
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Ejercicio_3d_24.png" width="700" height="266"></p>
+        </p>
+        A comparación del estado basal, en la 3ra derivación, los complejos QRS y aparecen cada 0.5 segundos aproximadamente en un tiempo de 2 a 4 segundos.
+        
 - Simulaciones
    - 60 bpm
    - 90 bpm
@@ -191,6 +212,10 @@ Para el análisis de la señal obtenida, se utilizó Python para filtrar las se�
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Simulación_a_120_bpm_fft_senal_filtrada_enfocada.png" width="700" height="266"></p>
         </p>
       - Interpretaciones
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/S120_24.png" width="700" height="266"></p>
+        </p>
+        En el ECG del intervalo de 2 a 4 segundos, se puede observar un intervalo RR de 0.5 segundos. Esto podria indicar que en el estado de ejercicio, la persona alcanzo 120 bpm. Ademas, al ser una simulación se pueden ver mejor las caracteristicas del ECG.
+        
    - 150 bpm
      - Imagenes obtenidas
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Simulación_a_150_bpm_senal_original.png" width="700" height="266"></p>
@@ -210,6 +235,9 @@ Para el análisis de la señal obtenida, se utilizó Python para filtrar las se�
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Simulación_a_150_bpm_fft_senal_filtrada_enfocada.png" width="700" height="266"></p>
         </p>
       - Interpretaciones
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/S150_24.png" width="700" height="266"></p>
+        </p>
+        En el ECG del intervalo de 2 a 4 segundos, se puede observar un intervalo RR de 0.4 segundos. Este rango es 0.1 segundos menor al del ECG a 120 bpm, lo cual puede indicar que a mayor bpms, mas corto es el intervalo RR. Ademas, al ser una simulación se pueden ver mejor las caracteristicas del ECG.
      
 
 ## Referencias
