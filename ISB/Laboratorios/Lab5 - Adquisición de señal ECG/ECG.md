@@ -101,7 +101,7 @@ Finalmente se puede observar señales patrón gracias al ProSim 4, un simulador 
 
 ### 5.1. Ploteo de la señal en Python
 
-Para el análisis de la señal obtenida, se utilizó Python para filtrar las señales usando Mediana (Reduce el ruido []), Butterworth (0.05Hz - 150Hz), Notch (60Hz) y visualizar la señal:
+Para el análisis de la señal obtenida, se utilizó Python para filtrar las señales usando Mediana (Reduce el ruido [3]), Butterworth (0.05Hz - 150Hz), Notch (60Hz) y visualizar la señal:
 
 - Estados de reposo
    - 1ra derivación
@@ -303,4 +303,4 @@ Para el análisis de la señal obtenida, se utilizó Python para filtrar las se�
 ## Referencias
 [1] D. J. Nelson, A. Alvarez, E. Dugarte, and G. Álvarez, “Técnicas de procesamiento de la señal ECGAR aplicadas en el prototipo DIGICARDIAC.” https://ve.scielo.org/scielo.php?script=sci_arttext&pid=S0798-04772015000100007
 [2] “BITalino Lab Guides (Home Guides).” https://support.pluxbiosignals.com/knowledge-base/bitalino-lab-guides/
-[] J. Cheng, Q. Zou y Y. Zhao, “ECG signal classification based on deep CNN and BiLSTM”, BMC Med. Inform. Decis. Making, vol. 21, n.º 1, diciembre de 2021. Accedido el 21 de septiembre de 2024. [En línea]. Disponible: https://doi.org/10.1186/s12911-021-01736-y
+[3] J. Cheng, Q. Zou y Y. Zhao, “ECG signal classification based on deep CNN and BiLSTM”, BMC Med. Inform. Decis. Making, vol. 21, n.º 1, diciembre de 2021. Accedido el 21 de septiembre de 2024. [En línea]. Disponible: https://doi.org/10.1186/s12911-021-01736-y
