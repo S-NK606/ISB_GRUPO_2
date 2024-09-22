@@ -19,7 +19,7 @@ El electrocardiograma (ECG) es una prueba diagnóstica fundamental en la medicin
 
 El presente laboratorio se centra en el uso de la placa de desarrollo Bitalino para capturar señales de electrocardiograma (ECG) de interés. Esta innovadora herramienta nos brinda la capacidad de registrar y analizar la actividad eléctrica del corazón de manera no invasiva y en tiempo real. A lo largo de esta experiencia práctica, se busca adquirir conocimientos sobre la obtención y el análisis de señales ECG, además de familiarizarse con los procedimientos y protocolos necesarios para la utilización de los electrodos de ECG.
 
-<p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/C.png" width="700" height="266"></p>
+<p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/C.png" width="500" height="266"></p>
 </p>
 Fig 1. Señales ECG con los diferentes intervalos y segmentos que la componen [1].
 
@@ -48,11 +48,11 @@ La conexión correcta de la PC con la placa BITalino, el reconocimiento del mode
 
 La guía: “HOME-GUIDE #2 ELECTROCARDIOGRAPHY (ECG) [1]” posee como contenido la ubicación de electrodos recomendadas siendo, la elegida, la siguiente:
 
-<p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/A.png" width="700" height="266"></p>
+<p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/A.png" width="500" height="266"></p>
 </p>
 Fig 2. Colocación de electrodos para la 1era derivación: IN+ (izquierda - rojo) e IN- (derecha - negro) en las muñecas y la REF (blanco) en la cresta ilíaca [1].
 
-<p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/B.png" width="700" height="266"></p>
+<p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/B.png" width="300" height="266"></p>
 </p>
 Fig 3. Colocación de los electrodos en el estudiante elegido junto con la conexión con el BITalino.
 
