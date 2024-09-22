@@ -49,7 +49,7 @@ La conexión correcta de la PC con la placa BITalino, el reconocimiento del mode
 
 ### 4.2. Revisión de las Guías de laboratorio de BITalino:
 
-La guía: “HOME-GUIDE #2 ELECTROCARDIOGRAPHY (ECG) [1]” posee como contenido la ubicación de electrodos recomendadas siendo, la elegida, la siguiente:
+La guía: “HOME-GUIDE #2 ELECTROCARDIOGRAPHY (ECG) [2]” posee como contenido la ubicación de electrodos recomendadas siendo, la elegida, la siguiente:
 
 <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/A.png" width="300" height="266"></p>
 </p>
@@ -301,4 +301,6 @@ Para el análisis de la señal obtenida, se utilizó Python para filtrar las se�
      
 
 ## Referencias
+[1] D. J. Nelson, A. Alvarez, E. Dugarte, and G. Álvarez, “Técnicas de procesamiento de la señal ECGAR aplicadas en el prototipo DIGICARDIAC.” https://ve.scielo.org/scielo.php?script=sci_arttext&pid=S0798-04772015000100007
+[2] “BITalino Lab Guides (Home Guides).” https://support.pluxbiosignals.com/knowledge-base/bitalino-lab-guides/
 [] J. Cheng, Q. Zou y Y. Zhao, “ECG signal classification based on deep CNN and BiLSTM”, BMC Med. Inform. Decis. Making, vol. 21, n.º 1, diciembre de 2021. Accedido el 21 de septiembre de 2024. [En línea]. Disponible: https://doi.org/10.1186/s12911-021-01736-y
