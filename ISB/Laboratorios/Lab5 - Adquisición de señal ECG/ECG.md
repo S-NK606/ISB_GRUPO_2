@@ -4,25 +4,30 @@
 
 ------------
 
-1. [Introducción](#Introduccion)
+1. [Introducción](#introduccion)
 2. [Objetivos](#objetivos)
 3. [Materiales y equipos](#materiales-y-equipos)
-4. [Resultados](#resultados)
+4. [Procedimiento](#procedimiento)
+5. [Resultados](#resultados)
    1. [Conexión usada](#conexion-usada)
    2. [Video de la señal](#video-de-la-señal)
    3. [Ploteo de la señal en Python](#ploteo-de-la-señal-en-python)
-5. [Referencias](#referencias)
+6. [Referencias](#referencias)
 
 ## Introducción
 El electrocardiograma (ECG) es una prueba diagnóstica fundamental en la medicina que registra la actividad eléctrica del corazón. Utilizando electrodos colocados en la piel, el ECG mide los impulsos eléctricos que desencadenan cada latido cardíaco, proporcionando un gráfico que muestra el ritmo, la frecuencia y la forma de las ondas eléctricas. Esta información es crucial para detectar diversas afecciones cardíacas, como arritmias, infartos y enfermedades del músculo cardíaco. El ECG es una herramienta no invasiva, rápida y ampliamente utilizada en entornos clínicos para evaluar la salud cardiovascular y guiar decisiones terapéuticas.
 
 El presente laboratorio se centra en el uso de la placa de desarrollo Bitalino para capturar señales de electrocardiograma (ECG) de interés. Esta innovadora herramienta nos brinda la capacidad de registrar y analizar la actividad eléctrica del corazón de manera no invasiva y en tiempo real. A lo largo de esta experiencia práctica, se busca adquirir conocimientos sobre la obtención y el análisis de señales ECG, además de familiarizarse con los procedimientos y protocolos necesarios para la utilización de los electrodos de ECG.
 
+[IMAGEN C]
+Fig 1. Señales ECG con los diferentes intervalos y segmentos que la componen [1].
+
 ## Objetivos
 
-- **Implementar** el uso de BITalino para la adquisición de señales ECG.
-- **Analizar** las señales obtenidas usando un entorno de desarrollo como Python.
-- **Filtrar** y procesar las señales para eliminar ruido y obtener datos claros.
+- Adquirir señales biomédicas de ECG usando el BiTalino
+- Hacer una correcta configuración de BiTalino.
+- Extraer la información de las señales ECG del software OpenSignals (r)evolution.
+- Interpretar el significado clínico de las señales ECG y observar posibles errores en la toma de datos.
   
 ## Materiales y equipos
 
@@ -32,23 +37,70 @@ El presente laboratorio se centra en el uso de la placa de desarrollo Bitalino p
 - Software OpenSignals
 - Entorno de desarrollo Python
 
+## Procedimiento
+
+### 4.1. Conexión del OpenSignals:
+
+La conexión correcta de la PC con la placa BITalino, el reconocimiento del modelo en la aplicación OpenSignals, junto con la configuración de la entrada A2 del BITalino para la medición del ECG.
+
+### 4.2. Revisión de las Guías de laboratorio de BITalino:
+
+La guía: “HOME-GUIDE #2 ELECTROCARDIOGRAPHY (ECG) [1]” posee como contenido la ubicación de electrodos recomendadas siendo, la elegida, la siguiente:
+
+[IMAGEN A]
+Fig 2. Colocación de electrodos para la 1era derivación: IN+ (izquierda - rojo) e IN- (derecha - negro) en las muñecas y la REF (blanco) en la cresta ilíaca [1].
+
+[IMAGEN B]
+Fig 3. Colocación de los electrodos en el estudiante elegido junto con la conexión con el BITalino.
+
+### 4.3. Preparación del estudiante:
+
+Se debe asegurar que las zonas correspondientes a la ubicación de los electrodos estén libres de obstrucciones, como prendas o accesorios, y que estén limpias para garantizar un contacto adecuado con los electrodos.
+
+### 4.4. Registro de la señal ECG:
+
+Una vez puestos los electrodos superficiales en las zonas descritas se empieza a registrar las señales tres veces en diferentes momentos, cada ocasión se repite con una configuración de derivación distinta.
+
+- **Estado Basal: **
+Estado de reposo evaluado donde el estudiante se mantiene calmado y relajado.
+
+[Video 1](https://youtu.be/eoxMC3BR_5U)
+Vid 1. Registro del EMG en estado basal.
+
+- **Estado de pausa respiratoria (durante y después):**
+El estudiante mantiene la respiración durante 10 segundos, mientras se registra su ECG en ese intervalo. Al concluir, se realiza un nuevo registro del ECG para observar las variaciones posteriores al ejercicio de contención de la respiración. Se repite este proceso tres veces, siendo seis registros en total.
+
+[Video 2](https://youtu.be/8n2kfjqa50U)
+Vid 2. Registro de EMG conteniendo la respiración
+
+[Video 3](https://youtu.be/anY9URw1vs4)
+Vid 3. Registro de EMG tras la pausa respiratoria.
+
+- **Estado después de una actividad física:**
+Durante 5 minutos aproximadamente, el estudiante realiza ejercicios aeróbicos intensos hasta llegar al cansancio. En nuestro caso, el estudiante subió y bajó escaleras durante ese periodo de tiempo.
+Se busca registrar cada derivación lo más rápido posible para que no disipe el efecto del cansancio sobre el ECG.
+
+[Video 4](https://youtu.be/AYHTVNsGHok)
+Vid 4. Estudiante realizando el ejercicio.
+
+[Video 5](https://youtu.be/aCMujE-tHtw)
+Video 5. Registro de EMG tras el ejercicio.
+
+### 4.5. Simulación - ProSim4:
+
+Finalmente se puede observar señales patrón gracias al ProSim 4, un simulador de signos vitales portátil diseñado para realizar pruebas rápidas que, en este caso se dieron para simular el ECG en diferentes frecuencias cardiacas que fueron registradas con la aplicación OpenSignals.
+
+   - Simulación de 60lpm - Estado basal
+   - Simulación de 120lpm - Empieza a agitarse
+   - Simulación de 150lpm - Haciendo ejercicio
+   - Simulación de 90lpm - Reponiéndose 
+
+[Video 6](https://youtu.be/D4N19q_PkfQ)
+Video 6. Simulaciones del ProSim4
+
 ## Resultados
 
-### 3.1. Conexión usada
-
-Se utilizó la conexión estándar de BITalino con los siguientes pasos:
-
-1. Colocación de los electrodos en el pecho del sujeto para medir la actividad cardíaca.
-2. Conexión del dispositivo BITalino vía Bluetooth con la computadora.
-3. Uso de la aplicación **OpenSignals** para la visualización en tiempo real de las señales.
-
-### 3.2. Video de la señal
-
-Aquí puedes ver un video demostrando la señal de ECG capturada en tiempo real:
-
-# ![Video placeholder](https://example.com/video-link) <!-- Cambia este enlace por el video correcto si lo tienes o un GIF -->
-
-### 3.3. Ploteo de la señal en Python
+### 5.1. Ploteo de la señal en Python
 
 Para el análisis de la señal obtenida, se utilizó Python para filtrar las señales usando Mediana (Reduce el ruido []), Butterworth (0.05Hz - 150Hz), Notch (60Hz) y visualizar la señal:
 
