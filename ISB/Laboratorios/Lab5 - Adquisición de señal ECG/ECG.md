@@ -38,6 +38,9 @@ Fig 1. Señales ECG con los diferentes intervalos y segmentos que la componen [1
 - Software OpenSignals
 - Entorno de desarrollo Python
 
+<p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/D.png" width="500" height="266"></p>
+</p>
+
 ## Procedimiento
 
 ### 4.1. Conexión del OpenSignals:
