@@ -61,40 +61,24 @@ Se debe asegurar que las zonas correspondientes a la ubicación de los electrodo
 
 Una vez puestos los electrodos superficiales en las zonas descritas se empieza a registrar las señales tres veces en diferentes momentos, cada ocasión se repite con una configuración de derivación distinta.
 
-- **Estado Basal: **
+- **Estado Basal:**
 Estado de reposo evaluado donde el estudiante se mantiene calmado y relajado.
 
-<div style="display: flex; justify-content: center;">
-    <iframe width="560" height="315" src="https://youtu.be/eoxMC3BR_5U" frameborder="0" allowfullscreen></iframe>
-</div>
-Vid 1. Registro del EMG en estado basal.
+[Ver video 1](https://youtu.be/eoxMC3BR_5U)
 
 - **Estado de pausa respiratoria (durante y después):**
 El estudiante mantiene la respiración durante 10 segundos, mientras se registra su ECG en ese intervalo. Al concluir, se realiza un nuevo registro del ECG para observar las variaciones posteriores al ejercicio de contención de la respiración. Se repite este proceso tres veces, siendo seis registros en total.
 
-<div style="display: flex; justify-content: center;">
-    <iframe width="560" height="315" src="https://youtu.be/8n2kfjqa50U" frameborder="0" allowfullscreen></iframe>
-</div>
-Vid 2. Registro de EMG conteniendo la respiración
+[Ver video 2](https://youtu.be/8n2kfjqa50U)
 
-<div style="display: flex; justify-content: center;">
-    <iframe width="560" height="315" src="https://youtu.be/anY9URw1vs4" frameborder="0" allowfullscreen></iframe>
-</div>
-Vid 3. Registro de EMG tras la pausa respiratoria.
+[Ver video 3](https://youtu.be/anY9URw1vs4)
 
 - **Estado después de una actividad física:**
-Durante 5 minutos aproximadamente, el estudiante realiza ejercicios aeróbicos intensos hasta llegar al cansancio. En nuestro caso, el estudiante subió y bajó escaleras durante ese periodo de tiempo.
-Se busca registrar cada derivación lo más rápido posible para que no disipe el efecto del cansancio sobre el ECG.
+Durante 5 minutos aproximadamente, el estudiante realiza ejercicios aeróbicos intensos hasta llegar al cansancio. En nuestro caso, el estudiante subió y bajó escaleras durante ese periodo de tiempo. Se busca registrar cada derivación lo más rápido posible para que no disipe el efecto del cansancio sobre el ECG.
 
-<div style="display: flex; justify-content: center;">
-    <iframe width="560" height="315" src="https://youtu.be/AYHTVNsGHok" frameborder="0" allowfullscreen></iframe>
-</div>
-Vid 4. Estudiante realizando el ejercicio.
+[Ver video 4](https://youtu.be/AYHTVNsGHok)
 
-<div style="display: flex; justify-content: center;">
-    <iframe width="560" height="315" src="https://youtu.be/aCMujE-tHtw" frameborder="0" allowfullscreen></iframe>
-</div>
-Video 5. Registro de EMG tras el ejercicio.
+[Ver video 5](https://youtu.be/aCMujE-tHtw)
 
 ### 4.5. Simulación - ProSim4:
 
@@ -103,12 +87,9 @@ Finalmente se puede observar señales patrón gracias al ProSim 4, un simulador 
    - Simulación de 60lpm - Estado basal
    - Simulación de 120lpm - Empieza a agitarse
    - Simulación de 150lpm - Haciendo ejercicio
-   - Simulación de 90lpm - Reponiéndose 
+   - Simulación de 90lpm - Reponiéndose
 
-<div style="display: flex; justify-content: center;">
-    <iframe width="560" height="315" src="https://youtu.be/D4N19q_PkfQ" frameborder="0" allowfullscreen></iframe>
-</div>
-Video 6. Simulaciones del ProSim4
+[Ver video 6](https://youtu.be/D4N19q_PkfQ)
 
 ## Resultados
 
