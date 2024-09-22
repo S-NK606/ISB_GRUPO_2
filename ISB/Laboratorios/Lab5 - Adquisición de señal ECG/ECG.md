@@ -4,13 +4,19 @@
 
 ------------
 
-1. [Objetivos](#objetivos)
-2. [Materiales y equipos](#materiales-y-equipos)
-3. [Resultados](#resultados)
+1. [Introducción](#Introduccion)
+2. [Objetivos](#objetivos)
+3. [Materiales y equipos](#materiales-y-equipos)
+4. [Resultados](#resultados)
    1. [Conexión usada](#conexion-usada)
    2. [Video de la señal](#video-de-la-señal)
    3. [Ploteo de la señal en Python](#ploteo-de-la-señal-en-python)
-4. [Referencias](#referencias)
+5. [Referencias](#referencias)
+
+## Introducción
+El electrocardiograma (ECG) es una prueba diagnóstica fundamental en la medicina que registra la actividad eléctrica del corazón. Utilizando electrodos colocados en la piel, el ECG mide los impulsos eléctricos que desencadenan cada latido cardíaco, proporcionando un gráfico que muestra el ritmo, la frecuencia y la forma de las ondas eléctricas. Esta información es crucial para detectar diversas afecciones cardíacas, como arritmias, infartos y enfermedades del músculo cardíaco. El ECG es una herramienta no invasiva, rápida y ampliamente utilizada en entornos clínicos para evaluar la salud cardiovascular y guiar decisiones terapéuticas.
+
+El presente laboratorio se centra en el uso de la placa de desarrollo Bitalino para capturar señales de electrocardiograma (ECG) de interés. Esta innovadora herramienta nos brinda la capacidad de registrar y analizar la actividad eléctrica del corazón de manera no invasiva y en tiempo real. A lo largo de esta experiencia práctica, se busca adquirir conocimientos sobre la obtención y el análisis de señales ECG, además de familiarizarse con los procedimientos y protocolos necesarios para la utilización de los electrodos de ECG.
 
 ## Objetivos
 
