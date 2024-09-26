@@ -105,28 +105,38 @@ Para el análisis de la señal obtenida, se utilizó Python para filtrar las se�
 
 - Estados de reposo
    - 1ra derivación
-             <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Señal Original Estado basal I dev.png" width="700" height="266"></p>
+     - Imagenes obtenidas
+       <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Señal Original Estado basal I dev.png" width="700" height="266"></p>
         </p>
-        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Estado_con_respiración_(1ra_derivación)_fft_senal_original.png" width="700" height="266"></p>
+       <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/FFT Señal Original Estado basal I dev.png" width="700" height="266"></p>
         </p>
-        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/SeñalFiltradaIderi_estadoBasal.png" width="700" height="266"></p>
-        </p>
+       <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/SeñalFiltradaIderi_estadoBasal.png" width="700" height="266"></p>
+       </p>
    - 2da derivación
-             <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Estado_con_respiración_(1ra_derivación)_senal_original.png" width="700" height="266"></p>
+     - Imagenes obtenidas
+       <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Señal Original Estado basal II dev.png" width="700" height="266"></p>
         </p>
-        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Estado_con_respiración_(1ra_derivación)_fft_senal_original.png" width="700" height="266"></p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/FFT Señal Original Estado basal II dev.png" width="700" height="266"></p>
         </p>
-        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Estado_con_respiración_(1ra_derivación)_senal_filtrada.png" width="700" height="266"></p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/SeñalFiltradaIIderi_estadoBasal.png" width="700" height="266"></p>
         </p>
    - 3ra derivación
-             <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Estado_con_respiración_(1ra_derivación)_senal_original.png" width="700" height="266"></p>
+     - Imagenes obtenidas
+       <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Señal Original Estado basal III dev.png" width="700" height="266"></p>
         </p>
-        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Estado_con_respiración_(1ra_derivación)_fft_senal_original.png" width="700" height="266"></p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/FFT Señal Original Estado basal III dev.png" width="700" height="266"></p>
         </p>
-        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Estado_con_respiración_(1ra_derivación)_senal_filtrada.png" width="700" height="266"></p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/SeñalFiltradaIIIderi_estadoBasal.png" width="700" height="266"></p>
         </p>
 - ECG durante la conteción de respiración
-   - Sin Respiración (1ra derivación)        
+   - Sin Respiración (1ra derivación)
+     - Imagenes obtenidas
+       <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Señal Original Estado sin respiración.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/FFT_Original_Estado sin respiración.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/SeñalFiltradaIderi_Sinrespira.png" width="700" height="266"></p>
+        </p>        
    - Post-Respiración (1ra derivación)
      - Imagenes obtenidas
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Estado_con_respiración_(1ra_derivación)_senal_original.png" width="700" height="266"></p>
@@ -151,6 +161,13 @@ Para el análisis de la señal obtenida, se utilizó Python para filtrar las se�
         En el ECG, se puede observar un intervalo RR de 0.75 segundos. Al comparar esta distancia con la del estado basal, podemos indicar que mantener la respiración por un tiempo de 20 segundos no influye en el aumento de la frecuencia cardiaca. 
         
    - Sin Respiración (2da derivación)
+     - Imagenes obtenidas
+       <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Señal Original Estado sin respiración II dev.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/FFT Señal Original Estado sin respiración II dev.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/SeñalFiltradaIIderi_Sinrespira.png" width="700" height="266"></p>
+        </p>    
    - Post-Respiración (2da derivación)
       - Imagenes obtenidas
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Estado_con_respiración_(2da_derivación)_senal_original.png" width="700" height="266"></p>
@@ -175,6 +192,13 @@ Para el análisis de la señal obtenida, se utilizó Python para filtrar las se�
         En el ECG, se puede observar un intervalo RR de 0.70 segundos.
       
    - Sin Respiración (3ra derivación)
+     - Imagenes obtenidas
+       <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Señal Original Estado sin respiración III dev.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/FFT Señal Original Estado sin respiración III dev.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/SeñalFiltradaIIIderi_Sinrespira.png" width="700" height="266"></p>
+        </p>    
    - Post-Respiración (3ra derivación)
       - Imagenes obtenidas
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Estado_con_respiración_(3ra_derivación)_senal_original.png" width="700" height="266"></p>
@@ -270,7 +294,21 @@ Para el análisis de la señal obtenida, se utilizó Python para filtrar las se�
         
 - Simulaciones
    - 60 bpm
+     - Imagenes obtenidas
+       <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Señal Original Simulacion 60 bpm.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/FFT Señal Original Simulación 60 bpm.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/SeñalFiltrad60bpm.png" width="700" height="266"></p>
+        </p>     
    - 90 bpm
+     - Imagenes obtenidas
+       <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Señal Original Simulacion 90 bpm.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/FFT Señal Original Simulacion 90 bpm.png" width="700" height="266"></p>
+        </p>
+        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/SeñalFiltrad90bpm.png" width="700" height="266"></p>
+        </p>     
    - 120 bpm
       - Imagenes obtenidas
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Simulación_a_120_bpm_senal_original.png" width="700" height="266"></p>
