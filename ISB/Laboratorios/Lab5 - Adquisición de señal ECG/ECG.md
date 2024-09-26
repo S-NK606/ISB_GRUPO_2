@@ -112,6 +112,9 @@ Para el análisis de la señal obtenida, se utilizó Python para filtrar las se�
         </p>
        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/SeñalFiltradaIderi_estadoBasal.png" width="700" height="266"></p>
        </p>
+     Al observar la señal filtrada obtenida de la primera derivación ECG de una persona en reposo (estado basal), se denotan los picos repetitivos pertenecientes a los complejos QRS, los cuales representan la despolarización de los ventrículos. No obstante, aunque los picos QRS son más visibles y más limpios después del proceso de filtrado de la señal, los picos R presentaron excesivamente una menor amplitud que los picos S, lo cual puede deberse a múltiples factores como la colocación de los electrodos, la anatomía individual, o las características eléctricas del corazón del individuo. También, se puede relacionar con una activación ventricular más prolongada o un eje eléctrico inclinado hacia la izquierda, lo cual no necesariamente es patológico.
+Asimismo, la gráfica de la transformada rápida de Fourier (FFT) para la señal muestra que la mayor parte de la actividad se concentra en frecuencias bajas (entre 0 y 50 Hz), lo cual es esperable en una señal de ECG para un estado de reposo. Se debe tener en cuenta que mayormente no se deberían encontrar frecuencias superiores de 40 Hz, ya que al estar en reposo, no debería haber frecuencias elevadas asociadas a la actividad muscular intensa o movimiento, por lo que es posible que el resto de frecuencias  se deban a interferencias electromagnéticas, como el ruido de la red eléctrica. De la misma manera, las ondas P y T no son claramente identificables, lo que puede deberse a la atenuación de estas señales de baja amplitud durante el proceso de filtrado. 
+
    - 2da derivación
      - Imagenes obtenidas
        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Señal Original Estado basal II dev.png" width="700" height="266"></p>
@@ -120,6 +123,9 @@ Para el análisis de la señal obtenida, se utilizó Python para filtrar las se�
         </p>
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/SeñalFiltradaIIderi_estadoBasal.png" width="700" height="266"></p>
         </p>
+     Al analizar la señal filtrada del estado basal para la II derivación se pueden contemplar todos los componentes de las fases del ciclo cardíaco, siendo el complejo QRS más prominente. En comparación de la gráfica para la I derivación, en esta señal, el pico R es uno de los picos con mayor amplitud y notoriedad, debido a la orientación del vector de activación del ventrículo izquierdo, que es dominante en la  II derivación. Del mismo modo, se presenta una separación regular entre los picos R, lo que indica un ritmo cardíaco normal en reposo. 
+Para el caso de la onda P y T, se puede observar que ambas son deflexiones de menor tamaños y menos prominentes que el complejo QRS. En caso de la onda P, es posible identificarla como la primera deflexión positiva significativa de cada ciclo antes del complejo QRS, lo que representa una despolarización de las aurículas adecuada. Sin embargo, el tamaño y la forma de la onda P, suelen ser más pequeños debido a que la activación auricular no es tan intensa como la ventricular. Mientras que la onda T aparece como una deflexión positiva suave tras el complejo QRS, representando la repolarización de los ventrículos, al presentar la forma más cercana a la ideal, se puede inferir que no se presentan alteraciones en la recuperación eléctrica de los ventrículos.
+
    - 3ra derivación
      - Imagenes obtenidas
        <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Señal Original Estado basal III dev.png" width="700" height="266"></p>
@@ -128,6 +134,8 @@ Para el análisis de la señal obtenida, se utilizó Python para filtrar las se�
         </p>
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/SeñalFiltradaIIIderi_estadoBasal.png" width="700" height="266"></p>
         </p>
+      En esta señal ECG filtrada para la III derivación, los electrodos fueron colocados de manera específica: el de referencia en la muñeca derecha, el negativo, en la muñeca izquierda, y el positivo, en la cresta iliaca. De esta manera, esta configuración permite capturar el potencial eléctrico generado por el corazón en un eje que va principalmente desde la muñeca izquierda hacia la pierna izquierda, proporcionando una perspectiva oblicua del eje cardíaco. Debido a lo anterior, el pico R del complejo QRS es visible pero con menor amplitud en comparación con la II derivación, lo cual es previsible, debido a que la derivación no está alineada directamente con el vector principal de despolarización ventricular. Asimismo, las ondas P y T aparecen menos definidas debido a la orientación y la menor amplitud intrínseca de estas ondas en la dirección captada por esta derivación, y por el proceso de filtrado que podría haber reducido aún más su visibilidad. 
+
 - ECG durante la conteción de respiración
    - Sin Respiración (1ra derivación)
      - Imagenes obtenidas
@@ -136,7 +144,9 @@ Para el análisis de la señal obtenida, se utilizó Python para filtrar las se�
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/FFT_Original_Estado sin respiración.png" width="700" height="266"></p>
         </p>
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/SeñalFiltradaIderi_Sinrespira.png" width="700" height="266"></p>
-        </p>        
+        </p>
+        Al examinar la señal del ECG, se observa que la amplitud del pico S es inusualmente mayor que la del pico R, lo cual podría atribuirse a la colocación de los electrodos y a la orientación del eje eléctrico del corazón. Asimismo, para este caso, la señal fue obtenida mientras la persona aguantaba la respiración, por lo que al visualizar la señal se dificulta el identificar las ondas P y T, ya que al no respirar, la ausencia de movimiento respiratorio reduce las fluctuaciones mecánicas y eléctricas inducidas por el diafragma y los músculos intercostales.Aún así, cabe destacar que el tamaño normal de la distancia de los intervalos RR sugiere que el ritmo es regular, lo que indica un funcionamiento adecuado del sistema de conducción cardíaco. 
+
    - Post-Respiración (1ra derivación)
      - Imagenes obtenidas
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Estado_con_respiración_(1ra_derivación)_senal_original.png" width="700" height="266"></p>
@@ -167,7 +177,8 @@ Para el análisis de la señal obtenida, se utilizó Python para filtrar las se�
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/FFT Señal Original Estado sin respiración II dev.png" width="700" height="266"></p>
         </p>
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/SeñalFiltradaIIderi_Sinrespira.png" width="700" height="266"></p>
-        </p>    
+        </p> 
+        La señal de ECG en II derivación para una persona que aguanta la respiración muestra complejos QRS bien definidos que corresponden a los picos altos y estrechos, indicando una fuerte actividad eléctrica ventricular. Mientras que, las ondas P y T son visibles como pequeñas oscilaciones antes y después de cada complejo QRS, reflejando la despolarización auricular y la repolarización ventricular, respectivamente. Aunque, cuando una persona aguanta la respiración, se puede esperar una menor variabilidad en la línea de base de la señal, ya que la variabilidad respiratoria afecta menos al ritmo cardíaco; en la señal observada, se aprecia un patrón relativamente regular del complejo PQRST, indicando un ritmo cardíaco constante. 
    - Post-Respiración (2da derivación)
       - Imagenes obtenidas
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Estado_con_respiración_(2da_derivación)_senal_original.png" width="700" height="266"></p>
@@ -199,6 +210,7 @@ Para el análisis de la señal obtenida, se utilizó Python para filtrar las se�
         </p>
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/SeñalFiltradaIIIderi_Sinrespira.png" width="700" height="266"></p>
         </p>    
+        En la señal de ECG en III derivación para cuando una persona mantiene la respiración, se pueden identificar los componentes típicos del ciclo cardíaco. En caso de la onda P, se mantiene como pequeñas deflexiones positivas que corresponden a la despolarización auricular, aunque puede no ser claramente visible en esta derivación, puede visualizarse justo antes del complejo QRS. En caso de este último, el complejo QRS es el componente más prominente en la señal, donde la onda R tiene una amplitud significativamente mayor que la onda S, lo cual indica una fuerte actividad eléctrica de los ventrículos y sugiere una buena captura del evento de despolarización ventricular. Aunque en la derivación III esta configuración de mayor R que S puede ser un hallazgo normal, también podría estar asociado con condiciones específicas como la hipertrofia ventricular izquierda, por lo que se recomienda evaluarlo en conjunto con otros datos clínicos. En caso de la onda T sigue al complejo QRS, indicando una repolarización ventricular adecuada, con amplitud y morfología normales. Por último, la línea de base se mantiene estable, con ligeras fluctuaciones típicas y la frecuencia cardíaca se mantiene constante debido a la reducción de la variabilidad por la falta de respiración.
    - Post-Respiración (3ra derivación)
       - Imagenes obtenidas
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Estado_con_respiración_(3ra_derivación)_senal_original.png" width="700" height="266"></p>
@@ -308,7 +320,10 @@ Para el análisis de la señal obtenida, se utilizó Python para filtrar las se�
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/FFT Señal Original Simulacion 90 bpm.png" width="700" height="266"></p>
         </p>
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/SeñalFiltrad90bpm.png" width="700" height="266"></p>
-        </p>     
+        </p>
+        Interpretaciones de 60 y 90 bpm: Las señales electrocardiográficas (ECG) presentadas corresponden a simulaciones de frecuencias cardíacas de 60 bpm y 90 bpm realizadas con el dispositivo ProSim. En el caso de una frecuencia cardiáca de 60 bpm, el corazón está trabajando en condiciones normales de reposo, con tiempo suficiente para que las aurículas y ventrículos se despolaricen y repolaricen de manera eficiente, asegurando un suministro constante de sangre oxigenada al cuerpo.  Mientras que, a 90 bpm, el corazón está trabajando más rápido, lo que suele ocurrir en situaciones de mayor demanda metabólica, como ejercicio físico, estrés o una mayor actividad simpática, por lo que el ciclo cardíaco es más corto, y tanto la despolarización como la repolarización deben ocurrir más rápidamente para mantener un flujo sanguíneo adecuado. 
+Finalmente, al comparar las dos señales filtradas, se observa que la señal a 60 bpm tiene ciclos cardíacos más espaciados, lo que permite una mejor diferenciación de los componentes PQRST. En cambio, en la señal a 90 bpm, los ciclos son más cortos y los elementos de la señal se encuentran más próximos entre sí, lo que reduce la claridad en la separación de las ondas, especialmente entre la onda T y el complejo QRS del siguiente ciclo. 
+
    - 120 bpm
       - Imagenes obtenidas
         <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/Simulación_a_120_bpm_senal_original.png" width="700" height="266"></p>
