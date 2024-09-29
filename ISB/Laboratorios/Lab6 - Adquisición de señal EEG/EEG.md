@@ -174,29 +174,29 @@
 
  - 5.3.2. Análisis de gráficas
    a. Basal 1:
-      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/IBASAL_orig.png" width="700" height="700"></p></p>
-      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/IBASAL_FFT.png" width="700" height="700"></p></p>
-      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/IBASAL_filtra_FFT.png" width="700" height="350"></p></p>
-      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/IBASAL_filtra.png" width="700" height="350"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/IBASAL_orig.png" width="800" height="450"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/IBASAL_FFT.png" width="800" height="450"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/IBASAL_filtra_FFT.png" width="800" height="450"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/IBASAL_filtra.png" width="800" height="450"></p></p>
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/BANDA_POT_IBASAL.png" width="700" height="350"></p></p>
 
    b. Durante el Pestañeo:
-      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/MOVIOJOS_orig.png" width="700" height="700"></p></p>
-      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/MOVIOJOS_FFT.png" width="700" height="700"></p></p>
-      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/MOVIOJOS_FILTRA_FFT.png" width="700" height="350"></p></p>
-      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/MOVIOJOS_FILTRA.png" width="700" height="350"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/MOVIOJOS_orig.png" width="800" height="450"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/MOVIOJOS_FFT.png" width="800" height="450"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/MOVIOJOS_FILTRA_FFT.png" width="800" height="450"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/MOVIOJOS_FILTRA.png" width="800" height="450"></p></p>
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/BANDA_POT_MOVIOJOS.png" width="700" height="350"></p></p>
    c. Basal 2:
-      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/IIBASAL_orig.png" width="700" height="700"></p></p>
-      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/IIBASAL_FFT.png" width="700" height="700"></p></p>
-      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/IIBASAL_filtra_FFT.png" width="700" height="350"></p></p>
-      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/IIBASAL_filtra.png" width="700" height="350"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/IIBASAL_orig.png" width="800" height="450"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/IIBASAL_FFT.png" width="800" height="450"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/IIBASAL_filtra_FFT.png" width="800" height="450"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/IIBASAL_filtra.png" width="800" height="450"></p></p>
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/BANDA_POT_IIBASAL.png" width="700" height="350"></p></p>
    d. Durante Matemática mental
-      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/MATE_orig.png" width="700" height="700"></p></p>
-      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/MATE_FFT.png" width="700" height="700"></p></p>
-      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/MATE_filtra_FFT.png" width="700" height="350"></p></p>
-      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/MATE_filtra.png" width="700" height="350"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/MATE_orig.png" width="800" height="450"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/MATE_FFT.png" width="800" height="450"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/MATE_filtra_FFT.png" width="800" height="450"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/MATE_filtra.png" width="800" height="450"></p></p>
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/BANDA_POT_MAT.png" width="700" height="350"></p></p>
 
 ## 6. Conclusiones
