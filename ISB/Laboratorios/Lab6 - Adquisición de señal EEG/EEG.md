@@ -56,6 +56,11 @@
 ### 5.2. Señales con OpenBCI
 
  - 5.2.1. Basal 1
+    - <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_GENERAL.png" width="300" height="266"></p></p>
+    - <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_FFT_POWER.png" width="300" height="266"></p></p>
+    - <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_HEAD.jpg" width="300" height="266"></p></p>
+    
+    
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_GENERAL.png" width="300" height="266"></p></p>
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_FFT_POWER.png" width="300" height="266"></p></p>
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_HEAD.jpg" width="300" height="266"></p></p>
