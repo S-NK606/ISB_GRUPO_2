@@ -56,39 +56,51 @@
 ### 5.2. Señales con OpenBCI
 
  - 5.2.1. Basal 1
-    - <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_GENERAL.png" width="800" height="700"></p></p>
-    - <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_FFT_POWER.png" width="800" height="700"></p></p>
+    - <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_GENERAL.png" width="700" height="700"></p></p>
+    - <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_FFT_POWER.png" width="700" height="700"></p></p>
     - <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_HEAD.jpg" width="700" height="350"></p></p>
    - Canal 1
-     <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C1_SIGNAL.png" width="800" height="350"></p></p>
-     <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C1_FFT_POWER.png" width="800" height="700"></p></p>
+     <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C1_SIGNAL.png" width="700" height="350"></p></p>
+     <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C1_FFT_POWER.png" width="700" height="700"></p></p>
    - Canal 2
-     <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C2_SIGNAL.png" width="800" height="350"></p></p>
-     <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C2_FFT_POWER.png" width="800" height="700"></p></p>
+     <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C2_SIGNAL.png" width="700" height="350"></p></p>
+     <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C2_FFT_POWER.png" width="700" height="700"></p></p>
    - Canal 3
-     <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C3_SIGNAL.png" width="800" height="350"></p></p>
-     <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C3_FFT_POWER.png" width="800" height="700"></p></p>
+     <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C3_SIGNAL.png" width="700" height="350"></p></p>
+     <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C3_FFT_POWER.png" width="700" height="700"></p></p>
    - Canal 4
-     <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C4_SIGNAL.png" width="800" height="350"></p></p>
-     <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C4_FFT_POWER.png" width="800" height="700"></p></p>
+     <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C4_SIGNAL.png" width="700" height="350"></p></p>
+     <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C4_FFT_POWER.png" width="700" height="700"></p></p>
    - Canal 5
-     <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C5_SIGNAL.png" width="800" height="350"></p></p>
-     <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C5_FFT_POWER.png" width="800" height="700"></p></p>
+     <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C5_SIGNAL.png" width="700" height="350"></p></p>
+     <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C5_FFT_POWER.png" width="700" height="700"></p></p>
    - Canal 6
-     <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C6_SIGNAL.png" width="800" height="350"></p></p>
-     <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C6_FFT_POWER.png" width="800" height="700"></p></p>
+     <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C6_SIGNAL.png" width="700" height="350"></p></p>
+     <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C6_FFT_POWER.png" width="700" height="700"></p></p>
    - Canal 7
-     <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C7_SIGNAL.png" width="800" height="350"></p></p>
-     <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C7_FFT_POWER.png" width="800" height="700"></p></p>
+     <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C7_SIGNAL.png" width="700" height="350"></p></p>
+     <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C7_FFT_POWER.png" width="700" height="700"></p></p>
    - Canal 8
-     <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C8_SIGNAL.png" width="800" height="350"></p></p>
-     <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C8_FFT_POWER.png" width="800" height="700"></p></p>
+     <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C8_SIGNAL.png" width="700" height="350"></p></p>
+     <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C8_FFT_POWER.png" width="700" height="700"></p></p>
 
  - 5.2.2. Durante el Pestañeo
     - De 0 a 5 segundos (Ojos cerrados)
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B2_0_5_SIGNAL.png" width="700" height="350"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B2_0_5_FFT_POWER.png" width="700" height="700"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B2_0_5_HEAD.png" width="700" height="350"></p></p>
     - De 5 a 10 segundos (Ojos abiertos)
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B2_5_10_SIGNAL.png" width="700" height="350"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B2_5_10_FFT_POWER.png" width="700" height="700"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B2_5_10_HEAD.png" width="700" height="350"></p></p>
     - De 10 a 15 segundos (Ojos cerrados)
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B2_10_15_SIGNAL.png" width="700" height="350"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B2_10_15_FFT_POWER.png" width="700" height="700"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B2_10_15_HEAD.png" width="700" height="350"></p></p>
     - De 15 a 20 segundos (Ojos abiertos)
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B2_15_20_SIGNAL.png" width="700" height="350"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B2_15_20_FFT_POWER.png" width="700" height="700"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B2_15_20_HEAD.png" width="700" height="350"></p></p>
       
  - 5.2.3. Basal 2
     - 5 segundos de señal
