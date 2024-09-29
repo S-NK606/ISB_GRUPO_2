@@ -93,6 +93,8 @@
     - <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_GENERAL.png" width="700" height="700"></p></p>
     - <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_FFT_POWER.png" width="700" height="700"></p></p>
     - <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_HEAD.jpg" width="700" height="350"></p></p>
+    - Se puede observar más actividad en la sección 8 (lóbulo occipital 2), la cual está encargada de la visión. Posiblemente, esto se dio debido a que el sujeto se encontraba con los ojos cerrados pero despierto. También, se aprecia una menor actividad en las zonas 1, 2 y 7 (lóbulo frontal y occipital 1). [4] Además, en el gráfico de bandas de poder, se ve la predominancia de la onda Alpha, la cual esta relacionada con la meditación y relación. Posiblemente, el sujeto procuro estar lo mas relajado posible para el experimento. En las siguientes graficas de los canales, se observa la casi nula actividad de las ondas Delta, ya que esta mas relacionada a los ciclos de sueño.
+
    - Canal 1
      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C1_SIGNAL.png" width="700" height="350"></p></p>
      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C1_FFT_POWER.png" width="700" height="700"></p></p>
@@ -123,50 +125,69 @@
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B2_0_5_SIGNAL.png" width="700" height="700"></p></p>
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B2_0_5_FFT_POWER.png" width="700" height="700"></p></p>
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B2_0_5_HEAD.png" width="700" height="350"></p></p>
+      Se ve mayor actividad en las secciones 1 y 2 (lóbulo frontal) y la menor actividad en la sección 6 (lóbulo temporal). El lóbulo frontal esta relacionado a la elaboración de pensamientos [3]. Esto puedo darse debido a que el sujeto estaba esperando el toque en el hombro para poder abrir los ojos. Se ve una predominancia en la onda Beta. Esta onda está relacionada al enfoque consciente.[2]
+
     - De 5 a 10 segundos (Ojos abiertos)
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B2_5_10_SIGNAL.png" width="700" height="700"></p></p>
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B2_5_10_FFT_POWER.png" width="700" height="700"></p></p>
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B2_5_10_HEAD.png" width="700" height="350"></p></p>
+      Se ve mayor actividad en la sección 8 (lóbulo occipital 2) y la menor actividad en la sección 1 y 2 (lóbulo frontal). Esto se puede deber a que el sujeto ya tiene abiertos los ojos. Además, hay una predominancia en la onda Beta.
+      
     - De 10 a 15 segundos (Ojos cerrados)
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B2_10_15_SIGNAL.png" width="700" height="700"></p></p>
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B2_10_15_FFT_POWER.png" width="700" height="700"></p></p>
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B2_10_15_HEAD.png" width="700" height="350"></p></p>
+      Se ven resultados similares al tiempo de 0 a 5 segundos, como se tomó de referencia el tiempo a los 10 segundos, justo cuando el sujeto debe cerrar los ojos, se ve como es que hay una actividad incrementada en la sección 3, relacionada a la función motora. También se ve una predominancia de la onda Beta.
+      
     - De 15 a 20 segundos (Ojos abiertos)
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B2_15_20_SIGNAL.png" width="700" height="700"></p></p>
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B2_15_20_FFT_POWER.png" width="700" height="700"></p></p>
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B2_15_20_HEAD.png" width="700" height="350"></p></p>
+      Se ven resultados parecidos al tiempo 0 a 5 y 10 a 15 segundos. Aun que en este caso hay una predominancia de las ondas Gamma, la cual esta relacionada con las funciones motoras y cognitivas específicas [1].
       
  - 5.2.3. Basal 2
     - 5 segundos de señal
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B3_SIGNAL.png" width="700" height="700"></p></p>
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B3_FFT_POWER.png" width="700" height="700"></p></p>
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B3_HEAD.png" width="700" height="350"></p></p>
+      Se ve una gran irregularidad en todas las graficas adquiridas como picos de 500uV en las señales. En el ploteo de la FFT, se ve como son demasiado parecidas a pesar de ser distintos canales. Las bandas de potencia muestran predominancia alta para casi todas las ondas y el ploteo de cabeza indica alta actividad en todas las secciones. Esto puede deberse a algún error por parte del dispositivo.
       
  - 5.2.4. Durante Matemática mental
     - De 0 a 10 segundos
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_0_10_SIGNAL.png" width="700" height="700"></p></p>
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_0_10_FFT_HEAD.png" width="700" height="700"></p></p>
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_0_10_POWER.png" width="700" height="350"></p></p>
+      Alta actividad en la sección 8, 6 y 4. Estas áreas están relacionadas a la comprensión del lenguaje e inteligencia, a la sección auditiva y al procesamiento visual de las palabras. Esto puede deberse a que el sujeto estaba escuchando con atención la pregunta. Tiene una predominancia de onda Beta.
+      
     - De 10 a 20 segundos
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_10_20_SIGNAL.png" width="700" height="700"></p></p>
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_10_20_FFT_HEAD.png" width="700" height="700"></p></p>
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_10_20_POWER.png" width="700" height="350"></p></p>
+      Se ven resultados similares al primer tiempo. Existe una predominancia de la onda Theta, la cual esta relacionada con la imaginación. Posiblemente, esto se debe a que el sujeto esta escuchando el problema matemático con los ojos cerrados. Además, la onda Beta también predomina debido a su relación con la solución de problemas, memoria y concentración.
+      
     - De 20 a 30 segundos
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_20_30_SIGNAL.png" width="700" height="700"></p></p>
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_20_30_FFT_HEAD.png" width="700" height="700"></p></p>
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_20_30_POWER.png" width="700" height="350"></p></p>
+      Resultados similares a los tiempos 0-10 y 10-20 segundos, pero en menor intensidad.
+      
     - De 30 a 40 segundos
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_30_40_SIGNAL.png" width="700" height="700"></p></p>
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_30_40_FFT_HEAD.png" width="700" height="700"></p></p>
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_30_40_POWER.png" width="700" height="350"></p></p>
+      Resultados similares a los tiempos 0-10 y 10-20 segundos.
+      
     - De 40 a 50 segundos
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_40_50_SIGNAL.png" width="700" height="700"></p></p>
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_40_50_FFT_HEAD.png" width="700" height="700"></p></p>
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_40_50_POWER.png" width="700" height="350"></p></p>
+      Resultados similares a los tiempos 0-10 y 10-20 segundos.
+      
     - De 50 a 58 segundos
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_50_58_SIGNAL.png" width="700" height="700"></p></p>
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_50_58_FFT_HEAD.png" width="700" height="700"></p></p>
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_50_58_POWER.png" width="700" height="350"></p></p>
+      Resultados similares a los tiempos 0-10 y 10-20 segundos.
 
 ### 5.3. Señal con Bitalino
 
