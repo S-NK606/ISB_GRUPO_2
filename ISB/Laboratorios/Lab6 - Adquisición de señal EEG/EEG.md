@@ -31,8 +31,21 @@
    señales:
 
    1. Posición de electrodo bipolar (fp1-fp2):
-   <p align="center"> <img src="https://github.com/S-NK606/ISB_GRUPO_2/blob/main/ISB/Laboratorios/Lab6%20-%20Adquisici%C3%B3n%20de%20se%C3%B1al%20EEG/Imagenes/protocoloimagen.png" width="100%" /> </p>
-   2. Adquisición de datos
+   <p align="center"> <img src="https://github.com/S-NK606/ISB_GRUPO_2/blob/main/ISB/Laboratorios/Lab6%20-%20Adquisici%C3%B3n%20de%20se%C3%B1al%20EEG/Imagenes/protocoloimagen.png" width="70%" /> </p>
+   2. Adquisición de datos</p>
+   Procedimiento para la Adquisición y Medición de Señal EEG con BITalino:</p>
+      1. **Abrir el software OpenSignals y conectar el BITalino**.</p>
+      2. **Conectar el sensor EEG** al canal especificado del BITalino, según lo indicado en la ficha técnica.</p>
+      3. **Colocar los electrodos húmedos** en los pines de los sensores EEG, aplicando el gel conductor adecuado.</p>
+      4. **Ubicar los electrodos en la cabeza del participante**:</p>
+         - Colocar los electrodos en las zonas **Fp1 y Fp2** del cráneo, asegurándose de seguir las recomendaciones sobre el tipo de electrodo mencionadas anteriormente.</p>
+         - Posicionar el electrodo de referencia en la **parte posterior de la oreja**.</p>
+      5. **Iniciar el registro de señal**:</p>
+         a. Registrar una **línea base** de la señal durante 30 segundos, asegurándose de que haya poco ruido y sin movimientos (respiración normal, sin movimientos oculares, ojos cerrados).</p>
+         b. Realizar cinco ciclos alternados de **ojos abiertos y ojos cerrados**, manteniendo cada fase durante cinco segundos.</p>
+         c. Registrar otra fase de referencia de 30 segundos (similar al paso 5.a).</p>
+         d. Mientras un compañero lee en voz alta una serie de ejercicios matemáticos, resolverlos mentalmente, manteniendo la mirada en un punto fijo para evitar artefactos.</p>
+         e. Detenga la grabación y guarde sus datos</p>
 
 
 6. [Resultados](#resultados)  
