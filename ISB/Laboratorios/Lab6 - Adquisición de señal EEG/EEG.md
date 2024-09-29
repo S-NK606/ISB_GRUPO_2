@@ -119,6 +119,7 @@ En esta sesión de laboratorio obtendremos la señal mediante dos dispositivos. 
          e. Detenga la grabación y guarde sus datos</p>
    <p align="center"> <img src="https://github.com/S-NK606/ISB_GRUPO_2/blob/main/ISB/Laboratorios/Lab6%20-%20Adquisici%C3%B3n%20de%20se%C3%B1al%20EEG/Imagenes/preguntas.png" width="70%" /> </p>
    <p align="center"> Figura X. Preguntas de distinta complejidad.</p> 
+   
 ## Resultados
 
 ### 5.1. Fotos de conexión usada
