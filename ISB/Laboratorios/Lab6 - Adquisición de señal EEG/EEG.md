@@ -257,6 +257,8 @@ El estudiante es puesto a prueba con ejercicios de razonamiento matemático entr
 [Ver video 4](https://youtu.be/RdxDtemofSo)
 
  - 5.3.2. Análisis de gráficas
+   En el código, se trabaja con señales de EEG utilizando una frecuencia de muestreo de 500 Hz y se analiza una ventana de 21 segundos entre los segundos 4 y 25. Se aplica un filtro de mediana para eliminar artefactos, seguido de un filtro pasa banda Butterworth (4-50 Hz) para conservar las frecuencias relevantes del EEG. Luego, se utiliza un filtro notch a 60 Hz para eliminar el ruido de la línea eléctrica y se finaliza con un filtro pasa bajos para eliminar frecuencias altas residuales. Finalmente, se emplea la FFT para analizar las frecuencias de la señal filtrada y se calcula la potencia en las bandas EEG (Delta, Theta, Alpha, Beta y Gamma).
+
    a. Basal 1:
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/IBASAL_orig.png" width="800" height="450"></p></p>
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/SEÑALES EEG/IBASAL_FFT.png" width="800" height="450"></p></p>
