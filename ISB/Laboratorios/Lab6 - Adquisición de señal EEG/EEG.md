@@ -26,6 +26,8 @@
 
 6. [Conclusiones](#conclusiones)
 
+7. [Referencias](#referencias)
+
 
 ## 1. Introducción al laboratorio
 
@@ -62,3 +64,6 @@
 #### 5.3.2. Análisis de gráficas
 
 ## 6. Conclusiones
+
+## 7. Referencias
+
