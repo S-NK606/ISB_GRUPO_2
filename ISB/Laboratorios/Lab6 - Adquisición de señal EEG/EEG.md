@@ -47,6 +47,7 @@
          d. Mientras un compañero lee en voz alta una serie de ejercicios matemáticos, resolverlos mentalmente, manteniendo la mirada en un punto fijo para evitar artefactos.</p>
          e. Detenga la grabación y guarde sus datos</p>
    <p align="center"> <img src="https://github.com/S-NK606/ISB_GRUPO_2/blob/main/ISB/Laboratorios/Lab6%20-%20Adquisici%C3%B3n%20de%20se%C3%B1al%20EEG/Imagenes/preguntas.png" width="70%" /> </p>
+   <p align="center"> Figura X. Preguntas de distinta complejidad.</p> 
 
 
 6. [Resultados](#resultados)  
