@@ -223,9 +223,9 @@
 ## 6. Conclusiones
 
 ## 7. Referencias
-[1] Satapathy, S. K., Dehuri, S., Jagadev, A. K., & Mishra, S. (2019). Introduction. En EEG Brain Signal Classification for Epileptic Seizure Disorder Detection (pp. 1–25). Elsevier.
-[2] Attar, E. T. (2022). Review of electroencephalography signals approaches for mental stress assessment. Neurosciences (Riyadh, Saudi Arabia), 27(4), 209–215. https://doi.org/10.17712/nsj.2022.4.20220025
-[3]Nosotros, P. C. (2021, julio 22). Áreas funcionales de la corteza cerebral humana. Www.elsevier.com; Elsevier. https://www.elsevier.com/es-es/connect/areas-funcionales-de-la-corteza-cerebral-humana
-[4] GUI Widget guide. (s/f). Openbci.com. Recuperado el 29 de septiembre de 2024, de https://docs.openbci.com/Software/OpenBCISoftware/GUIWidgets/
+ - [1] Satapathy, S. K., Dehuri, S., Jagadev, A. K., & Mishra, S. (2019). Introduction. En EEG Brain Signal Classification for Epileptic Seizure Disorder Detection (pp. 1–25). Elsevier.
+ - [2] Attar, E. T. (2022). Review of electroencephalography signals approaches for mental stress assessment. Neurosciences (Riyadh, Saudi Arabia), 27(4), 209–215. https://doi.org/10.17712/nsj.2022.4.20220025
+ - [3]Nosotros, P. C. (2021, julio 22). Áreas funcionales de la corteza cerebral humana. Www.elsevier.com; Elsevier. https://www.elsevier.com/es-es/connect/areas-funcionales-de-la-corteza-cerebral-humana
+ - [4] GUI Widget guide. (s/f). Openbci.com. Recuperado el 29 de septiembre de 2024, de https://docs.openbci.com/Software/OpenBCISoftware/GUIWidgets/
 
 
