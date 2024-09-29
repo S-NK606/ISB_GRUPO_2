@@ -38,6 +38,8 @@ El electroencefalograma (EEG) es una prueba que evalúa la actividad eléctrica 
 Las neuronas se comunican entre sí a través de estos impulsos eléctricos, siempre estando activas y esta actividad se manifiesta como las ondas cerebrales: Delta, Theta, Alpha, Beta y Gamma [2].
 
    <p align="center"> <img src="https://github.com/S-NK606/ISB_GRUPO_2/blob/main/ISB/Laboratorios/Lab6%20-%20Adquisici%C3%B3n%20de%20se%C3%B1al%20EEG/Imagenes/IMAGENA.png" width="70%" /> </p>
+   Figura 1. Ondas cerebrales.
+
 - Ondas Delta:
 Son las ondas con menor frecuencia y las de mayor amplitud. Se observan fisiológicamente en el sueño profundo y es más prominente en las regiones frontocentrales de la cabeza.
 
@@ -62,18 +64,21 @@ El EEG se utiliza ampliamente en diversos campos debido a su capacidad para anal
 - La regulación de la profundidad de la anestesia
 - La investigación de la epilepsia y la localización del origen de las convulsiones junto con la evaluación de los efectos de medicamentos antiepilépticos
 - La investigación de los trastornos del sueño y su fisiología.
-   <p align="center"> <img src="https://github.com/S-NK606/ISB_GRUPO_2/blob/main/ISB/Laboratorios/Lab6%20-%20Adquisici%C3%B3n%20de%20se%C3%B1al%20EEG/Imagenes/IMAGENB.png" width="70%" /> </p>
+   <p align="center"> <img src="https://github.com/S-NK606/ISB_GRUPO_2/blob/main/ISB/Laboratorios/Lab6%20-%20Adquisici%C3%B3n%20de%20se%C3%B1al%20EEG/Imagenes/IMAGENB.jpg" width="70%" /> </p>
+Fig 2. Utilización médica del EEG
 
 ### 1.3. Tipos de medición de EEG
 Existen dos tipos de formas básicas de disposición de electrodos para EEG y se diferencias en el registro de la actividad eléctrica [4]:
 Monopolar: Se mide la diferencia de un potencial entre un electrodo colocado en una zona activa del cerebro, donde se espera el registro de la actividad eléctrica, y un electrodo de referencia en una zona neutra. Permite obtener una medida más focalizada en una región específica.
 Bipolar: La diferencia del potencial es entre dos electrodos colocados en áreas de actividad principal, es decir, no hay un electrodo de referencia neutro. Se realiza de manera transversal, con una línea imaginaria que cruza el cerebro de lado a lado, o de manera longitudinal, de adelante hacia atrás o viceversa. Permite comparar la actividad eléctrica de dos áreas.
    <p align="center"> <img src="https://github.com/S-NK606/ISB_GRUPO_2/blob/main/ISB/Laboratorios/Lab6%20-%20Adquisici%C3%B3n%20de%20se%C3%B1al%20EEG/Imagenes/IMAGENC.png" width="70%" /> </p>
+   Fig 3. Tipos de medición del EEG
    
 ### 1.4. ¿De qué forma obtenemos la señal?
 En esta sesión de laboratorio obtendremos la señal mediante dos dispositivos. Usaremos la entrada para EEG del BITalino y veremos las señales producidas por el Ultracortex Mark IV EEG.
    <p align="center"> <img src="https://github.com/S-NK606/ISB_GRUPO_2/blob/main/ISB/Laboratorios/Lab6%20-%20Adquisici%C3%B3n%20de%20se%C3%B1al%20EEG/Imagenes/IMAGEND.png" width="70%" /> </p>
-   
+   Fig 4. BITalino y Ultracortex Mark IV EEG.
+
 ## Objetivos
 - Adquirir señales biomédicas de EEG usando el BiTalino y el Ultracortex Mark IV EEG.
 - Extraer la información de las señales EEG del software OpenSignals (r)evolution y del OpenBCI GUI.
