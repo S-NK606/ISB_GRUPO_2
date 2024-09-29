@@ -128,9 +128,9 @@ En esta sesión de laboratorio obtendremos la señal mediante dos dispositivos. 
 ## Resultados
 
 ### 5.1. Fotos de conexión usada
-   <p align="center"> <img src="https://github.com/S-NK606/ISB_GRUPO_2/blob/main/ISB/Laboratorios/Lab6%20-%20Adquisici%C3%B3n%20de%20se%C3%B1al%20EEG/Imagenes/preguntas.png" width="70%" /> </p>
+   <p align="center"> <img src="https://github.com/S-NK606/ISB_GRUPO_2/blob/main/ISB/Laboratorios/Lab6%20-%20Adquisici%C3%B3n%20de%20se%C3%B1al%20EEG/Imagenes/WhatsApp Image 2024-09-28 at 11.25.39 PM.jpeg" width="70%" /> </p>
 
-   <p align="center"> <img src="https://github.com/S-NK606/ISB_GRUPO_2/blob/main/ISB/Laboratorios/Lab6%20-%20Adquisici%C3%B3n%20de%20se%C3%B1al%20EEG/Imagenes/preguntas.png" width="70%" /> </p>   
+   <p align="center"> <img src="https://github.com/S-NK606/ISB_GRUPO_2/blob/main/ISB/Laboratorios/Lab6%20-%20Adquisici%C3%B3n%20de%20se%C3%B1al%20EEG/Imagenes/WhatsApp Image 2024-09-28 at 11.26.59 PM.jpeg" width="70%" /> </p>   
 ### 5.2. Señales con OpenBCI
 
  - 5.2.1. Basal 1
