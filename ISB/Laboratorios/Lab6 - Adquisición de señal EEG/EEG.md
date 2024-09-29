@@ -55,9 +55,13 @@
 
 ### 5.2. Señales con OpenBCI
 
- - 5.2.1. Gráficas del OpenBCI
+ - 5.2.1. Basal 1
    <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/C.png" width="500" height="266"></p>
    </p>
+   
+ - 5.2.2. Durante el Pestañeo
+ - 5.2.3. Basal 2
+ - 5.2.4. Durante Matemática mental
 
 ### 5.3. Señal con Bitalino
 
