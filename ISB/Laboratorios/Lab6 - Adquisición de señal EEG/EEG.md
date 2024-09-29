@@ -92,7 +92,7 @@ En esta sesión de laboratorio obtendremos la señal mediante dos dispositivos. 
 ### 4.1. Medición y Adquisición por electrodos
    En general, los métodos desarrollados en este laboratorio para la adquisición de señales EEG seguirán el sistema de posicionamiento 10/20, que se detalla a continuación:
    <p align="center"> <img src="https://github.com/S-NK606/ISB_GRUPO_2/blob/main/ISB/Laboratorios/Lab6%20-%20Adquisici%C3%B3n%20de%20se%C3%B1al%20EEG/Imagenes/procedimientoeeg.png" width="100%" /> </p>
-   <p align="center"> Figura X. Distribución de electrodos.</p> 
+   <p align="center"> Figura 5. Distribución de electrodos.</p> 
    Tipo de electrodo:</p>
    El electrodo del Bitalino es un sensor bipolar que consta de dos pines de medición y un pin de referencia, y se utiliza para captar las diferencias de potencial entre dos electrodos cercanos. 
     - Alta sensibilidad: La elevada ganancia del sistema (ganancia = 40,000) lo hace extremadamente sensible a interferencias externas, como artefactos generados por la luz ambiental, movimientos del sujeto y fuentes de        alimentación cercanas, como el ruido de línea de 50/60 Hz.</p>
@@ -123,12 +123,14 @@ En esta sesión de laboratorio obtendremos la señal mediante dos dispositivos. 
          d. Mientras un compañero lee en voz alta una serie de ejercicios matemáticos, resolverlos mentalmente, manteniendo la mirada en un punto fijo para evitar artefactos.</p>
          e. Detenga la grabación y guarde sus datos</p>
    <p align="center"> <img src="https://github.com/S-NK606/ISB_GRUPO_2/blob/main/ISB/Laboratorios/Lab6%20-%20Adquisici%C3%B3n%20de%20se%C3%B1al%20EEG/Imagenes/preguntas.png" width="70%" /> </p>
-   <p align="center"> Figura X. Preguntas de distinta complejidad.</p> 
+   <p align="center"> Figura 6. Preguntas de distinta complejidad.</p> 
    
 ## Resultados
 
 ### 5.1. Fotos de conexión usada
+   <p align="center"> <img src="https://github.com/S-NK606/ISB_GRUPO_2/blob/main/ISB/Laboratorios/Lab6%20-%20Adquisici%C3%B3n%20de%20se%C3%B1al%20EEG/Imagenes/preguntas.png" width="70%" /> </p>
 
+   <p align="center"> <img src="https://github.com/S-NK606/ISB_GRUPO_2/blob/main/ISB/Laboratorios/Lab6%20-%20Adquisici%C3%B3n%20de%20se%C3%B1al%20EEG/Imagenes/preguntas.png" width="70%" /> </p>   
 ### 5.2. Señales con OpenBCI
 
  - 5.2.1. Basal 1
@@ -234,6 +236,25 @@ En esta sesión de laboratorio obtendremos la señal mediante dos dispositivos. 
 ### 5.3. Señal con Bitalino
 
  - 5.3.1. Videos utilizando el Bitalino
+Una vez puestos los electrodos superficiales en las zonas descritas se empieza a registrar las señales según los movimientos requeridos.
+
+- **Estado Basal 1:**
+Estado de reposo evaluado donde el estudiante se mantiene calmado y relajado.
+
+[Ver video 1](https://youtu.be/xE2c2RN0ELw)
+
+- **Estado de Pestañeo:**
+El estudiante cierra y abre los ojos 5 veces cada uno en intervalos de 5 segundos.
+
+[Ver video 2](https://youtu.be/9A-EMl1lTdQ)
+- **Estado Basal 2:**
+El estudiante vuelve al estado de reposo manteniendose calmado luego del estado de pestañeo.
+
+[Ver video 3](https://youtu.be/6K9KzS4KCaU)
+- **Estado de Razonamiento Matemático:**
+El estudiante es puesto a prueba con ejercicios de razonamiento matemático entre simples y complejos.
+
+[Ver video 4](https://youtu.be/RdxDtemofSo)
 
  - 5.3.2. Análisis de gráficas
    a. Basal 1:
