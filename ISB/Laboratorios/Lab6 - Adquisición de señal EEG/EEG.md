@@ -13,11 +13,11 @@
 3. [Materiales y equipos](#materiales-y-equipos)
 
 4. [Procedimiento](#procedimiento)  
-   4.1 [Medición y Adquisición por electrodos](#medición-y-adquisición-por-electrodos)</a>
+   4.1 [Medición y Adquisición por electrodos](#medición-y-adquisición-por-electrodos)</p>
    En general, los métodos desarrollados en este laboratorio para la adquisición de señales EEG seguirán el sistema de posicionamiento 10/20, que se detalla a continuación:
    <p align="center"> Sistema 10/20 <img ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/procedimientoeeg.png width="100%" /> </p>
    <p align="center"> Figura X. Distribución de electrodos. [8] </p> 
-   **Tipo de electrodo:**
+   **Tipo de electrodo:**</p>
    El electrodo del Bitalino es un sensor bipolar que consta de dos pines de medición y un pin de referencia, y se utiliza para captar las diferencias de potencial entre dos electrodos cercanos. 
 
    - 
