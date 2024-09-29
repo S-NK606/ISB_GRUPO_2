@@ -104,14 +104,35 @@
       
  - 5.2.3. Basal 2
     - 5 segundos de señal
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B3_SIGNAL.png" width="700" height="700"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B3_FFT_POWER.png" width="700" height="700"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B3_HEAD.png" width="700" height="350"></p></p>
       
  - 5.2.4. Durante Matemática mental
     - De 0 a 10 segundos
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_0_10_SIGNAL.png" width="700" height="700"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_0_10_FFT_HEAD.png" width="700" height="700"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_0_10_HEAD.png" width="700" height="350"></p></p>
     - De 10 a 20 segundos
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_10_20_SIGNAL.png" width="700" height="700"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_10_20_FFT_HEAD.png" width="700" height="700"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_10_20_HEAD.png" width="700" height="350"></p></p>
     - De 20 a 30 segundos
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_20_30_SIGNAL.png" width="700" height="700"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_20_30_FFT_HEAD.png" width="700" height="700"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_20_30_HEAD.png" width="700" height="350"></p></p>
     - De 30 a 40 segundos
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_30_40_SIGNAL.png" width="700" height="700"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_30_40_FFT_HEAD.png" width="700" height="700"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_30_40_HEAD.png" width="700" height="350"></p></p>
     - De 40 a 50 segundos
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_40_50_SIGNAL.png" width="700" height="700"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_40_50_FFT_HEAD.png" width="700" height="700"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_40_50_HEAD.png" width="700" height="350"></p></p>
     - De 50 a 58 segundos
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_50_58_SIGNAL.png" width="700" height="700"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_50_58_FFT_HEAD.png" width="700" height="700"></p></p>
+      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B4_50_58_HEAD.png" width="700" height="350"></p></p>
 
 ### 5.3. Señal con Bitalino
 
