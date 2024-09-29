@@ -58,14 +58,14 @@
  - 5.2.1. Basal 1
    <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/C.png" width="500" height="266"></p>
    </p>
-    - Canal 1
-    - Canal 2
-    - Canal 3
-    - Canal 4
-    - Canal 5
-    - Canal 6
-    - Canal 7
-    - Canal 8
+   - Canal 1
+   - Canal 2
+   - Canal 3
+   - Canal 4
+   - Canal 5
+   - Canal 6
+   - Canal 7
+   - Canal 8
    
  - 5.2.2. Durante el Pestañeo
     - De 0 a 5 segundos (Ojos cerrados)
