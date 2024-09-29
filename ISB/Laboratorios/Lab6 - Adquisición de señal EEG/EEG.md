@@ -14,6 +14,77 @@
 
 4. [Procedimiento](#procedimiento)  
    4.1 [Medición y Adquisición por electrodos](#medición-y-adquisición-por-electrodos)</p>
+   
+   4.2 [Protocolo de adquisición](#protocolo-de-adquisición)</p>
+
+
+5. [Resultados](#resultados)  
+   5.1 [Fotos de conexión usada](#fotos-de-conexión-usada)  
+   5.2 [Señales con OpenBCI](#Señales-con-OpenBCI)  
+      5.2.1 [Gráficas del OpenBCI](#gráficas-del-openbci)  
+   5.3 [Señal con Bitalino](#señal-con-bitalino)  
+      5.3.1 [Videos utilizando el Bitalino](#videos-utilizando-el-bitalino)  
+      5.3.2 [Análisis de gráficas](#análisis-de-gráficas)
+
+6. [Conclusiones](#conclusiones)
+
+7. [Referencias](#referencias)
+
+
+## Introducción al laboratorio
+
+### 1.1. ¿Qué es EEG?
+El electroencefalograma (EEG) es una prueba que evalúa la actividad eléctrica cerebral producida por las neuronas. Es una prueba neurofisiológica que evalúa los impulsos eléctricos y la conductividad del cerebro mediante electrodos colocados en el cuero cabelludo [1].
+Las neuronas se comunican entre sí a través de estos impulsos eléctricos, siempre estando activas y esta actividad se manifiesta como las ondas cerebrales: Delta, Theta, Alpha, Beta y Gamma [2].
+
+   <p align="center"> <img src="https://github.com/S-NK606/ISB_GRUPO_2/blob/main/ISB/Laboratorios/Lab6%20-%20Adquisici%C3%B3n%20de%20se%C3%B1al%20EEG/Imagenes/IMAGENA.png" width="70%" /> </p>
+- Ondas Delta:
+Son las ondas con menor frecuencia y las de mayor amplitud. Se observan fisiológicamente en el sueño profundo y es más prominente en las regiones frontocentrales de la cabeza.
+
+- Ondas Theta:
+Este es el ritmo que se manifiesta con la somnolencia y las primeras etapas del sueño, como N1 y N2, en un estado inconsciente donde predomina los pensamientos y la reflexión. Es más prominente en las regiones frontocentrales de la cabeza y migra lentamente hacia atrás reemplazando al ritmo alfa debido a la somnolencia temprana.
+
+- Ondas Alfa:
+Las ondas alfa están presentes en estado despierto, pero relajado en estado de vigilia, en la región occipital de la cabeza. Se observa mejor con ojos cerrados y un estado de relajación, a su vez se atenúa al abrir los ojos o realizar esfuerzo mental.
+
+- Ondas Beta:
+Es el ritmo más frecuente observado en niños y adultos. Su amplitud aumenta durante la somnolencia, estado de alerta, concentración, el sueño N1 y disminuye en el sueño N2 y N3. Es más prominente en las regiones central y frontal de la cabeza.
+
+- Ondas Gamma:
+Atribuidas a la percepción sensorial, integrando diferentes áreas del cerebro para las tareas de alto procesamiento cognitivo.
+
+### 1.2. Aplicaciones
+El EEG se utiliza ampliamente en diversos campos debido a su capacidad para analizar la actividad eléctrica del cerebro en diferentes situaciones, lo que permite su aplicación en una gran variedad de estudios tanto en humanos como en animales [3]. Algunas de estas aplicaciones incluyen:
+- El monitoreo del estado de alerta, coma y muerte cerebral
+- La localización de áreas de daño tras una lesión en la cabeza
+- Un accidente cerebrovascular o la ubicación de un tumor
+- La monitorización del compromiso cognitivo;
+- La regulación de la profundidad de la anestesia
+- La investigación de la epilepsia y la localización del origen de las convulsiones junto con la evaluación de los efectos de medicamentos antiepilépticos
+- La investigación de los trastornos del sueño y su fisiología.
+   <p align="center"> <img src="https://github.com/S-NK606/ISB_GRUPO_2/blob/main/ISB/Laboratorios/Lab6%20-%20Adquisici%C3%B3n%20de%20se%C3%B1al%20EEG/Imagenes/IMAGENB.png" width="70%" /> </p>
+
+### 1.3. Tipos de medición de EEG
+Existen dos tipos de formas básicas de disposición de electrodos para EEG y se diferencias en el registro de la actividad eléctrica [4]:
+Monopolar: Se mide la diferencia de un potencial entre un electrodo colocado en una zona activa del cerebro, donde se espera el registro de la actividad eléctrica, y un electrodo de referencia en una zona neutra. Permite obtener una medida más focalizada en una región específica.
+Bipolar: La diferencia del potencial es entre dos electrodos colocados en áreas de actividad principal, es decir, no hay un electrodo de referencia neutro. Se realiza de manera transversal, con una línea imaginaria que cruza el cerebro de lado a lado, o de manera longitudinal, de adelante hacia atrás o viceversa. Permite comparar la actividad eléctrica de dos áreas.
+   <p align="center"> <img src="https://github.com/S-NK606/ISB_GRUPO_2/blob/main/ISB/Laboratorios/Lab6%20-%20Adquisici%C3%B3n%20de%20se%C3%B1al%20EEG/Imagenes/IMAGENC.png" width="70%" /> </p>
+   
+### 1.4. ¿De qué forma obtenemos la señal?
+En esta sesión de laboratorio obtendremos la señal mediante dos dispositivos. Usaremos la entrada para EEG del BITalino y veremos las señales producidas por el Ultracortex Mark IV EEG.
+   <p align="center"> <img src="https://github.com/S-NK606/ISB_GRUPO_2/blob/main/ISB/Laboratorios/Lab6%20-%20Adquisici%C3%B3n%20de%20se%C3%B1al%20EEG/Imagenes/IMAGEND.png" width="70%" /> </p>
+   
+## Objetivos
+- Adquirir señales biomédicas de EEG usando el BiTalino y el Ultracortex Mark IV EEG.
+- Extraer la información de las señales EEG del software OpenSignals (r)evolution y del OpenBCI GUI.
+- Interpretar el significado clínico de las señales EEG y observar posibles errores en la toma de datos.
+
+## Materiales y equipos
+   <p align="center"> <img src="https://github.com/S-NK606/ISB_GRUPO_2/blob/main/ISB/Laboratorios/Lab6%20-%20Adquisici%C3%B3n%20de%20se%C3%B1al%20EEG/Imagenes/IMAGENE.png" width="70%" /> </p>
+   
+## Procedimiento
+
+### 4.1. Medición y Adquisición por electrodos
    En general, los métodos desarrollados en este laboratorio para la adquisición de señales EEG seguirán el sistema de posicionamiento 10/20, que se detalla a continuación:
    <p align="center"> <img src="https://github.com/S-NK606/ISB_GRUPO_2/blob/main/ISB/Laboratorios/Lab6%20-%20Adquisici%C3%B3n%20de%20se%C3%B1al%20EEG/Imagenes/procedimientoeeg.png" width="100%" /> </p>
    <p align="center"> Figura X. Distribución de electrodos.</p> 
@@ -24,8 +95,8 @@
     - Preparación de la piel: Es crucial preparar adecuadamente la piel antes de colocar los electrodos para asegurar una buena conductividad. Esto implica desinfectar la superficie cutánea para eliminar células muertas 
       y otras impurezas, así como retirar cualquier vello que pueda interferir con la adherencia y el contacto del electrodo.</p>
    Además, es recomendable usar un gel conductor para reducir la impedancia de contacto y mejorar la calidad de la señal. Asegurarse de que el área esté seca antes de aplicar los electrodos también es fundamental para       evitar artefactos relacionados con la humedad.
-   
-   4.2 [Protocolo de adquisición](#protocolo-de-adquisición)</p>
+
+### 4.2. Protocolo de adquisición
 
    El proceso de adquisición y medición de señales EEG con BITalino involucra el uso de este dispositivo de adquisición de datos, junto con un conjunto de sensores EEG. Estos sensores capturan las señales bioeléctricas      del cerebro y las convierten en señales digitales que luego pueden ser analizadas con el software especializado OpenSignal. A continuación, se describe el procedimiento empleado para la adquisición y medición de estas 
    señales:
@@ -48,41 +119,6 @@
          e. Detenga la grabación y guarde sus datos</p>
    <p align="center"> <img src="https://github.com/S-NK606/ISB_GRUPO_2/blob/main/ISB/Laboratorios/Lab6%20-%20Adquisici%C3%B3n%20de%20se%C3%B1al%20EEG/Imagenes/preguntas.png" width="70%" /> </p>
    <p align="center"> Figura X. Preguntas de distinta complejidad.</p> 
-
-
-6. [Resultados](#resultados)  
-   5.1 [Fotos de conexión usada](#fotos-de-conexión-usada)  
-   5.2 [Señales con OpenBCI](#Señales-con-OpenBCI)  
-      5.2.1 [Gráficas del OpenBCI](#gráficas-del-openbci)  
-   5.3 [Señal con Bitalino](#señal-con-bitalino)  
-      5.3.1 [Videos utilizando el Bitalino](#videos-utilizando-el-bitalino)  
-      5.3.2 [Análisis de gráficas](#análisis-de-gráficas)
-
-7. [Conclusiones](#conclusiones)
-
-8. [Referencias](#referencias)
-
-
-## Introducción al laboratorio
-
-### 1.1. ¿Qué es EEG?
-
-### 1.2. Aplicaciones
-
-### 1.3. Tipos de medición de EEG
-
-### 1.4. ¿De qué forma obtenemos la señal?
-
-## Objetivos
-
-## Materiales y equipos
-
-## Procedimiento
-
-### 4.1. Medición y Adquisición por electrodos
-
-### 4.2. Protocolo de adquisición
-
 ## Resultados
 
 ### 5.1. Fotos de conexión usada
@@ -93,7 +129,7 @@
     - <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_GENERAL.png" width="700" height="700"></p></p>
     - <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_FFT_POWER.png" width="700" height="700"></p></p>
     - <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_HEAD.jpg" width="700" height="350"></p></p>
-    - Se puede observar más actividad en la sección 8 (lóbulo occipital 2), la cual está encargada de la visión. Posiblemente, esto se dio debido a que el sujeto se encontraba con los ojos cerrados pero despierto. También, se aprecia una menor actividad en las zonas 1, 2 y 7 (lóbulo frontal y occipital 1). [4] Además, en el gráfico de bandas de poder, se ve la predominancia de la onda Alpha, la cual esta relacionada con la meditación y relación. Posiblemente, el sujeto procuro estar lo mas relajado posible para el experimento. En las siguientes graficas de los canales, se observa la casi nula actividad de las ondas Delta, ya que esta mas relacionada a los ciclos de sueño.
+    - Se puede observar más actividad en la sección 8 (lóbulo occipital 2), la cual está encargada de la visión. Posiblemente, esto se dio debido a que el sujeto se encontraba con los ojos cerrados pero despierto. También, se aprecia una menor actividad en las zonas 1, 2 y 7 (lóbulo frontal y occipital 1). [8] Además, en el gráfico de bandas de poder, se ve la predominancia de la onda Alpha, la cual esta relacionada con la meditación y relación. Posiblemente, el sujeto procuro estar lo mas relajado posible para el experimento. En las siguientes graficas de los canales, se observa la casi nula actividad de las ondas Delta, ya que esta mas relacionada a los ciclos de sueño.
 
    - Canal 1
      <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B1_C1_SIGNAL.png" width="700" height="350"></p></p>
@@ -125,7 +161,7 @@
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B2_0_5_SIGNAL.png" width="700" height="700"></p></p>
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B2_0_5_FFT_POWER.png" width="700" height="700"></p></p>
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B2_0_5_HEAD.png" width="700" height="350"></p></p>
-      Se ve mayor actividad en las secciones 1 y 2 (lóbulo frontal) y la menor actividad en la sección 6 (lóbulo temporal). El lóbulo frontal esta relacionado a la elaboración de pensamientos [3]. Esto puedo darse debido a que el sujeto estaba esperando el toque en el hombro para poder abrir los ojos. Se ve una predominancia en la onda Beta. Esta onda está relacionada al enfoque consciente.[2]
+      Se ve mayor actividad en las secciones 1 y 2 (lóbulo frontal) y la menor actividad en la sección 6 (lóbulo temporal). El lóbulo frontal esta relacionado a la elaboración de pensamientos [7]. Esto puedo darse debido a que el sujeto estaba esperando el toque en el hombro para poder abrir los ojos. Se ve una predominancia en la onda Beta. Esta onda está relacionada al enfoque consciente.[6]
 
     - De 5 a 10 segundos (Ojos abiertos)
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B2_5_10_SIGNAL.png" width="700" height="700"></p></p>
@@ -143,7 +179,7 @@
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B2_15_20_SIGNAL.png" width="700" height="700"></p></p>
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B2_15_20_FFT_POWER.png" width="700" height="700"></p></p>
       <p align="center"><img src="/ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/B2_15_20_HEAD.png" width="700" height="350"></p></p>
-      Se ven resultados parecidos al tiempo 0 a 5 y 10 a 15 segundos. Aun que en este caso hay una predominancia de las ondas Gamma, la cual esta relacionada con las funciones motoras y cognitivas específicas [1].
+      Se ven resultados parecidos al tiempo 0 a 5 y 10 a 15 segundos. Aun que en este caso hay una predominancia de las ondas Gamma, la cual esta relacionada con las funciones motoras y cognitivas específicas [5].
       
  - 5.2.3. Basal 2
     - 5 segundos de señal
@@ -238,9 +274,15 @@ En contraste, la banda beta muestra una mayor potencia con respecto a las demás
 ## 6. Conclusiones
 
 ## 7. Referencias
- - [1] Satapathy, S. K., Dehuri, S., Jagadev, A. K., & Mishra, S. (2019). Introduction. En EEG Brain Signal Classification for Epileptic Seizure Disorder Detection (pp. 1–25). Elsevier.
- - [2] Attar, E. T. (2022). Review of electroencephalography signals approaches for mental stress assessment. Neurosciences (Riyadh, Saudi Arabia), 27(4), 209–215. https://doi.org/10.17712/nsj.2022.4.20220025
- - [3]Nosotros, P. C. (2021, julio 22). Áreas funcionales de la corteza cerebral humana. Www.elsevier.com; Elsevier. https://www.elsevier.com/es-es/connect/areas-funcionales-de-la-corteza-cerebral-humana
- - [4] GUI Widget guide. (s/f). Openbci.com. Recuperado el 29 de septiembre de 2024, de https://docs.openbci.com/Software/OpenBCISoftware/GUIWidgets/
+
+- [1] A. I. De Riquer, “Electroencefalograma | ¿Qué es un electroencefalograma | PortalCLÍNIC,” Clínic Barcelona. https://www.clinicbarcelona.org/asistencia/pruebas-y-procedimientos/electroencefalograma
+- [2] C. S. Nayak and A. C. Anilkumar, “EEG Normal waveforms,” StatPearls - NCBI Bookshelf, Jul. 24, 2023. https://www.ncbi.nlm.nih.gov/books/NBK539805/
+- [3] P. A. Abhang, B. W. Gawali, and S. C. Mehrotra, “Technological basics of EEG recording and operation of apparatus,” in Elsevier eBooks, 2016, pp. 19–50. doi: 10.1016/b978-0-12-804490-2.00002-6.
+- [4] F. Ramos-Argüelles, G. Morales, S. Egozcue, R. M. Pabón, and M. T. Alonso, “Técnicas básicas de electroencefalografía: principios y aplicaciones clínicas.” https://scielo.isciii.es/scielo.php?script=sci_arttext&pid=S1137-66272009000600006
+
+ - [5] Satapathy, S. K., Dehuri, S., Jagadev, A. K., & Mishra, S. (2019). Introduction. En EEG Brain Signal Classification for Epileptic Seizure Disorder Detection (pp. 1–25). Elsevier.
+ - [6] Attar, E. T. (2022). Review of electroencephalography signals approaches for mental stress assessment. Neurosciences (Riyadh, Saudi Arabia), 27(4), 209–215. https://doi.org/10.17712/nsj.2022.4.20220025
+ - [7]Nosotros, P. C. (2021, julio 22). Áreas funcionales de la corteza cerebral humana. Www.elsevier.com; Elsevier. https://www.elsevier.com/es-es/connect/areas-funcionales-de-la-corteza-cerebral-humana
+ - [8] GUI Widget guide. (s/f). Openbci.com. Recuperado el 29 de septiembre de 2024, de https://docs.openbci.com/Software/OpenBCISoftware/GUIWidgets/
 
 
