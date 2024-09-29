@@ -15,8 +15,8 @@
 4. [Procedimiento](#procedimiento)  
    4.1 [Medición y Adquisición por electrodos](#medición-y-adquisición-por-electrodos)</p>
    En general, los métodos desarrollados en este laboratorio para la adquisición de señales EEG seguirán el sistema de posicionamiento 10/20, que se detalla a continuación:
-   <p align="center"> Sistema 10/20 <img src="https://github.com/S-NK606/ISB_GRUPO_2/blob/main/ISB/Laboratorios/Lab6%20-%20Adquisici%C3%B3n%20de%20se%C3%B1al%20EEG/Imagenes/procedimientoeeg.png" width="100%" /> </p>
-   <p align="center"> Figura X. Distribución de electrodos. [8] </p> 
+   <p align="center"> <img src="https://github.com/S-NK606/ISB_GRUPO_2/blob/main/ISB/Laboratorios/Lab6%20-%20Adquisici%C3%B3n%20de%20se%C3%B1al%20EEG/Imagenes/procedimientoeeg.png" width="100%" /> </p>
+   <p align="center"> Figura X. Distribución de electrodos.</p> 
    Tipo de electrodo:</p>
    El electrodo del Bitalino es un sensor bipolar que consta de dos pines de medición y un pin de referencia, y se utiliza para captar las diferencias de potencial entre dos electrodos cercanos. 
     - Alta sensibilidad: La elevada ganancia del sistema (ganancia = 40,000) lo hace extremadamente sensible a interferencias externas, como artefactos generados por la luz ambiental, movimientos del sujeto y fuentes de        alimentación cercanas, como el ruido de línea de 50/60 Hz.</p>
@@ -25,7 +25,15 @@
       y otras impurezas, así como retirar cualquier vello que pueda interferir con la adherencia y el contacto del electrodo.</p>
    Además, es recomendable usar un gel conductor para reducir la impedancia de contacto y mejorar la calidad de la señal. Asegurarse de que el área esté seca antes de aplicar los electrodos también es fundamental para       evitar artefactos relacionados con la humedad.
    
-   4.2 [Protocolo de adquisición](#protocolo-de-adquisición)
+   4.2 [Protocolo de adquisición](#protocolo-de-adquisición)</p>
+
+   El proceso de adquisición y medición de señales EEG con BITalino involucra el uso de este dispositivo de adquisición de datos, junto con un conjunto de sensores EEG. Estos sensores capturan las señales bioeléctricas      del cerebro y las convierten en señales digitales que luego pueden ser analizadas con el software especializado OpenSignal. A continuación, se describe el procedimiento empleado para la adquisición y medición de estas 
+   señales:
+
+   1. Posición de electrodo bipolar (fp1-fp2):
+   <p align="center"> <img src="https://github.com/S-NK606/ISB_GRUPO_2/blob/main/ISB/Laboratorios/Lab6%20-%20Adquisici%C3%B3n%20de%20se%C3%B1al%20EEG/Imagenes/protocoloimagen.png" width="100%" /> </p>
+   2. Adquisición de datos
+
 
 6. [Resultados](#resultados)  
    5.1 [Fotos de conexión usada](#fotos-de-conexión-usada)  
