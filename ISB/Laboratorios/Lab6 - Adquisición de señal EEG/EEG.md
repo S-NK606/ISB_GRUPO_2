@@ -15,12 +15,10 @@
 4. [Procedimiento](#procedimiento)  
    4.1 [Medición y Adquisición por electrodos](#medición-y-adquisición-por-electrodos)</p>
    En general, los métodos desarrollados en este laboratorio para la adquisición de señales EEG seguirán el sistema de posicionamiento 10/20, que se detalla a continuación:
-   <p align="center"> Sistema 10/20 <img ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/procedimientoeeg.png width="100%" /> </p>
+   <p align="center"> Sistema 10/20 <img src="https://github.com/S-NK606/ISB_GRUPO_2/blob/main/ISB/Laboratorios/Lab6%20-%20Adquisici%C3%B3n%20de%20se%C3%B1al%20EEG/Imagenes/procedimientoeeg.png" width="100%" /> </p>
    <p align="center"> Figura X. Distribución de electrodos. [8] </p> 
-   **Tipo de electrodo:**</p>
+   Tipo de electrodo:</p>
    El electrodo del Bitalino es un sensor bipolar que consta de dos pines de medición y un pin de referencia, y se utiliza para captar las diferencias de potencial entre dos electrodos cercanos. 
-
-   - 
     - Alta sensibilidad: La elevada ganancia del sistema (ganancia = 40,000) lo hace extremadamente sensible a interferencias externas, como artefactos generados por la luz ambiental, movimientos del sujeto y fuentes de        alimentación cercanas, como el ruido de línea de 50/60 Hz.</p>
     - Filtrado de señal: La señal capturada representa la diferencia amplificada entre los dos puntos de medición. Esta señal se procesa mediante un filtro paso de banda de 0,8 a 48 Hz, que ayuda a suprimir las señales         indeseadas comunes, como la actividad muscular y otras fuentes de ruido.</p>
     - Preparación de la piel: Es crucial preparar adecuadamente la piel antes de colocar los electrodos para asegurar una buena conductividad. Esto implica desinfectar la superficie cutánea para eliminar células muertas 
