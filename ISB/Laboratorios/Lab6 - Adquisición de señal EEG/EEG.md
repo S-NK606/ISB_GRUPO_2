@@ -13,16 +13,18 @@
 3. [Materiales y equipos](#materiales-y-equipos)
 
 4. [Procedimiento](#procedimiento)  
-   4.1 [Medición y Adquisición por electrodos](#medición-y-adquisición-por-electrodos)
+   4.1 [Medición y Adquisición por electrodos](#medición-y-adquisición-por-electrodos)</a>
    En general, los métodos desarrollados en este laboratorio para la adquisición de señales EEG seguirán el sistema de posicionamiento 10/20, que se detalla a continuación:
    <p align="center"> Sistema 10/20 <img ISB/Laboratorios/Lab6 - Adquisición de señal EEG/Imagenes/procedimientoeeg.png width="100%" /> </p>
    <p align="center"> Figura X. Distribución de electrodos. [8] </p> 
-   **Tipo de electrodo:*
+   **Tipo de electrodo:**
    El electrodo del Bitalino es un sensor bipolar que consta de dos pines de medición y un pin de referencia, y se utiliza para captar las diferencias de potencial entre dos electrodos cercanos. 
-   - Alta sensibilidad: La elevada ganancia del sistema (ganancia = 40,000) lo hace extremadamente sensible a interferencias externas, como artefactos generados por la luz ambiental, movimientos del sujeto y fuentes de        alimentación cercanas, como el ruido de línea de 50/60 Hz.
-   - Filtrado de señal: La señal capturada representa la diferencia amplificada entre los dos puntos de medición. Esta señal se procesa mediante un filtro paso de banda de 0,8 a 48 Hz, que ayuda a suprimir las señales         indeseadas comunes, como la actividad muscular y otras fuentes de ruido.
-   - Preparación de la piel: Es crucial preparar adecuadamente la piel antes de colocar los electrodos para asegurar una buena conductividad. Esto implica desinfectar la superficie cutánea para eliminar células muertas y 
-     otras impurezas, así como retirar cualquier vello que pueda interferir con la adherencia y el contacto del electrodo.
+
+   - 
+    - Alta sensibilidad: La elevada ganancia del sistema (ganancia = 40,000) lo hace extremadamente sensible a interferencias externas, como artefactos generados por la luz ambiental, movimientos del sujeto y fuentes de        alimentación cercanas, como el ruido de línea de 50/60 Hz.</p>
+    - Filtrado de señal: La señal capturada representa la diferencia amplificada entre los dos puntos de medición. Esta señal se procesa mediante un filtro paso de banda de 0,8 a 48 Hz, que ayuda a suprimir las señales         indeseadas comunes, como la actividad muscular y otras fuentes de ruido.</p>
+    - Preparación de la piel: Es crucial preparar adecuadamente la piel antes de colocar los electrodos para asegurar una buena conductividad. Esto implica desinfectar la superficie cutánea para eliminar células muertas 
+      y otras impurezas, así como retirar cualquier vello que pueda interferir con la adherencia y el contacto del electrodo.</p>
    Además, es recomendable usar un gel conductor para reducir la impedancia de contacto y mejorar la calidad de la señal. Asegurarse de que el área esté seca antes de aplicar los electrodos también es fundamental para       evitar artefactos relacionados con la humedad.
    
    4.2 [Protocolo de adquisición](#protocolo-de-adquisición)
