@@ -58,10 +58,31 @@
  - 5.2.1. Basal 1
    <p align="center"><img src="/ISB/Laboratorios/Lab5 - Adquisición de señal ECG/Imagenes/ECG/C.png" width="500" height="266"></p>
    </p>
+    - Canal 1
+    - Canal 2
+    - Canal 3
+    - Canal 4
+    - Canal 5
+    - Canal 6
+    - Canal 7
+    - Canal 8
    
  - 5.2.2. Durante el Pestañeo
+    - De 0 a 5 segundos (Ojos cerrados)
+    - De 5 a 10 segundos (Ojos abiertos)
+    - De 10 a 15 segundos (Ojos cerrados)
+    - De 15 a 20 segundos (Ojos abiertos)
+      
  - 5.2.3. Basal 2
+    - 5 segundos de señal
+      
  - 5.2.4. Durante Matemática mental
+    - De 0 a 10 segundos
+    - De 10 a 20 segundos
+    - De 20 a 30 segundos
+    - De 30 a 40 segundos
+    - De 40 a 50 segundos
+    - De 50 a 58 segundos
 
 ### 5.3. Señal con Bitalino
 
