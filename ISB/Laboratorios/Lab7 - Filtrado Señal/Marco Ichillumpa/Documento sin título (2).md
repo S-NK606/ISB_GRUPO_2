@@ -26,7 +26,7 @@ Para su procesamiento se recurrió a tres distintos filtros. El primero es un fi
 
 | CAMPO | dominio del tiempo. | dominio de la frecuencia. | Transformada corta de Fourier (opcional).  |
 | :---: | ----- | ----- | ----- |
-| **Señal Cruda** | \!\[Texto alternativo\](Imagenes/[FFT\_ECG\_Original.png](https://github.com/S-NK606/ISB_GRUPO_2/blob/main/ISB/Laboratorios/Lab7%20-%20Filtrado%20Se%C3%B1al/Marco%20Ichillumpa/Imagenes/FFT_ECG_Original.png)) | \!\[Texto alternativo\](Imagenes/[Señal\_original\_tiempo.png](https://github.com/S-NK606/ISB_GRUPO_2/blob/main/ISB/Laboratorios/Lab7%20-%20Filtrado%20Se%C3%B1al/Marco%20Ichillumpa/Imagenes/Se%C3%B1al_original_tiempo.png)) | \!\[Texto alternativo\](Imagenes/[STFT\_ECG\_Original.png](https://github.com/S-NK606/ISB_GRUPO_2/blob/main/ISB/Laboratorios/Lab7%20-%20Filtrado%20Se%C3%B1al/Marco%20Ichillumpa/Imagenes/STFT_ECG_Original.png)) |
+| **Señal Cruda** | \!\[Texto alternativo\](Imagenes/[FFT\_ECG\_Original.png](https://github.com/S-NK606/ISB_GRUPO_2/blob/main/ISB/Laboratorios/Lab7%20-%20Filtrado%20Se%C3%B1al/Marco%20Ichillumpa/Imagenes/FFT_ECG_Original.png)) | \!\[Texto alternativo\](Imagenes/Señal_original_tiempo.png) | \!\[Texto alternativo\](Imagenes/[STFT\_ECG\_Original.png](https://github.com/S-NK606/ISB_GRUPO_2/blob/main/ISB/Laboratorios/Lab7%20-%20Filtrado%20Se%C3%B1al/Marco%20Ichillumpa/Imagenes/STFT_ECG_Original.png)) |
 | **PASA BAJAS** |  |  |  |
 | **PASA BANDAS** |  |  |  |
 | **RECHAZA BANDA** |  |  |  |
