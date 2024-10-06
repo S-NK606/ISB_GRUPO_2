@@ -36,6 +36,7 @@ Usaré el tipo de filtro FIR <br>
 <p align="center"> Señal BICEPS RELAJADO - Diagrama de Bode
 <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Josue Taipe/Imagenes/bicepreposoBOLE.png" width="600" height="266"></p>
 </p
+<p align="justify">
   
 ### **Biceps con contracción leve** <br>
 <p align="center"> Señal BICEPS LEVE - Dominio del Tiempo 
@@ -61,6 +62,7 @@ Usaré el tipo de filtro FIR <br>
 <p align="center"> Señal BICEPS LEVE - Diagrama de Bode
 <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Josue Taipe/Imagenes/bicepleveBOLE.png" width="600" height="266"></p>
 </p
+<p align="justify">
 
 ### **Biceps con fuerte contracción** <br>
 
