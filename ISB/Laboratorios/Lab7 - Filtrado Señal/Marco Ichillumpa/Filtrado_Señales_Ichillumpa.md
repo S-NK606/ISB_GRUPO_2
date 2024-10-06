@@ -12,19 +12,13 @@ Para su procesamiento se recurrió a tres distintos filtros. El primero es un fi
 
 pite con una configuración de derivación distinta.
 
-El procesamiento de las señales ECG se puede dar cPara procesar la señal de electromiografía, se recurre a un filtro IIR de tipo Butterworth debido a su uso recurrente en procesamiento de dichas señales \[5, 6\]. Específicamente, el filtro contará con características idénticas así como el implementado por Mello R. G. T, et al en \[6\], que además mostró resultados óptimos. Los componentes del filtro general son un filtro pasa altas (orden 2, fc \= 10 Hz), filtro pasa bajas (orden 8, fc \= 400 Hz) y seis filtros rechaza banda (orden 2, 60 Hz y armónicos hasta 360 Hz). Por otro lado, basándonos en la investigación de Drake y Callaghan \[7\], el filtro FIR adecuado para reducir el ruido y la contaminación generada por la actividad eléctrica cardiaca en las señales de EMG debe ser de pasa alta con una ventana tipo Hamming y una frecuencia de corte de 30 Hz.
 
 ### **Diseño del Filtro ECG**
 
-Para el filtro de señales ECG, estudios \[8,9\] comparan el uso de filtros IIR como Butterworth o Chebyshev I y I; sin embargo, muestran que el filtro más adecuado para este tipo de señales es el Butterworth de orden 8\. De manera específica, el estudio \[8\] muestra que un filtro Butterworth pasa bajas de orden 8 con una frecuencia de corte de 60 Hz muestra un Ratio Señal a Ruido (SNR por sus siglas en ingles) en decibelios 11.84, donde un alto valor de SNR indica que la señal no tenderá a perderse en el ruido. En comparación a otros filtros Butterworth implementados en el mismo estudio \[8\] pero con menor orden y distinta frecuencia de corte, este filtro resulta ser el que mejor ante el ruido. Por ello, se tomará como referencia este filtro Butterworth pasa bajas de orden 8 y fc= 60 Hz para el filtro IIR de las señales.
+
 
 ### **Diseño del Filtro EEG**
 
-En la adquisición de señales de EEG, estas resultan acompañadas de ruido o interferencia de la actividad muscular. En el desarrollo del laboratorio de EEG, los movimientos musculares presentes durante la adquisición de la señal fueron los movimientos faciales, movimientos oculares, hablar, abrir y cerrar los ojos. Ante ello, el estudio \[10\], propone el uso de un filtro tipo Butterworth pasa baja de orden 8 y frecuencia de corte de 35 Hz para la eliminación de contaminación o ruido producida por los movimientos musculares.
-
-Para el presente trabajo se eligieron señales EMG y ECG 
-
-Deberán presentar un archivo en formato Markdown que contenga el siguiente contenido:
 
 1. **:**
 
