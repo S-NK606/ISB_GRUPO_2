@@ -89,9 +89,13 @@ Usaré el tipo de filtro FIR <br>
 </p
 
 
+### Justificación  <br>
 
+En una señal EMG, un filtro pasabanda es ideal porque permite conservar el rango de frecuencias donde se encuentra la información útil de la actividad muscular, mientras que un filtro pasabaja eliminaría parte de esa información.  <br>
 
+1. Rango relevante de frecuencia: La mayor parte de la energía útil en una señal EMG está entre 20 Hz y 500 Hz. Un filtro pasabaja eliminaría las frecuencias por encima de un umbral, como 20 Hz, lo cual descartaría las frecuencias esenciales en este rango que contienen información crucial sobre la actividad muscular.<br>
 
+2. Eliminación de ruido de baja y alta frecuencia: Un filtro pasabanda permite eliminar tanto el ruido de baja frecuencia (debido a movimientos lentos o interferencias de corriente alterna de 50/60 Hz) como el ruido de alta frecuencia (por ejemplo, artefactos electrónicos o térmicos), manteniendo únicamente la señal muscular.<br>
 
 <p align="justify">
 
