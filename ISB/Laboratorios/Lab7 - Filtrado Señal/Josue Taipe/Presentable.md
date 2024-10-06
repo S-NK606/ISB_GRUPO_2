@@ -87,11 +87,12 @@ Usaré el tipo de filtro FIR <br>
 <p align="center"> Señal BICEPS FUERTE - Diagrama de Bode
 <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Josue Taipe/Imagenes/bicepfuerteBOLE.png" width="600" height="266"></p>
 </p
-
+  
+<p align="justify">
 
 ### Justificación  <br>
 
-En una señal EMG, un filtro pasabanda es ideal porque permite conservar el rango de frecuencias donde se encuentra la información útil de la actividad muscular, mientras que un filtro pasabaja eliminaría parte de esa información.  <br>
+Para esta actividad, decidí usar un filtro pasabanda ya que permite conservar el rango de frecuencias donde se encuentra la información útil de la actividad muscular, mientras que un filtro pasabaja eliminaría parte de esa información.  <br>
 
 1. Rango relevante de frecuencia: La mayor parte de la energía útil en una señal EMG está entre 20 Hz y 500 Hz. Un filtro pasabaja eliminaría las frecuencias por encima de un umbral, como 20 Hz, lo cual descartaría las frecuencias esenciales en este rango que contienen información crucial sobre la actividad muscular.<br>
 
