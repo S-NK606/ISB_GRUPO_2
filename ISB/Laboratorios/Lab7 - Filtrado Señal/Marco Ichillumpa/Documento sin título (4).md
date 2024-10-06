@@ -24,12 +24,13 @@ Para su procesamiento se recurrió a tres distintos filtros. El primero es un fi
 
 ### 
 
-| CAMPO | dominio del tiempo. | dominio de la frecuencia. | Transformada corta de Fourier (opcional).  |
-| :---: | ----- | ----- | ----- |
-| **Señal Cruda** | \!\[Texto alternativo\](Imagenes/FFT\_ECG\_Original.png) | \!\[Texto alternativo\](Imagenes/Señal\_original\_tiempo.png) | \!\[Texto alternativo\](Imagenes/STFT\_ECG\_Original.png) |
-| **PASA BAJAS** |  |  |  |
-| **PASA BANDAS** |  |  |  |
-| **RECHAZA BANDA** |  |  |  |
+| CAMPO             | dominio del tiempo. | dominio de la frecuencia. | Transformada corta de Fourier (opcional). |
+|:------------------|:-------------------:|:--------------------------:|:-----------------------------------------:|
+| **Señal Cruda**    | ![Texto alternativo](Imagenes/FFT_ECG_Original.png)  | ![Texto alternativo](Imagenes/Señal_original_tiempo.png) | ![Texto alternativo](Imagenes/STFT_ECG_Original.png) |
+| **PASA BAJAS**    |                     |                              |                                             |
+| **PASA BANDAS**   |                     |                              |                                             |
+| **RECHAZA BANDA** |                     |                              |                                             |
+
 
 pite con una configuración de derivación distinta.
 
