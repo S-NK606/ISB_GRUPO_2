@@ -26,7 +26,7 @@ Para su procesamiento se recurrió a tres distintos filtros. El primero es un fi
 
 | CAMPO             | DOMINIO DEL TIEMPO | DOMINIO DE LA FRECUENCIA (FFT). | ESPECTROGRAMA (STFT). |
 |:------------------|:-------------------:|:--------------------------:|:-----------------------------------------:|
-| **Señal Cruda**    | ![Texto alternativo](Imagenes/FFT_ECG_Original.png)  | ![Texto alternativo](Imagenes/Señal_original_tiempo.png) | ![Texto alternativo](Imagenes/STFT_ECG_Original.png) |
+| **Señal Cruda**    | ![mANOLO](Imagenes/FFT_ECG_Original.png)  | ![Texto alternativo](Imagenes/Señal_original_tiempo.png) | ![Texto alternativo](Imagenes/STFT_ECG_Original.png) |
 | **PASA BAJAS**    |                     |                              |                                             |
 | **PASA BANDAS**   |                     |                              |                                             |
 | **RECHAZA BANDA** |                     |                              |                                             |
