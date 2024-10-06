@@ -6,10 +6,12 @@ Este entregable fue elaboración personal - Josue Francisco Taipe Callañaupa (7
 
 
 
-### SEÑALES  <br>
+### Análisis de señales y del filtro  <br>
 
 Usaré el tipo de filtro FIR <br>
 <p align="justify">
+
+### **Biceps reposo** <br>
 
 <p align="center"> Señal BICEPS REPOSO - Dominio del Tiempo 
 <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Josue Taipe/Imagenes/BicepreposoDOMTIEMPO.png" width="600" height="266"></p>
@@ -35,8 +37,56 @@ Usaré el tipo de filtro FIR <br>
 <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Josue Taipe/Imagenes/bicepreposoBOLE.png" width="600" height="266"></p>
 </p
   
+### **Biceps con contracción leve** <br>
+<p align="center"> Señal BICEPS REPOSO - Dominio del Tiempo 
+<p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Josue Taipe/Imagenes/BicepleveDOMINIO.png" width="600" height="266"></p>
+</p
+  
+<p align="justify">
+<p align="center"> Señal BICEPS RELAJADO - Frecuencia 
+<p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Josue Taipe/Imagenes/bicepleveFREC.png" width="600" height="266"></p>
+</p
+  
+<p align="justify">
+<p align="center"> Señal BICEPS RELAJADO - Transformada corta de Fourier
+<p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Josue Taipe/Imagenes/bicepleveTFT.png" width="600" height="266"></p>
+</p
+  
+<p align="justify">
+<p align="center"> Señal BICEPS RELAJADO - Diagrama de Polos y Ceros
+<p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Josue Taipe/Imagenes/biceplevePOLOS.png" width="600" height="266"></p>
+</p
+  
+<p align="justify">
+<p align="center"> Señal BICEPS RELAJADO - Diagrama de Bode
+<p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Josue Taipe/Imagenes/bicepleveBOLE.png" width="600" height="266"></p>
+</p
 
+### **Biceps con fuerte contracción** <br>
 
+<p align="center"> Señal BICEPS REPOSO - Dominio del Tiempo 
+<p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Josue Taipe/Imagenes/BicepfuerteDOM.png" width="600" height="266"></p>
+</p
+  
+<p align="justify">
+<p align="center"> Señal BICEPS RELAJADO - Frecuencia 
+<p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Josue Taipe/Imagenes/bicepfuerteFREC.png" width="600" height="266"></p>
+</p
+  
+<p align="justify">
+<p align="center"> Señal BICEPS RELAJADO - Transformada corta de Fourier
+<p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Josue Taipe/Imagenes/bicepfuerteTFT.png" width="600" height="266"></p>
+</p
+  
+<p align="justify">
+<p align="center"> Señal BICEPS RELAJADO - Diagrama de Polos y Ceros
+<p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Josue Taipe/Imagenes/bicepfuertePOLOS.png" width="600" height="266"></p>
+</p
+  
+<p align="justify">
+<p align="center"> Señal BICEPS RELAJADO - Diagrama de Bode
+<p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Josue Taipe/Imagenes/bicepfuerteBOLE.png" width="600" height="266"></p>
+</p
 
 
 
