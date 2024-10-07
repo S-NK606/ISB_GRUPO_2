@@ -5,19 +5,17 @@ Este trabajo ha sido hecho de forma individual
 
 Para el presente trabajo se usaron señales ECG y EMG procedentes de laboratorios anteriores presentes en este mismo GitHub. Las señales seleccionadas son de distintos tipos de medición.
 
-
-
 ### **Señales ECG**
 
 Las señales registradas fueron de diferentes momentos donde se usó diferentes configuraciones de derivaciones. Específicamente, para el análisis del filtro ECG usaremos las pertenecientes a la tercera derivación de las siguientes etapas: estado basal, estado de reposo medido; estado de pausa respiratoria, donde se registró el ECG después de que el estudiante mantuvo su respiración 10 segundos; y por último, el estado después de una actividad física, ECG registrado después de 5 minutos de actividad física.
 
-Para su procesamiento se recurrió a tres distintos filtros. El primero es un filtro IIR de tipo Butterworth pasa bajas con una frecuencia de corte de 20 Hz. El segundo también es un tipo de filtro IIR de tipo Butterworth pasa altas con una frecuencia de 0.5 Hz. Por último un filtro FIR de tipo Butterworth rechaza banda de frecuencias de 60 Hz, usando una ventana de Blackman.
+Para su procesamiento se recurrió a tres distintos filtros. El primero es un filtro IIR de tipo Butterworth pasa bajas con una frecuencia de corte de 20 Hz. El segundo también es un tipo de filtro IIR de tipo Butterworth pasa banda con una frecuencia de 1 Hz a 100 Hz. Por último un filtro FIR de tipo Butterworth rechaza banda de frecuencias de 60 Hz, usando una ventana de Blackman.
 
 ### **Señales ECG**
 
-Las señales registradas fueron de diferentes momentos donde se usó diferentes configuraciones de derivaciones. Específicamente, para el análisis del filtro ECG usaremos las pertenecientes a la tercera derivación de las siguientes etapas: estado basal, estado de reposo medido; estado de pausa respiratoria, donde se registró el ECG después de que el estudiante mantuvo su respiración 10 segundos; y por último, el estado después de una actividad física, ECG registrado después de 5 minutos de actividad física.
+Las señales registradas fueron de diferentes músculos: biceps braquial, el aductor del pulgar y el gastrocnemio, durante distintas fases de actividad. Específicamente, para el análisis del filtro EMG usaremos las señales del biceps braquila durante las fases de reposo, sin ningún movimiento; oposición leve, donde el estudiante hizo fuerza ligeramente; y oposición fuerte, donde el estudiante usó toda su fuerza contra la oposición.
 
-Para su procesamiento se recurrió a tres distintos filtros. El primero es un filtro IIR de tipo Butterworth pasa bajas con una frecuencia de corte de 20 Hz. El segundo también es un tipo de filtro IIR de tipo Butterworth pasa altas con una frecuencia de 0.5 Hz. Por último un filtro FIR de tipo Butterworth rechaza banda de frecuencias de 60 Hz, usando una ventana de Blackman.
+Para su procesamiento se recurrió a tres distintos filtros. El primero es un filtro IIR de tipo Butterworth pasa bajas con una frecuencia de corte de 400 Hz. El segundo también es un tipo de filtro IIR de tipo Butterworth pasa bandas con una frecuencia de 20 Hz a 500Hz. Por último un filtro FIR de tipo Butterworth rechaza banda de frecuencias de 60 Hz, usando una ventana de Blackman.
 
 ## **RESULTADOS**
 
@@ -60,7 +58,7 @@ Para su procesamiento se recurrió a tres distintos filtros. El primero es un fi
 | **F. PASA BANDAS**   | ![Texto alternativo](Imagenes/ECG3_FILTRO2.png)   | ![Texto alternativo](Imagenes/FFT_ECG3_FILTRO2.png)| ![Texto alternativo](Imagenes/STFT_ECG3_FILTRO2.png) |  
 | **F. RECHAZA BANDA** | ![Texto alternativo](Imagenes/ECG3_FILTRO3.png)   | ![Texto alternativo](Imagenes/FFT_ECG3_FILTRO3.png)| ![Texto alternativo](Imagenes/STFT_ECG3_FILTRO3.png) |  
 
-Analizando cada señal de ECG junto con cada filtro podemos llegar a observaciones generales. En primer lugar, las señales elegidas sí poseen un patrón típico de ECG mostrando a su vez la distorsión que poseen estas por el ruido producido. En segundo lugar, el filtro pasabajas es aquel que suaviza más la señal al eliminar los componentes de alta frecuencia que, con un análisis mayor podríamos determinar si se está perdiendo o no información, pero por la gráfica parece que no al dotarle de una morfología más cercana a lo que es un ECG. Por su parte, el filtro pasa banda permite un rango de frecuencias más amplio obteniendo un poco más de detalle a comparación del filtro pasa bajas y en su FFT se resalta la presencia de solamente las frecuencias de su rango (0.5 a 100 Hz). Por último, el filtro rechaza banda solo eliminó el ruido a 60 Hz y por ende mantuvo la forma más cercana a la señal en bruto.
+Analizando cada señal de ECG junto con cada filtro podemos llegar a observaciones generales. En primer lugar, las señales elegidas sí poseen un patrón típico de ECG mostrando a su vez la distorsión que poseen estas por el ruido producido. En segundo lugar, el filtro pasabajas es aquel que suaviza más la señal al eliminar los componentes de alta frecuencia que, con un análisis mayor podríamos determinar si se está perdiendo o no información, pero por la gráfica parece que no al dotarle de una morfología más cercana a lo que es un ECG. Por su parte, el filtro pasa banda permite un rango de frecuencias más amplio obteniendo un poco más de detalle a comparación del filtro pasa bajas y en su FFT se resalta la presencia de solamente las frecuencias de su rango (0.5 a 100 Hz). Por último, el filtro rechaza banda solo eliminó el ruido a 60 Hz y por ende mantuvo la forma más cercana a las señales en bruto.
 ###
 ###
 ### **ANÁLISIS DE SEÑALES EMG**
@@ -96,6 +94,23 @@ Analizando cada señal de ECG junto con cada filtro podemos llegar a observacion
 | **F. PASA BAJAS**    | ![Texto alternativo](Imagenes/EMG3_FILTRO1.png)   | ![Texto alternativo](Imagenes/FFT_EMG3_FILTRO1.png)| ![Texto alternativo](Imagenes/STFT_EMG3_FILTRO1.png) |
 | **F. PASA BANDAS**   | ![Texto alternativo](Imagenes/EMG3_FILTRO2.png)   | ![Texto alternativo](Imagenes/FFT_EMG3_FILTRO2.png)| ![Texto alternativo](Imagenes/STFT_EMG3_FILTRO2.png) |  
 | **F. RECHAZA BANDA** | ![Texto alternativo](Imagenes/EMG3_FILTRO3.png)   | ![Texto alternativo](Imagenes/FFT_EMG3_FILTRO3.png)| ![Texto alternativo](Imagenes/STFT_EMG3_FILTRO3.png) |
+
+Analizando cada señal de EMG junto con cada filtro podemos llegar a observaciones generales. En primer lugar, podemos ver que las señales EMG difieren mucho entre sí dependiendo de la actividad del músculo.
+En segundo lugar, el filtro pasabajas atenuó a la señal en general haciendo también que las señales de alta frecuencia se vean eliminadas. Por su parte, el filtro pasa banda permite un rango de frecuencias propio de un EMG más amplio y también atenuó a la señal EMG, incluso moviéndola. Por último, el filtro rechaza banda solo eliminó el ruido a 60 HZ, pero fue el filtro que más atenuó a las señales en comparación con los otros dos.
+
+## **FILTROS**
+
+### **ANÁLISIS DE LOS FILTROS USADOS**
+| CAMPO             | DIAGRAMA DE POLOS Y ZEROS | DIAGRAMA DE BODE (MAGNITUD Y FASE).|
+|:------------------|:-------------------:|:--------------------------:|
+| **F. PASA BAJAS**    | ![Texto alternativo](Imagenes/EMG3_FILTRO1.png)   | ![Texto alternativo](Imagenes/FFT_EMG3_FILTRO1.png)| 
+| **F. PASA BANDAS**   | ![Texto alternativo](Imagenes/EMG3_FILTRO2.png)   | ![Texto alternativo](Imagenes/FFT_EMG3_FILTRO2.png)| 
+| **F. RECHAZA BANDA** | ![Texto alternativo](Imagenes/EMG3_FILTRO3.png)   | ![Texto alternativo](Imagenes/FFT_EMG3_FILTRO3.png)| 
+
+
+### **JUSTIFICACIÓN DE LOS FILTROS USADOS**
+
+## **BIBLIOGRAFÍA**
 
 
 ### **Diseño del Filtro EEG**
@@ -134,10 +149,3 @@ ISB1
 ISB2  
 [https://academy.theortusgroup.com/en-gb/ecg-filtering-that-can-help-save-lives\#:\~:text=The%20intended%20use%20plays%20a,pass%20filter%20with%20150%20Hz](https://academy.theortusgroup.com/en-gb/ecg-filtering-that-can-help-save-lives#:~:text=The%20intended%20use%20plays%20a,pass%20filter%20with%20150%20Hz).  
 [https://www.medteq.net/article/2017/4/1/ecg-filters](https://www.medteq.net/article/2017/4/1/ecg-filters)
-
-| das | asd | ads |
-| :---- | :---- | :---- |
-| ads | ads | dasads |
-| ![][image1] |  |  |
-
-[image1]: <data:image/png;base64,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>
