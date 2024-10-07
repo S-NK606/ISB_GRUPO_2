@@ -1,7 +1,7 @@
 # **LABORATORIO 7: – Filtrado de señales EMG y ECG**
 
-Este entregable fue elaboración personal - Josue Francisco Taipe Callañaupa (75504516)
-
+Este entregable fue elaboración personal - Josue Francisco Taipe Callañaupa (75504516) <br>
+El codigo que se usó para este trabajo, está comentado en este archivo .md
 # **Primera sección - EMG**
 
 <!-- CODIGO USADO PARA FILTRAR LA SEÑAL EMG 
