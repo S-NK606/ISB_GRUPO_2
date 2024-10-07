@@ -16,8 +16,16 @@ Nombre: Ingrid Pierina Licota Ocaña
 
 1. **Gráfica en el dominio del tiempo**.
    <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/a1.png" width="700" height="300"></p></p>
-3. **Gráfica en el dominio de la frecuencia**.
-4. **Transformada corta de Fourier (opcional)**.
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b1.png" width="700" height="300"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/a2.png" width="700" height="300"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b2.png" width="700" height="300"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/a7.png" width="700" height="300"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b7.png" width="700" height="300"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/a12.png" width="700" height="300"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b12.png" width="700" height="300"></p></p>
+   
+2. **Gráfica en el dominio de la frecuencia**.
+3. **Transformada corta de Fourier (opcional)**.
 
 # Análisis del filtro:
 
