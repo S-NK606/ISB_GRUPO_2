@@ -1,5 +1,5 @@
 # **PROCESAMIENTO DE SEÑALES DE ECG Y EMG MEDIANTE FILTROS DIGITALES**
-Este trabajo ha sido hecho de forma individual
+Este trabajo ha sido hecho de forma individual.
 
 ## **INTRODUCCIÓN**
 
