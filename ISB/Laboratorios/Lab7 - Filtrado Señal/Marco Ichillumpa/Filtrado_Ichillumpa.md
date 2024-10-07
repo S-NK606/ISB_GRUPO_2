@@ -127,6 +127,8 @@ En caso del ECG el filtro IIR se usó por su menor complejidad en la programaci�
 Para el EMG se tomó en cuenta el rango de interés de 2 a 500 Hz y el uso de un pasa altas con un corte en 20 Hz [4]. Normalmente se usa un filtro pasa altas a esta frecuencia para eliminar los artefactos generandos por movimientos u otras fuentes de interferencia [4].
 
 #### **FILTRO RECHAZA BANDAS**
+El uso de una ventana de Blackman para el rechazo rechaza bandas fue su transición suave en el dominio de la frecuencia, evitando la distorsión de la señal y la reducción de los lóbulos secundarios en la respuesta en frecuencia, para que no se mantengan los ruidos de la señal.
+
 El uso de un rechaza bandas a una frecuencia de 60 Hz o 50 Hz proviene de la red eléctrica de los paises donde el ruido se introduce en las señales fisiológicas capturadas como lo son el ECG y el EMG [1, 3]. Este ruido se debe a la cercanía de fuentes eléctricas o equipos electrónicos, ya que los electrodos y sus cables captan la interferencia electromagnética. Por ello, al ser un ruido común para ambas señales usé un filtro rechaza banda en 60 Hz, por estar en América Latina, buscando atenuar el ruido de la red eléctrica.
 
 ## **BIBLIOGRAFÍA**
