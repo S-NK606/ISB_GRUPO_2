@@ -3,14 +3,14 @@ Nombre: Ingrid Pierina Licota Ocaña
 # Filtros usados:
 
 1. **Para las señales EMG**
-   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/filtro_emg_blackman.png" width="700" height="400"></p></p>
-   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/filtro_emg_hamming.png" width="700" height="400"></p></p>
-   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/filtro_emg_hann.png" width="700" height="400"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/filtro_emg_blackman.png" width="700" height="300"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/filtro_emg_hamming.png" width="700" height="300"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/filtro_emg_hann.png" width="700" height="300"></p></p>
    
 2. **Para las señales ECG**
-   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/filtro_ecg_blackman.png" width="700" height="400"></p></p>
-   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/Filtro_ecg_hamming.png" width="700" height="400"></p></p>
-   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/filtro_ecg_hann.png" width="700" height="400"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/filtro_ecg_blackman.png" width="700" height="300"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/Filtro_ecg_hamming.png" width="700" height="300"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/filtro_ecg_hann.png" width="700" height="300"></p></p>
 
 # Análisis de señales:
 
