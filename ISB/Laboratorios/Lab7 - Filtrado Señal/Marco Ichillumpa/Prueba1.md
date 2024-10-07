@@ -53,9 +53,9 @@ Para su procesamiento se recurrió a tres distintos filtros. El primero es un fi
 | CAMPO             | DOMINIO DEL TIEMPO | DOMINIO DE LA FRECUENCIA (FFT). | ESPECTROGRAMA (STFT). |
 |:------------------|:-------------------:|:--------------------------:|:-----------------------------------------:|
 | **SEÑAL ORIGINAL**    | ![Texto alternativo](Imagenes/ECG3.png)  | ![Texto alternativo](Imagenes/FFT_ECG3.png)  | ![Texto alternativo](Imagenes/STFT_ECG3.png) |
-| **F. PASA BAJAS**    | ![Texto alternativo](Imagenes/ECG3 - FILTRO1.png)   | ![Texto alternativo](Imagenes/FFT_ECG3_FILTRO1.png)| ![Texto alternativo](Imagenes/STFT_ECG3_FILTRO1.png) |                             |                                             |
-| **F. PASA BANDAS**   | ![Texto alternativo](Imagenes/ECG3 - FILTRO2.png)   | ![Texto alternativo](Imagenes/FFT_ECG3_FILTRO2.png)| ![Texto alternativo](Imagenes/STFT_ECG3_FILTRO2.png) |  
-| **F. RECHAZA BANDA** | ![Texto alternativo](Imagenes/ECG3 - FILTRO3.png)   | ![Texto alternativo](Imagenes/FFT_ECG3_FILTRO3.png)| ![Texto alternativo](Imagenes/STFT_ECG3_FILTRO3.png) |  
+| **F. PASA BAJAS**    | ![Texto alternativo](Imagenes/ECG3_FILTRO1.png)   | ![Texto alternativo](Imagenes/FFT_ECG3_FILTRO1.png)| ![Texto alternativo](Imagenes/STFT_ECG3_FILTRO1.png) |                             |                                             |
+| **F. PASA BANDAS**   | ![Texto alternativo](Imagenes/ECG3_FILTRO2.png)   | ![Texto alternativo](Imagenes/FFT_ECG3_FILTRO2.png)| ![Texto alternativo](Imagenes/STFT_ECG3_FILTRO2.png) |  
+| **F. RECHAZA BANDA** | ![Texto alternativo](Imagenes/ECG3_FILTRO3.png)   | ![Texto alternativo](Imagenes/FFT_ECG3_FILTRO3.png)| ![Texto alternativo](Imagenes/STFT_ECG3_FILTRO3.png) |  
 
 ### **Diseño del Filtro ECG**
 
