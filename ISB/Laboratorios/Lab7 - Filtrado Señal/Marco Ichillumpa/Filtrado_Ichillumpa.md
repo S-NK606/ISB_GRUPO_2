@@ -131,7 +131,11 @@ El uso de un rechaza bandas a una frecuencia de 60 Hz o 50 Hz proviene de la red
 
 ## **BIBLIOGRAFÍA**
 **[1]** N. Singh, S. Ayub and J. P. Saini, "Design of Digital IIR Filter for Noise Reduction in ECG Signal," 2013 5th International Conference and Computational Intelligence and Communication Networks, Mathura, India, 2013, pp. 171-176, doi: 10.1109/CICN.2013.45.
+
 **[2]** N. N. Samsudin, S. Isaak, and N. Paraman, “Implementation of Optimized Low Pass Filter for ECG filtering using Verilog,” Journal of Physics Conference Series, vol. 2312, no. 1, p. 012049, Aug. 2022, doi: 10.1088/1742-6596/2312/1/012049.
+
 **[3]** F. Parola and J. García-Niebla, “Use of High-Pass and Low-Pass Electrocardiographic Filters in an International Cardiological Community and...,” ResearchGate, Dec. 2017, [Online]. Available: https://www.researchgate.net/publication/321683328_Use_of_High-Pass_and_Low-Pass_Electrocardiographic_Filters_in_an_International_Cardiological_Community_and_Possible_Clinical_Effects
+
 **[4]** C. J. De Luca, L. D. Gilmore, M. Kuznetsov, and S. H. Roy, “Filtering the surface EMG signal: Movement artifact and baseline noise contamination,” Journal of Biomechanics, vol. 43, no. 8, pp. 1573–1579, Mar. 2010, doi: 10.1016/j.jbiomech.2010.01.027.
+
 **[5]** A guide to ECG signal Filtering,” GE HealthCare (United States). https://www.gehealthcare.com/insights/article/a-guide-to-ecg-signal-filtering
