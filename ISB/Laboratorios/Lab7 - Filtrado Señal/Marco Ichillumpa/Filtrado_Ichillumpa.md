@@ -25,7 +25,7 @@ Para su procesamiento se recurrió a tres distintos filtros. El primero es un fi
 
 ### 
 
-| CAMPO             | DOMINIO DEL TIEMPO | DOMINIO DE LA FRECUENCIA (FFT). | ESPECTROGRAMA (STFT). |
+| CAMPO             | DOMINIO DEL TIEMPO | DOMINIO DE LA FRECUENCIA (FFT) | ESPECTROGRAMA (STFT) |
 |:------------------|:-------------------:|:--------------------------:|:-----------------------------------------:|
 | **SEÑAL ORIGINAL**    | ![Texto alternativo](Imagenes/ECG1.png)  | ![Texto alternativo](Imagenes/FFT_ECG1.png)  | ![Texto alternativo](Imagenes/STFT_ECG1.png) |
 | **F. PASA BAJAS**    | ![Texto alternativo](Imagenes/ECG1_FILTRO1.png)   | ![Texto alternativo](Imagenes/FFT_ECG1_FILTRO1.png)| ![Texto alternativo](Imagenes/STFT_ECG1_FILTRO1.png) |                             |                                             |
@@ -38,7 +38,7 @@ Para su procesamiento se recurrió a tres distintos filtros. El primero es un fi
 
 ### 
 
-| CAMPO             | DOMINIO DEL TIEMPO | DOMINIO DE LA FRECUENCIA (FFT). | ESPECTROGRAMA (STFT). |
+| CAMPO             | DOMINIO DEL TIEMPO | DOMINIO DE LA FRECUENCIA (FFT) | ESPECTROGRAMA (STFT) |
 |:------------------|:-------------------:|:--------------------------:|:-----------------------------------------:|
 | **SEÑAL ORIGINAL**    | ![Texto alternativo](Imagenes/ECG2.png)  | ![Texto alternativo](Imagenes/FFT_ECG2.png)  | ![Texto alternativo](Imagenes/STFT_ECG2.png) |
 | **F. PASA BAJAS**    | ![Texto alternativo](Imagenes/ECG2_FILTRO1.png)   | ![Texto alternativo](Imagenes/FFT_ECG2_FILTRO1.png)| ![Texto alternativo](Imagenes/STFT_ECG2_FILTRO1.png) |                             |                                             |
@@ -51,7 +51,7 @@ Para su procesamiento se recurrió a tres distintos filtros. El primero es un fi
 
 ### 
 
-| CAMPO             | DOMINIO DEL TIEMPO | DOMINIO DE LA FRECUENCIA (FFT). | ESPECTROGRAMA (STFT). |
+| CAMPO             | DOMINIO DEL TIEMPO | DOMINIO DE LA FRECUENCIA (FFT) | ESPECTROGRAMA (STFT) |
 |:------------------|:-------------------:|:--------------------------:|:-----------------------------------------:|
 | **SEÑAL ORIGINAL**    | ![Texto alternativo](Imagenes/ECG3.png)  | ![Texto alternativo](Imagenes/FFT_ECG3.png)  | ![Texto alternativo](Imagenes/STFT_ECG3.png) |
 | **F. PASA BAJAS**    | ![Texto alternativo](Imagenes/ECG3_FILTRO1.png)   | ![Texto alternativo](Imagenes/FFT_ECG3_FILTRO1.png)| ![Texto alternativo](Imagenes/STFT_ECG3_FILTRO1.png) |                             |                                             |
@@ -66,7 +66,7 @@ Analizando cada señal de ECG junto con cada filtro podemos llegar a observacion
 **1\. BICEPS BRAQUIAL EN REPOSO**
 ###
 
-| CAMPO             | DOMINIO DEL TIEMPO | DOMINIO DE LA FRECUENCIA (FFT). | ESPECTROGRAMA (STFT). |
+| CAMPO             | DOMINIO DEL TIEMPO | DOMINIO DE LA FRECUENCIA (FFT) | ESPECTROGRAMA (STFT) |
 |:------------------|:-------------------:|:--------------------------:|:-----------------------------------------:|
 | **SEÑAL ORIGINAL**    | ![Texto alternativo](Imagenes/EMG1.png)  | ![Texto alternativo](Imagenes/FFT_EMG1.png)  | ![Texto alternativo](Imagenes/STFT_EMG1.png) |
 | **F. PASA BAJAS**    | ![Texto alternativo](Imagenes/EMG1_FILTRO1.png)   | ![Texto alternativo](Imagenes/FFT_EMG1_FILTRO1.png)| ![Texto alternativo](Imagenes/STFT_EMG1_FILTRO1.png) |
@@ -77,7 +77,7 @@ Analizando cada señal de ECG junto con cada filtro podemos llegar a observacion
 **2\. BICEPS BRAQUIAL CON OPOSICIÓN LEVE**
 ###
 
-| CAMPO             | DOMINIO DEL TIEMPO | DOMINIO DE LA FRECUENCIA (FFT). | ESPECTROGRAMA (STFT). |
+| CAMPO             | DOMINIO DEL TIEMPO | DOMINIO DE LA FRECUENCIA (FFT) | ESPECTROGRAMA (STFT) |
 |:------------------|:-------------------:|:--------------------------:|:-----------------------------------------:|
 | **SEÑAL ORIGINAL**    | ![Texto alternativo](Imagenes/EMG2.png)  | ![Texto alternativo](Imagenes/FFT_EMG2.png)  | ![Texto alternativo](Imagenes/STFT_EMG2.png) |
 | **F. PASA BAJAS**    | ![Texto alternativo](Imagenes/EMG2_FILTRO1.png)   | ![Texto alternativo](Imagenes/FFT_EMG2_FILTRO1.png)| ![Texto alternativo](Imagenes/STFT_EMG2_FILTRO1.png) |
@@ -88,7 +88,7 @@ Analizando cada señal de ECG junto con cada filtro podemos llegar a observacion
 **3\. BICEPS BRAQUIAL CON OPOSICIÓN FUERTE**
 ###
 
-| CAMPO             | DOMINIO DEL TIEMPO | DOMINIO DE LA FRECUENCIA (FFT). | ESPECTROGRAMA (STFT). |
+| CAMPO             | DOMINIO DEL TIEMPO | DOMINIO DE LA FRECUENCIA (FFT) | ESPECTROGRAMA (STFT) |
 |:------------------|:-------------------:|:--------------------------:|:-----------------------------------------:|
 | **SEÑAL ORIGINAL**    | ![Texto alternativo](Imagenes/EMG3.png)  | ![Texto alternativo](Imagenes/FFT_EMG3.png)  | ![Texto alternativo](Imagenes/STFT_EMG3.png) |
 | **F. PASA BAJAS**    | ![Texto alternativo](Imagenes/EMG3_FILTRO1.png)   | ![Texto alternativo](Imagenes/FFT_EMG3_FILTRO1.png)| ![Texto alternativo](Imagenes/STFT_EMG3_FILTRO1.png) |
@@ -101,7 +101,7 @@ En segundo lugar, el filtro pasabajas atenuó a la señal en general haciendo ta
 ## **FILTROS**
 
 ### **ANÁLISIS DE LOS FILTROS USADOS**
-| CAMPO             | DIAGRAMA DE POLOS Y ZEROS | DIAGRAMA DE BODE (MAGNITUD Y FASE).|
+| CAMPO             | DIAGRAMA DE POLOS Y ZEROS | DIAGRAMA DE BODE (MAGNITUD Y FASE)|
 |:------------------|:-------------------:|:--------------------------:|
 | **F. PASA BAJAS**    | ![Texto alternativo](Imagenes/Zplane_Bajas.png)   | ![Texto alternativo](Imagenes/Bode_Bajas.png)| 
 | **F. PASA BANDAS**   | ![Texto alternativo](Imagenes/Zplane_Pasa.png)   | ![Texto alternativo](Imagenes/Bode_Pasa.png)| 
