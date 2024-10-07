@@ -16,47 +16,47 @@ Nombre: Ingrid Pierina Licota Ocaña
 
 1. **Gráfica en el dominio del tiempo**.
    <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/a1.png" width="700" height="300"></p></p>
-   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b1.png" width="700" height="300"></p></p>
    <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/a2.png" width="700" height="300"></p></p>
-   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b2.png" width="700" height="300"></p></p>
    <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/a7.png" width="700" height="300"></p></p>
-   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b7.png" width="700" height="300"></p></p>
    <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/a12.png" width="700" height="300"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b1.png" width="700" height="300"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b2.png" width="700" height="300"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b7.png" width="700" height="300"></p></p>
    <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b12.png" width="700" height="300"></p></p>
    
 2. **Gráfica en el dominio de la frecuencia**.
    <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/a3.png" width="700" height="300"></p></p>
-   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b3.png" width="700" height="300"></p></p>
    <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/a8.png" width="700" height="300"></p></p>
-   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b8.png" width="700" height="300"></p></p>
    <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/a13.png" width="700" height="300"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b3.png" width="700" height="300"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b8.png" width="700" height="300"></p></p>
    <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b13.png" width="700" height="300"></p></p>
    
 3. **Transformada corta de Fourier (opcional)**.
    <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/a4.png" width="700" height="300"></p></p>
-   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b4.png" width="700" height="300"></p></p>
    <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/a9.png" width="700" height="300"></p></p>
-   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b9.png" width="700" height="300"></p></p>
    <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/a14.png" width="700" height="300"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b4.png" width="700" height="300"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b9.png" width="700" height="300"></p></p>
    <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b14.png" width="700" height="300"></p></p>
 
 # Análisis del filtro:
 
 1. **Diagrama de polos y ceros**.
-   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/a6.png" width="700" height="300"></p></p>
-   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b6.png" width="700" height="300"></p></p>
-   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/a11.png" width="700" height="300"></p></p>
-   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b11.png" width="700" height="300"></p></p>
-   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/a16.png" width="700" height="300"></p></p>
-   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b16.png" width="700" height="300"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/a6.png" width="300" height="300"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b6.png" width="300" height="300"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/a11.png" width="300" height="300"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b11.png" width="300" height="300"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/a16.png" width="300" height="300"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b16.png" width="300" height="300"></p></p>
    
 2. **Diagrama de Bode** (magnitud y fase).
-   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/a5.png" width="700" height="300"></p></p>
-   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b5.png" width="700" height="300"></p></p>
-   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/a10.png" width="700" height="300"></p></p>
-   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b10.png" width="700" height="300"></p></p>
-   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/a15.png" width="700" height="300"></p></p>
-   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b15.png" width="700" height="300"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/a5.png" width="700" height="700"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b5.png" width="700" height="700"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/a10.png" width="700" height="700"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b10.png" width="700" height="700"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/a15.png" width="700" height="700"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b15.png" width="700" height="700"></p></p>
 
 # Justificación:
 Se utilizaron esos filtros, debido a que son los más utilizados en el filtrado de señales. Ademas, los filtros FIR producen menos variaciones en las frecuencias al ser mas estables.
