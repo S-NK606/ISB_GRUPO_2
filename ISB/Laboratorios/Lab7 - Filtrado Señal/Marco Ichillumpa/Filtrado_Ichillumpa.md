@@ -1,7 +1,7 @@
 # **PROCESAMIENTO DE SEÑALES DE ECG Y EMG MEDIANTE FILTROS DIGITALES**
 Este trabajo ha sido hecho de forma individual
 
-## **METODOLOGÍA**
+## **INTRODUCCIÓN**
 
 Para el presente trabajo se usaron señales ECG y EMG procedentes de laboratorios anteriores presentes en este mismo GitHub. Las señales seleccionadas son de distintos tipos de medición.
 
@@ -11,15 +11,15 @@ Las señales registradas fueron de diferentes momentos donde se usó diferentes 
 
 Para su procesamiento se recurrió a tres distintos filtros. El primero es un filtro IIR de tipo Butterworth pasa bajas con una frecuencia de corte de 20 Hz. El segundo también es un tipo de filtro IIR de tipo Butterworth pasa banda con una frecuencia de 1 Hz a 100 Hz. Por último un filtro FIR de tipo Butterworth rechaza banda de frecuencias de 60 Hz, usando una ventana de Blackman.
 
-### **Señales ECG**
+### **Señales EMG**
 
 Las señales registradas fueron de diferentes músculos: biceps braquial, el aductor del pulgar y el gastrocnemio, durante distintas fases de actividad. Específicamente, para el análisis del filtro EMG usaremos las señales del biceps braquila durante las fases de reposo, sin ningún movimiento; oposición leve, donde el estudiante hizo fuerza ligeramente; y oposición fuerte, donde el estudiante usó toda su fuerza contra la oposición.
 
 Para su procesamiento se recurrió a tres distintos filtros. El primero es un filtro IIR de tipo Butterworth pasa bajas con una frecuencia de corte de 400 Hz. El segundo también es un tipo de filtro IIR de tipo Butterworth pasa bandas con una frecuencia de 20 Hz a 500Hz. Por último un filtro FIR de tipo Butterworth rechaza banda de frecuencias de 60 Hz, usando una ventana de Blackman.
 
-## **RESULTADOS**
+## **ANÁLISIS Y FILTRADO DE LAS SEÑALES**
 
-### **ANÁLISIS DE SEÑALES ECG**
+### **SEÑALES ECG**
 
 **1\. ESTADO BASAL \- III DERIVACIÓN**
 
