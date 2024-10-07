@@ -51,12 +51,12 @@ Nombre: Ingrid Pierina Licota Ocaña
    <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b16.png" width="300" height="300"></p></p>
    
 2. **Diagrama de Bode** (magnitud y fase).
-   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/a5.png" width="700" height="700"></p></p>
-   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b5.png" width="700" height="700"></p></p>
-   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/a10.png" width="700" height="700"></p></p>
-   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b10.png" width="700" height="700"></p></p>
-   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/a15.png" width="700" height="700"></p></p>
-   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b15.png" width="700" height="700"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/a5.png" width="700" height="600"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b5.png" width="700" height="600"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/a10.png" width="700" height="600"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b10.png" width="700" height="600"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/a15.png" width="700" height="600"></p></p>
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/b15.png" width="700" height="600"></p></p>
 
 # Justificación:
 Se utilizaron esos filtros, debido a que son los más utilizados en el filtrado de señales. Ademas, los filtros FIR producen menos variaciones en las frecuencias al ser mas estables.
