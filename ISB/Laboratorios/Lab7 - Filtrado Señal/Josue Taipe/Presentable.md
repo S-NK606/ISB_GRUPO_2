@@ -103,3 +103,66 @@ Para esta actividad, decidí usar un filtro pasabanda ya que permite conservar e
 <p align="justify">
 
 # **Segunda sección - ECG**
+
+
+
+### Análisis de señales y del filtro  <br>
+
+Usaré el tipo de filtro FIR <br>
+<p align="justify">
+
+### **Primera derivación** <br>
+<p align="justify">
+
+### **Segunda derivación** <br>
+<p align="justify">
+
+### **Tercera derivación** <br>
+<p align="justify">
+
+### **Estado Basal Primera derivación** <br>
+<p align="justify">
+  
+### **Estado Respiración Primera derivación** <br>
+<p align="justify">
+  
+### **Estado Sin Respiración Primera derivación** <br>
+<p align="justify">
+  
+### **Usando el fluke a 60 BPM** <br>
+<p align="justify">
+
+### **Usando el fluke a 90 BPM** <br>
+<p align="justify">
+
+### **Usando el fluke a 120 BPM** <br>
+<p align="justify">
+
+### **Usando el fluke a 150 BPM** <br>
+<p align="justify">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
