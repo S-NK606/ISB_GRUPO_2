@@ -27,9 +27,9 @@ Para su procesamiento se recurrió a tres distintos filtros. El primero es un fi
 | CAMPO             | DOMINIO DEL TIEMPO | DOMINIO DE LA FRECUENCIA (FFT). | ESPECTROGRAMA (STFT). |
 |:------------------|:-------------------:|:--------------------------:|:-----------------------------------------:|
 | **SEÑAL ORIGINAL**    | ![Texto alternativo](Imagenes/ECG1.png)  | ![Texto alternativo](Imagenes/FFT_ECG1.png)  | ![Texto alternativo](Imagenes/STFT_ECG1.png) |
-| **F. PASA BAJAS**    | ![Texto alternativo](Imagenes/ECG1 - FILTRO1.png)   | ![Texto alternativo](Imagenes/FFT_ECG1_FILTRO1.png)| ![Texto alternativo](Imagenes/STFT_ECG1_FILTRO1.png) |                             |                                             |
-| **F. PASA BANDAS**   | ![Texto alternativo](Imagenes/ECG1 - FILTRO2.png)   | ![Texto alternativo](Imagenes/FFT_ECG1_FILTRO2.png)| ![Texto alternativo](Imagenes/STFT_ECG1_FILTRO2.png) |  
-| **F. RECHAZA BANDA** | ![Texto alternativo](Imagenes/ECG1 - FILTRO3.png)   | ![Texto alternativo](Imagenes/FFT_ECG1_FILTRO3.png)| ![Texto alternativo](Imagenes/STFT_ECG1_FILTRO3.png) |  
+| **F. PASA BAJAS**    | ![Texto alternativo](Imagenes/ECG1_FILTRO1.png)   | ![Texto alternativo](Imagenes/FFT_ECG1_FILTRO1.png)| ![Texto alternativo](Imagenes/STFT_ECG1_FILTRO1.png) |                             |                                             |
+| **F. PASA BANDAS**   | ![Texto alternativo](Imagenes/ECG1_FILTRO2.png)   | ![Texto alternativo](Imagenes/FFT_ECG1_FILTRO2.png)| ![Texto alternativo](Imagenes/STFT_ECG1_FILTRO2.png) |  
+| **F. RECHAZA BANDA** | ![Texto alternativo](Imagenes/ECG1_FILTRO3.png)   | ![Texto alternativo](Imagenes/FFT_ECG1_FILTRO3.png)| ![Texto alternativo](Imagenes/STFT_ECG1_FILTRO3.png) |  
 
 ###
 
