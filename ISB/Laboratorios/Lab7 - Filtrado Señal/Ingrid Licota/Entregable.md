@@ -1,5 +1,10 @@
 Nombre: Ingrid Pierina Licota Ocaña
 
+# Filtros usados:
+
+1. **Para las señales EMG**
+2. **Para las señales ECG**
+
 # Análisis de señales:
 
 1. **Gráfica en el dominio del tiempo**.
