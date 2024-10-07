@@ -4,7 +4,7 @@ Este entregable fue elaboración personal - Josue Francisco Taipe Callañaupa (7
 
 # **Primera sección - EMG**
 
-#INSERTO CODIGO USADO PARA FILTRAR SEÑAL EMG
+<!-- Este comentario no se mostrará en la vista renderizada -->
 
 ### Análisis de señales y del filtro  <br>
 
