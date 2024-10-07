@@ -355,7 +355,7 @@ Usaré el tipo de filtro FIR <br>
 
 
 <p align="center"> Señal 150 BPM - Dominio del Tiempo 
-<p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Josue Taipe/Imagenes/150BPM.png" width="600" height="266"></p>
+<p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Josue Taipe/Imagenes/150DOM.png" width="600" height="266"></p>
 </p
   
 <p align="justify">
@@ -365,17 +365,17 @@ Usaré el tipo de filtro FIR <br>
   
 <p align="justify">
 <p align="center"> Señal 150 BPM - Transformada corta de Fourier
-<p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Josue Taipe/Imagenes/150BTFT.png" width="600" height="266"></p>
+<p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Josue Taipe/Imagenes/150TFT.png" width="600" height="266"></p>
 </p
   
 <p align="justify">
 <p align="center"> Señal 150 BPM - Diagrama de Polos y Ceros
-<p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Josue Taipe/Imagenes/150BPOLOS.png" width="600" height="266"></p>
+<p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Josue Taipe/Imagenes/150POLOS.png" width="600" height="266"></p>
 </p
   
 <p align="justify">
 <p align="center"> Señal 150 BPM - Diagrama de Bode
-<p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Josue Taipe/Imagenes/150BBOLE.png" width="600" height="266"></p>
+<p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Josue Taipe/Imagenes/150BOLE.png" width="600" height="266"></p>
 </p
 <p align="justify">
   
