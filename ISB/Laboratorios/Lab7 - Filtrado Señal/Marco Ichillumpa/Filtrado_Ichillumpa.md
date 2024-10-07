@@ -111,8 +111,9 @@ Gracias a las gráficas podemos ver como actúan los filtros y sus propiedades.
 
 En el filtro pasa bajas podemos ver que los polos están dentro del círculo unitario, entonces como es un filtro IIR que depende de muestras pasadas y presentes tanto de la entrada como de la salida podemos concluir que el filtro es estable. A su vez, analizando el diagrama de Bode vemos como efectivamente el filtro deja pasar frecuencias bajas hasta que la mangitud decae cerca a los 20 Hz, a eso se le suma el desfase significativo que se aplica para las frecuencias altas.
 
-En el filtro pasa bajas podemos ver que los polos están dentro del círculo unitario, entonces como es un filtro IIR que depende de muestras pasadas y presentes tanto de la entrada como de la salida podemos concluir que el filtro es estable. A su vez, analizando el diagrama de Bode vemos como efectivamente el filtro deja pasar frecuencias bajas hasta que la mangitud decae cerca a los 20 Hz, a eso se le suma el desfase significativo que se aplica para las frecuencias altas.
+En el filtro pasa bandas igualmente al ser IIR y poseer sus polos dentro del círculo se concluye que es estable. Respecto a su diagrama de Bode podemos ver que dentro del rango de 1 a 100 Hz las frecuencias no son atenuadas, pero fuera del rango si lo son. Por el diagrama de fase podemos ver que esta cambia todos los componentes de la frecuencia.
 
+Finalmente podemos ver que en el filtro rechaza banda al ser FIR, no posee polos por lo que es estable, a su vez podemos ver que los ceros correspondientes a los componentes de frecuencia de 60 Hz están en el circulo unitario, indicando que están siendo cancelados. El gráfico de magnitud muestra la atenuación en 60Hz y se muestra el desfase constante para toda la señal.
 
 ### **JUSTIFICACIÓN DE LOS FILTROS USADOS**
 
