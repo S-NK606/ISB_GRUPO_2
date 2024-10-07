@@ -15,8 +15,9 @@ Nombre: Ingrid Pierina Licota Ocaña
 # Análisis de señales:
 
 1. **Gráfica en el dominio del tiempo**.
-2. **Gráfica en el dominio de la frecuencia**.
-3. **Transformada corta de Fourier (opcional)**.
+   <p align="center"><img src="/ISB/Laboratorios/Lab7 - Filtrado Señal/Ingrid Licota/Imagenes/a1.png" width="700" height="300"></p></p>
+3. **Gráfica en el dominio de la frecuencia**.
+4. **Transformada corta de Fourier (opcional)**.
 
 # Análisis del filtro:
 
