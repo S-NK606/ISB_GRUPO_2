@@ -116,43 +116,22 @@ En el filtro pasa bandas igualmente al ser IIR y poseer sus polos dentro del cí
 Finalmente podemos ver que en el filtro rechaza banda al ser FIR, no posee polos por lo que es estable, a su vez podemos ver que los ceros correspondientes a los componentes de frecuencia de 60 Hz están en el circulo unitario, indicando que están siendo cancelados. El gráfico de magnitud muestra la atenuación en 60Hz y se muestra el desfase constante para toda la señal.
 
 ### **JUSTIFICACIÓN DE LOS FILTROS USADOS**
+#### **FILTRO PASA BAJAS**
+Para el caso de un ECG el filtro IIR pasa bajas con una frecuencia de corte de 20 Hz es usado frecuentemente para eliminar el ruido de alta frecuencia [1, 2, 3]. Si bien la señal ECG posee un rango de frecuencias entre 0.05 Hz y 100 Hz, gran parte de la energía de la señal e información del complejo QRS, uno de los elementos más importantes del ECG, se encuentra entre los 10 y 25 Hz (o menor a los 40 Hz) [1, 2]. Además a esta frecuencia de corte no se pierde la información que con un filtro de 10 o 15 Hz [1]. 
+
+En el caso de un EMG se usó con una frecuencia de corte de 400 Hz, porque la mayoría de las señales EMG su energía se encuentra en un rango menor a los 400 - 450 Hz [4]. A una mayor frecuencia se pierde el rango de interés de una señal EMG y se obtiene mayormente ruido. El uso de este filtro también tiene la razón de que, diseñar un filtro IIR es más sencillo que uno FIR, tanto porque el orden es mucho menor y porque el procesamiento es más rápido.
+
+#### **FILTRO PASA BANDAS**
+En caso del ECG el filtro IIR se usó por su menor complejidad en la programación y el menor orden, a diferencia del FIR que, usando un software como PYFDA, se generaban filtros de orden mayor a los 2000. El rango de frecuencias de este filtro es el mismo que el rango de interés de las señales de ECG [5].
+
+Para el EMG se tomó en cuenta el rango de interés de 2 a 500 Hz y el uso de un pasa altas con un corte en 20 Hz [4]. Normalmente se usa un filtro pasa altas a esta frecuencia para eliminar los artefactos generandos por movimientos u otras fuentes de interferencia [4].
+
+#### **FILTRO RECHAZA BANDAS**
+El uso de un rechaza bandas a una frecuencia de 60 Hz o 50 Hz proviene de la red eléctrica de los paises donde el ruido se introduce en las señales fisiológicas capturadas como lo son el ECG y el EMG [1, 3]. Este ruido se debe a la cercanía de fuentes eléctricas o equipos electrónicos, ya que los electrodos y sus cables captan la interferencia electromagnética. Por ello, al ser un ruido común para ambas señales usé un filtro rechaza banda en 60 Hz, por estar en América Latina, buscando atenuar el ruido de la red eléctrica.
 
 ## **BIBLIOGRAFÍA**
-
-
-### **Diseño del Filtro EEG**
-
-
-
-Para el presente trabajo se eligieron señales EMG y ECG 
-
-Deberán presentar un archivo en formato Markdown que contenga el siguiente contenido:
-
-1. **:**
-
-   * Utilicen las señales EMG y ECG obtenidas en las sesiones anteriores.  
-   * Seleccionen una señal de cada actividad realizada para EMG y ECG.  
-   * Las señales deben ser filtradas utilizando filtros FIR o IIR.
-
-1. **Análisis de señales:**  
-* Para cada señal (original y filtrada), incluyan las siguientes gráficas:  
-  * Gráfica en el dominio del tiempo.  
-    * Gráfica en el dominio de la frecuencia.  
-  * Transformada corta de Fourier (opcional).
-
-1. **Análisis del filtro:**  
-   * Incluyan el diagrama de polos y ceros.  
-   * Diagrama de Bode (magnitud y fase).  
-2. **Justificación:**  
-   * Expliquen por qué eligieron esos tres filtros.
-
-METODOLOGÍA
-
-ECG:  
-Pasa baja \-Butterworth \- Fifth order filter \- 20Hz  
-Pasa alta \- Butterworth \- 0.5Hz
-
-ISB1  
-ISB2  
-[https://academy.theortusgroup.com/en-gb/ecg-filtering-that-can-help-save-lives\#:\~:text=The%20intended%20use%20plays%20a,pass%20filter%20with%20150%20Hz](https://academy.theortusgroup.com/en-gb/ecg-filtering-that-can-help-save-lives#:~:text=The%20intended%20use%20plays%20a,pass%20filter%20with%20150%20Hz).  
-[https://www.medteq.net/article/2017/4/1/ecg-filters](https://www.medteq.net/article/2017/4/1/ecg-filters)
+**[1]** N. Singh, S. Ayub and J. P. Saini, "Design of Digital IIR Filter for Noise Reduction in ECG Signal," 2013 5th International Conference and Computational Intelligence and Communication Networks, Mathura, India, 2013, pp. 171-176, doi: 10.1109/CICN.2013.45.
+**[2]** N. N. Samsudin, S. Isaak, and N. Paraman, “Implementation of Optimized Low Pass Filter for ECG filtering using Verilog,” Journal of Physics Conference Series, vol. 2312, no. 1, p. 012049, Aug. 2022, doi: 10.1088/1742-6596/2312/1/012049.
+**[3]** F. Parola and J. García-Niebla, “Use of High-Pass and Low-Pass Electrocardiographic Filters in an International Cardiological Community and...,” ResearchGate, Dec. 2017, [Online]. Available: https://www.researchgate.net/publication/321683328_Use_of_High-Pass_and_Low-Pass_Electrocardiographic_Filters_in_an_International_Cardiological_Community_and_Possible_Clinical_Effects
+**[4]** C. J. De Luca, L. D. Gilmore, M. Kuznetsov, and S. H. Roy, “Filtering the surface EMG signal: Movement artifact and baseline noise contamination,” Journal of Biomechanics, vol. 43, no. 8, pp. 1573–1579, Mar. 2010, doi: 10.1016/j.jbiomech.2010.01.027.
+**[5]** A guide to ECG signal Filtering,” GE HealthCare (United States). https://www.gehealthcare.com/insights/article/a-guide-to-ecg-signal-filtering
