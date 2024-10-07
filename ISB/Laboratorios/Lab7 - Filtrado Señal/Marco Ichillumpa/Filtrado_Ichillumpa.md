@@ -103,9 +103,15 @@ En segundo lugar, el filtro pasabajas atenuó a la señal en general haciendo ta
 ### **ANÁLISIS DE LOS FILTROS USADOS**
 | CAMPO             | DIAGRAMA DE POLOS Y ZEROS | DIAGRAMA DE BODE (MAGNITUD Y FASE).|
 |:------------------|:-------------------:|:--------------------------:|
-| **F. PASA BAJAS**    | ![Texto alternativo](Imagenes/EMG3_FILTRO1.png)   | ![Texto alternativo](Imagenes/FFT_EMG3_FILTRO1.png)| 
-| **F. PASA BANDAS**   | ![Texto alternativo](Imagenes/EMG3_FILTRO2.png)   | ![Texto alternativo](Imagenes/FFT_EMG3_FILTRO2.png)| 
-| **F. RECHAZA BANDA** | ![Texto alternativo](Imagenes/EMG3_FILTRO3.png)   | ![Texto alternativo](Imagenes/FFT_EMG3_FILTRO3.png)| 
+| **F. PASA BAJAS**    | ![Texto alternativo](Imagenes/Zplane_Bajas.png)   | ![Texto alternativo](Imagenes/Bode_Bajas.png)| 
+| **F. PASA BANDAS**   | ![Texto alternativo](Imagenes/Zplane_Pasa.png)   | ![Texto alternativo](Imagenes/Bode_Pasa.png)| 
+| **F. RECHAZA BANDA** | ![Texto alternativo](Imagenes/Zplane_Rechaza.png)   | ![Texto alternativo](Imagenes/Bode_Rechaza.png)| 
+
+Gracias a las gráficas podemos ver como actúan los filtros y sus propiedades.
+
+En el filtro pasa bajas podemos ver que los polos están dentro del círculo unitario, entonces como es un filtro IIR que depende de muestras pasadas y presentes tanto de la entrada como de la salida podemos concluir que el filtro es estable. A su vez, analizando el diagrama de Bode vemos como efectivamente el filtro deja pasar frecuencias bajas hasta que la mangitud decae cerca a los 20 Hz, a eso se le suma el desfase significativo que se aplica para las frecuencias altas.
+
+En el filtro pasa bajas podemos ver que los polos están dentro del círculo unitario, entonces como es un filtro IIR que depende de muestras pasadas y presentes tanto de la entrada como de la salida podemos concluir que el filtro es estable. A su vez, analizando el diagrama de Bode vemos como efectivamente el filtro deja pasar frecuencias bajas hasta que la mangitud decae cerca a los 20 Hz, a eso se le suma el desfase significativo que se aplica para las frecuencias altas.
 
 
 ### **JUSTIFICACIÓN DE LOS FILTROS USADOS**
@@ -115,7 +121,7 @@ En segundo lugar, el filtro pasabajas atenuó a la señal en general haciendo ta
 
 ### **Diseño del Filtro EEG**
 
-En la adquisición de señales de EEG, estas resultan acompañadas de ruido o interferencia de la actividad muscular. En el desarrollo del laboratorio de EEG, los movimientos musculares presentes durante la adquisición de la señal fueron los movimientos faciales, movimientos oculares, hablar, abrir y cerrar los ojos. Ante ello, el estudio \[10\], propone el uso de un filtro tipo Butterworth pasa baja de orden 8 y frecuencia de corte de 35 Hz para la eliminación de contaminación o ruido producida por los movimientos musculares.
+
 
 Para el presente trabajo se eligieron señales EMG y ECG 
 
