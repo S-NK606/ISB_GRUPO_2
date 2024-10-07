@@ -187,6 +187,92 @@ Para esta actividad, decidí usar un filtro pasabanda ya que permite conservar e
 
 # **Segunda sección - ECG**
 
+<!-- CODIGO USADO PARA FILTRAR LA SEÑAL ECG 
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.signal import firwin, lfilter, freqz, spectrogram, tf2zpk
+
+# Leer los datos del archivo ECG
+data = np.loadtxt(r'D:\UNIV\Introducción Señales\SeñalesFILTRO\ECG\Simulacion 150 bpm.txt', skiprows=4)  # Ajusta este archivo
+ecg_signal = data[:, 5]  # Extraer la columna ECG (A1)
+fs = 1000  # Frecuencia de muestreo en Hz
+
+# --- Sección 1: Análisis de señales ---
+# Dominio del tiempo
+time = np.arange(len(ecg_signal)) / fs
+plt.figure(figsize=(10, 4))
+plt.plot(time, ecg_signal)
+plt.title("Señal ECG en el dominio del tiempo")
+plt.xlabel("Tiempo [s]")
+plt.ylabel("Amplitud")
+plt.grid(True)
+plt.show()
+
+# Dominio de la frecuencia
+frecuencia = np.fft.fftfreq(len(ecg_signal), 1/fs)
+ecg_fft = np.fft.fft(ecg_signal)
+plt.figure(figsize=(10, 4))
+plt.plot(frecuencia[:len(frecuencia)//2], np.abs(ecg_fft)[:len(frecuencia)//2])
+plt.title("Espectro de frecuencia de la señal ECG")
+plt.xlabel("Frecuencia [Hz]")
+plt.ylabel("Magnitud")
+plt.grid(True)
+plt.show()
+
+# Transformada corta de Fourier (STFT)
+f, t, Sxx = spectrogram(ecg_signal, fs, nperseg=256)
+plt.figure(figsize=(10, 4))
+plt.pcolormesh(t, f, 10 * np.log10(Sxx), shading='gouraud')
+plt.title("Transformada de Fourier de tiempo corto (STFT) para la señal ECG")
+plt.ylabel("Frecuencia [Hz]")
+plt.xlabel("Tiempo [s]")
+plt.colorbar(label="Potencia [dB]")
+plt.show()
+
+# --- Sección 2: Análisis del filtro ---
+# Parámetros del filtro FIR
+cutoff_frequency = 100  # Frecuencia de corte para la señal ECG
+numtaps = 101  # Número de coeficientes del filtro
+filtro_fir = firwin(numtaps, cutoff_frequency, pass_zero=True, fs=fs)  # Filtro pasabaja
+
+# Aplicar el filtro FIR a la señal ECG
+ecg_filtrada = lfilter(filtro_fir, 1.0, ecg_signal)
+
+# Diagrama de polos y ceros
+z, p, k = tf2zpk(filtro_fir, [1])
+plt.figure(figsize=(6, 6))
+plt.scatter(np.real(z), np.imag(z), marker='o', label='Ceros')
+plt.scatter(np.real(p), np.imag(p), marker='x', label='Polos')
+plt.title("Diagrama de polos y ceros del filtro FIR pasabaja")
+plt.xlabel("Parte real")
+plt.ylabel("Parte imaginaria")
+plt.grid(True)
+plt.legend()
+plt.show()
+
+# Diagrama de Bode (magnitud y fase)
+w, h = freqz(filtro_fir, 1, worN=2000)
+plt.figure(figsize=(10, 6))
+
+# Magnitud
+plt.subplot(2, 1, 1)
+plt.plot(w * fs / (2 * np.pi), 20 * np.log10(abs(h)))
+plt.title("Respuesta en frecuencia del filtro FIR pasabaja")
+plt.ylabel("Magnitud [dB]")
+plt.grid(True)
+
+# Fase
+plt.subplot(2, 1, 2)
+plt.plot(w * fs / (2 * np.pi), np.angle(h))
+plt.ylabel("Fase [radianes]")
+plt.xlabel("Frecuencia [Hz]")
+plt.grid(True)
+
+plt.show()
+
+
+ -->
+
 
 
 ### Análisis de señales y del filtro  <br>
