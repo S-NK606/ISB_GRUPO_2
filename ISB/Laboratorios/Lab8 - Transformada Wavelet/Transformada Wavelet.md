@@ -7,8 +7,8 @@
 3. [Objetivos](#3-objetivos)
 4. [Materiales y equipos](#4-materiales-y-equipos)
 5. [Metodología](#5-metodología)
-6. [Conclusiones](#7-conclusiones)
-7. [Bibliografía](#8-bibliografía)
+6. [Conclusiones](#6-conclusiones)
+7. [Bibliografía](#7-bibliografía)
 
 
 ## 1. Introducción
