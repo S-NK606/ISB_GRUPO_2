@@ -8,7 +8,7 @@
 4. [Materiales y equipos](#4-materiales-y-equipos)
 5. [Metodología](#5-metodología)
 6. [Conclusiones](#6-conclusiones)
-7. [Bibliografía](#7-bibliografía)
+7. [Referencias bibliográficas](#7-referencias-bibliográficas)
 
 
 ## 1. Introducción
@@ -27,11 +27,89 @@ En este informe, se abordará el uso de las transformadas wavelet en el procesam
 
 ## 3. Objetivos
 
+### Objetivo general
+Evaluar el uso de la transformada wavelet en el procesamiento de señales biomédicas, específicamente en señales de electrocardiograma (ECG), electromiograma (EMG) y electroencefalograma (EEG), con el fin de optimizar la detección de patrones fisiológicos y patológicos.
+
+### Objetivos específicos
+1. **Analizar la aplicación de la transformada wavelet en el procesamiento de señales ECG** para la identificación y detección precisa de los complejos QRS y eliminación de artefactos de ruido.
+   
+2. **Explorar el uso de la transformada wavelet en señales EMG** para separar patrones de activación muscular de artefactos y ruido, permitiendo un análisis más robusto de la actividad muscular en diferentes condiciones fisiológicas.
+
+3. **Investigar la implementación de la transformada wavelet en señales EEG** para la identificación de eventos transitorios y anómalos, como ondas cerebrales características en condiciones como la epilepsia.
+
+4. **Revisar estudios previos y actuales** sobre la aplicación de la transformada wavelet en señales biomédicas, para identificar mejoras potenciales en algoritmos de procesamiento que puedan ser implementados en dispositivos biomédicos de diagnóstico.
+
+
 ## 4. Materiales y equipos
 
 ## 5. Metodología
+**Recolección de datos**
+Para este estudio, se utilizaron datasets correspondientes a señales de electromiograma (EMG), electrocardiograma (ECG) y electroencefalograma (EEG). Estas señales, obtenidas en laboratorios previos, contienen información valiosa sobre la actividad fisiológica de músculos, corazón y cerebro, respectivamente, pero están contaminadas por diversos tipos de ruido.
 
 ### 5.1. Análisis de Señales ECG
+
+*Preprocesamiento*
+
+Antes de aplicar la Transformada Wavelet Discreta (DWT), cada señal fue filtrada utilizando técnicas de **filtro de paso bajo** y **filtro de paso alto** para mitigar el ruido de alta y baja frecuencia, respectivamente. Estos filtros son esenciales para eliminar interferencias como el ruido de línea base y los artefactos electromagnéticos, comunes en las señales biomédicas.
+
+*Transformada Wavelet Discreta (DWT)*
+
+La DWT fue aplicada para descomponer las señales en distintos niveles de resolución. Esta técnica permite separar las componentes de alta y baja frecuencia en diferentes escalas temporales, facilitando la identificación de patrones y la eliminación de ruido.
+
+#### Fórmula de la DWT
+La **DWT** utiliza una **función madre wavelet** $$\( \psi(t) \)$$, que es escalada y trasladada para descomponer la señal $$\( x(t) \)$$ en coeficientes de detalle y aproximación. La DWT se define matemáticamente como:
+
+$$
+W_{\psi}(a, b) = \frac{1}{\sqrt{|a|}} \int_{-\infty}^{\infty} x(t) \psi^*\left(\frac{t - b}{a}\right) dt
+$$
+
+Donde:
+- \( a \) es el parámetro de **escala**, que controla la compresión o expansión de la wavelet.
+- \( b \) es el parámetro de **traslación**, que desplaza la wavelet a lo largo de la señal.
+- $$\( \psi(t) \)$$ es la **función madre wavelet**.
+- $$\( \psi^* \)$$ es la **conjugada compleja** de la función madre wavelet.
+
+Para la DWT, los valores de $$\( a \)$$ y $$\( b \)$$ se toman en discretos pasos, típicamente potencias de 2, es decir, $$\( a = 2^j \)$$ y $$\( b = k2^j \)$$, donde $$\( j \)$$ y $$\( k \)$$ son enteros.
+
+#### Selección de la función madre wavelet
+Se probaron varias funciones madre wavelet, como la wavelet de Daubechies, Coiflets y Symlets, para seleccionar la más adecuada para cada tipo de señal biomédica. La selección se basó en la **relación señal-ruido (SNR)** obtenida tras el procesamiento de la señal.
+
+#### Descomposición y Umbralización
+Cada señal fue descompuesta en **niveles de detalle (coeficientes D)** y **niveles de aproximación (coeficientes A)**. Se utilizó un esquema de **umbralización adaptativa** para reducir los coeficientes de detalle asociados al ruido, manteniendo la información relevante de la señal original. La fórmula para la umbralización suave aplicada a los coeficientes \( w \) es:
+
+$$
+w' = \text{sign}(w) \cdot \max(|w| - \lambda, 0)
+$$
+
+Donde:
+- $$\( \lambda \)$$ es el umbral adaptativo, calculado para minimizar el ruido sin eliminar información relevante de la señal.
+  
+### Reconstrucción de la señal
+Tras eliminar los coeficientes de ruido, se realizó la **transformada inversa de la DWT** para reconstruir la señal filtrada. La reconstrucción se hace sumando los coeficientes de detalle y aproximación modificados, preservando la estructura original de la señal.
+
+#### Fórmula de la DWT inversa
+La señal original \( x(t) \) se puede reconstruir mediante la DWT inversa usando la siguiente expresión:
+
+$$
+x(t) = \sum_{j} \sum_{k} W_{\psi}(a_j, b_k) \psi_{a_j, b_k}(t)
+$$
+
+Donde $$\( W_{\psi}(a_j, b_k) \)$$ son los coeficientes wavelet calculados en el proceso de descomposición.
+
+### Métricas de evaluación
+
+Para evaluar la calidad de la señal tras la eliminación del ruido, se utilizaron las siguientes métricas:
+
+1. **Relación Señal-Ruido (SNR)**:
+
+   $$\text{SNR} = 10 \log_{10} \left(\frac{\sum_{i=1}^{N} x_i^2}{\sum_{i=1}^{N} (x_i - \hat{x}_i)^2}\right)$$
+
+2. **Error cuadrático medio (RMSE)**:
+
+   $$\text{RMSE} = \sqrt{\frac{1}{N} \sum_{i=1}^{N} (x_i - \hat{x}_i)^2}$$
+   
+Estas métricas permitieron comparar la señal original con la señal procesada, evaluando la efectividad de la DWT en la eliminación de ruido y preservación de la información relevante.
+
 
 ### 5.2. Análisis de Señales EMG
 
