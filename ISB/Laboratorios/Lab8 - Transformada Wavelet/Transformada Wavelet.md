@@ -21,6 +21,13 @@
 
 ## 5. Metodología
 
+### 5.1. Análisis de Señales ECG
+
+### 5.2. Análisis de Señales EMG
+
+### 5.3. Análisis de Señales EEG
+
+
 ## 6. Conclusiones
 
 ## 7. Bibliografía
