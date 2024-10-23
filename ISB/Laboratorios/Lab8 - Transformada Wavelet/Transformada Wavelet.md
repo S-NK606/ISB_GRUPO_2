@@ -329,24 +329,28 @@ Donde \(X(a, b)\) son los coeficientes wavelet umbralizados y \(\psi_{a, b}(t)\)
 #### 6.1 EEG  
 #### Primer Estado de Reposo
 
-| Señal original | Señal filtrada |
+| Tipo de Señal| Gráficas|
 | --- | --- |
-| ![Imagen 1](./WAVELET_EEG/SENAL_ORIGINAL_REPOSOI.png) | ![Imagen 2](./WAVELET_EEG/SENAL_FILTRADA_REPOSOI.png) |
+|Señal original| ![Imagen 1](./WAVELET_EEG/SENAL_ORIGINAL_REPOSOI.png) |
+|Señal filtrada|![Imagen 2](./WAVELET_EEG/SENAL_FILTRADA_REPOSOI.png) |
 #### Ciclo de Ojos Abiertos y Cerrados
 
-| Señal original | Señal filtrada |
+| Tipo de Señal| Gráficas|
 | --- | --- |
-| ![Imagen 1](./WAVELET_EEG/SENAL_ORIGINAL_OJOS.png) | ![Imagen 2](./WAVELET_EEG/SENAL_FILTRADA_OJOS.png) |
+|Señal original| ![Imagen 1](./WAVELET_EEG/SENAL_ORIGINAL_OJOS.png) | 
+|Señal filtrada|![Imagen 2](./WAVELET_EEG/SENAL_FILTRADA_OJOS.png) |
 #### Segundo Estado de Reposo
 
-| Señal original | Señal filtrada |
+| Tipo de Señal| Gráficas|
 | --- | --- |
-| ![Imagen 1](./WAVELET_EEG/SENAL_ORIGINAL_REPOSOII.png) | ![Imagen 2](./WAVELET_EEG/SENAL_FILTRADA_REPOSOII.png) |
+|Señal original| ![Imagen 1](./WAVELET_EEG/SENAL_ORIGINAL_REPOSOII.png) |
+|Señal filtrada|![Imagen 2](./WAVELET_EEG/SENAL_FILTRADA_REPOSOII.png) |
 #### Razonamiento Matemático
 
-| Señal original | Señal filtrada |
+| Tipo de Señal| Gráficas|
 | --- | --- |
-| ![Imagen 1](./WAVELET_EEG/SENAL_ORIGINAL_PREGUNTAS.png) | ![Imagen 2](./WAVELET_EEG/SENAL_FILTRADA_PREGUNTAS.png) |
+|Señal original| ![Imagen 1](./WAVELET_EEG/SENAL_ORIGINAL_PREGUNTAS.png) |
+|Señal filtrada|![Imagen 2](./WAVELET_EEG/SENAL_FILTRADA_PREGUNTAS.png) |
 
 
 ## 7. Conclusiones
