@@ -7,8 +7,9 @@
 3. [Objetivos](#3-objetivos)
 4. [Materiales y equipos](#4-materiales-y-equipos)
 5. [Metodología](#5-metodología)
-6. [Conclusiones](#6-conclusiones)
-7. [Referencias bibliográficas](#7-referencias-bibliográficas)
+6. [Resultados y discusiones](#6-resultados-y-discusiones)
+7. [Conclusiones](#7-conclusiones)
+8. [Referencias bibliográficas](#8-referencias-bibliográficas)
 
 
 ## 1. Introducción
@@ -112,18 +113,21 @@ Estas métricas permitieron comparar la señal original con la señal procesada,
 
 
 ### 5.2. Análisis de Señales EMG
-### 1. Recolección de Datos
+*Recolección de Datos*
+
 Se recopilaron señales de electromiografía (EMG) utilizando electrodos superficiales en músculos específicos. Las señales se obtuvieron durante diversas actividades motoras, en laboratorios previos.
 
-### 2. Adición de Ruido
+*Adición de Ruido*
+
 Se añadió *ruido gaussiano blanco* a las señales EMG originales para simular condiciones reales de ruido. Los niveles de *relación señal a ruido (SNR)* utilizados fueron:
 - SNR = 10 dB
 - SNR = 15 dB
 - SNR = 50 dB
 
-### 3. Procesamiento de Señales
+### Procesamiento de Señales
 
-#### 3.1. Transformada Wavelet Discreta (DWT)
+#### Transformada Wavelet Discreta (DWT)
+
 Se aplicó la *Transformada Wavelet Discreta (DWT)* para descomponer las señales EMG en componentes de tiempo y frecuencia, utilizando la siguiente fórmula:
 
 $$
@@ -136,7 +140,7 @@ Donde:
 - $$\( a \)$$ es el factor de *escala*.
 - $$\( b \)$$ es el factor de *traslación*.
 
-#### 3.2. Umbralización
+#### Umbralización
 Se emplearon dos tipos de umbralización en los coeficientes wavelet:
 1. *Umbralización dura*:
    
@@ -151,14 +155,14 @@ Donde:
 - $$\( w \)$$ son los coeficientes wavelet.
 - $$\( \lambda \)$$ es el *valor del umbral* adaptado según el ruido en la señal.
 
-### 4. Reconstrucción de la Señal
+### Reconstrucción de la Señal
 Una vez aplicada la umbralización, se utilizó la *Transformada Inversa de Wavelet (IDWT)* para reconstruir la señal. La fórmula para la reconstrucción es:
 
 $$x(t) = \sum_{a, b} X(a, b) \psi_{a, b}(t)$$
 
-Donde $$\( X(a, b) \)$$ son los coeficientes wavelet umbralizados y \( \psi_{a, b}(t) \) son las wavelets escaladas y trasladadas.
+Donde $$\( X(a, b) \)$$ son los coeficientes wavelet umbralizados y $$\( \psi_{a, b}(t) \)$$ son las wavelets escaladas y trasladadas.
 
-### 5. Evaluación de la Calidad
+### Evaluación de la Calidad
 La calidad de las señales denoised se evaluó utilizando las siguientes métricas:
 
 1. *Relación Señal-Ruido (SNR)*:
@@ -202,10 +206,87 @@ La segundas señales son intervalos para que se pueda ver mejor la señal
 
 ### 5.3. Análisis de Señales EEG
 
+El procesamiento de señales EEG para la eliminación automática de artefactos de parpadeo se realiza mediante la aplicación de la *Transformada Wavelet Discreta (DWT)*, utilizando técnicas de umbralización óptima basada en metaheurísticas. La metodología está estructurada en los siguientes pasos:
 
-## 6. Conclusiones
+*Recolección de señales EEG*
 
-## 7. Referencias bibliográficas
+Se utilizaron señales EEG tomadas de laboratorios anteriores.
+
+*Clasificación automática de señales contaminadas*
+
+Primero, se empleó una *Máquina de Soporte Vectorial (SVM)* entrenada con características estadísticas de señales EEG limpias y contaminadas para clasificar automáticamente si la señal está contaminada. Las características usadas para la clasificación incluyen:
+- *Kurtosis* $$(\(K\))$$ para medir la "cola" de la distribución de los datos, lo que es útil para identificar artefactos.
+- *Varianza* $$(\(Var\))$$ para medir la dispersión de los datos.
+- *Amplitud pico a pico* $$(\(pk\))$$ para medir la diferencia máxima entre el valor positivo y negativo de la señal.
+
+Las fórmulas son las siguientes:
+
+- *Kurtosis*:
+
+  $$K(Y) = \frac{E[(Y - \mu_Y)^4]}{\sigma_Y^4}$$
+
+  Donde $$\(Y\)$$ es la señal, $$\(\mu_Y\)$$ es la media de $$\(Y\)$$, y $$\(\sigma_Y\)$$ su desviación estándar.
+
+- *Varianza*:
+
+  $$Var(Y) = E[(Y - \mu_Y)^2]$$
+
+- *Amplitud pico a pico*:
+
+  $$pk(Y) = \max(Y) - \min(Y)$$
+
+#### 3. Descomposición de la señal mediante la DWT
+
+Una vez identificadas las señales contaminadas, se aplicó la *Transformada Wavelet Discreta (DWT)* para descomponer la señal EEG en varios niveles de frecuencia. Se seleccionó la wavelet madre óptima basada en la *Relación de Energía-Entropía de Shannon (ESER)*:
+
+- *Energía* de los coeficientes wavelet $$(\(wt(i)\))$$:
+
+  $$Energía(s) = ||wt(i)||$$
+
+- *Entropía de Shannon*:
+
+  $$Entropía(s) = - p \cdot \log(p)$$
+
+  Donde \(p\) es la probabilidad de energía:
+
+  $$p = \frac{||wt(i)||}{Energía(s)}$$
+
+  La relación *Energía-Entropía (ESER)* se calcula como:
+
+  $$ESER(s) = \frac{Energía(s)}{Entropía(s)}$$
+
+Se seleccionó la wavelet con el valor máximo de ESER para cada señal.
+
+#### 4. Umbralización de los coeficientes de aproximación
+
+Se aplicaron algoritmos metaheurísticos como *Particle Swarm Optimization (PSO)* y *Grey Wolf Optimization (GWO)* para encontrar los umbrales óptimos que se aplicaron a los coeficientes de aproximación (ACs). La fórmula de umbralización dura utilizada fue:
+
+- *Umbralización dura*:
+
+  $$
+  w' = 
+  \begin{cases} 
+  w & \text{si } |w| \geq \lambda \\
+  0 & \text{si } |w| < \lambda
+  \end{cases}
+  $$
+
+Donde \(w\) son los coeficientes wavelet originales y $$\(\lambda\)$$ es el valor del umbral.
+
+#### 5. Reconstrucción de la señal limpia
+
+Finalmente, se utilizó la *Transformada Inversa de Wavelet (IDWT)* para reconstruir la señal EEG sin los artefactos de parpadeo. La fórmula para la reconstrucción es:
+
+$$
+x(t) = \sum_{a, b} X(a, b) \psi_{a, b}(t)
+$$
+
+Donde \(X(a, b)\) son los coeficientes wavelet umbralizados y \(\psi_{a, b}(t)\) son las wavelets escaladas y trasladadas.
+## 6. Resultados y discusiones
+
+## 7. Conclusiones
+
+## 8. Referencias bibliográficas
 
 [1] M. Akay, "Wavelets in Biomedical Engineering," Annals of Biomedical Engineering, vol. 23, no. 5, pp. 531-542, doi: 10.1007/BF02584453.
 
