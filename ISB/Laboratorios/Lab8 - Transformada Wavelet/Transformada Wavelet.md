@@ -226,13 +226,11 @@ Donde:
 - $$\( x_i \)$$ son los valores de la señal original.
 - $$\( \hat{x}_i \)$$ son los valores de la señal reconstruida.
 
-3. Fórmula de PSNR (Peak Signal-to-Noise Ratio)
+3. *Fórmula de PSNR (Peak Signal-to-Noise Ratio)*:
 
 El PSNR se calcula a partir del *Error Cuadrático Medio (MSE)*, que mide las diferencias promedio al cuadrado entre los valores originales y los valores distorsionados de la señal. La fórmula general para el PSNR es:
 
-
-PSNR = 10 \cdot \log_{10} \left( \frac{MAX_I^2}{MSE} \right)
-
+$$PSNR = 10 \cdot \log_{10} \left( \frac{MAX_I^2}{MSE} \right)$$
 
 Donde:
 - \( MAX_I \) es el valor máximo posible de la señal de entrada. Para una imagen de 8 bits, este valor sería 255.
