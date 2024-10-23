@@ -444,4 +444,9 @@ Para las señales de EEG provinientes del Reposo I y II, en la señal original s
 
 [4] S. Mallat, "Chapter 3 - Discrete Revolution," in *A Wavelet Tour of Signal Processing*, 3rd ed., San Diego, CA, USA: Academic Press, 2009, pp. 59-88, doi: 10.1016/B978-0-12-374370-1.00007-0. 
 
+[5] S. Phadikar, N. Sinha y R. Ghosh, “Automatic Eye Blink Artifact Removal from EEG Signal Using Wavelet Transform with Heuristically Optimized Threshold”, IEEE J. Biomed. Health Inform., p. 1, 2020. Accedido el 23 de octubre de 2024. [En línea]. Disponible: https://doi.org/10.1109/jbhi.2020.2995235
+
+[6] R. T. Thukral, “Effect of Different Thresholding Techniques for Denoising of EMG Signals by using Different Wavelets”, 2019 2nd Int. Conf. Intell. Communication Comput. Techn. (ICCT) Manipal Univ. Jaipur,, p. 5, septiembre de 2019.
+
+[7] A. Kumar, H. Tomar, V. K. Mehla, R. Komaragiri y M. Kumar, “Stationary wavelet transform based ECG signal denoising method”, ISA Trans., diciembre de 2020. Accedido el 23 de octubre de 2024. [En línea]. Disponible: https://doi.org/10.1016/j.isatra.2020.12.029
 
