@@ -230,6 +230,9 @@ Donde:
 
 ### 5.3. Análisis de Señales EEG
 
+Parametros usados en el filtrado de señales:  </p>
+Se ha seleccionado la familia de wavelets db8 (Daubechies 8) para el proceso de filtrado, utilizando un nivel de descomposición de 6. La técnica aplicada es la umbralización óptima, implementada a través de algoritmos metaheurísticos de Optimización por Enjambre de Partículas (PSO).</p>
+
 El procesamiento de señales EEG para la eliminación automática de artefactos de parpadeo se realiza mediante la aplicación de la *Transformada Wavelet Discreta (DWT)*, utilizando técnicas de umbralización óptima basada en metaheurísticas. La metodología está estructurada en los siguientes pasos:
 
 *Recolección de señales EEG*
