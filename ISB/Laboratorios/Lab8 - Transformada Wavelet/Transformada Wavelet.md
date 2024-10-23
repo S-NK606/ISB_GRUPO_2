@@ -112,7 +112,68 @@ Estas métricas permitieron comparar la señal original con la señal procesada,
 
 
 ### 5.2. Análisis de Señales EMG
+### 1. Recolección de Datos
+Se recopilaron señales de electromiografía (EMG) utilizando electrodos superficiales en músculos específicos. Las señales se obtuvieron durante diversas actividades motoras, en laboratorios previos.
 
+### 2. Adición de Ruido
+Se añadió *ruido gaussiano blanco* a las señales EMG originales para simular condiciones reales de ruido. Los niveles de *relación señal a ruido (SNR)* utilizados fueron:
+- SNR = 10 dB
+- SNR = 15 dB
+- SNR = 50 dB
+
+### 3. Procesamiento de Señales
+
+#### 3.1. Transformada Wavelet Discreta (DWT)
+Se aplicó la *Transformada Wavelet Discreta (DWT)* para descomponer las señales EMG en componentes de tiempo y frecuencia, utilizando la siguiente fórmula:
+
+$$
+X(a, b) = \int x(t) \frac{1}{\sqrt{|a|}} \psi\left(\frac{t-b}{a}\right) dt
+$$
+
+Donde:
+- $$\( x(t) \)$$ es la señal EMG.
+- $$\( \psi(t) \)$$ es la *función wavelet madre*.
+- $$\( a \)$$ es el factor de *escala*.
+- $$\( b \)$$ es el factor de *traslación*.
+
+#### 3.2. Umbralización
+Se emplearon dos tipos de umbralización en los coeficientes wavelet:
+1. *Umbralización dura*:
+   
+   $$w' = w \ \text{si } |w| \geq \lambda, \ 0 \ \text{si } |w| < \lambda$$
+
+   
+3. *Umbralización suave*:
+   
+   $$w' = \text{sign}(w) \cdot \max(|w| - \lambda, 0)$$
+
+Donde:
+- $$\( w \)$$ son los coeficientes wavelet.
+- $$\( \lambda \)$$ es el *valor del umbral* adaptado según el ruido en la señal.
+
+### 4. Reconstrucción de la Señal
+Una vez aplicada la umbralización, se utilizó la *Transformada Inversa de Wavelet (IDWT)* para reconstruir la señal. La fórmula para la reconstrucción es:
+
+$$x(t) = \sum_{a, b} X(a, b) \psi_{a, b}(t)$$
+
+Donde $$\( X(a, b) \)$$ son los coeficientes wavelet umbralizados y \( \psi_{a, b}(t) \) son las wavelets escaladas y trasladadas.
+
+### 5. Evaluación de la Calidad
+La calidad de las señales denoised se evaluó utilizando las siguientes métricas:
+
+1. *Relación Señal-Ruido (SNR)*:
+   
+   $$\text{SNR} = 10 \log_{10} \left(\frac{\text{Potencia de la señal}}{\text{Potencia del ruido}}\right)$$
+
+3. *Error Cuadrático Medio (MSE)*:
+   
+   $$\text{MSE} = \frac{1}{N} \sum_{i=1}^{N} (x_i - \hat{x}_i)^2$$
+
+Donde:
+- $$\( x_i \)$$ son los valores de la señal original.
+- $$\( \hat{x}_i \)$$ son los valores de la señal reconstruida.
+
+###RESULTADOS
 La segundas señales son intervalos para que se pueda ver mejor la señal
 
 #### EMG - Biceps braquial en reposo
