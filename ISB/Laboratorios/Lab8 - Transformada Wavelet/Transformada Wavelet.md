@@ -28,7 +28,7 @@ En este informe, se abordará el uso de las transformadas wavelet en el procesam
 
 **2.1 ¿Qué es la transformada de Wavelet?**
 <p align="justify">
-La transformada de Wavelet es una herramienta matemática utilizada para el análisis de señales no estacionarias. Permite descomponer una señal en distintos niveles de frecuencia y tiempo, manteniendo la ubicación temporal de sus características. A diferencia de la transformada de Fourier, que solo proporciona información en el dominio de la frecuencia, la transformada de Wavelet ofrece un análisis multiresolución, lo que la hace ideal para estudiar señales con variaciones abruptas o transitorias​   .
+La transformada de Wavelet es una herramienta matemática utilizada para el análisis de señales no estacionarias. Permite descomponer una señal en distintos niveles de frecuencia y tiempo, manteniendo la ubicación temporal de sus características. A diferencia de la transformada de Fourier, que solo proporciona información en el dominio de la frecuencia, la transformada de Wavelet ofrece un análisis multiresolución, lo que la hace ideal para estudiar señales con variaciones abruptas o transitorias​  [8] .
 
 **2.2 ¿Cuáles son sus características?**
    
@@ -226,7 +226,6 @@ Donde:
 - $$\( x_i \)$$ son los valores de la señal original.
 - $$\( \hat{x}_i \)$$ son los valores de la señal reconstruida.
 
-###RESULTADOS
 
 ### 5.3. Análisis de Señales EEG
 
@@ -477,3 +476,4 @@ En general, el procesamiento de las señales EEG, ECG y EMG ha sido efectivo par
 
 [7] A. Kumar, H. Tomar, V. K. Mehla, R. Komaragiri y M. Kumar, “Stationary wavelet transform based ECG signal denoising method”, ISA Trans., diciembre de 2020. Accedido el 23 de octubre de 2024. [En línea]. Disponible: https://doi.org/10.1016/j.isatra.2020.12.029
 
+[8] J. RUIZ SALAZAR. “IMPLEMENTACIÓN DE LA TRANSFORMADA WAVELET SOBRE UN SISTEMA EMBEBIDO PARA EL PRE-PROCESAMIENTO DE SEÑALES UNIDIMENSIONALES NO ESTACIONARIAS”. Biblioteca Digital USB - Universidad de San Buenaventura ::Inicio. Accedido el 23 de octubre de 2024. [En línea]. Disponible: https://bibliotecadigital.usb.edu.co/server/api/core/bitstreams/c77ceb81-363f-4cf2-8f55-18030470ac5b/content
