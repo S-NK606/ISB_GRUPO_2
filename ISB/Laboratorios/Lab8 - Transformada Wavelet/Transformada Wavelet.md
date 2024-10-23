@@ -360,31 +360,37 @@ Donde \(X(a, b)\) son los coeficientes wavelet umbralizados y \(\psi_{a, b}(t)\)
 |Coeficientes de Detalle|![Imagen 2](./WAVELET_EEG/NIVELES_PREGUNTAS_PART1.png) ![Imagen 2](./WAVELET_EEG/NIVELES_PREGUNTAS_PART2.png) |
 
 #### 6.2 ECG
-| Señal original del estado en ejercicio | Señal de 4.2 a 5 seg |
-| --- | --- |
-| ![Imagen 1](./WAVELET_ECG/comparacion_Ejercicio (1ra derivación).png) | ![Imagen 2](./WAVELET_ECG/comparacion_Ejercicio (1ra derivación)_4.2-5s.png) |
-
-
 | Señal original del estado basal | Señal de 4.2 a 5 seg |
 | --- | --- |
-| ![Imagen 1](./WAVELET_ECG/comparacion_Estado Basal (1ra derivación).png) | ![Imagen 2](./WAVELET_ECG/comparacion_Estado Basal (1ra derivación)_4.2-5s.png) |
+| <img src="/ISB/Laboratorios/Lab8 - Transformada Wavelet/WAVELET_ECG/comparacion_Estado Basal (1ra derivación).png" width="500" height="266"> | <img src="/ISB/Laboratorios/Lab8 - Transformada Wavelet/WAVELET_ECG/comparacion_Estado Basal (1ra derivación)_4.2-5s.png" width="500" height="266"> |
+
+
+| Señal original del estado en ejercicio | Señal de 4.2 a 5 seg |
+| --- | --- |
+| <img src="/ISB/Laboratorios/Lab8 - Transformada Wavelet/WAVELET_ECG/comparacion_Ejercicio (1ra derivación).png" width="500" height="266"> | <img src="/ISB/Laboratorios/Lab8 - Transformada Wavelet/WAVELET_ECG/comparacion_Ejercicio (1ra derivación)_4.2-5s.png" width="500" height="266"> |
 
 
 | Señal original del estado en respiración | Señal de 4.2 a 5 seg |
 | --- | --- |
-| ![Imagen 1](./WAVELET_ECG/comparacion_Estado con respiración (1ra derivación).png) | ![Imagen 2](./WAVELET_ECG/comparacion_Estado con respiración (1ra derivación)_4.2-5s.png) |
+| <img src="/ISB/Laboratorios/Lab8 - Transformada Wavelet/WAVELET_ECG/comparacion_Estado con respiración (1ra derivación).png" width="500" height="266"> | <img src="/ISB/Laboratorios/Lab8 - Transformada Wavelet/WAVELET_ECG/comparacion_Estado con respiración (1ra derivación)_4.2-5s.png" width="500" height="266"> |
 
 
-| Señal original de la simulación 150 bpm | Señal de 4.2 a 5 seg |
+| Señal original del estado sin respiración | Señal de 4.2 a 5 seg |
 | --- | --- |
-| ![Imagen 1](./WAVELET_ECG/comparacion_Simulación a 150 bpm.png) | ![Imagen 2](./WAVELET_ECG/comparacion_Simulación a 150 bpm_4.2-5s.png) |
+| <img src="/ISB/Laboratorios/Lab8 - Transformada Wavelet/WAVELET_ECG/comparacion_Estado sin respiración (1ra derivación).png" width="500" height="266"> | <img src="/ISB/Laboratorios/Lab8 - Transformada Wavelet/WAVELET_ECG/comparacion_Estado sin respiración (1ra derivación)_4.2-5s.png" width="500" height="266"> |
 
 
 | Señal original de la simulación 60 bpm | Señal de 4.2 a 5 seg |
 | --- | --- |
-|<img src="/ISB/Laboratorios/Lab8 - Transformada Wavelet/WAVELET_ECG/Resultados_ECG.png" width="400" height="266"> | ![Imagen 2](./WAVELET_ECG/comparacion_Simulación a 60 bpm_4.2-5s.png) |
+| <img src="/ISB/Laboratorios/Lab8 - Transformada Wavelet/WAVELET_ECG/comparacion_Simulación a 60 bpm.png" width="500" height="266"> | <img src="/ISB/Laboratorios/Lab8 - Transformada Wavelet/WAVELET_ECG/comparacion_Simulación a 60 bpm_4.2-5s.png" width="500" height="266"> ||
 
-<p align="center"><img src="/ISB/Laboratorios/Lab8 - Transformada Wavelet/WAVELET_ECG/Resultados_ECG.png" width="400" height="266"></p>
+
+| Señal original de la simulación 150 bpm | Señal de 4.2 a 5 seg |
+| --- | --- |
+| <img src="/ISB/Laboratorios/Lab8 - Transformada Wavelet/WAVELET_ECG/comparacion_Simulación a 150 bpm.png" width="500" height="266"> | <img src="/ISB/Laboratorios/Lab8 - Transformada Wavelet/WAVELET_ECG/comparacion_Simulación a 150 bpm_4.2-5s.png" width="500" height="266"> |
+
+
+<p align="center"><img src="/ISB/Laboratorios/Lab8 - Transformada Wavelet/WAVELET_ECG/Resultados_ECG.png" width="900" height="266"></p>
 </p>
 
 ## 7. Conclusiones
