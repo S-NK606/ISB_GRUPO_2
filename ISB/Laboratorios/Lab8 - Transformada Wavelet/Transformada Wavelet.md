@@ -218,7 +218,7 @@ La calidad de las señales denoised se evaluó utilizando las siguientes métric
    
    $$\text{SNR} = 10 \log_{10} \left(\frac{\text{Potencia de la señal}}{\text{Potencia del ruido}}\right)$$
 
-3. *Error Cuadrático Medio (MSE)*:
+2. *Error Cuadrático Medio (MSE)*:
    
    $$\text{MSE} = \frac{1}{N} \sum_{i=1}^{N} (x_i - \hat{x}_i)^2$$
 
@@ -226,6 +226,19 @@ Donde:
 - $$\( x_i \)$$ son los valores de la señal original.
 - $$\( \hat{x}_i \)$$ son los valores de la señal reconstruida.
 
+3. Fórmula de PSNR (Peak Signal-to-Noise Ratio)
+
+El PSNR se calcula a partir del *Error Cuadrático Medio (MSE)*, que mide las diferencias promedio al cuadrado entre los valores originales y los valores distorsionados de la señal. La fórmula general para el PSNR es:
+
+
+PSNR = 10 \cdot \log_{10} \left( \frac{MAX_I^2}{MSE} \right)
+
+
+Donde:
+- \( MAX_I \) es el valor máximo posible de la señal de entrada. Para una imagen de 8 bits, este valor sería 255.
+- \( MSE \) es el *Error Cuadrático Medio*
+
+El valor de PSNR se expresa en decibelios (dB), y un valor más alto indica que la señal reconstruida o procesada es más similar a la señal original.
 
 ### 5.3. Análisis de Señales EEG
 
