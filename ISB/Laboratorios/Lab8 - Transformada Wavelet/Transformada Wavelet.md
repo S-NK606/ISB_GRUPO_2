@@ -382,7 +382,7 @@ Donde \(X(a, b)\) son los coeficientes wavelet umbralizados y \(\psi_{a, b}(t)\)
 
 | Señal original de la simulación 60 bpm | Señal de 4.2 a 5 seg |
 | --- | --- |
-| ![Imagen 1](./WAVELET_ECG/comparacion_Simulación a 60 bpm.png) | ![Imagen 2](./WAVELET_ECG/comparacion_Simulación a 60 bpm_4.2-5s.png) |
+|<img src="/ISB/Laboratorios/Lab8 - Transformada Wavelet/WAVELET_ECG/Resultados_ECG.png" width="400" height="266"> | ![Imagen 2](./WAVELET_ECG/comparacion_Simulación a 60 bpm_4.2-5s.png) |
 
 <p align="center"><img src="/ISB/Laboratorios/Lab8 - Transformada Wavelet/WAVELET_ECG/Resultados_ECG.png" width="400" height="266"></p>
 </p>
