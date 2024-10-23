@@ -84,6 +84,7 @@ Evaluar el uso de la transformada wavelet en el procesamiento de señales biomé
 
 </div>
 <p align="justify">
+   
 ## 5. Metodología
 **Recolección de datos**
 Para este estudio, se utilizaron datasets correspondientes a señales de electromiograma (EMG), electrocardiograma (ECG) y electroencefalograma (EEG). Estas señales, obtenidas en laboratorios previos, contienen información valiosa sobre la actividad fisiológica de músculos, corazón y cerebro, respectivamente, pero están contaminadas por diversos tipos de ruido.
@@ -219,31 +220,6 @@ Donde:
 - $$\( \hat{x}_i \)$$ son los valores de la señal reconstruida.
 
 ###RESULTADOS
-La segundas señales son intervalos para que se pueda ver mejor la señal
-
-#### EMG - Biceps braquial en reposo
-
-| Señal original | Señal filtrada |
-| --- | --- |
-| ![Imagen 1](./WAVELET_EMG/EMG1_1.png) | ![Imagen 2](./WAVELET_EMG/EMG1_2.png) |
-| ![Imagen 1](./WAVELET_EMG/EMG1_3.png) | ![Imagen 2](./WAVELET_EMG/EMG1_4.png) |
-
-
-#### EMG - Biceps braquial con oposición leve
-
-| Señal original | Señal filtrada |
-| --- | --- |
-| ![Imagen 1](./WAVELET_EMG/EMG2_1.png) | ![Imagen 2](./WAVELET_EMG/EMG2_2.png) |
-| ![Imagen 1](./WAVELET_EMG/EMG2_3.png) | ![Imagen 2](./WAVELET_EMG/EMG2_4.png) |
-
-
-#### EMG - Biceps braquial con oposición fuerte
-| Señal original | Señal filtrada |
-| --- | --- |
-| ![Imagen 1](./WAVELET_EMG/EMG3_1.png) | ![Imagen 2](./WAVELET_EMG/EMG3_2.png) |
-| ![Imagen 1](./WAVELET_EMG/EMG3_3.png) | ![Imagen 2](./WAVELET_EMG/EMG3_4.png) |
-
-
 
 ### 5.3. Análisis de Señales EEG
 
@@ -408,6 +384,48 @@ Donde \(X(a, b)\) son los coeficientes wavelet umbralizados y \(\psi_{a, b}(t)\)
 - **Global**: Los valores de RMSE (que miden el error medio cuadrático entre las señales originales y las denoised) están por debajo de **2.6**, lo cual indica que el error es bastante bajo y consistente en las diferentes señales.
 - **Segmento (4.2-5 s)**: Similarmente, los valores de RMSE son muy cercanos a los globales, lo que indica una consistencia en la calidad de la denoising a lo largo de la señal.
 
+#### 6.3 EMG
+
+#### EMG - Biceps braquial en reposo
+
+| Señal original | Señal filtrada |
+| --- | --- |
+| ![Imagen 1](./WAVELET_EMG/EMG1_1.png) | ![Imagen 2](./WAVELET_EMG/EMG1_2.png) |
+|               Señal recortada de 10 a 11 segundos                             |
+| ![Imagen 1](./WAVELET_EMG/EMG1_3.png) | ![Imagen 2](./WAVELET_EMG/EMG1_4.png) |
+
+
+#### EMG - Biceps braquial con oposición leve
+
+| Señal original | Señal filtrada |
+| --- | --- |
+| ![Imagen 1](./WAVELET_EMG/EMG2_1.png) | ![Imagen 2](./WAVELET_EMG/EMG2_2.png) |
+|               Señal recortada de 18 a 19 segundos                             |
+| ![Imagen 1](./WAVELET_EMG/EMG2_3.png) | ![Imagen 2](./WAVELET_EMG/EMG2_4.png) |
+
+
+#### EMG - Biceps braquial con oposición fuerte
+| Señal original | Señal filtrada |
+| --- | --- |
+| ![Imagen 1](./WAVELET_EMG/EMG3_1.png) | ![Imagen 2](./WAVELET_EMG/EMG3_2.png) |
+|               Señal recortada de 11.5 a 12 segundos                             |
+| ![Imagen 1](./WAVELET_EMG/EMG3_3.png) | ![Imagen 2](./WAVELET_EMG/EMG3_4.png) |
+
+##### Métricas obtenidas:
+<p align="center"><img src="/ISB/Laboratorios/Lab8 - Transformada Wavelet/WAVELET_EMG/TABLA.jpg" width="600" height="200"></p>
+</p>
+
+###### SNR (Signal-to-Noise Ratio):
+
+- Las señales en general se pueden ver que están en el límite de aceptación respecto a lo que es una señal aceptable, ya que aún con ello poseen un ruido notable. Entre las tres señales ninguna es mayor a los 20dB, indicando que se debe mejorar el filtrado, sobre todo para la señal en oposición leve que es quien tiene el SNR más bajo: 12.86 dB.
+
+###### MSE (Mean Squared Error):
+
+- Los valores se mantienen menores a 0.01 pero mayores o cercanos a 0.001 lo que indica que la señal original se acerca en similitud a la señal filtrada, indicando que las señales no están distorsionadas en comparación con las originales.
+
+###### PSNR (Peak Signal-to-Noise Ratio):
+
+- El PSNR mide la calidad de la señal en base a su valor máximo posible, comparandolo con la señal original. En el caso de la señal de reposo (19.23 dB), la calidad es razonable pero se entiende que posee distorsión. En cambio la señal en oposición leve y fuerte (28.26 dB y 29.49 dB respectivamente) poseen una calidad mayor en comparación a la de reposo. Incluso, la señal en oposición fuerte es la mayor aunque su error MSE sea el más grande.
 
 ## 7. Conclusiones
 
