@@ -157,9 +157,9 @@ Estas métricas permitieron comparar la señal original con la señal procesada,
 ### 5.2. Análisis de Señales EMG
 
 DATOS:
-Familia elejida: db4 </b>
-Nivel de descomposición: 5 </b> 
-Técnica de filtrado: Filtrado suave de Boyes </b>
+Familia elejida: db4 </p>
+Nivel de descomposición: 5 </p>
+Técnica de filtrado: Filtrado suave de Boyes </p>
 
 *Recolección de Datos*
 
