@@ -335,6 +335,17 @@ Donde \(X(a, b)\) son los coeficientes wavelet umbralizados y \(\psi_{a, b}(t)\)
 |Señal filtrada|![Imagen 2](./WAVELET_EEG/SENAL_FILTRADA_PREGUNTAS.png) |
 |Coeficientes de Detalle|![Imagen 2](./WAVELET_EEG/NIVELES_PREGUNTAS_PART1.png) ![Imagen 2](./WAVELET_EEG/NIVELES_PREGUNTAS_PART2.png) |
 
+
+
+## - Reposo I y II
+En la señal original, se observan picos prominentes, algunos cercanos a los 900 µV, reflejando artefactos típicos de parpadeo y actividad muscular facial, especialmente al inicio de la señal. Después de aplicar la transformada wavelet, los picos se reducen significativamente, con una amplitud máxima de alrededor de 800 µV. El filtrado elimina de manera efectiva estos artefactos, mejorando la claridad de los patrones neuronales basales y permitiendo una observación más precisa de la actividad cerebral en reposo.
+
+## - Ciclo de Ojos
+La señal original del ciclo de ojos presenta amplias fluctuaciones debido a los movimientos oculares, con picos de gran magnitud que superan los observados en reposo. Estos artefactos son esperados y notoriamente altos. Tras el filtrado, se logra una disminución considerable de las oscilaciones de alta amplitud, preservando las frecuencias bajas asociadas con la actividad cerebral subyacente. Esto demuestra la eficacia del filtrado para atenuar los artefactos oculares sin afectar la señal cerebral relevante.
+
+## - Razonamiento Matemático
+En este estado, los picos alrededor del segundo 2 y hacia el final de la señal original reflejan una alta carga cognitiva. Tras el filtrado, se mantiene el pico dominante del segundo 2, pero con una mejor resolución, permitiendo resaltar la respuesta neuronal a la tarea cognitiva. La reducción de ruido es clara, destacando los momentos de mayor activación cerebral, lo que optimiza el análisis de la actividad neuronal asociada a la resolución de problemas.
+
 #### 6.2 ECG
 | Señal original del estado basal | Señal de 4.2 a 5 seg |
 | --- | --- |
