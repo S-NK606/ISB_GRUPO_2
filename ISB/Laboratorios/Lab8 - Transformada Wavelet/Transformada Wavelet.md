@@ -439,6 +439,23 @@ Para las señales de EEG provinientes del Reposo I y II, en la señal original s
 
 ## 7. Conclusiones
 
+El análisis de las señales EEG, ECG y EMG muestra cómo las técnicas de procesamiento de señales, como el filtrado y la transformada wavelet, mejoran significativamente la calidad de los datos, eliminando artefactos y reduciendo el ruido, lo que facilita la interpretación de la actividad fisiológica subyacente.</p>
+
+#### EEG </p>
+Para las señales EEG de reposo y ciclos oculares, se observó que los artefactos de parpadeo y actividad muscular facial afectaban la claridad de las señales, especialmente en los primeros segundos. Estos artefactos fueron mitigados de manera eficiente mediante la transformada wavelet, logrando una reducción notable en los picos de amplitud, lo que permite una observación más precisa de la actividad cerebral en reposo. En el caso de la prueba de razonamiento matemático, los picos asociados a la alta carga cognitiva se mantuvieron después del filtrado, pero con una mejor resolución, lo que facilita el análisis de la respuesta neuronal. Esto demuestra que las técnicas de filtrado aplicadas no solo reducen el ruido, sino que preservan las características importantes de las señales, como los picos relacionados con la actividad cognitiva, permitiendo un análisis más detallado y preciso de la actividad cerebral en diferentes estados.</p>
+
+#### ECG </p>
+En el análisis de las señales ECG, el alto SNR (mayor a 45 dB) confirma que la señal ha sido limpiada de manera efectiva, conservando la mayor parte de la información útil. Tanto a nivel global como en segmentos específicos, los resultados indican que el denoising fue consistente, con valores bajos de PRD (<1%) y RMSE (<2.6), lo que sugiere una alta precisión en la reconstrucción de la señal. Esto es crucial para garantizar que la señal procesada sea fiel a la original, permitiendo un análisis fiable de la actividad cardíaca sin interferencias significativas de ruido. Las simulaciones realizadas en diferentes frecuencias cardíacas, como 60 y 150 bpm, refuerzan la efectividad del proceso, con valores de PRD llegando a 0.23%, lo cual es excelente.</p>
+
+#### EMG </p>
+En cuanto a las señales EMG, se observa que el filtrado actual no es completamente óptimo, ya que los valores de SNR son bajos, especialmente en la señal de oposición leve (12.86 dB), lo que indica la necesidad de mejorar el proceso de denoising. Sin embargo, los valores de MSE, que se mantienen por debajo de 0.01, reflejan que las señales originales y filtradas son muy similares, lo cual es positivo. El análisis del PSNR muestra que la calidad de las señales varía según el tipo de oposición, siendo la señal en oposición fuerte la de mejor calidad (29.49 dB), seguida de la oposición leve (28.26 dB). La señal en reposo, con un PSNR de 19.23 dB, presenta más distorsión, lo que resalta la necesidad de mejorar el filtrado en escenarios de baja actividad muscular.</p>
+
+En general, el procesamiento de las señales EEG, ECG y EMG ha sido efectivo para reducir el ruido y mejorar la claridad de las señales, permitiendo una interpretación más precisa de la actividad cerebral, cardíaca y muscular. Sin embargo, se identifican áreas de mejora, particularmente en el filtrado de las señales EMG, donde el SNR podría aumentarse para mejorar la calidad de la señal. Estos resultados destacan la importancia del filtrado adecuado para obtener datos más precisos y confiables en estudios fisiológicos, lo cual es crucial para aplicaciones en investigación biomédica y clínica.
+
+
+
+
+
 ## 8. Referencias bibliográficas
 
 [1] M. Akay, "Wavelets in Biomedical Engineering," Annals of Biomedical Engineering, vol. 23, no. 5, pp. 531-542, doi: 10.1007/BF02584453.
