@@ -83,6 +83,7 @@ Evaluar el uso de la transformada wavelet en el procesamiento de señales biomé
 |       -       | Laptop o PC   | 1        |
 
 </div>
+<p align="justify">
 ## 5. Metodología
 **Recolección de datos**
 Para este estudio, se utilizaron datasets correspondientes a señales de electromiograma (EMG), electrocardiograma (ECG) y electroencefalograma (EEG). Estas señales, obtenidas en laboratorios previos, contienen información valiosa sobre la actividad fisiológica de músculos, corazón y cerebro, respectivamente, pero están contaminadas por diversos tipos de ruido.
