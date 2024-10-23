@@ -330,7 +330,7 @@ Donde \(X(a, b)\) son los coeficientes wavelet umbralizados y \(\psi_{a, b}(t)\)
 
 | Señal original | Señal filtrada |
 | --- | --- |
-| ![Imagen 1](./WAVELET_EEG/SEÑAL ORIGINAL REPOSOI.png) | ![Imagen 2](./WAVELET_EEG/SEÑAL FILTRADA REPOSOI.png) |
+| ![Imagen 1](./WAVELET_EEG/SENAL_ORIGINAL_REPOSOI.png) | ![Imagen 2](./WAVELET_EEG/SENAL_FILTRADA_REPOSOI.png) |
 
 
 ## 7. Conclusiones
