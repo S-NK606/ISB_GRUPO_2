@@ -325,6 +325,14 @@ $$
 Donde \(X(a, b)\) son los coeficientes wavelet umbralizados y \(\psi_{a, b}(t)\) son las wavelets escaladas y trasladadas.
 ## 6. Resultados y discusiones
 
+
+#### EEG - PRIMER ESTADO DE REPOSO
+
+| Señal original | Señal filtrada |
+| --- | --- |
+| ![Imagen 1](./WAVELET_EEG/SEÑAL ORIGINAL REPOSOI.png) | ![Imagen 2](./WAVELET_EEG/SEÑAL FILTRADA REPOSOI.png) |
+
+
 ## 7. Conclusiones
 
 ## 8. Referencias bibliográficas
