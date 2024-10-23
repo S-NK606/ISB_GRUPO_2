@@ -155,6 +155,12 @@ Estas métricas permitieron comparar la señal original con la señal procesada,
 
 
 ### 5.2. Análisis de Señales EMG
+
+DATOS:
+Familia elejida: db4
+Nivel de descomposición: 5
+Técnica de filtrado: Filtrado suave de Boyes 
+
 *Recolección de Datos*
 
 Se recopilaron señales de electromiografía (EMG) utilizando electrodos superficiales en músculos específicos. Las señales se obtuvieron durante diversas actividades motoras, en laboratorios previos.
