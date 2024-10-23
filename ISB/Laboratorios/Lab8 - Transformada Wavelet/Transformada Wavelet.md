@@ -389,9 +389,25 @@ Donde \(X(a, b)\) son los coeficientes wavelet umbralizados y \(\psi_{a, b}(t)\)
 | --- | --- |
 | <img src="/ISB/Laboratorios/Lab8 - Transformada Wavelet/WAVELET_ECG/comparacion_Simulación a 150 bpm.png" width="500" height="266"> | <img src="/ISB/Laboratorios/Lab8 - Transformada Wavelet/WAVELET_ECG/comparacion_Simulación a 150 bpm_4.2-5s.png" width="500" height="266"> |
 
+##### Métricas obtenidas:
 
 <p align="center"><img src="/ISB/Laboratorios/Lab8 - Transformada Wavelet/WAVELET_ECG/Resultados_ECG.png" width="900" height="266"></p>
 </p>
+
+###### SNR (Signal-to-Noise Ratio):
+
+- **Global**: En todas las señales, el SNR es muy alto (mayor de 45 dB), lo cual indica que la señal denoised conserva gran parte de la información útil, y el ruido ha sido eliminado de manera eficiente.
+- **Segmento (4.2-5 s)**: Los SNR en este segmento específico también son altos, lo que sugiere que el denoising es consistente tanto a nivel global como en el segmento seleccionado.
+
+###### PRD (Percentage Root-mean-square Difference):
+
+- Valores de **PRD menores al 1%** indican que la diferencia entre la señal original y la denoised es muy pequeña, lo que significa que la reconstrucción de la señal es bastante precisa. En todos los casos, el PRD es bajo, incluso llegando a **0.23%** en las simulaciones de 60 y 150 bpm, lo que es excelente.
+
+###### RMSE (Root Mean Square Error):
+
+- **Global**: Los valores de RMSE (que miden el error medio cuadrático entre las señales originales y las denoised) están por debajo de **2.6**, lo cual indica que el error es bastante bajo y consistente en las diferentes señales.
+- **Segmento (4.2-5 s)**: Similarmente, los valores de RMSE son muy cercanos a los globales, lo que indica una consistencia en la calidad de la denoising a lo largo de la señal.
+
 
 ## 7. Conclusiones
 
