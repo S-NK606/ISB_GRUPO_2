@@ -26,6 +26,37 @@ En este informe, se abordará el uso de las transformadas wavelet en el procesam
 
 ## 2. Marco teórico
 
+**2.1 ¿Qué es la transformada de Wavelet?**
+<p align="justify">
+La transformada de Wavelet es una herramienta matemática utilizada para el análisis de señales no estacionarias. Permite descomponer una señal en distintos niveles de frecuencia y tiempo, manteniendo la ubicación temporal de sus características. A diferencia de la transformada de Fourier, que solo proporciona información en el dominio de la frecuencia, la transformada de Wavelet ofrece un análisis multiresolución, lo que la hace ideal para estudiar señales con variaciones abruptas o transitorias​   .
+
+**2.2 ¿Cuáles son sus características?**
+   
+<p align="justify">
+La transformada de Wavelet tiene varias características que la hacen adecuada para el análisis de señales no estacionarias​   :
+
+- **Localización tiempo-frecuencia**: A diferencia de la transformada de Fourier, la transformada de Wavelet permite analizar una señal en ambos dominios, temporal y frecuencial, lo cual es crucial para señales que cambian a lo largo del tiempo. Esta técnica divide la señal en componentes de frecuencia, mientras conserva la información temporal, lo que facilita la identificación de cuándo ocurren eventos específicos en la señal​.
+  
+- **Análisis multiresolución**: La transformada Wavelet puede realizar análisis a diferentes escalas, utilizando ventanas amplias para bajas frecuencias y ventanas más pequeñas para altas frecuencias. Esto es útil para el análisis de señales como EEG, ECG o EMG, donde los eventos pueden variar en frecuencia y duración​.
+
+- **Adaptabilidad**: La Wavelet ajusta dinámicamente el tamaño de la ventana de análisis según la frecuencia de la señal. Para bajas frecuencias, utiliza ventanas más largas, y para altas frecuencias, ventanas más cortas, lo que mejora la precisión temporal​.
+
+- **Detección de transitorios**: Es especialmente efectiva para identificar eventos cortos y abruptos en una señal, como picos o rupturas, lo que es útil en áreas como la sismología, medicina o ingeniería eléctrica​.
+
+- **Invertibilidad**: La transformada de Wavelet es invertible, lo que permite reconstruir la señal original a partir de sus coeficientes sin pérdida de información, siempre que no se alteren​.
+
+**2.3 ¿Cuál es su clasificación?**
+
+La transformada de Wavelet se clasifica en varias modalidades según su implementación y aplicación en el análisis de señales​   :
+
+- **Transformada Wavelet Continua (CWT)**: Proporciona una representación detallada de la señal en escalas continuas de tiempo y frecuencia. Aunque es muy precisa, genera una gran cantidad de datos redundantes, lo que la hace menos eficiente en términos de procesamiento y almacenamiento​.
+
+- **Transformada Wavelet Discreta (DWT)**: Utiliza un conjunto discreto de escalas y posiciones, lo que reduce la redundancia y mejora la eficiencia. La DWT es comúnmente usada en el procesamiento de señales biomédicas y en la compresión de datos​.
+
+- **Transformada Wavelet Estacionaria (SWT)**: Es una variante de la DWT que no submuestrea la señal, lo que mantiene la localización temporal sin pérdida de datos por desplazamiento, aunque aumenta la redundancia y los requerimientos de procesamiento​.
+
+- **Wavelet Shrinkage**: Este método se usa para la eliminación de ruido en señales. Aplica umbrales a los coeficientes de Wavelet para eliminar aquellos que contienen ruido, conservando los que representan la señal útil, siendo ideal para señales como ECG o EEG​.
+
 ## 3. Objetivos
 
 ### Objetivo general
