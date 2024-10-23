@@ -113,6 +113,32 @@ Estas métricas permitieron comparar la señal original con la señal procesada,
 
 ### 5.2. Análisis de Señales EMG
 
+La segundas señales son intervalos para que se pueda ver mejor la señal
+
+#### EMG - Biceps braquial en reposo
+
+| Señal original | Señal filtrada |
+| --- | --- |
+| ![Imagen 1](./WAVELET_EMG/EMG1_1.png) | ![Imagen 2](./WAVELET_EMG/EMG1_2.png) |
+| ![Imagen 1](./WAVELET_EMG/EMG1_3.png) | ![Imagen 2](./WAVELET_EMG/EMG1_4.png) |
+
+
+#### EMG - Biceps braquial con oposición leve
+
+| Señal original | Señal filtrada |
+| --- | --- |
+| ![Imagen 1](./WAVELET_EMG/EMG2_1.png) | ![Imagen 2](./WAVELET_EMG/EMG2_2.png) |
+| ![Imagen 1](./WAVELET_EMG/EMG2_3.png) | ![Imagen 2](./WAVELET_EMG/EMG2_4.png) |
+
+
+#### EMG - Biceps braquial con oposición fuerte
+| Señal original | Señal filtrada |
+| --- | --- |
+| ![Imagen 1](./WAVELET_EMG/EMG3_1.png) | ![Imagen 2](./WAVELET_EMG/EMG3_2.png) |
+| ![Imagen 1](./WAVELET_EMG/EMG3_3.png) | ![Imagen 2](./WAVELET_EMG/EMG3_4.png) |
+
+
+
 ### 5.3. Análisis de Señales EEG
 
 
