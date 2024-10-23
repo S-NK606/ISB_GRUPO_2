@@ -233,8 +233,8 @@ El PSNR se calcula a partir del *Error Cuadrático Medio (MSE)*, que mide las di
 $$PSNR = 10 \cdot \log_{10} \left( \frac{MAX_I^2}{MSE} \right)$$
 
 Donde:
-- \( MAX_I \) es el valor máximo posible de la señal de entrada. Para una imagen de 8 bits, este valor sería 255.
-- \( MSE \) es el *Error Cuadrático Medio*
+- $$\( MAX_I \)$$ es el valor máximo posible de la señal de entrada. Para una imagen de 8 bits, este valor sería 255.
+- $$\( MSE \)$$ es el *Error Cuadrático Medio*
 
 El valor de PSNR se expresa en decibelios (dB), y un valor más alto indica que la señal reconstruida o procesada es más similar a la señal original.
 
