@@ -91,6 +91,9 @@ Para este estudio, se utilizaron datasets correspondientes a señales de electro
 
 ### 5.1. Análisis de Señales ECG
 
+Parametros usados en el filtrado de señales: </p> 
+Se ha realizado un filtrado utilizando la wavelet biorthogonal 3.1 con un nivel de descomposición 4. Este método ha logrado reducir el ruido de las señales, manteniendo la integridad de las características esenciales para un análisis detallado. </p> 
+
 *Preprocesamiento*
 
 Antes de aplicar la Transformada Wavelet Discreta (DWT), cada señal fue filtrada utilizando técnicas de **filtro de paso bajo** y **filtro de paso alto** para mitigar el ruido de alta y baja frecuencia, respectivamente. Estos filtros son esenciales para eliminar interferencias como el ruido de línea base y los artefactos electromagnéticos, comunes en las señales biomédicas.
@@ -156,10 +159,8 @@ Estas métricas permitieron comparar la señal original con la señal procesada,
 
 ### 5.2. Análisis de Señales EMG
 
-DATOS:
-Familia elejida: db4 </p>
-Nivel de descomposición: 5 </p>
-Técnica de filtrado: Filtrado suave de Boyes </p>
+Parametros usados en el filtrado de señales:  </p>
+Se ha aplicado un filtrado con la wavelet db4 a nivel de descomposición 5, utilizando la técnica de filtrado suave de Boyes. Este proceso ha reducido eficazmente el ruido de las señales, preservando las características fisiológicas clave para un análisis más preciso.</p>
 
 *Recolección de Datos*
 
