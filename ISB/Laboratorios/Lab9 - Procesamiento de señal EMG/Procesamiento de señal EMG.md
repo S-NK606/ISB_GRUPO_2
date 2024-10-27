@@ -1,4 +1,4 @@
-# INFORME LABORATORIO 9 - Procesamiento de señal EMG
+# Análisis y Procesamiento de Señal EMG para Clasificación de Movimientos Basado en la Transformada Wavelet y Extracción de Características
 
 ## Tabla de Contenidos
 
@@ -16,8 +16,11 @@
 
 <div style="text-align: justify;">
 
-texto
+La electromiografía de superficie (sEMG, por sus siglas en inglés) es una técnica ampliamente utilizada en el análisis de actividad muscular y aplicaciones de interfaces hombre-máquina, debido a su capacidad para capturar patrones eléctricos generados durante las contracciones musculares. Sin embargo, el sEMG enfrenta desafíos significativos, como la presencia de artefactos y ruidos, principalmente de origen cardíaco y del entorno, que afectan la precisión de las señales recolectadas [1], [2].
 
+Para optimizar la calidad y utilidad de las señales EMG, los procesos de preprocesamiento y extracción de características son esenciales. Entre los métodos de procesamiento, la transformada wavelet ha demostrado ser una técnica poderosa para la descomposición y análisis en tiempo-frecuencia, permitiendo extraer información significativa de señales no estacionarias, como es el caso de las señales EMG [3]. La extracción de características a partir de estas transformadas facilita la clasificación de gestos o contracciones musculares mediante algoritmos de aprendizaje automático, mejorando así el reconocimiento de patrones en interfaces de control para prótesis y aplicaciones de rehabilitación [4].
+
+Este trabajo presenta un análisis exhaustivo del procesamiento de señales EMG utilizando la transformada wavelet para extraer características robustas, que permitan una clasificación precisa de movimientos. Además, se exploran métodos de optimización de características para reducir la dimensionalidad y mejorar la eficiencia de los clasificadores, manteniendo la precisión en contextos de múltiples días, donde las variaciones en las señales pueden impactar negativamente el rendimiento de los modelos entrenados.
 </div>
 
 ## 2. Marco teórico
@@ -31,10 +34,17 @@ texto
 ## 3. Objetivos
 
 ### Objetivo general
-texto
+Desarrollar un método efectivo de procesamiento de señales EMG utilizando la transformada wavelet y técnicas de extracción de características para mejorar la precisión en la clasificación de movimientos musculares y gestos, con aplicaciones en interfaces hombre-máquina y rehabilitación.
 
-### Objetivos específicos
-texto
+### Objetivos Específicos
+1. Analizar y comparar diferentes métodos de preprocesamiento de señales EMG, incluyendo técnicas de eliminación de ruido y artefactos, para optimizar la calidad de las señales utilizadas en el estudio.
+
+2. Implementar la transformada wavelet para la descomposición y análisis en tiempo-frecuencia de señales EMG, evaluando su capacidad para capturar patrones significativos en señales no estacionarias.
+
+3. Extraer y seleccionar características relevantes de las señales EMG utilizando métodos de extracción de características basados en dominios de tiempo y frecuencia, con el fin de optimizar la clasificación de movimientos.
+
+4. Desarrollar una estrategia de optimización de características para reducir la dimensionalidad de las señales EMG, manteniendo la precisión del modelo y mejorando la eficiencia computacional.
+
 
 ## 4. Materiales y equipos
 
@@ -117,3 +127,10 @@ conclusiones xd
 
 ## 8. Referencias bibliográficas
 
+[1] X. Jiang et al., "Optimization of HD-sEMG-Based Cross-Day Hand Gesture Classification by Optimal Feature Extraction and Data Augmentation," IEEE Transactions on Human-Machine Systems, vol. 52, no. 6, pp. 1281-1289, Dec. 2022. doi: 10.1109/THMS.2022.3175408.
+
+[2] W. Lu, D. Gong, X. Xue, and L. Gao, "Improved multi-layer wavelet transform and blind source separation based ECG artifacts removal algorithm from the sEMG signal: in the case of upper limbs," Frontiers in Bioengineering and Biotechnology, vol. 12, pp. 1–10, May 2024. doi: 10.3389/fbioe.2024.1367929.
+
+[3] N. Li, J. Ou, H. He, J. He, L. Zhang, Z. Peng, J. Zhong, y N. Jiang, "Exploration of a machine learning approach for diagnosing sarcopenia among Chinese community-dwelling older adults using sEMG-based data," *Journal of NeuroEngineering and Rehabilitation*, vol. 21, p. 69, 2024. doi: 10.1186/s12984-024-01369-y. 
+
+[4] A. Phinyomark, P. Phukpattaranont, and C. Limsakul, "Feature reduction and selection for EMG signal classification," Expert Systems with Applications, vol. 39, no. 7, pp. 7420–7431, 2012. doi: 10.1016/j.eswa.2012.01.102.
