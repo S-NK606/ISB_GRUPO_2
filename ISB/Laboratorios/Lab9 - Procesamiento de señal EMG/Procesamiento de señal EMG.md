@@ -206,6 +206,135 @@ mas texto xd tabla no de resultados sino q de los cosos q se extraen
 |Hjorth2|![Imagen 2](./graficas_EMG/B/40.png)|
 |Kurtosis|![Imagen 2](./graficas_EMG/B/41.png)|
 |SSC|![Imagen 2](./graficas_EMG/B/42.png)|
+
+
+
+
+#### Gastrocnemio con Oposición Leve
+
+| Tipo de Señal| Gráficas|
+| --- | --- |
+|Señal original| ![Imagen 1](./graficas_EMG/G/45.png) |
+|Señal filtrada|![Imagen 2](./graficas_EMG/G/46.png) |
+|FFT de la señal original|![Imagen 2](./graficas_EMG/G/43.png) |
+|FFT de la señal filtrada|![Imagen 2](./graficas_EMG/G/44.png) |
+|Señal rectificada|![Imagen 2](./graficas_EMG/G/47.png) |
+|RMS y RMS normalizado|![Imagen 2](./graficas_EMG/G/48.png) |
+| Características obtenidas| Gráficas|
+|MFL|![Imagen 2](./graficas_EMG/G/49.png)|
+|MYOP|![Imagen 2](./graficas_EMG/G/50.png)|
+|V-Order|![Imagen 2](./graficas_EMG/G/51.png)|
+|WAMP|![Imagen 2](./graficas_EMG/G/52.png)|
+|SampEn|![Imagen 2](./graficas_EMG/G/53.png)|
+|Hjorth2|![Imagen 2](./graficas_EMG/G/54.png)|
+|Kurtosis|![Imagen 2](./graficas_EMG/G/55.png)|
+|SSC|![Imagen 2](./graficas_EMG/G/56.png)|
+
+#### Gastrocnemio con Oposición Fuerte
+
+
+| Tipo de Señal| Gráficas|
+| --- | --- |
+|Señal original| ![Imagen 1](./graficas_EMG/G/59.png) |
+|Señal filtrada|![Imagen 2](./graficas_EMG/G/60.png) |
+|FFT de la señal original|![Imagen 2](./graficas_EMG/G/57.png) |
+|FFT de la señal filtrada|![Imagen 2](./graficas_EMG/G/58.png) |
+|Señal rectificada|![Imagen 2](./graficas_EMG/G/61.png) |
+|RMS y RMS normalizado|![Imagen 2](./graficas_EMG/G/62.png) |
+| Características obtenidas| Gráficas|
+|MFL|![Imagen 2](./graficas_EMG/G/63.png)|
+|MYOP|![Imagen 2](./graficas_EMG/G/64.png)|
+|V-Order|![Imagen 2](./graficas_EMG/G/65.png)|
+|WAMP|![Imagen 2](./graficas_EMG/G/66.png)|
+|SampEn|![Imagen 2](./graficas_EMG/G/67.png)|
+|Hjorth2|![Imagen 2](./graficas_EMG/G/68.png)|
+|Kurtosis|![Imagen 2](./graficas_EMG/G/69.png)|
+|SSC|![Imagen 2](./graficas_EMG/G/70.png)|
+
+#### Gastrocnemio en Reposo
+
+| Tipo de Señal| Gráficas|
+| --- | --- |
+|Señal original| ![Imagen 1](./graficas_EMG/G/73.png) |
+|Señal filtrada|![Imagen 2](./graficas_EMG/G/74.png) |
+|FFT de la señal original|![Imagen 2](./graficas_EMG/G/71.png) |
+|FFT de la señal filtrada|![Imagen 2](./graficas_EMG/G/72.png) |
+|Señal rectificada|![Imagen 2](./graficas_EMG/G/75.png) |
+|RMS y RMS normalizado|![Imagen 2](./graficas_EMG/G/76.png) |
+| Características obtenidas| Gráficas|
+|MFL|![Imagen 2](./graficas_EMG/G/77.png)|
+|MYOP|![Imagen 2](./graficas_EMG/G/78.png)|
+|V-Order|![Imagen 2](./graficas_EMG/G/79.png)|
+|WAMP|![Imagen 2](./graficas_EMG/G/80.png)|
+|SampEn|![Imagen 2](./graficas_EMG/G/81.png)|
+|Hjorth2|![Imagen 2](./graficas_EMG/G/82.png)|
+|Kurtosis|![Imagen 2](./graficas_EMG/G/83.png)|
+|SSC|![Imagen 2](./graficas_EMG/G/84.png)|
+
+
+
+#### Dedo con Oposición Leve
+
+| Tipo de Señal| Gráficas|
+| --- | --- |
+|Señal original| ![Imagen 1](./graficas_EMG/D/87.png) |
+|Señal filtrada|![Imagen 2](./graficas_EMG/D/88.png) |
+|FFT de la señal original|![Imagen 2](./graficas_EMG/D/85.png) |
+|FFT de la señal filtrada|![Imagen 2](./graficas_EMG/D/86.png) |
+|Señal rectificada|![Imagen 2](./graficas_EMG/D/89.png) |
+|RMS y RMS normalizado|![Imagen 2](./graficas_EMG/D/90.png) |
+| Características obtenidas| Gráficas|
+|MFL|![Imagen 2](./graficas_EMG/D/91.png)|
+|MYOP|![Imagen 2](./graficas_EMG/D/92.png)|
+|V-Order|![Imagen 2](./graficas_EMG/D/93.png)|
+|WAMP|![Imagen 2](./graficas_EMG/D/94.png)|
+|SampEn|![Imagen 2](./graficas_EMG/D/95.png)|
+|Hjorth2|![Imagen 2](./graficas_EMG/D/96.png)|
+|Kurtosis|![Imagen 2](./graficas_EMG/D/97.png)|
+|SSC|![Imagen 2](./graficas_EMG/D/98.png)|
+
+#### Dedo con Oposición Fuerte
+
+
+| Tipo de Señal| Gráficas|
+| --- | --- |
+|Señal original| ![Imagen 1](./graficas_EMG/D/101.png) |
+|Señal filtrada|![Imagen 2](./graficas_EMG/D/102.png) |
+|FFT de la señal original|![Imagen 2](./graficas_EMG/D/99.png) |
+|FFT de la señal filtrada|![Imagen 2](./graficas_EMG/D/100.png) |
+|Señal rectificada|![Imagen 2](./graficas_EMG/D/103.png) |
+|RMS y RMS normalizado|![Imagen 2](./graficas_EMG/D/104.png) |
+| Características obtenidas| Gráficas|
+|MFL|![Imagen 2](./graficas_EMG/D/105.png)|
+|MYOP|![Imagen 2](./graficas_EMG/D/106.png)|
+|V-Order|![Imagen 2](./graficas_EMG/D/107.png)|
+|WAMP|![Imagen 2](./graficas_EMG/D/108.png)|
+|SampEn|![Imagen 2](./graficas_EMG/D/109.png)|
+|Hjorth2|![Imagen 2](./graficas_EMG/D/110.png)|
+|Kurtosis|![Imagen 2](./graficas_EMG/D/111.png)|
+|SSC|![Imagen 2](./graficas_EMG/D/112.png)|
+
+#### Dedo en Reposo
+
+| Tipo de Señal| Gráficas|
+| --- | --- |
+|Señal original| ![Imagen 1](./graficas_EMG/D/115.png) |
+|Señal filtrada|![Imagen 2](./graficas_EMG/D/116.png) |
+|FFT de la señal original|![Imagen 2](./graficas_EMG/D/113.png) |
+|FFT de la señal filtrada|![Imagen 2](./graficas_EMG/D/114.png) |
+|Señal rectificada|![Imagen 2](./graficas_EMG/D/117.png) |
+|RMS y RMS normalizado|![Imagen 2](./graficas_EMG/D/118.png) |
+| Características obtenidas| Gráficas|
+|MFL|![Imagen 2](./graficas_EMG/D/119.png)|
+|MYOP|![Imagen 2](./graficas_EMG/D/120.png)|
+|V-Order|![Imagen 2](./graficas_EMG/D/121.png)|
+|WAMP|![Imagen 2](./graficas_EMG/D/122.png)|
+|SampEn|![Imagen 2](./graficas_EMG/D/123.png)|
+|Hjorth2|![Imagen 2](./graficas_EMG/D/124.png)|
+|Kurtosis|![Imagen 2](./graficas_EMG/D/125.png)|
+|SSC|![Imagen 2](./graficas_EMG/D/126.png)|
+
+
 #### Discusiones de EMG
 
 discutan uwu
