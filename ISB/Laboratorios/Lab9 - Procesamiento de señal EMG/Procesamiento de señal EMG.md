@@ -42,45 +42,42 @@ La extracción de características en el análisis de señales sEMG es un paso c
 
 - **Características Temporales**: Las características temporales se extraen directamente de la amplitud de la señal sEMG en el dominio del tiempo. Son útiles para cuantificar la intensidad y la variación de la actividad muscular durante la contracción. Algunas de las métricas más utilizadas incluyen:
 
-### Medidas de Señal: RMS e IAV
+   -  Raíz Cuadrada Media (RMS)
+   La RMS refleja la amplitud promedio de una señal en un período y se calcula como:
+   
+   $$
+   RMS = \sqrt{\frac{1}{N} \sum_{i=1}^{N} x_i^2}
+   $$
+   
+   donde $x_i$ representa cada muestra en la ventana de tiempo.
 
-#### Raíz Cuadrada Media (RMS)
-La RMS refleja la amplitud promedio de una señal en un período y se calcula como:
-
-$$
-RMS = \sqrt{\frac{1}{N} \sum_{i=1}^{N} x_i^2}
-$$
-
-donde $x_i$ representa cada muestra en la ventana de tiempo.
-
-#### Integral Absoluta (IAV)
-La IAV es una medida de la intensidad total de una señal en un intervalo y se define como:
-
-$$
-IAV = \sum_{i=1}^{N} |x_i|
-$$
-
-Esta métrica es útil para comparar niveles de esfuerzo entre contracciones.
+   - Integral Absoluta (IAV)
+   La IAV es una medida de la intensidad total de una señal en un intervalo y se define como:
+   
+   $$
+   IAV = \sum_{i=1}^{N} |x_i|
+   $$
+   
+   Esta métrica es útil para comparar niveles de esfuerzo entre contracciones.
   
 - **Características de Frecuencia**: Las características de frecuencia analizan la distribución de la energía en diferentes bandas de frecuencia de la señal. Estas métricas son útiles para detectar cambios en la frecuencia asociados con fatiga muscular o diferentes tipos de contracción. Entre las características de frecuencia más comunes se encuentran:
 
-\begin{itemize}
-    \item **Frecuencia Media (MNF)**: Representa el promedio de todas las frecuencias en la señal y se calcula como:
-    \[
-    \text{MNF} = \frac{\sum_{f} f \cdot P(f)}{\sum_{f} P(f)}
-    \]
-    donde \( P(f) \) es la densidad espectral de potencia en la frecuencia \( f \).
-    \item **Frecuencia Mediana (MDF)**: Es el valor de frecuencia que divide el espectro de la señal en dos partes de igual energía. La MDF se utiliza para identificar la fatiga, ya que esta frecuencia tiende a disminuir con la fatiga muscular.
-\end{itemize}
+   - Frecuencia Media (MNF)
+   La Frecuencia Media representa el promedio ponderado de todas las frecuencias presentes en una señal. Se calcula como:
+   
+   $$
+   MNF = \frac{\sum_{f} f \cdot P(f)}{\sum_{f} P(f)}
+   $$
+   
+   donde $P(f)$ es la densidad espectral de potencia en la frecuencia $f$.
+
+   - Frecuencia Mediana (MDF)
+   La Frecuencia Mediana es el valor de frecuencia que divide el espectro de la señal en dos partes con igual energía. Se utiliza como indicador de fatiga, ya que    tiende a disminuir con la fatiga muscular.
 
 - **Características Espaciales**: Las características espaciales se utilizan principalmente en señales HD-sEMG, donde los electrodos están dispuestos en matrices de alta densidad sobre la superficie muscular. Estas características permiten analizar la coordinación y sincronización de diferentes áreas musculares. Un ejemplo es:
-
-\begin{itemize}
-    \item **Sincronización Espacial (SS)**: Mide la correlación entre canales adyacentes en la matriz de electrodos, proporcionando información sobre la propagación de la actividad muscular.
-\end{itemize}
-
-Estas características temporales, de frecuencia y espaciales proporcionan una representación rica de la señal sEMG, permitiendo analizar la actividad muscular de manera más detallada y con aplicaciones prácticas en el control de prótesis y la rehabilitación muscular.
-
+  
+   - La **Sincronización Espacial (SS)** es una medida que evalúa la correlación entre señales eléctricas registradas en electrodos adyacentes. Proporciona información valiosa sobre la propagación de la actividad muscular en el espacio. Estas características temporales, de frecuencia y espaciales proporcionan una representación rica de la señal sEMG, permitiendo analizar la actividad muscular de manera más detallada y con aplicaciones prácticas en el control de prótesis y la rehabilitación muscular.
+   
 
 </div>
 
