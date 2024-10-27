@@ -43,33 +43,15 @@ La extracción de características en el análisis de señales sEMG es un paso c
 - **Características Temporales**: Las características temporales se extraen directamente de la amplitud de la señal sEMG en el dominio del tiempo. Son útiles para cuantificar la intensidad y la variación de la actividad muscular durante la contracción. Algunas de las métricas más utilizadas incluyen:
 
    -  Raíz Cuadrada Media (RMS)
-   La RMS refleja la amplitud promedio de una señal en un período y se calcula como:
-   
-   $$
-   RMS = \sqrt{\frac{1}{N} \sum_{i=1}^{N} x_i^2}
-   $$
-   
-   donde $x_i$ representa cada muestra en la ventana de tiempo.
+   La RMS refleja la amplitud promedio de una señal en un período
 
    - Integral Absoluta (IAV)
-   La IAV es una medida de la intensidad total de una señal en un intervalo y se define como:
-   
-   $$
-   IAV = \sum_{i=1}^{N} |x_i|
-   $$
-   
-   Esta métrica es útil para comparar niveles de esfuerzo entre contracciones.
+   La IAV es una medida de la intensidad total de una señal en un intervalo. Esta métrica es útil para comparar niveles de esfuerzo entre contracciones.
   
 - **Características de Frecuencia**: Las características de frecuencia analizan la distribución de la energía en diferentes bandas de frecuencia de la señal. Estas métricas son útiles para detectar cambios en la frecuencia asociados con fatiga muscular o diferentes tipos de contracción. Entre las características de frecuencia más comunes se encuentran:
 
    - Frecuencia Media (MNF)
-   La Frecuencia Media representa el promedio ponderado de todas las frecuencias presentes en una señal. Se calcula como:
-   
-   $$
-   MNF = \frac{\sum_{f} f \cdot P(f)}{\sum_{f} P(f)}
-   $$
-   
-   donde $P(f)$ es la densidad espectral de potencia en la frecuencia $f$.
+   La Frecuencia Media representa el promedio ponderado de todas las frecuencias presentes en una señal. 
 
    - Frecuencia Mediana (MDF)
    La Frecuencia Mediana es el valor de frecuencia que divide el espectro de la señal en dos partes con igual energía. Se utiliza como indicador de fatiga, ya que    tiende a disminuir con la fatiga muscular.
