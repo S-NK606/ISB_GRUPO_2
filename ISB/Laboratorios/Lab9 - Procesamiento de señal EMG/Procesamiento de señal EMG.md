@@ -92,39 +92,6 @@ Desarrollar un método efectivo de procesamiento de señales EMG utilizando la t
 <p align="justify">
    
 ## 5. Metodología
-**Recolección de datos**
-
-
-**Características extraídas [5]**
-
-|   Modelo      | Descripción   |
-|---------------|---------------|
-|MFL: Longitud fractal máxima|
-|Para el cálculo de la longitud de la señal sEMG se debe: <ul><li>Calcular la longitud en diferentes escalas. \(k\)</li><li>Usar una fórmula basada en teoría de fractales para obtener el valor de la Longitud Máxima del Fractal.</li><li>Evaluar la intensidad y complejidad de la contracción muscular.</li></ul>| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/1_FML.png">|
-|MYOP: Porcentaje de Miopulsos|
-|Los momentos espectrales describen la distribución de la energía de la señal en función a una cierta frecuencia. Por ello, el VCF mide la dispersión y variabilidad de la energía del sMEG con el propósito de evaluar la consistencia de la contracción muscular y la presencia de fatigas. Se mide respecto a los momentos espectrales de primer y segundo orden (SM1 y SM2) en conjunto con el poder total del espectro de la señal. (SM0).| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/2_VCF.png">|
-|SS: Sincronización espacial|
-|La sincronización especial evalúa la sincronización de señales registradas en canales vecinos del electrodo, evaluando si poseen patrones similares que, en caso sea así, indica que la señal vecina proviene de la misma actividad muscular y no es ruido. Esta medida permite diferenciar la información verdadera del ruido distinguiendo señales de una actividad muscular en conjunto.| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/3_SS.png">|
-|MYOP: Porcentaje de Miopulsos|
-|Es una característica que mide la proporción de tiempo en la que un músculo está activo cuando la amplitud absoluta de la señal supera un valor de umbral definido. Cuantifica la actividad muscular distinguiendo valores altos y bajos según el umbral.| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/4_MYOP.png">|
-|AR: Coeficientes autorregresivos|
-|Son coeficientes obtenidos de un modelo autoregresivo, combinación lineal de valores previos, que se usa para predecir el valor actual de la señal EMG. Sirve para la búsqueda de patrones en la señal EMG, clasificar los coeficientes generados para identificar movimientos específicos y registrarlos.| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/5_AR.png">|
-|V: Características del orden V|
-|La característica v-Order (V) es un detector no lineal que se usa para estimar, indirectamente, la fuerza de contracción muscular con un modelo matemático. Es decir, representa la actividad e intensidad de los músculos durante la contracción.| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/6_V.png">|
-|MNF: Frecuencia Media|
-|Esta medida representa la frecuencia promedio en la cual se concentra la mayor parte de la energía de la señal EMG siendo un promedio ponderado que nos puede indicar la intensidad de la contracción. Cuando la MNF obtiene valores bajos indica la fatiga del músculo, a su vez, cuando un músculo se activa con mayor intensidad, el valor de la MNF capturará el aumento.| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/7_MNF.png">|
-|WAMP: Willison amplitude|
-|La amplitud de Willison o amplitud de Wilson (WAMP) es una medida de la información de frecuencia de la señal EMG, similar a la definida en la característica ZC (por ejemplo, Philipson, 1987; Zardoshti-Kermani et al., 1995). Es el número de veces que la diferencia entre la amplitud de la señal EMG entre dos segmentos contiguos supera un umbral predefinido. Además, está relacionada con la activación de los potenciales de acción de las unidades motoras (MUAP) y la fuerza de contracción muscular. [6]| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/WAMP.png">|
-|SampEn: Entropía de la muestra|
-|La Entropía de Muestra (SampEn) es un método de estimación de entropía utilizado en el análisis de señales biológicas, conocido por su bajo sesgo y alta consistencia. En el ámbito del sEMG, se aplica en el estudio de enfermedades como el accidente cerebrovascular y el Parkinson. SampEn ayuda a identificar la complejidad de las señales EMG, permitiendo diferenciar entre enfermedades neurológicas y personas sanas, así como evaluar trastornos neuromusculares y cambios en las unidades motoras tras un accidente cerebrovascular. [7]| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/SAMPEN.png">|
-|Hjorth 2: Movilidad|
-|La Hjorth 2 (movilidad o NDS 2) es la raíz cuadrada media (rms) de las pendientes de la señal dividida por la rms de la amplitud. Este segundo NSD se expresa como una relación por unidad de tiempo y puede considerarse como una estimación de la frecuencia media. La complejidad proporciona una medida de la rms de la tasa de cambios en la pendiente en referencia a una forma de curva ideal posible (sabiendo que la complejidad de una onda sinusoidal pura corresponde a uno). También, sirve para el análisis de EEG. [8]| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/Hjorth2.png">|
-|Kurt: Kurtosis|
-|KURT es una medida del sEMG que puede proporcionar información sobre las propiedades estadísticas de la señal relacionadas con su comportamiento en los picos o colas. Donde \(N\) define el número total de muestras en la señal sEMG, \(s(i)\) representa la amplitud de la señal sEMG en un punto de tiempo específico \(i\), y \(\bar{s}\) denota la media de los valores de la señal sEMG. (9)| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/Kurt.png">|
-|SSC: Slope sign change|
-|El cambio de signo de la pendiente (SSC) se relaciona con características como ZC, MYOP y WAMP. Este método mide la cantidad de veces que la pendiente de una señal EMG cambia de signo. Se evalúa el número de cambios entre pendientes positivas y negativas en tres segmentos secuenciales, aplicando una función de umbral para minimizar el ruido de fondo. La selección del valor de umbral para las características ZC, MYOP, WAMP y SSC se elige generalmente entre 50 µV y 100 mV, dependiendo de la configuración del instrumento y del ruido ambiental. [6]| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/SSC.png">|
-|MDF: Median frequency|
-|El MDF (frecuencia de densidad media) se refiere a la frecuencia en la que el espectro se divide en dos áreas con amplitudes iguales; en otras palabras, el MDF equivale a la mitad de la característica TTP. Esto indica que la suma de las probabilidades hasta el MDF es igual a la mitad de la suma total de probabilidades. [6]| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/MDF.png">|
 
 ### 5.1. Análisis de Señales EMG
 
@@ -201,9 +168,36 @@ Finalmente, el artículo compara los resultados de este procedimiento de DWT con
 - **Error Cuadrático Medio (RMSE)**: Evalúa la precisión en la reducción del ruido comparando la señal reconstruida con la señal original.
 - **Relación Señal a Ruido (SNR)**: Indica la cantidad de ruido eliminado en la señal final.
 
----
+#### 6. Características extraídas [5]
 
-Este proceso detallado permite que el algoritmo basado en DWT de múltiples capas elimine eficazmente los artefactos de ECG de las señales sEMG, mejorando significativamente la relación señal-ruido y facilitando el análisis de la actividad muscular en aplicaciones como la estimación de fuerza y el reconocimiento de movimiento.
+|   Modelo      | Descripción   |
+|---------------|---------------|
+|MFL: Longitud fractal máxima|
+|Para el cálculo de la longitud de la señal sEMG se debe: <ul><li>Calcular la longitud en diferentes escalas. \(k\)</li><li>Usar una fórmula basada en teoría de fractales para obtener el valor de la Longitud Máxima del Fractal.</li><li>Evaluar la intensidad y complejidad de la contracción muscular.</li></ul>| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/1_FML.png">|
+|MYOP: Porcentaje de Miopulsos|
+|Los momentos espectrales describen la distribución de la energía de la señal en función a una cierta frecuencia. Por ello, el VCF mide la dispersión y variabilidad de la energía del sMEG con el propósito de evaluar la consistencia de la contracción muscular y la presencia de fatigas. Se mide respecto a los momentos espectrales de primer y segundo orden (SM1 y SM2) en conjunto con el poder total del espectro de la señal. (SM0).| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/2_VCF.png">|
+|SS: Sincronización espacial|
+|La sincronización especial evalúa la sincronización de señales registradas en canales vecinos del electrodo, evaluando si poseen patrones similares que, en caso sea así, indica que la señal vecina proviene de la misma actividad muscular y no es ruido. Esta medida permite diferenciar la información verdadera del ruido distinguiendo señales de una actividad muscular en conjunto.| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/3_SS.png">|
+|MYOP: Porcentaje de Miopulsos|
+|Es una característica que mide la proporción de tiempo en la que un músculo está activo cuando la amplitud absoluta de la señal supera un valor de umbral definido. Cuantifica la actividad muscular distinguiendo valores altos y bajos según el umbral.| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/4_MYOP.png">|
+|AR: Coeficientes autorregresivos|
+|Son coeficientes obtenidos de un modelo autoregresivo, combinación lineal de valores previos, que se usa para predecir el valor actual de la señal EMG. Sirve para la búsqueda de patrones en la señal EMG, clasificar los coeficientes generados para identificar movimientos específicos y registrarlos.| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/5_AR.png">|
+|V: Características del orden V|
+|La característica v-Order (V) es un detector no lineal que se usa para estimar, indirectamente, la fuerza de contracción muscular con un modelo matemático. Es decir, representa la actividad e intensidad de los músculos durante la contracción.| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/6_V.png">|
+|MNF: Frecuencia Media|
+|Esta medida representa la frecuencia promedio en la cual se concentra la mayor parte de la energía de la señal EMG siendo un promedio ponderado que nos puede indicar la intensidad de la contracción. Cuando la MNF obtiene valores bajos indica la fatiga del músculo, a su vez, cuando un músculo se activa con mayor intensidad, el valor de la MNF capturará el aumento.| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/7_MNF.png">|
+|WAMP: Willison amplitude|
+|La amplitud de Willison o amplitud de Wilson (WAMP) es una medida de la información de frecuencia de la señal EMG, similar a la definida en la característica ZC (por ejemplo, Philipson, 1987; Zardoshti-Kermani et al., 1995). Es el número de veces que la diferencia entre la amplitud de la señal EMG entre dos segmentos contiguos supera un umbral predefinido. Además, está relacionada con la activación de los potenciales de acción de las unidades motoras (MUAP) y la fuerza de contracción muscular. [6]| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/WAMP.png">|
+|SampEn: Entropía de la muestra|
+|La Entropía de Muestra (SampEn) es un método de estimación de entropía utilizado en el análisis de señales biológicas, conocido por su bajo sesgo y alta consistencia. En el ámbito del sEMG, se aplica en el estudio de enfermedades como el accidente cerebrovascular y el Parkinson. SampEn ayuda a identificar la complejidad de las señales EMG, permitiendo diferenciar entre enfermedades neurológicas y personas sanas, así como evaluar trastornos neuromusculares y cambios en las unidades motoras tras un accidente cerebrovascular. [7]| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/SAMPEN.png">|
+|Hjorth 2: Movilidad|
+|La Hjorth 2 (movilidad o NDS 2) es la raíz cuadrada media (rms) de las pendientes de la señal dividida por la rms de la amplitud. Este segundo NSD se expresa como una relación por unidad de tiempo y puede considerarse como una estimación de la frecuencia media. La complejidad proporciona una medida de la rms de la tasa de cambios en la pendiente en referencia a una forma de curva ideal posible (sabiendo que la complejidad de una onda sinusoidal pura corresponde a uno). También, sirve para el análisis de EEG. [8]| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/Hjorth2.png">|
+|Kurt: Kurtosis|
+|KURT es una medida del sEMG que puede proporcionar información sobre las propiedades estadísticas de la señal relacionadas con su comportamiento en los picos o colas. Donde \(N\) define el número total de muestras en la señal sEMG, \(s(i)\) representa la amplitud de la señal sEMG en un punto de tiempo específico \(i\), y \(\bar{s}\) denota la media de los valores de la señal sEMG. (9)| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/Kurt.png">|
+|SSC: Slope sign change|
+|El cambio de signo de la pendiente (SSC) se relaciona con características como ZC, MYOP y WAMP. Este método mide la cantidad de veces que la pendiente de una señal EMG cambia de signo. Se evalúa el número de cambios entre pendientes positivas y negativas en tres segmentos secuenciales, aplicando una función de umbral para minimizar el ruido de fondo. La selección del valor de umbral para las características ZC, MYOP, WAMP y SSC se elige generalmente entre 50 µV y 100 mV, dependiendo de la configuración del instrumento y del ruido ambiental. [6]| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/SSC.png">|
+|MDF: Median frequency|
+|El MDF (frecuencia de densidad media) se refiere a la frecuencia en la que el espectro se divide en dos áreas con amplitudes iguales; en otras palabras, el MDF equivale a la mitad de la característica TTP. Esto indica que la suma de las probabilidades hasta el MDF es igual a la mitad de la suma total de probabilidades. [6]| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/MDF.png">|
 
 ## 6. Resultados y discusiones
 
