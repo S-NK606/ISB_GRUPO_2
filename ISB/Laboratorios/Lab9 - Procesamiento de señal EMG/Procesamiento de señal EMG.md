@@ -27,7 +27,53 @@ Este trabajo presenta un análisis exhaustivo del procesamiento de señales EMG 
 
 <div style="text-align: justify;">
 
-texto
+**2.1 Normalización mediante Contracción Voluntaria Máxima (MVC)**
+<p align="justify">
+La normalización mediante Contracción Voluntaria Máxima (MVC) es un método ampliamente utilizado en el análisis de señales electromiográficas para estandarizar y comparar los niveles de activación muscular. Este proceso implica registrar la contracción máxima del músculo de interés en condiciones controladas, lo que permite establecer una referencia de activación máxima. De esta forma, los valores obtenidos de la señal sEMG pueden ser expresados como un porcentaje del valor máximo de contracción, facilitando la comparación entre individuos, músculos y condiciones experimentales. La normalización MVC es particularmente útil en estudios donde se evalúan patrones de fatiga muscular, esfuerzos de contracción, y en aplicaciones de rehabilitación, ya que elimina la variabilidad inherente a cada sujeto y permite analizar la respuesta muscular de forma objetiva.
+
+**2.2  Transformada Wavelet Discreta (DWT) en sEMG**
+   
+<p align="justify">
+La DWT es una herramienta de análisis de señales en los dominios de tiempo y frecuencia, ideal para capturar la variabilidad dinámica de la sEMG debido a su naturaleza transitoria. A diferencia de la Transformada de Fourier, que solo descompone la señal en términos de frecuencia, la DWT permite analizar cambios de frecuencia en función del tiempo, lo que es especialmente útil en señales biológicas como la sEMG, donde la actividad muscular varía en cortos periodos. La DWT descompone la señal en niveles de detalle sucesivos, lo que facilita identificar componentes específicos asociados a diferentes frecuencias de contracción muscular y permite el análisis detallado de eventos como contracciones sostenidas y picos de actividad. En el procesamiento de señales sEMG, la DWT se implementa típicamente usando funciones wavelet como las Daubechies, que son adecuadas para capturar las variaciones suaves y rápidas típicas de las señales biológicas.
+
+**2.3 Extracción de Características**
+
+La extracción de características en el análisis de señales sEMG es un paso crucial para la identificación y clasificación de patrones de activación muscular. Este proceso implica seleccionar y calcular métricas que capturen aspectos relevantes de la señal, facilitando así su análisis y comparación. En el contexto de señales sEMG procesadas mediante la DWT, la extracción de características se centra en resaltar patrones temporales, de frecuencia y, en algunos casos, espaciales, que reflejan la dinámica de la actividad muscular.
+
+- **Características Temporales**: Las características temporales se extraen directamente de la amplitud de la señal sEMG en el dominio del tiempo. Son útiles para cuantificar la intensidad y la variación de la actividad muscular durante la contracción. Algunas de las métricas más utilizadas incluyen:
+
+\begin{itemize}
+    \item **Raíz Cuadrada Media (RMS)**: Refleja la amplitud promedio de la señal en un período y se calcula como:
+    \[
+    \text{RMS} = \sqrt{\frac{1}{N} \sum_{i=1}^{N} x_i^2}
+    \]
+    donde \( x_i \) representa cada muestra en la ventana de tiempo.
+    \item **Integral Absoluta (IAV)**: Es una medida de la intensidad total de la señal en un intervalo y se define como:
+    \[
+    \text{IAV} = \sum_{i=1}^{N} |x_i|
+    \]
+    Esta métrica es útil para comparar niveles de esfuerzo entre contracciones.
+\end{itemize}   
+  
+- **Características de Frecuencia**: Las características de frecuencia analizan la distribución de la energía en diferentes bandas de frecuencia de la señal. Estas métricas son útiles para detectar cambios en la frecuencia asociados con fatiga muscular o diferentes tipos de contracción. Entre las características de frecuencia más comunes se encuentran:
+
+\begin{itemize}
+    \item **Frecuencia Media (MNF)**: Representa el promedio de todas las frecuencias en la señal y se calcula como:
+    \[
+    \text{MNF} = \frac{\sum_{f} f \cdot P(f)}{\sum_{f} P(f)}
+    \]
+    donde \( P(f) \) es la densidad espectral de potencia en la frecuencia \( f \).
+    \item **Frecuencia Mediana (MDF)**: Es el valor de frecuencia que divide el espectro de la señal en dos partes de igual energía. La MDF se utiliza para identificar la fatiga, ya que esta frecuencia tiende a disminuir con la fatiga muscular.
+\end{itemize}
+
+- **Características Espaciales**: Las características espaciales se utilizan principalmente en señales HD-sEMG, donde los electrodos están dispuestos en matrices de alta densidad sobre la superficie muscular. Estas características permiten analizar la coordinación y sincronización de diferentes áreas musculares. Un ejemplo es:
+
+\begin{itemize}
+    \item **Sincronización Espacial (SS)**: Mide la correlación entre canales adyacentes en la matriz de electrodos, proporcionando información sobre la propagación de la actividad muscular.
+\end{itemize}
+
+Estas características temporales, de frecuencia y espaciales proporcionan una representación rica de la señal sEMG, permitiendo analizar la actividad muscular de manera más detallada y con aplicaciones prácticas en el control de prótesis y la rehabilitación muscular.
+
 
 </div>
 
