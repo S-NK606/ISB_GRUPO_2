@@ -133,48 +133,77 @@ Se ha realizado un filtrado utilizando la wavelet biorthogonal 3.1 con un nivel 
 
 *Preprocesamiento*
 
-texto
+El preprocesamiento de la señal sEMG ayuda a preparar la señal para el filtrado mediante DWT y mejora la efectividad del proceso de eliminación de artefactos. Los pasos de preprocesamiento incluyen:
 
-*Transformada Wavelet Discreta (DWT)*
+#### 1. Sustracción de la Media
+   - Para centrar la señal en torno a un valor medio de cero, se resta el valor promedio de la señal de cada punto de datos. Esto ayuda a simplificar el análisis y reduce el sesgo en el procesamiento posterior.
+   - La fórmula de sustracción de la media es:
+     \[
+     x' = x - \mu
+     \]
+     donde \( x \) es la señal original y \( \mu \) es la media de los valores de la señal.
 
-texto
+#### 2. Blanqueamiento o Whitening
+   - El **blanqueamiento** es un proceso que elimina las correlaciones entre las diferentes dimensiones de la señal y normaliza su varianza.
+   - En el contexto del sEMG, esto significa transformar la señal en una donde cada componente tenga la misma varianza, facilitando la extracción de componentes independientes y la eliminación de artefactos de ECG.
+   - Para lograr el blanqueamiento, se calcula la **matriz de covarianza** de la señal centrada, y luego se usa una **descomposición en valores propios** para normalizar cada componente.
 
-#### Fórmula de la DWT
-La **DWT** utiliza una **función madre wavelet** $$\( \psi(t) \)$$, que es escalada y trasladada para descomponer la señal $$\( x(t) \)$$ en coeficientes de detalle y aproximación. La DWT se define matemáticamente como:
+#### 3. Filtrado Inicial
+   - Aunque el enfoque principal de filtrado es mediante la DWT, el preprocesamiento puede incluir un filtrado inicial de **frecuencia de potencia** (ruido de 50 Hz o 60 Hz) para eliminar la interferencia de la red eléctrica.
+   - Esto ayuda a que el algoritmo de DWT enfoque su eliminación de ruido en los artefactos de ECG en lugar de interferencias externas.
 
-$$
-W_{\psi}(a, b) = \frac{1}{\sqrt{|a|}} \int_{-\infty}^{\infty} x(t) \psi^*\left(\frac{t - b}{a}\right) dt
-$$
+#### 4. Segmentación de la Señal
+   - En algunos casos, la señal se segmenta en intervalos específicos para facilitar el procesamiento y garantizar que solo se analicen partes de la señal que incluyen actividad relevante del sEMG. Esta segmentación ayuda a mejorar la precisión en la identificación y eliminación de artefactos.
 
-Donde:
-- \( a \) es el parámetro de **escala**, que controla la compresión o expansión de la wavelet.
-- \( b \) es el parámetro de **traslación**, que desplaza la wavelet a lo largo de la señal.
-- $$\( \psi(t) \)$$ es la **función madre wavelet**.
-- $$\( \psi^* \)$$ es la **conjugada compleja** de la función madre wavelet.
 
-Para la DWT, los valores de $$\( a \)$$ y $$\( b \)$$ se toman en discretos pasos, típicamente potencias de 2, es decir, $$\( a = 2^j \)$$ y $$\( b = k2^j \)$$, donde $$\( j \)$$ y $$\( k \)$$ son enteros.
+*Procedimiento de Filtrado de Artefactos de ECG en Señales sEMG usando DWT*
 
-#### Selección de la función madre wavelet
-texto
+El artículo describe un método de eliminación de artefactos de ECG en señales sEMG utilizando una **Transformada Wavelet Discreta (DWT)** de múltiples capas mejorada, junto con un análisis de componentes independientes rápido (**Fast-ICA**). A continuación, se detalla el procedimiento de la DWT utilizado en este método.
 
-#### Descomposición y Umbralización
-texto
-  
-### Reconstrucción de la señal
-texto
+#### 1. Descomposición de la Señal sEMG mediante Transformada Wavelet Multinivel
 
-#### Fórmula de la DWT inversa
-La señal original \( x(t) \) se puede reconstruir mediante la DWT inversa usando la siguiente expresión:
+La señal sEMG capturada contiene información útil y también artefactos de ECG y ruido. La DWT multinivel permite descomponer la señal en componentes de frecuencia que facilitan la eliminación de los artefactos.
 
-$$
-x(t) = \sum_{j} \sum_{k} W_{\psi}(a_j, b_k) \psi_{a_j, b_k}(t)
-$$
+- **Aplicación de Filtros de Paso Bajo y Paso Alto**:
+  - Se utilizan filtros de paso bajo para obtener los **coeficientes de aproximación** (componentes de baja frecuencia).
+  - Se emplean filtros de paso alto para extraer los **coeficientes de detalle** (componentes de alta frecuencia).
+- **Base Wavelet Seleccionada**: La base wavelet **Daubechies de orden 4** se usa con **9 niveles de descomposición**. Esta elección permite analizar eficazmente señales cortas y no estacionarias como el sEMG.
 
-Donde $$\( W_{\psi}(a_j, b_k) \)$$ son los coeficientes wavelet calculados en el proceso de descomposición.
+#### 2. Umbralización de los Coeficientes de Detalle
 
-### Caracteristicas extraidas
+Una vez que la señal se descompone en sus componentes de aproximación y detalle en cada nivel, se aplica un proceso de umbralización para reducir el ruido y eliminar los artefactos de ECG de las señales sEMG.
 
-mas texto xd tabla no de resultados sino q de los cosos q se extraen
+- **Función de Umbral Mejorada**:
+  - Los umbrales tradicionales, como el duro y el suave, suelen introducir problemas de discontinuidad o sesgo.
+  - Para este análisis, se implementa una **función de umbral mejorada** que reduce estas desventajas.
+  - Esta función asegura que los valores cercanos al umbral se atenúan suavemente hacia cero, evitando una discontinuidad en la reconstrucción de la señal.
+- **Criterio de Selección del Umbral**:
+  - El algoritmo establece un umbral específico para cada nivel de detalle.
+  - A medida que aumenta la frecuencia, los detalles contienen más ruido, y el umbral se ajusta para asegurar la eliminación de estos componentes indeseados.
+  - El criterio de umbral utiliza la relación señal-ruido (SNR) de cada capa para identificar el nivel óptimo de descomposición.
+
+#### 3. Rechazo de Componentes No Deseados
+
+Tras aplicar los umbrales a los coeficientes de detalle, los componentes de frecuencia indeseados, como los artefactos de ECG, se suprimen o eliminan. Este proceso permite que solo permanezcan las frecuencias que contienen información útil sobre la actividad muscular.
+
+#### 4. Reconstrucción de la Señal sEMG Filtrada
+
+Con los coeficientes de detalle procesados y los coeficientes de aproximación originales, el algoritmo utiliza la DWT inversa para reconstruir la señal sEMG:
+
+- **Integración de Coeficientes Filtrados**: Los coeficientes de detalle filtrados y los coeficientes de aproximación se integran para reconstruir la señal en su totalidad.
+- **Eliminación de Ruido y Artefactos**: Como resultado, la señal reconstruida tiene menos ruido y carece de interferencias de ECG, conservando las características fisiológicas útiles del sEMG.
+
+#### 5. Verificación de Resultados
+
+Finalmente, el artículo compara los resultados de este procedimiento de DWT con otros métodos de filtrado, evaluando la eficiencia del proceso mediante indicadores como:
+
+- **Coeficiente de Correlación (CC)**: Mide la retención de información útil en la señal reconstruida.
+- **Error Cuadrático Medio (RMSE)**: Evalúa la precisión en la reducción del ruido comparando la señal reconstruida con la señal original.
+- **Relación Señal a Ruido (SNR)**: Indica la cantidad de ruido eliminado en la señal final.
+
+---
+
+Este proceso detallado permite que el algoritmo basado en DWT de múltiples capas elimine eficazmente los artefactos de ECG de las señales sEMG, mejorando significativamente la relación señal-ruido y facilitando el análisis de la actividad muscular en aplicaciones como la estimación de fuerza y el reconocimiento de movimiento.
 
 ## 6. Resultados y discusiones
 
