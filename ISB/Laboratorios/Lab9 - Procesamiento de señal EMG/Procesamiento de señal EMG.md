@@ -61,7 +61,38 @@ Desarrollar un método efectivo de procesamiento de señales EMG utilizando la t
    
 ## 5. Metodología
 **Recolección de datos**
-texto
+
+
+**Características extraídas [5]**
+
+|   Modelo      | Descripción   |
+|---------------|---------------|
+|MFL: Longitud fractal máxima|
+|Para el cálculo de la longitud de la señal sEMG se debe: <ul><li>Calcular la longitud en diferentes escalas. \(k\)</li><li>Usar una fórmula basada en teoría de fractales para obtener el valor de la Longitud Máxima del Fractal.</li><li>Evaluar la intensidad y complejidad de la contracción muscular.</li></ul>| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/1_FML.png">|
+|MYOP: Porcentaje de Miopulsos|
+|Los momentos espectrales describen la distribución de la energía de la señal en función a una cierta frecuencia. Por ello, el VCF mide la dispersión y variabilidad de la energía del sMEG con el propósito de evaluar la consistencia de la contracción muscular y la presencia de fatigas. Se mide respecto a los momentos espectrales de primer y segundo orden (SM1 y SM2) en conjunto con el poder total del espectro de la señal. (SM0).| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/2_VCF.png">|
+|SS: Sincronización espacial|
+|La sincronización especial evalúa la sincronización de señales registradas en canales vecinos del electrodo, evaluando si poseen patrones similares que, en caso sea así, indica que la señal vecina proviene de la misma actividad muscular y no es ruido. Esta medida permite diferenciar la información verdadera del ruido distinguiendo señales de una actividad muscular en conjunto.| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/3_SS.png">|
+|MYOP: Porcentaje de Miopulsos|
+|Es una característica que mide la proporción de tiempo en la que un músculo está activo cuando la amplitud absoluta de la señal supera un valor de umbral definido. Cuantifica la actividad muscular distinguiendo valores altos y bajos según el umbral.| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/4_MYOP.png">|
+|AR: Coeficientes autorregresivos|
+|Son coeficientes obtenidos de un modelo autoregresivo, combinación lineal de valores previos, que se usa para predecir el valor actual de la señal EMG. Sirve para la búsqueda de patrones en la señal EMG, clasificar los coeficientes generados para identificar movimientos específicos y registrarlos.| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/5_AR.png">|
+|V: Características del orden V|
+|La característica v-Order (V) es un detector no lineal que se usa para estimar, indirectamente, la fuerza de contracción muscular con un modelo matemático. Es decir, representa la actividad e intensidad de los músculos durante la contracción.| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/6_V.png">|
+|MNF: Frecuencia Media|
+|Esta medida representa la frecuencia promedio en la cual se concentra la mayor parte de la energía de la señal EMG siendo un promedio ponderado que nos puede indicar la intensidad de la contracción. Cuando la MNF obtiene valores bajos indica la fatiga del músculo, a su vez, cuando un músculo se activa con mayor intensidad, el valor de la MNF capturará el aumento.| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/7_MNF.png">|
+|Titulo|
+|Texto| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/7_MNF.png">|
+|Titulo|
+|Texto| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/7_MNF.png">|
+|Titulo|
+|Texto| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/7_MNF.png">|
+|Titulo|
+|Texto| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/7_MNF.png">|
+|Titulo|
+|Texto| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/7_MNF.png">|
+|Titulo|
+|Texto| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/7_MNF.png">|
 
 ### 5.1. Análisis de Señales EMG
 
@@ -134,3 +165,5 @@ conclusiones xd
 [3] N. Li, J. Ou, H. He, J. He, L. Zhang, Z. Peng, J. Zhong, y N. Jiang, "Exploration of a machine learning approach for diagnosing sarcopenia among Chinese community-dwelling older adults using sEMG-based data," *Journal of NeuroEngineering and Rehabilitation*, vol. 21, p. 69, 2024. doi: 10.1186/s12984-024-01369-y. 
 
 [4] A. Phinyomark, P. Phukpattaranont, and C. Limsakul, "Feature reduction and selection for EMG signal classification," Expert Systems with Applications, vol. 39, no. 7, pp. 7420–7431, 2012. doi: 10.1016/j.eswa.2012.01.102.
+
+[5] X. Jiang et al., “Optimization of HD-SEMG-Based Cross-Day hand gesture classification by optimal feature extraction and data augmentation,” IEEE Transactions on Human-Machine Systems, vol. 52, no. 6, pp. 1281–1291, May 2022, doi: 10.1109/thms.2022.3175408.
