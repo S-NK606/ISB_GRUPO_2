@@ -93,12 +93,7 @@ Desarrollar un método efectivo de procesamiento de señales EMG utilizando la t
    
 ## 5. Metodología
 
-### 5.1. Análisis de Señales EMG
-
-Parametros usados en el filtrado de señales: </p> 
-Se ha realizado un filtrado utilizando la wavelet biorthogonal 3.1 con un nivel de descomposición 4. Este método ha logrado reducir el ruido de las señales, manteniendo la integridad de las características esenciales para un análisis detallado. </p> 
-
-*Preprocesamiento*
+### 5.1. Preprocesamiento
 
 El preprocesamiento de la señal sEMG ayuda a preparar la señal para el filtrado mediante DWT y mejora la efectividad del proceso de eliminación de artefactos. Los pasos de preprocesamiento incluyen:
 
@@ -123,7 +118,7 @@ El preprocesamiento de la señal sEMG ayuda a preparar la señal para el filtrad
    - En algunos casos, la señal se segmenta en intervalos específicos para facilitar el procesamiento y garantizar que solo se analicen partes de la señal que incluyen actividad relevante del sEMG. Esta segmentación ayuda a mejorar la precisión en la identificación y eliminación de artefactos.
 
 
-*Procedimiento de Filtrado de Artefactos de ECG en Señales sEMG usando DWT*
+### 5.2. Procedimiento de Filtrado de Artefactos de ECG en Señales sEMG usando DWT
 
 El artículo describe un método de eliminación de artefactos de ECG en señales sEMG utilizando una **Transformada Wavelet Discreta (DWT)** de múltiples capas mejorada, junto con un análisis de componentes independientes rápido (**Fast-ICA**). A continuación, se detalla el procedimiento de la DWT utilizado en este método.
 
@@ -168,7 +163,7 @@ Finalmente, el artículo compara los resultados de este procedimiento de DWT con
 - **Error Cuadrático Medio (RMSE)**: Evalúa la precisión en la reducción del ruido comparando la señal reconstruida con la señal original.
 - **Relación Señal a Ruido (SNR)**: Indica la cantidad de ruido eliminado en la señal final.
 
-#### 6. Características extraídas [5]
+### 5.3. Características extraídas [5]
 
 |   Modelo      | Descripción   |
 |---------------|---------------|
