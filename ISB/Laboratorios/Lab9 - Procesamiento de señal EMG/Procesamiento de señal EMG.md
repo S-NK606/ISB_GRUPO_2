@@ -81,18 +81,18 @@ Desarrollar un método efectivo de procesamiento de señales EMG utilizando la t
 |La característica v-Order (V) es un detector no lineal que se usa para estimar, indirectamente, la fuerza de contracción muscular con un modelo matemático. Es decir, representa la actividad e intensidad de los músculos durante la contracción.| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/6_V.png">|
 |MNF: Frecuencia Media|
 |Esta medida representa la frecuencia promedio en la cual se concentra la mayor parte de la energía de la señal EMG siendo un promedio ponderado que nos puede indicar la intensidad de la contracción. Cuando la MNF obtiene valores bajos indica la fatiga del músculo, a su vez, cuando un músculo se activa con mayor intensidad, el valor de la MNF capturará el aumento.| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/7_MNF.png">|
-|Titulo|
-|Texto| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/7_MNF.png">|
-|Titulo|
-|Texto| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/7_MNF.png">|
-|Titulo|
-|Texto| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/7_MNF.png">|
-|Titulo|
-|Texto| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/7_MNF.png">|
-|Titulo|
-|Texto| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/7_MNF.png">|
-|Titulo|
-|Texto| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/7_MNF.png">|
+|WAMP: Willison amplitude|
+|La amplitud de Willison o amplitud de Wilson (WAMP) es una medida de la información de frecuencia de la señal EMG, similar a la definida en la característica ZC (por ejemplo, Philipson, 1987; Zardoshti-Kermani et al., 1995). Es el número de veces que la diferencia entre la amplitud de la señal EMG entre dos segmentos contiguos supera un umbral predefinido. Además, está relacionada con la activación de los potenciales de acción de las unidades motoras (MUAP) y la fuerza de contracción muscular.| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/WAMP.png">|
+|SampEn: Entropía de la muestra|
+|La Entropía de Muestra (SampEn) es un método de estimación de entropía utilizado en el análisis de señales biológicas, conocido por su bajo sesgo y alta consistencia. En el ámbito del sEMG, se aplica en el estudio de enfermedades como el accidente cerebrovascular y el Parkinson. SampEn ayuda a identificar la complejidad de las señales EMG, permitiendo diferenciar entre enfermedades neurológicas y personas sanas, así como evaluar trastornos neuromusculares y cambios en las unidades motoras tras un accidente cerebrovascular.| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/SAMPEN.png">|
+|Hjorth 2: Movilidad|
+|La Hjorth 2 (movilidad o NDS 2) es la raíz cuadrada media (rms) de las pendientes de la señal dividida por la rms de la amplitud. Este segundo NSD se expresa como una relación por unidad de tiempo y puede considerarse como una estimación de la frecuencia media. La complejidad proporciona una medida de la rms de la tasa de cambios en la pendiente en referencia a una forma de curva ideal posible (sabiendo que la complejidad de una onda sinusoidal pura corresponde a uno). También, sirve para el análisis de EEG.| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/Hjorth2.png">|
+|Kurt: Kurtosis|
+|KURT es una medida del sEMG que puede proporcionar información sobre las propiedades estadísticas de la señal relacionadas con su comportamiento en los picos o colas. Donde \(N\) define el número total de muestras en la señal sEMG, \(s(i)\) representa la amplitud de la señal sEMG en un punto de tiempo específico \(i\), y \(\bar{s}\) denota la media de los valores de la señal sEMG.| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/Kurt.png">|
+|SSC: Slope sign change|
+|El cambio de signo de la pendiente (SSC) se relaciona con características como ZC, MYOP y WAMP. Este método mide la cantidad de veces que la pendiente de una señal EMG cambia de signo. Se evalúa el número de cambios entre pendientes positivas y negativas en tres segmentos secuenciales, aplicando una función de umbral para minimizar el ruido de fondo. La selección del valor de umbral para las características ZC, MYOP, WAMP y SSC se elige generalmente entre 50 µV y 100 mV, dependiendo de la configuración del instrumento y del ruido ambiental.| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/SSC.png">|
+|MDF: Median frequency|
+|El MDF (frecuencia de densidad media) se refiere a la frecuencia en la que el espectro se divide en dos áreas con amplitudes iguales; en otras palabras, el MDF equivale a la mitad de la característica TTP. Esto indica que la suma de las probabilidades hasta el MDF es igual a la mitad de la suma total de probabilidades.| <img src="/ISB/Laboratorios/Lab9 - Procesamiento de señal EMG/formulas/MDF.png">|
 
 ### 5.1. Análisis de Señales EMG
 
