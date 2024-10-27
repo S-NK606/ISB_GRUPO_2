@@ -146,8 +146,66 @@ mas texto xd tabla no de resultados sino q de los cosos q se extraen
 
 ## 6. Resultados y discusiones
 
-aqui si los resultados (sofia)
+#### Biceps con Oposición Leve
 
+| Tipo de Señal| Gráficas|
+| --- | --- |
+|Señal original| ![Imagen 1](./graficas_EMG/B/3.png) |
+|Señal filtrada|![Imagen 2](./graficas_EMG/B/4.png) |
+|FFT de la señal original|![Imagen 2](./graficas_EMG/B/1.png) |
+|FFT de la señal filtrada|![Imagen 2](./graficas_EMG/B/2.png) |
+|Señal rectificada|![Imagen 2](./graficas_EMG/B/5.png) |
+|RMS y RMS normalizado|![Imagen 2](./graficas_EMG/B/6.png) |
+| Características obtenidas| Gráficas|
+|MFL|![Imagen 2](./graficas_EMG/B/7.png)|
+|MYOP|![Imagen 2](./graficas_EMG/B/8.png)|
+|V-Order|![Imagen 2](./graficas_EMG/B/9.png)|
+|WAMP|![Imagen 2](./graficas_EMG/B/10.png)|
+|SampEn|![Imagen 2](./graficas_EMG/B/11.png)|
+|Hjorth2|![Imagen 2](./graficas_EMG/B/12.png)|
+|Kurtosis|![Imagen 2](./graficas_EMG/B/13.png)|
+|SSC|![Imagen 2](./graficas_EMG/B/14.png)|
+
+#### Biceps con Oposición Fuerte
+
+
+| Tipo de Señal| Gráficas|
+| --- | --- |
+|Señal original| ![Imagen 1](./graficas_EMG/B/17.png) |
+|Señal filtrada|![Imagen 2](./graficas_EMG/B/18.png) |
+|FFT de la señal original|![Imagen 2](./graficas_EMG/B/15.png) |
+|FFT de la señal filtrada|![Imagen 2](./graficas_EMG/B/16.png) |
+|Señal rectificada|![Imagen 2](./graficas_EMG/B/19.png) |
+|RMS y RMS normalizado|![Imagen 2](./graficas_EMG/B/20.png) |
+| Características obtenidas| Gráficas|
+|MFL|![Imagen 2](./graficas_EMG/B/21.png)|
+|MYOP|![Imagen 2](./graficas_EMG/B/22.png)|
+|V-Order|![Imagen 2](./graficas_EMG/B/23.png)|
+|WAMP|![Imagen 2](./graficas_EMG/B/24.png)|
+|SampEn|![Imagen 2](./graficas_EMG/B/25.png)|
+|Hjorth2|![Imagen 2](./graficas_EMG/B/26.png)|
+|Kurtosis|![Imagen 2](./graficas_EMG/B/27.png)|
+|SSC|![Imagen 2](./graficas_EMG/B/28.png)|
+
+#### Biceps en Reposo
+
+| Tipo de Señal| Gráficas|
+| --- | --- |
+|Señal original| ![Imagen 1](./graficas_EMG/B/31.png) |
+|Señal filtrada|![Imagen 2](./graficas_EMG/B/32.png) |
+|FFT de la señal original|![Imagen 2](./graficas_EMG/B/29.png) |
+|FFT de la señal filtrada|![Imagen 2](./graficas_EMG/B/30.png) |
+|Señal rectificada|![Imagen 2](./graficas_EMG/B/33.png) |
+|RMS y RMS normalizado|![Imagen 2](./graficas_EMG/B/34.png) |
+| Características obtenidas| Gráficas|
+|MFL|![Imagen 2](./graficas_EMG/B/35.png)|
+|MYOP|![Imagen 2](./graficas_EMG/B/36.png)|
+|V-Order|![Imagen 2](./graficas_EMG/B/37.png)|
+|WAMP|![Imagen 2](./graficas_EMG/B/38.png)|
+|SampEn|![Imagen 2](./graficas_EMG/B/39.png)|
+|Hjorth2|![Imagen 2](./graficas_EMG/B/40.png)|
+|Kurtosis|![Imagen 2](./graficas_EMG/B/41.png)|
+|SSC|![Imagen 2](./graficas_EMG/B/42.png)|
 #### Discusiones de EMG
 
 discutan uwu
