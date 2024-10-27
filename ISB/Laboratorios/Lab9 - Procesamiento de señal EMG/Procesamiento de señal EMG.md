@@ -43,17 +43,17 @@ La extracción de características en el análisis de señales sEMG es un paso c
 - **Características Temporales**: Las características temporales se extraen directamente de la amplitud de la señal sEMG en el dominio del tiempo. Son útiles para cuantificar la intensidad y la variación de la actividad muscular durante la contracción. Algunas de las métricas más utilizadas incluyen:
 
 \begin{itemize}
-    \item **Raíz Cuadrada Media (RMS)**: Refleja la amplitud promedio de la señal en un período y se calcula como:
+    \item **Raíz Cuadrada Media (RMS):** Refleja la amplitud promedio de la señal en un período y se calcula como:
     \[
-    \text{RMS} = \sqrt{\frac{1}{N} \sum_{i=1}^{N} x_i^2}
+        \text{RMS} = \sqrt{\frac{1}{N} \sum_{i=1}^{N} x_i^2}
     \]
-    donde \( x_i \) representa cada muestra en la ventana de tiempo.
-    \item **Integral Absoluta (IAV)**: Es una medida de la intensidad total de la señal en un intervalo y se define como:
+    donde $x_i$ representa cada muestra en la ventana de tiempo.
+    \item **Integral Absoluta (IAV):** Es una medida de la intensidad total de la señal en un intervalo y se define como:
     \[
-    \text{IAV} = \sum_{i=1}^{N} |x_i|
+        \text{IAV} = \sum_{i=1}^{N} |x_i|
     \]
     Esta métrica es útil para comparar niveles de esfuerzo entre contracciones.
-\end{itemize}   
+\end{itemize}
   
 - **Características de Frecuencia**: Las características de frecuencia analizan la distribución de la energía en diferentes bandas de frecuencia de la señal. Estas métricas son útiles para detectar cambios en la frecuencia asociados con fatiga muscular o diferentes tipos de contracción. Entre las características de frecuencia más comunes se encuentran:
 
