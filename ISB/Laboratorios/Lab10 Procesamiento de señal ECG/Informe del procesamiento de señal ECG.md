@@ -1,4 +1,17 @@
-# Introducción
+# Análisis y Procesamiento de Señal EMG para Clasificación de Movimientos Basado en la Transformada Wavelet y Extracción de Características
+
+## Tabla de Contenidos
+
+1. [Introducción](#1-introducción)
+2. [Marco teórico](#2-marco-teórico)
+3. [Objetivos](#3-objetivos)
+4. [Materiales y equipos](#4-materiales-y-equipos)
+5. [Metodología](#5-metodología)
+6. [Resultados y discusiones](#6-resultados-y-discusiones)
+7. [Conclusiones](#7-conclusiones)
+8. [Referencias bibliográficas](#8-referencias-bibliográficas)
+
+## 1. Introducción
 <p style="font-size: 4px;">
 El electrocardiograma (ECG) es una herramienta fundamental en la práctica médica moderna para el diagnóstico y monitoreo de enfermedades cardiovasculares, una de las principales causas de mortalidad a nivel mundial [1]. Su facilidad de uso y naturaleza no invasiva lo convierten en un método eficiente para detectar irregularidades en el ritmo y la morfología del latido cardíaco, permitiendo identificar condiciones como arritmias, hipertensión y enfermedades isquémicas [2]. La interpretación precisa de estas señales es crítica en contextos de alto riesgo, donde la detección temprana de anomalías puede prevenir complicaciones graves e incluso salvar vidas.
 </p>
@@ -9,20 +22,7 @@ La detección del complejo QRS, que representa la despolarización ventricular, 
 
 Este informe explora los métodos actuales de procesamiento de señales de ECG, abarcando enfoques tradicionales y sistemas basados en aprendizaje automático. Se revisan las etapas clave en el procesamiento de la señal y se analizan las metodologías empleadas para su implementación en sistemas de monitoreo en tiempo real, proporcionando una visión integral del estado actual y las direcciones futuras en el análisis automatizado de ECG para aplicaciones diagnósticas.
 
-## Objetivos
-
-### Objetivo General
-
-- Evaluar y analizar los métodos de procesamiento de señales de ECG, destacando tanto los enfoques tradicionales como los modernos basados en inteligencia artificial, con el propósito de identificar mejoras en la precisión y eficacia en la detección de anomalías cardíacas.
-
-### Objetivos Específicos
-
-1. Describir las técnicas de filtrado y eliminación de ruido en señales de ECG y evaluar su efectividad en la detección precisa del complejo QRS.
-2. Analizar los métodos de extracción de características y clasificación en señales de ECG y su aplicación en el diagnóstico de enfermedades cardíacas.
-3. Evaluar el impacto de los algoritmos de inteligencia artificial en el procesamiento de señales de ECG, especialmente en aplicaciones de telemedicina y dispositivos portátiles.
-4. Identificar los desafíos y limitaciones en el procesamiento automatizado de ECG y proponer áreas de investigación futura que puedan mejorar la detección de condiciones cardíacas en entornos clínicos y domésticos.
-
-# Marco Teórico
+## 2. Marco Teórico
 
 ## 1. Procesamiento de Señales de ECG
 
@@ -48,7 +48,24 @@ La extracción de características permite reducir la dimensionalidad de los dat
 
 Los modelos de clasificación supervisados, como redes neuronales y máquinas de soporte vectorial, han demostrado ser efectivos en la detección de arritmias y otras condiciones a partir de señales de ECG. Además, los modelos basados en aprendizaje profundo, como el aprendizaje por transferencias y redes neuronales recurrentes, han mostrado un rendimiento robusto en la clasificación de patrones complejos en señales de ECG [6].
 
-# Referencias
+## 3. Objetivos
+
+### Objetivo General
+
+- Evaluar y analizar los métodos de procesamiento de señales de ECG, destacando tanto los enfoques tradicionales como los modernos basados en inteligencia artificial, con el propósito de identificar mejoras en la precisión y eficacia en la detección de anomalías cardíacas.
+
+### Objetivos Específicos
+
+1. Describir las técnicas de filtrado y eliminación de ruido en señales de ECG y evaluar su efectividad en la detección precisa del complejo QRS.
+2. Analizar los métodos de extracción de características y clasificación en señales de ECG y su aplicación en el diagnóstico de enfermedades cardíacas.
+3. Evaluar el impacto de los algoritmos de inteligencia artificial en el procesamiento de señales de ECG, especialmente en aplicaciones de telemedicina y dispositivos portátiles.
+4. Identificar los desafíos y limitaciones en el procesamiento automatizado de ECG y proponer áreas de investigación futura que puedan mejorar la detección de condiciones cardíacas en entornos clínicos y domésticos.
+
+## 4. Materiales y equipos 
+## 5. Metodología
+## 6. Resultados y discusiones
+## 7. Conclusiones
+## 8. Referencias Bibliográficas
 
 1. V. A. Ardeti, V. R. Kolluru, G. T. Varghese, y R. K. Patjoshi, "An overview on state-of-the-art electrocardiogram signal processing methods: Traditional to AI-based approaches," *Expert Systems With Applications*, vol. 217, 2023, pp. 119561.  
 2. A. K. Singh y S. Krishnan, "ECG signal feature extraction trends in methods and applications," *BioMedical Engineering OnLine*, vol. 22, 2023.  
