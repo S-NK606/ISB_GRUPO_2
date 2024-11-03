@@ -62,6 +62,18 @@ Los modelos de clasificación supervisados, como redes neuronales y máquinas de
 4. Identificar los desafíos y limitaciones en el procesamiento automatizado de ECG y proponer áreas de investigación futura que puedan mejorar la detección de condiciones cardíacas en entornos clínicos y domésticos.
 
 ## 4. Materiales y equipos 
+
+
+<div align="center">
+
+|   Modelo      | Descripción   | Cantidad |
+|---------------|---------------|----------|
+| NeuroKit2 | - | -       |
+|      -      | - | - |
+|       -       |   Laptop o PC | 1        |
+
+</div>
+<p align="justify">
 ## 5. Metodología
 ## 6. Resultados y discusiones
 ## 7. Conclusiones
