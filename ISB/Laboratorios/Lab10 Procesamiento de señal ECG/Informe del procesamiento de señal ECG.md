@@ -96,7 +96,7 @@ Importación de librerías: A continuación, importa las librerías requeridas:
   import matplotlib.pyplot as plt
   import pandas as pd
 
-### 2. Carga de los Datos de ECG
+### 2. Carga y conversión de los Datos de ECG
 Es importante que los datos estén organizados en un formato adecuado (por ejemplo, en un archivo CSV) y que la señal de ECG esté contenida en una columna específica.
    - Carga la señal de ECG desde un archivo CSV u otro formato compatible:
      ```python
@@ -104,12 +104,26 @@ Es importante que los datos estén organizados en un formato adecuado (por ejemp
      ecg_signal = data["ECG"]  # Cambia "ECG" por el nombre de la columna en tu archivo
      ```
 Este código lee los datos desde un archivo CSV y almacena la señal de ECG en la variable ecg_signal.
+
+Para la conversión digital de los datos de la señal ecg se usa una función de transferencia disponible en el manual ECG del BITalino [7], donde se nos indica la conversión de las muestras para medirlas en mV.
+
+<p align="center">
+ <img src="./imagenes/transfer_ecg.png" alt="Gráfico de ECG" width="230" height="100"/>
+</p>
+
+- Donde ADC sería la señal, 1024 sería la resolución de 10 bits, el VCC sería 3.3V y la ganancia del sensor sería 1100. Dándonos como resultado la señal en V, para luego multiplicarlo por 1000 y obtener, finalmente, la señal en mV.
+  ```python
+  ecg_signal = (((ecg_signal/1024)-0.5)*3.3)/(1100) # Datos en V
+  ecg_signal = ecg_signal * 1000 # Datos en mV
+  ```
+
 ### 3. Preprocesamiento de la Señal ECG
 El preprocesamiento es fundamental para reducir el ruido en la señal de ECG. NeuroKit2 proporciona la función ecg_clean(), que filtra la señal automáticamente.
 
 Objetivo: Limpiar la señal de ECG para remover artefactos y ruido.
-
+```python
 ecg_cleaned = nk.ecg_clean(ecg_signal, sampling_rate=1000)  # Ajusta la tasa de muestreo a la de tus datos
+```
 
 La función ecg_clean() aplica filtros y suaviza la señal de ECG, eliminando el ruido. La tasa de muestreo (sampling_rate) debe coincidir con la tasa de los datos originales.
 
@@ -117,37 +131,37 @@ La función ecg_clean() aplica filtros y suaviza la señal de ECG, eliminando el
 El siguiente paso es extraer características específicas de la señal de ECG, como la frecuencia cardíaca y la variabilidad de la frecuencia cardíaca (HRV), mediante la función ecg_analyze().
 
 Objetivo: Calcular características clave de la señal.
-
+```python
 ecg_analysis = nk.ecg_analyze(ecg_cleaned, sampling_rate=1000)
-
+```
 La función ecg_analyze() permite obtener métricas importantes de la señal, como la frecuencia cardíaca promedio y la HRV. Estos datos son útiles en estudios de salud y diagnóstico.
 
 ### 5. Procesamiento Completo con `ecg_process()`
 Para simplificar el flujo de trabajo, NeuroKit2 ofrece la función ecg_process(), que combina el preprocesamiento y el análisis de la señal en una sola llamada.
 
 Objetivo: Realizar el preprocesamiento y análisis completo de una sola vez.
-
+```python
 signals, info = nk.ecg_process(ecg_signal, sampling_rate=1000)
-
+```
 ecg_process() integra ecg_clean() y ecg_analyze() y devuelve dos elementos: signals, que contiene la señal limpia y procesada, y info, un diccionario con detalles y métricas sobre la señal.
 
 ### 6. Visualización de Resultados
 Para visualizar los datos y verificar el procesamiento, utiliza ecg_plot().
 
 Código para visualizar:
-
+```python
 nk.ecg_plot(signals, sampling_rate=1000)
 plt.show()
-
+```
 La gráfica permite observar la señal limpia, mostrando los picos R y las fases cardíacas. Esto es útil para validar visualmente el preprocesamiento y los resultados de la detección de picos.
 
 ### 7. Análisis e Interpretación de los Datos
 El objeto info contiene métricas clave como la frecuencia cardíaca promedio y HRV, que se pueden extraer y analizar.
 Ejemplo de extracción de métricas:
-
+```python
 print("Frecuencia cardíaca promedio:", info["Heart_Rate_Mean"])
 print("HRV (RMSSD):", info["HRV_RMSSD"])
-
+```
 Estas métricas permiten interpretar el estado de salud del sujeto y son útiles para investigaciones en fisiología y salud.
 
 ### 8. Conclusión y Reportes
@@ -173,5 +187,6 @@ Nota: Esta metodología sigue las mejores prácticas de NeuroKit2 para asegurar 
 3. E. J. da S. Luz, W. R. Schwartz, G. Cámara-Chávez, y D. Menotti, "ECG-based heartbeat classification for arrhythmia detection: A survey," *Computer Methods and Programs in Biomedicine*, vol. 127, 2016, pp. 144–164.  
 4. J. Pan y W. J. Tompkins, "A Real-Time QRS Detection Algorithm," *IEEE Transactions on Biomedical Engineering*, vol. BME-32, no. 3, 1985, pp. 230–236.  
 5. P. Hamilton, "Open source ECG analysis," *Computers in Cardiology*, vol. 29, 2002, pp. 101–104.  
-6. D. Makowski, T. Pham, Z. J. Lau, et al., "NeuroKit2: A Python toolbox for neurophysiological signal processing," *Behavior Research Methods*, vol. 53, 2021, pp. 1689–1696.  
+6. D. Makowski, T. Pham, Z. J. Lau, et al., "NeuroKit2: A Python toolbox for neurophysiological signal processing," *Behavior Research Methods*, vol. 53, 2021, pp. 1689–1696.
+7. “BITalino documentation.” https://support.pluxbiosignals.com/knowledge-base/bitalino-documentation/
 
