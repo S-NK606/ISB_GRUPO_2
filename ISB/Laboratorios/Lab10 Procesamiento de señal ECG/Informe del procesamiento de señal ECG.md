@@ -182,49 +182,49 @@ Nota: Esta metodología sigue las mejores prácticas de NeuroKit2 para asegurar 
 #### ECG originales: ecg_plot()
  | Señales | Gráficas|
  | --- | --- |
- |Reposo 1ra derivada| |
- |Reposo 2da derivada| |
- |Reposo 3ra derivada| |
+ |Reposo 1ra derivada|![Imagen 1](./imagenes/ECG_9.png)  |
+ |Reposo 2da derivada|![Imagen 1](./imagenes/ECG_10.png)  |
+ |Reposo 3ra derivada|![Imagen 1](./imagenes/ECG_11.png)  |
  |Respiración 1ra derivada|![Imagen 1](./imagenes/ECG_1.png) |
  |Respiración 2da derivada|![Imagen 2](./imagenes/ECG_2.png) |
  |Respiración 3ra derivada|![Imagen 3](./imagenes/ECG_3.png) |
- |Sin Respiración 1ra derivada|![Imagen 1](./WAVELET_EEG/SENAL_ORIGINAL_REPOSOI.png) |
- |Sin Respiración 2da derivada|![Imagen 2](./WAVELET_EEG/SENAL_FILTRADA_REPOSOI.png) |
- |Sin Respiración 3ra derivada|![Imagen 3](./WAVELET_EEG/SENAL_FILTRADA_REPOSOI.png) |
+ |Sin Respiración 1ra derivada|![Imagen 1](./imagenes/ECG_12.png) |
+ |Sin Respiración 2da derivada|![Imagen 2](./imagenes/ECG_13.png) |
+ |Sin Respiración 3ra derivada|![Imagen 3](./imagenes/ECG_14.png) |
  |Ejercicio 1ra derivada|![Imagen 1](./imagenes/ECG_4.png) |
  |Ejercicio 2da derivada|![Imagen 2](./imagenes/ECG_5.png) |
  |Ejercicio 3ra derivada|![Imagen 3](./imagenes/ECG_6.png) |
- |Simulación a 60bpm|![Imagen 2](./WAVELET_EEG/SENAL_FILTRADA_REPOSOI.png) |
- |Simulación a 90bpm|![Imagen 3](./WAVELET_EEG/SENAL_FILTRADA_REPOSOI.png) |
+ |Simulación a 60bpm|![Imagen 2](./imagenes/ECG_15.png) |
+ |Simulación a 90bpm|![Imagen 3](./imagenes/ECG_16.png) |
  |Simulación a 120bpm|![Imagen 2](./imagenes/ECG_7.png) |
  |Simulación a 150bpm|![Imagen 3](./imagenes/ECG_8.png) |
  
 #### Preprocesamiento: ecg_clean()
  | Señales | Gráficas|
  | --- | --- |
- |Reposo 1ra derivada|![Imagen 1](./WAVELET_EEG/SENAL_ORIGINAL_REPOSOI.png) |
- |Reposo 2da derivada|![Imagen 2](./WAVELET_EEG/SENAL_FILTRADA_REPOSOI.png) |
- |Reposo 3ra derivada|![Imagen 3](./WAVELET_EEG/SENAL_FILTRADA_REPOSOI.png) |
+ |Reposo 1ra derivada|![Imagen 1](./imagenes/ECG_9_b.png)  |
+ |Reposo 2da derivada|![Imagen 1](./imagenes/ECG_10_b.png)  |
+ |Reposo 3ra derivada|![Imagen 1](./imagenes/ECG_11_b.png)  |
  |Respiración 1ra derivada|![Imagen 1](./imagenes/ECG_1_b.png) |
  |Respiración 2da derivada|![Imagen 2](./imagenes/ECG_2_b.png) |
  |Respiración 3ra derivada|![Imagen 3](./imagenes/ECG_3_b.png) |
- |Sin Respiración 1ra derivada|![Imagen 1](./WAVELET_EEG/SENAL_ORIGINAL_REPOSOI.png) |
- |Sin Respiración 2da derivada|![Imagen 2](./WAVELET_EEG/SENAL_FILTRADA_REPOSOI.png) |
- |Sin Respiración 3ra derivada|![Imagen 3](./WAVELET_EEG/SENAL_FILTRADA_REPOSOI.png) |
+ |Sin Respiración 1ra derivada|![Imagen 1](./imagenes/ECG_12_b.png) |
+ |Sin Respiración 2da derivada|![Imagen 2](./imagenes/ECG_13_b.png) |
+ |Sin Respiración 3ra derivada|![Imagen 3](./imagenes/ECG_14_b.png) |
  |Ejercicio 1ra derivada|![Imagen 1](./imagenes/ECG_4_b.png) |
  |Ejercicio 2da derivada|![Imagen 2](./imagenes/ECG_5_b.png) |
  |Ejercicio 3ra derivada|![Imagen 3](./imagenes/ECG_6_b.png) |
- |Simulación a 60bpm|![Imagen 2](./WAVELET_EEG/SENAL_FILTRADA_REPOSOI.png) |
- |Simulación a 90bpm|![Imagen 3](./WAVELET_EEG/SENAL_FILTRADA_REPOSOI.png) |
+ |Simulación a 60bpm|![Imagen 2](./imagenes/ECG_15_b.png) |
+ |Simulación a 90bpm|![Imagen 3](./imagenes/ECG_16_b.png) |
  |Simulación a 120bpm|![Imagen 2](./imagenes/ECG_7_b.png) |
  |Simulación a 150bpm|![Imagen 3](./imagenes/ECG_8_b.png) |
  
 #### Análisis: ecg_analyze()
  | Señales | Gráficas|
  | --- | --- |
- |Reposo 1ra derivada|![Imagen 1](./imagenes/ECG_9_e.png) |
- |Reposo 2da derivada|![Imagen 2](./imagenes/ECG_10_e.png) |
- |Reposo 3ra derivada|![Imagen 3](./imagenes/ECG_11_e.png) |
+ |Reposo 1ra derivada|![Imagen 1](./imagenes/ECG_9_e.png)  |
+ |Reposo 2da derivada|![Imagen 1](./imagenes/ECG_10_e.png)  |
+ |Reposo 3ra derivada|![Imagen 1](./imagenes/ECG_11_e.png)  |
  |Respiración 1ra derivada|![Imagen 1](./imagenes/ECG_1_e.png) |
  |Respiración 2da derivada|![Imagen 2](./imagenes/ECG_2_e.png) |
  |Respiración 3ra derivada|![Imagen 3](./imagenes/ECG_3_e.png) |
@@ -242,60 +242,60 @@ Nota: Esta metodología sigue las mejores prácticas de NeuroKit2 para asegurar 
 #### Preprocesamiento y Análisis: ecg_process()
  | Señales | Gráficas|
  | --- | --- |
- |Reposo 1ra derivada|![Imagen 1](./WAVELET_EEG/SENAL_ORIGINAL_REPOSOI.png) |
- |Reposo 2da derivada|![Imagen 2](./WAVELET_EEG/SENAL_FILTRADA_REPOSOI.png) |
- |Reposo 3ra derivada|![Imagen 3](./WAVELET_EEG/SENAL_FILTRADA_REPOSOI.png) |
+ |Reposo 1ra derivada|![Imagen 1](./imagenes/ECG_9_a.png)  |
+ |Reposo 2da derivada|![Imagen 1](./imagenes/ECG_10_a.png)  |
+ |Reposo 3ra derivada|![Imagen 1](./imagenes/ECG_11_a.png)  |
  |Respiración 1ra derivada|![Imagen 1](./imagenes/ECG_1_a.png) |
  |Respiración 2da derivada|![Imagen 2](./imagenes/ECG_2_a.png) |
  |Respiración 3ra derivada|![Imagen 3](./imagenes/ECG_3_a.png) |
- |Sin Respiración 1ra derivada|![Imagen 1](./WAVELET_EEG/SENAL_ORIGINAL_REPOSOI.png) |
- |Sin Respiración 2da derivada|![Imagen 2](./WAVELET_EEG/SENAL_FILTRADA_REPOSOI.png) |
- |Sin Respiración 3ra derivada|![Imagen 3](./WAVELET_EEG/SENAL_FILTRADA_REPOSOI.png) |
+ |Sin Respiración 1ra derivada|![Imagen 1](./imagenes/ECG_12_a.png) |
+ |Sin Respiración 2da derivada|![Imagen 2](./imagenes/ECG_13_a.png) |
+ |Sin Respiración 3ra derivada|![Imagen 3](./imagenes/ECG_14_a.png) |
  |Ejercicio 1ra derivada|![Imagen 1](./imagenes/ECG_4_a.png) |
  |Ejercicio 2da derivada|![Imagen 2](./imagenes/ECG_5_a.png) |
  |Ejercicio 3ra derivada|![Imagen 3](./imagenes/ECG_6_a.png) |
- |Simulación a 60bpm|![Imagen 2](./WAVELET_EEG/SENAL_FILTRADA_REPOSOI.png) |
- |Simulación a 90bpm|![Imagen 3](./WAVELET_EEG/SENAL_FILTRADA_REPOSOI.png) |
+ |Simulación a 60bpm|![Imagen 2](./imagenes/ECG_15_a.png) |
+ |Simulación a 90bpm|![Imagen 3](./imagenes/ECG_16_a.png) |
  |Simulación a 120bpm|![Imagen 2](./imagenes/ECG_7_a.png) |
  |Simulación a 150bpm|![Imagen 3](./imagenes/ECG_8_a.png) |
  
 #### Compute Signal Rate: ecg_rate()
  | Señales | Gráficas|
  | --- | --- |
- |Reposo 1ra derivada|![Imagen 1](./WAVELET_EEG/SENAL_ORIGINAL_REPOSOI.png) |
- |Reposo 2da derivada|![Imagen 2](./WAVELET_EEG/SENAL_FILTRADA_REPOSOI.png) |
- |Reposo 3ra derivada|![Imagen 3](./WAVELET_EEG/SENAL_FILTRADA_REPOSOI.png) |
+ |Reposo 1ra derivada|![Imagen 1](./imagenes/ECG_9_c.png)  |
+ |Reposo 2da derivada|![Imagen 1](./imagenes/ECG_10_c.png)  |
+ |Reposo 3ra derivada|![Imagen 1](./imagenes/ECG_11_c.png)  |
  |Respiración 1ra derivada|![Imagen 1](./imagenes/ECG_1_c.png) |
  |Respiración 2da derivada|![Imagen 2](./imagenes/ECG_2_c.png) |
  |Respiración 3ra derivada|![Imagen 3](./imagenes/ECG_3_c.png) |
- |Sin Respiración 1ra derivada|![Imagen 1](./WAVELET_EEG/SENAL_ORIGINAL_REPOSOI.png) |
- |Sin Respiración 2da derivada|![Imagen 2](./WAVELET_EEG/SENAL_FILTRADA_REPOSOI.png) |
- |Sin Respiración 3ra derivada|![Imagen 3](./WAVELET_EEG/SENAL_FILTRADA_REPOSOI.png) |
+ |Sin Respiración 1ra derivada|![Imagen 1](./imagenes/ECG_12_c.png) |
+ |Sin Respiración 2da derivada|![Imagen 2](./imagenes/ECG_13_c.png) |
+ |Sin Respiración 3ra derivada|![Imagen 3](./imagenes/ECG_14_c.png) |
  |Ejercicio 1ra derivada|![Imagen 1](./imagenes/ECG_4_c.png) |
  |Ejercicio 2da derivada|![Imagen 2](./imagenes/ECG_5_c.png) |
  |Ejercicio 3ra derivada|![Imagen 3](./imagenes/ECG_6_c.png) |
- |Simulación a 60bpm|![Imagen 2](./WAVELET_EEG/SENAL_FILTRADA_REPOSOI.png) |
- |Simulación a 90bpm|![Imagen 3](./WAVELET_EEG/SENAL_FILTRADA_REPOSOI.png) |
+ |Simulación a 60bpm|![Imagen 2](./imagenes/ECG_15_c.png) |
+ |Simulación a 90bpm|![Imagen 3](./imagenes/ECG_16_c.png) |
  |Simulación a 120bpm|![Imagen 2](./imagenes/ECG_7_c.png) |
  |Simulación a 150bpm|![Imagen 3](./imagenes/ECG_8_c.png) |
  
 #### Respiración derivada de ECG (EDR): ecg_rsp()
  | Señales | Gráficas|
  | --- | --- |
- |Reposo 1ra derivada|![Imagen 1](./WAVELET_EEG/SENAL_ORIGINAL_REPOSOI.png) |
- |Reposo 2da derivada|![Imagen 2](./WAVELET_EEG/SENAL_FILTRADA_REPOSOI.png) |
- |Reposo 3ra derivada|![Imagen 3](./WAVELET_EEG/SENAL_FILTRADA_REPOSOI.png) |
+ |Reposo 1ra derivada|![Imagen 1](./imagenes/ECG_9_d.png)  |
+ |Reposo 2da derivada|![Imagen 1](./imagenes/ECG_10_d.png)  |
+ |Reposo 3ra derivada|![Imagen 1](./imagenes/ECG_11_d.png)  |
  |Respiración 1ra derivada|![Imagen 1](./imagenes/ECG_1_d.png) |
  |Respiración 2da derivada|![Imagen 2](./imagenes/ECG_2_d.png) |
  |Respiración 3ra derivada|![Imagen 3](./imagenes/ECG_3_d.png) |
- |Sin Respiración 1ra derivada|![Imagen 1](./WAVELET_EEG/SENAL_ORIGINAL_REPOSOI.png) |
- |Sin Respiración 2da derivada|![Imagen 2](./WAVELET_EEG/SENAL_FILTRADA_REPOSOI.png) |
- |Sin Respiración 3ra derivada|![Imagen 3](./WAVELET_EEG/SENAL_FILTRADA_REPOSOI.png) |
+ |Sin Respiración 1ra derivada|![Imagen 1](./imagenes/ECG_12_d.png) |
+ |Sin Respiración 2da derivada|![Imagen 2](./imagenes/ECG_13_d.png) |
+ |Sin Respiración 3ra derivada|![Imagen 3](./imagenes/ECG_14_d.png) |
  |Ejercicio 1ra derivada|![Imagen 1](./imagenes/ECG_4_d.png) |
  |Ejercicio 2da derivada|![Imagen 2](./imagenes/ECG_5_d.png) |
  |Ejercicio 3ra derivada|![Imagen 3](./imagenes/ECG_6_d.png) |
- |Simulación a 60bpm|![Imagen 2](./WAVELET_EEG/SENAL_FILTRADA_REPOSOI.png) |
- |Simulación a 90bpm|![Imagen 3](./WAVELET_EEG/SENAL_FILTRADA_REPOSOI.png) |
+ |Simulación a 60bpm|![Imagen 2](./imagenes/ECG_15_d.png) |
+ |Simulación a 90bpm|![Imagen 3](./imagenes/ECG_16_d.png) |
  |Simulación a 120bpm|![Imagen 2](./imagenes/ECG_7_d.png) |
  |Simulación a 150bpm|![Imagen 3](./imagenes/ECG_8_d.png) |
 
