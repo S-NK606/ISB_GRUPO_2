@@ -171,7 +171,7 @@ Representa la desviación estándar de los intervalos NN (intervalos entre latid
 - HRV_RMSSD:
 Representa la raíz cuadrada de la media de las diferencias al cuadrado entre intervalos sucesivos, es decir, mide las variaciones rápida de latido a latido evaluando la actividad del sistema parasimpático [8, 9].
 
-####ECG rate mean
+#### ECG rate mean
 Es la frecuencia cardiaca media calculada durante un tiempo específico y es útil para conocer el estado de reposo y actividad del corazón.
 
 Estas métricas permiten interpretar el estado de salud del sujeto y son útiles para investigaciones en fisiología y salud.
