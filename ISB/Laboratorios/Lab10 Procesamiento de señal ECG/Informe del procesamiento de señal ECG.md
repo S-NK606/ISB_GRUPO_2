@@ -78,72 +78,90 @@ Los modelos de clasificación supervisados, como redes neuronales y máquinas de
  
 ## 5. Metodología
 
-# Metodología para Preprocesamiento y Análisis de Señal ECG usando NeuroKit2
+## Metodología para Preprocesamiento y Análisis de Señal ECG usando NeuroKit2
+
+# Metodología para el Preprocesamiento y Análisis de Señal ECG usando NeuroKit2
+
+En este documento se describe la metodología para procesar y analizar una señal de ECG utilizando la librería **NeuroKit2** en Python. Esta librería facilita el procesamiento de señales neurofisiológicas mediante funciones específicas para la limpieza y el análisis de datos de ECG. 
 
 ### 1. Preparación e Instalación
-   - **Instalación**: Asegúrate de tener **NeuroKit2** instalado. Utiliza el siguiente comando en tu terminal:
-     ```python
-     pip install neurokit2
-     ```
-   - **Importación de librerías**: Importa las librerías necesarias para el análisis:
-     ```python
-     import neurokit2 as nk
-     import matplotlib.pyplot as plt
-     import pandas as pd
-     ```
+
+Para comenzar, instala la librería **NeuroKit2** y otras necesarias como `matplotlib` y `pandas`.
+
+- **Instalación de NeuroKit2**: 
+  ```python
+  pip install neurokit2
+
+Importación de librerías: A continuación, importa las librerías requeridas:
+
+  import neurokit2 as nk
+  import matplotlib.pyplot as plt
+  import pandas as pd
 
 ### 2. Carga de los Datos de ECG
+Es importante que los datos estén organizados en un formato adecuado (por ejemplo, en un archivo CSV) y que la señal de ECG esté contenida en una columna específica.
    - Carga la señal de ECG desde un archivo CSV u otro formato compatible:
      ```python
      data = pd.read_csv("ruta/a_tu_archivo.csv")
      ecg_signal = data["ECG"]  # Cambia "ECG" por el nombre de la columna en tu archivo
      ```
-
+Este código lee los datos desde un archivo CSV y almacena la señal de ECG en la variable ecg_signal.
 ### 3. Preprocesamiento de la Señal ECG
-   - **Objetivo**: Limpiar la señal de ruido y artefactos.
-   - **Método**: Utiliza `ecg_clean()` para aplicar filtros y suavizado en la señal.
-     ```python
-     ecg_cleaned = nk.ecg_clean(ecg_signal, sampling_rate=1000)  # Ajusta la tasa de muestreo
-     ```
-   - **Descripción**: `ecg_clean()` elimina el ruido de la señal, aplicando filtros adecuados. Puedes ajustar el parámetro `method` según tus necesidades.
+El preprocesamiento es fundamental para reducir el ruido en la señal de ECG. NeuroKit2 proporciona la función ecg_clean(), que filtra la señal automáticamente.
+
+Objetivo: Limpiar la señal de ECG para remover artefactos y ruido.
+
+ecg_cleaned = nk.ecg_clean(ecg_signal, sampling_rate=1000)  # Ajusta la tasa de muestreo a la de tus datos
+
+La función ecg_clean() aplica filtros y suaviza la señal de ECG, eliminando el ruido. La tasa de muestreo (sampling_rate) debe coincidir con la tasa de los datos originales.
 
 ### 4. Análisis de la Señal ECG
-   - **Objetivo**: Extraer características clave de la señal, como la frecuencia cardíaca y HRV.
-   - **Método**: Usa `ecg_analyze()` para obtener métricas importantes.
-     ```python
-     ecg_analysis = nk.ecg_analyze(ecg_cleaned, sampling_rate=1000)
-     ```
-   - **Descripción**: Esta función calcula la frecuencia cardíaca, variabilidad (HRV) y otros parámetros relevantes.
+El siguiente paso es extraer características específicas de la señal de ECG, como la frecuencia cardíaca y la variabilidad de la frecuencia cardíaca (HRV), mediante la función ecg_analyze().
+
+Objetivo: Calcular características clave de la señal.
+
+ecg_analysis = nk.ecg_analyze(ecg_cleaned, sampling_rate=1000)
+
+La función ecg_analyze() permite obtener métricas importantes de la señal, como la frecuencia cardíaca promedio y la HRV. Estos datos son útiles en estudios de salud y diagnóstico.
 
 ### 5. Procesamiento Completo con `ecg_process()`
-   - **Objetivo**: Realizar el preprocesamiento y análisis en un solo paso.
-   - **Método**: Usa `ecg_process()` para simplificar el flujo de trabajo.
-     ```python
-     signals, info = nk.ecg_process(ecg_signal, sampling_rate=1000)
-     ```
-   - **Descripción**: `ecg_process()` integra `ecg_clean()` y `ecg_analyze()`, devolviendo la señal preprocesada y un diccionario con información detallada.
+Para simplificar el flujo de trabajo, NeuroKit2 ofrece la función ecg_process(), que combina el preprocesamiento y el análisis de la señal en una sola llamada.
+
+Objetivo: Realizar el preprocesamiento y análisis completo de una sola vez.
+
+signals, info = nk.ecg_process(ecg_signal, sampling_rate=1000)
+
+ecg_process() integra ecg_clean() y ecg_analyze() y devuelve dos elementos: signals, que contiene la señal limpia y procesada, y info, un diccionario con detalles y métricas sobre la señal.
 
 ### 6. Visualización de Resultados
-   - **Visualizar la señal procesada**:
-     ```python
-     nk.ecg_plot(signals, sampling_rate=1000)
-     plt.show()
-     ```
-   - **Interpretación**: La gráfica muestra la señal de ECG limpia con los picos R detectados y las fases cardíacas.
+Para visualizar los datos y verificar el procesamiento, utiliza ecg_plot().
+
+Código para visualizar:
+
+nk.ecg_plot(signals, sampling_rate=1000)
+plt.show()
+
+La gráfica permite observar la señal limpia, mostrando los picos R y las fases cardíacas. Esto es útil para validar visualmente el preprocesamiento y los resultados de la detección de picos.
 
 ### 7. Análisis e Interpretación de los Datos
-   - Usa el diccionario `info` para obtener métricas clave como la frecuencia cardíaca promedio y HRV.
-   - **Ejemplo**:
-     ```python
-     print("Frecuencia cardíaca promedio:", info["Heart_Rate_Mean"])
-     print("HRV (RMSSD):", info["HRV_RMSSD"])
-     ```
+El objeto info contiene métricas clave como la frecuencia cardíaca promedio y HRV, que se pueden extraer y analizar.
+Ejemplo de extracción de métricas:
+
+print("Frecuencia cardíaca promedio:", info["Heart_Rate_Mean"])
+print("HRV (RMSSD):", info["HRV_RMSSD"])
+
+Estas métricas permiten interpretar el estado de salud del sujeto y son útiles para investigaciones en fisiología y salud.
 
 ### 8. Conclusión y Reportes
-   - Resume los resultados clave, destacando el impacto del preprocesamiento en la señal y los patrones detectados en frecuencia cardíaca y HRV.
-   - Incluye gráficos y observaciones sobre la calidad de la señal y la eficacia de los métodos aplicados.
+Finalmente, en el informe, resume los resultados clave obtenidos, destacando el impacto del preprocesamiento en la señal y cualquier patrón relevante en las métricas, como la frecuencia cardíaca y la HRV.
 
-> Esta metodología sigue los principios de NeuroKit2 para un procesamiento reproducible y eficiente de señales neurofisiológicas, aprovechando sus funciones integradas para una implementación simple y controlable.
+Resumen de puntos clave:
+ - Preprocesamiento exitoso de la señal ECG.
+ - Análisis y obtención de métricas relevantes.
+ - Visualización y validación de resultados.
+Incluye gráficos y observaciones sobre la calidad de la señal, haciendo énfasis en la eficacia del preprocesamiento y los resultados obtenidos con NeuroKit2.
+
+Nota: Esta metodología sigue las mejores prácticas de NeuroKit2 para asegurar un procesamiento reproducible y eficiente de señales neurofisiológicas, ofreciendo una implementación simplificada para el análisis de ECG.
 
 
 <p align="justify">
