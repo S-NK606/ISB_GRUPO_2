@@ -69,7 +69,6 @@ Los modelos de clasificación supervisados, como redes neuronales y máquinas de
 |   Modelo      | Descripción   | Cantidad |
 |---------------|---------------|----------|
 | NeuroKit2 | - | -       |
-|      -      | - | - |
 |       -       |   Laptop o PC | 1        |
 
 </div>
