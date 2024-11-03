@@ -24,7 +24,7 @@ Este informe explora los métodos actuales de procesamiento de señales de ECG, 
 
 ## 2. Marco Teórico
 
-## 1. Procesamiento de Señales de ECG
+### 1 Filtrado y Eliminación de Ruido
 
 El procesamiento de señales de ECG implica una serie de etapas que permiten convertir los datos crudos en información significativa para su interpretación clínica. La señal de ECG, que consiste en la captura de los impulsos eléctricos del corazón, requiere técnicas avanzadas de procesamiento para eliminar el ruido y resaltar características clave, como el complejo QRS, que son esenciales para el diagnóstico de condiciones cardíacas [2]. Los algoritmos clásicos se centran en la filtración de ruido, identificación de puntos críticos y extracción de características temporales y frecuenciales.
 
