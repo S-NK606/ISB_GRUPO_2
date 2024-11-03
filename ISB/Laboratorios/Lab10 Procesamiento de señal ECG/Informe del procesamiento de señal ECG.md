@@ -73,6 +73,9 @@ Los modelos de clasificación supervisados, como redes neuronales y máquinas de
 
 </div>
 <p align="justify">
+
+<p align="justify">
+ 
 ## 5. Metodología
 ## 6. Resultados y discusiones
 ## 7. Conclusiones
