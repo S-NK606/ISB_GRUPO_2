@@ -316,6 +316,11 @@ La función ecg_clean() de NeuroKit2 demostró ser eficaz en la eliminación de 
 
 Por otra parte, la función ecg_analyze() permitió extraer métricas relevantes de variabilidad de la frecuencia cardíaca (HRV), como el RMSSD, un indicador de la variabilidad cardíaca en el tiempo que refleja respuestas fisiológicas del sistema autónomo y puede ser útil para el diagnóstico de arritmias o la evaluación de la respuesta al estrés. Sin embargo, la calidad de estos indicadores depende de un preprocesamiento adecuado, lo que subraya la importancia de eliminar correctamente el ruido en la señal inicial.
 
+![Imagen 3](./imagenes/1.png) 
+Asimismo, en la imagen se muestra como la integración de estas funciones específicas en el procesamiento de ECG con NeuroKit2 facilita un análisis detallado y automatizado de las señales. El uso de una secuencia estructurada, que comienza con la limpieza de la señal y culmina con la identificación de fases cardíacas, asegura que el análisis sea exhaustivo y fiable. Además, cada función está diseñada para realizar tareas específicas que no solo mejoran la calidad de la señal sino que también extraen características relevantes para estudios clínicos y de investigación.
+
+Este flujo de procesamiento permite realizar análisis avanzados de ECG, como la variabilidad de la frecuencia cardíaca y la detección de arritmias, con un nivel de automatización que minimiza la intervención del usuario y reduce los errores de interpretación.
+
 Finalmente, aunque NeuroKit2 ofrece una metodología de procesamiento estandarizada que es rápida y reproducible, presenta limitaciones en señales con niveles de ruido particularmente altos o en individuos con alta variabilidad interindividual. Para mejorar la precisión en estos casos, sería conveniente explorar el uso de filtros más especializados o de técnicas de aprendizaje automático que ajusten el procesamiento a las características específicas de cada paciente.
 
 
