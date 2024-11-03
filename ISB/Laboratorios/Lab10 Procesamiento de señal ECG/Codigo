@@ -1,0 +1,132 @@
+import pandas as pd
+import neurokit2 as nk
+import numpy as np
+import matplotlib.pyplot as plt
+import ecg_plot
+
+# Lista de archivos a procesar
+file_paths = [
+    "C:\\Users\\Ingrid\\Downloads\\Señales_2\\Estado_con_Respiracion_I_deriv.txt",
+    "C:\\Users\\Ingrid\\Downloads\\Señales_2\\Estado_con_Respiracion_II_deriv.txt",
+    "C:\\Users\\Ingrid\\Downloads\\Señales_2\\Estado_con_Respiracion_III_deriv.txt",
+    "C:\\Users\\Ingrid\\Downloads\\Señales_2\\Ejercicio_I_deriv.txt",
+    "C:\\Users\\Ingrid\\Downloads\\Señales_2\\Ejercicio_II_deriv.txt",
+    "C:\\Users\\Ingrid\\Downloads\\Señales_2\\Ejercicio_III_deriv.txt",
+    "C:\\Users\\Ingrid\\Downloads\\Señales_2\\Simulacion_120bpm.txt",
+    "C:\\Users\\Ingrid\\Downloads\\Señales_2\\Simulacion_150bpm.txt"
+]
+
+nombres = ["Estado con respiración (1ra derivación)", "Estado con respiración (2da derivación)", "Estado con respiración (3ra derivación)",
+           "Ejercicio (1ra derivación)", "Ejercicio (2da derivación)", "Ejercicio (3ra derivación)",
+           "Simulación a 120 bpm", "Simulación a 150 bpm"
+           ]
+
+# Procesar cada archivo
+for idx, file_path in enumerate(file_paths):
+    # Leer archivo, ignorando las líneas de encabezado
+    with open(file_path, 'r') as file:
+        lines = file.readlines()
+
+    # Buscar la línea que contiene 'EndOfHeader'
+    data_start = None
+    for i, line in enumerate(lines):
+        if 'EndOfHeader' in line:
+            data_start = i + 1
+            break
+
+    if data_start is None:
+        raise ValueError(f"No se encontró 'EndOfHeader' en el archivo {file_path}.")
+
+    # Extraer las líneas de datos
+    data_lines = lines[data_start:]
+
+    # Convertir las líneas de datos a un array de NumPy
+    data = np.array([list(map(float, line.strip().split('\t'))) for line in data_lines])
+
+    # Extraer la señal ECG (última columna en los datos)
+    ecg_signal = data[:, 5]
+
+    # Frecuencia de muestreo
+    fs = 1000  # Frecuencia de muestreo en Hz
+
+    #IMPORTANTE--------------------------------------------------------------------------
+    # Conversión de los datos leídos mediante la función de transferencia
+    ecg_signal_raw = (((ecg_signal/1024)-0.5)*3.3)/(1100)
+    ecg_signal_raw = ecg_signal_raw * 1000
+
+    ecg_plot.plot_1(ecg_signal_raw[0:10000], sample_rate=1000, title = 'ECG')
+    #ecg_plot.show()
+    plt.tight_layout()
+    #------------------------------------------------------------------------------------
+
+    # Procesar y analizar la señal de ECG con ecg_process (preprocesamiento y análisis)
+    signals, info = nk.ecg_process(ecg_signal, sampling_rate=1000)
+
+    # Crear una nueva figura para cada gráfico
+    # plt.figure(figsize=(10, 40))  # Crear nueva figura para cada señal
+
+    # Visualizar los resultados del preprocesamiento y el análisis
+    nk.ecg_plot(signals)
+    plt.title(nombres[idx])  # Agregar título para cada señal
+    fig = plt.gcf()  # Obtiene la figura actual generada
+    fig.set_size_inches(20, 10, forward=True) 
+
+    # Mostrar el análisis
+    print(f"Análisis para {nombres[idx]}:")
+    print(nk.ecg_analyze(signals, sampling_rate=1000))
+
+    signals = pd.DataFrame({
+    "ECG_Raw" : ecg_signal,
+    "ECG_NeuroKit" : nk.ecg_clean(ecg_signal, sampling_rate=1000, method="neurokit"),
+    "ECG_BioSPPy" : nk.ecg_clean(ecg_signal, sampling_rate=1000, method="biosppy"),
+    "ECG_PanTompkins" : nk.ecg_clean(ecg_signal, sampling_rate=1000, method="pantompkins1985"),
+    "ECG_Hamilton" : nk.ecg_clean(ecg_signal, sampling_rate=1000, method="hamilton2002"),
+    "ECG_Elgendi" : nk.ecg_clean(ecg_signal, sampling_rate=1000, method="elgendi2010"),
+    "ECG_EngZeeMod" : nk.ecg_clean(ecg_signal, sampling_rate=1000, method="engzeemod2012"),
+    "ECG_VG" : nk.ecg_clean(ecg_signal, sampling_rate=1000, method="vg"),
+    "ECG_TC" : nk.ecg_clean(ecg_signal, sampling_rate=1000, method="templateconvolution")
+    })
+
+    signals.plot(subplots=True)
+    
+    # Supongamos que ya tienes una señal ECG limpia (por ejemplo, usando ecg_clean)
+    ecg_signal_clean = nk.ecg_clean(ecg_signal, sampling_rate=1000)
+
+    # Encontrar picos en la señal de ECG
+    info = nk.signal_findpeaks(ecg_signal_clean)
+
+    # Calcular la tasa de picos utilizando dos métodos
+    rate1 = nk.signal_rate(peaks=info["Peaks"],
+                            desired_length=len(ecg_signal_clean),
+                            interpolation_method="nearest")
+
+    rate2 = nk.signal_rate(peaks=info["Peaks"],
+                            desired_length=len(ecg_signal_clean),
+                            interpolation_method="monotone_cubic")
+
+    # Graficar la señal original y las tasas en la misma escala
+    nk.signal_plot([ecg_signal_clean, rate1, rate2],
+                labels=["Señal ECG Original", "Tasa (nearest)", "Tasa (monotone cubic)"],
+                standardize=True)
+
+    # Encontrar los picos R en la señal de ECG
+    rpeaks, info = nk.ecg_peaks(ecg_signal, sampling_rate=1000)
+
+    # Calcular la tasa de frecuencia cardíaca (heart rate)
+    ecg_rate = nk.signal_rate(rpeaks, sampling_rate=1000, desired_length=len(ecg_signal))
+
+    # Extraer la Respiración Derivada del ECG (EDR) utilizando el método deseado
+    # Puedes cambiar el método entre 'vangent2019', 'soni2019', 'charlton2016', 'sarkar2015'
+    edr = nk.ecg_rsp(ecg_rate, sampling_rate=1000, method='vangent2019')
+
+    # Agregar la EDR a un DataFrame para facilitar la visualización
+    signals_df = pd.DataFrame({
+        'ECG': ecg_signal,
+        'Heart Rate': ecg_rate,
+        'EDR': edr
+    })
+
+    # Visualizar la señal de ECG y la EDR
+    nk.signal_plot([signals_df['ECG'], signals_df['EDR']],
+                labels=["Señal ECG", "Respiración Derivada del ECG"],
+                standardize=True)
