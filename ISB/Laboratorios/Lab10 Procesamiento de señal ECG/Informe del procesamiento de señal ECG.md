@@ -80,8 +80,6 @@ Los modelos de clasificación supervisados, como redes neuronales y máquinas de
 
 ## Metodología para Preprocesamiento y Análisis de Señal ECG usando NeuroKit2
 
-# Metodología para el Preprocesamiento y Análisis de Señal ECG usando NeuroKit2
-
 En este documento se describe la metodología para procesar y analizar una señal de ECG utilizando la librería **NeuroKit2** en Python. Esta librería facilita el procesamiento de señales neurofisiológicas mediante funciones específicas para la limpieza y el análisis de datos de ECG. 
 
 ### 1. Preparación e Instalación
