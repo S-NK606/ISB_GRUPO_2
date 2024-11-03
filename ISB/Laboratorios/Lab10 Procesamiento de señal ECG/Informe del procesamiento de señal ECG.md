@@ -1,4 +1,4 @@
-# Análisis y Procesamiento de Señal EMG para Clasificación de Movimientos Basado en la Transformada Wavelet y Extracción de Características
+# Análisis y Procesamiento de Señal ECG
 
 ## Tabla de Contenidos
 
@@ -162,6 +162,18 @@ Ejemplo de extracción de métricas:
 print("Frecuencia cardíaca promedio:", info["Heart_Rate_Mean"])
 print("HRV (RMSSD):", info["HRV_RMSSD"])
 ```
+#### HRV
+Es la variabilidad de la frecuencia cardiaca, una medida de las pequeñas variaciones en el tiempo, los llamados intervalos R-R, entre cada latido del corazón. Su ánalisis corresponde a evaluar como el cuerpo responde al estrés, un valor alto indicado un cuerpo bien regulado y uno bajo, es signo de estrés o fatiga [8, 9].
+
+- HRV_SDNN:
+Representa la desviación estándar de los intervalos NN (intervalos entre latidos sucesivos), siendo una variabilidad a su vez de los intervalos RR, midiendo cómo varían estos respecto a un valor promedio en un periodo largo [8, 9].
+
+- HRV_RMSSD:
+Representa la raíz cuadrada de la media de las diferencias al cuadrado entre intervalos sucesivos, es decir, mide las variaciones rápida de latido a latido evaluando la actividad del sistema parasimpático [8, 9].
+
+####ECG rate mean
+Es la frecuencia cardiaca media calculada durante un tiempo específico y es útil para conocer el estado de reposo y actividad del corazón.
+
 Estas métricas permiten interpretar el estado de salud del sujeto y son útiles para investigaciones en fisiología y salud.
 
 ### 8. Conclusión y Reportes
@@ -319,4 +331,6 @@ Las funciones de preprocesamiento de NeuroKit2, como ecg_clean() y ecg_process()
 5. P. Hamilton, "Open source ECG analysis," *Computers in Cardiology*, vol. 29, 2002, pp. 101–104.  
 6. D. Makowski, T. Pham, Z. J. Lau, et al., "NeuroKit2: A Python toolbox for neurophysiological signal processing," *Behavior Research Methods*, vol. 53, 2021, pp. 1689–1696.
 7. “BITalino documentation.” https://support.pluxbiosignals.com/knowledge-base/bitalino-documentation/
+8. Welltory, “RMSSD and other HRV measurements,” Welltory, Dec. 22, 2022. https://welltory.com/rmssd-and-other-hrv-measurements/
+9. F. Shaffer and J. P. Ginsberg, “An overview of heart rate variability metrics and norms,” Frontiers in Public Health, vol. 5, Sep. 2017, doi: 10.3389/fpubh.2017.00258.
 
