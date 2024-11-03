@@ -177,7 +177,6 @@ Nota: Esta metodología sigue las mejores prácticas de NeuroKit2 para asegurar 
 
 
 <p align="justify">
-
 ## 6. Resultados y discusiones
 #### ECG originales: ecg_plot()
  | Señales | Gráficas|
@@ -299,7 +298,17 @@ Nota: Esta metodología sigue las mejores prácticas de NeuroKit2 para asegurar 
  |Simulación a 120bpm|![Imagen 2](./imagenes/ECG_7_d.png) |
  |Simulación a 150bpm|![Imagen 3](./imagenes/ECG_8_d.png) |
 
+
+## 7. Discusiones
+La función ecg_clean() de NeuroKit2 demostró ser eficaz en la eliminación de ruidos en la señal de ECG, especialmente frente a artefactos comunes como el ruido de línea de potencia y el movimiento muscular. Esto resultó en una señal más clara que facilita la identificación de complejos QRS sin afectar la estructura morfológica de la señal, aunque es importante ajustar parámetros como la tasa de muestreo para optimizar los resultados según el origen y la calidad de los datos iniciales. Además, el uso de la transformada wavelet para descomponer la señal en escalas permitió distinguir componentes de alta y baja frecuencia, lo cual fue esencial para mejorar la precisión en la detección del complejo QRS, incluso en presencia de ruidos de baja frecuencia. Esta técnica representa un avance respecto a métodos de filtrado tradicionales en ECG, ya que permite reducir interferencias específicas.
+
+Por otra parte, la función ecg_analyze() permitió extraer métricas relevantes de variabilidad de la frecuencia cardíaca (HRV), como el RMSSD, un indicador de la variabilidad cardíaca en el tiempo que refleja respuestas fisiológicas del sistema autónomo y puede ser útil para el diagnóstico de arritmias o la evaluación de la respuesta al estrés. Sin embargo, la calidad de estos indicadores depende de un preprocesamiento adecuado, lo que subraya la importancia de eliminar correctamente el ruido en la señal inicial.
+
+Finalmente, aunque NeuroKit2 ofrece una metodología de procesamiento estandarizada que es rápida y reproducible, presenta limitaciones en señales con niveles de ruido particularmente altos o en individuos con alta variabilidad interindividual. Para mejorar la precisión en estos casos, sería conveniente explorar el uso de filtros más especializados o de técnicas de aprendizaje automático que ajusten el procesamiento a las características específicas de cada paciente.
+
+
 ## 7. Conclusiones
+Las funciones de preprocesamiento de NeuroKit2, como ecg_clean() y ecg_process(), facilitan un procesamiento rápido y estandarizado de señales de ECG, lo cual es ideal para aplicaciones de telemedicina y dispositivos portátiles debido a su eficiencia y facilidad de uso. La metodología utilizada permitió una detección confiable del complejo QRS incluso en condiciones de ruido moderado, destacándose la efectividad de la transformada wavelet en mejorar la precisión para el diagnóstico de arritmias y otras anomalías cardíacas. Además, NeuroKit2 permite la extracción automática de métricas clave para el monitoreo continuo de la salud cardíaca, lo cual facilita tanto el diagnóstico temprano como el monitoreo en tiempo real de la respuesta fisiológica del paciente. Para mejorar aún más estos resultados, se recomienda explorar la integración de algoritmos de aprendizaje automático, como redes neuronales, los cuales podrían optimizar la clasificación de patrones de ECG en escenarios clínicos complejos.
 
 ## 8. Referencias Bibliográficas
 
