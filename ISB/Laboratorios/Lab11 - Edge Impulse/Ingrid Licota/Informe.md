@@ -155,9 +155,22 @@
       | Simulacion_120_bpm.txt               | 2   |
       | Simulacion_150_bpm.txt               | 2   |
    
-3. **CSV Wizard**
-   Antes de subir los segmentos al Dataset, se configuro el CSV Wizard para que pueda procesar los archivos de la misma forma.
-   
+3. **CSV Wizard:**
+   Para garantizar una correcta integración de los segmentos en el dataset, se utilizó la herramienta **CSV Wizard**, configurada para procesar los archivos de manera uniforme. A continuación, se detallan los pasos realizados:
+
+      | **Pasos** | **Imágenes** |
+      | --- | --- |
+      | **Paso 1:** Cargar un archivo de datos al **CSV Wizard** para iniciar la configuración de los parámetros necesarios. Esto permite establecer las reglas de procesamiento desde el inicio. | <img src="./Imagenes/paso_1.png" width="500"> |
+      | **Paso 2:** Configurar las delimitaciones del archivo: <ul><li>Separador: **Comas**</li><li>Omitir líneas: **Ninguna**</li><li>Encabezado: **"No header row"**</li></ul> Estas configuraciones aseguran que todos los datos sean interpretados correctamente. | <img src="./Imagenes/paso_2.png" width="500"> |
+      | **Paso 3:** Establecer la frecuencia de muestreo a **1000 Hz**, reflejando el intervalo de tiempo con el que los datos fueron registrados. Este paso es crucial para mantener la integridad del análisis de las señales. | <img src="./Imagenes/paso_3.png" width="500"> |
+      |  | <img src="./Imagenes/paso_4.png" width="500"> |
+      | **Paso 4:** Seleccionar la columna de datos correspondiente, especificando la señal o información relevante dentro del archivo CSV. | <img src="./Imagenes/paso_5.png" width="500"> |
+      |  | <img src="./Imagenes/paso_6.png" width="500"> |
+      | **Paso 5:** Indicar la duración de las muestras seleccionando **"Unlimited"** en la opción *How long do you want your samples to be*. Esto permite que las muestras se procesen completas sin restricciones de longitud. | <img src="./Imagenes/paso_7.png" width="500"> |
+      | **Paso 6:** Confirmar la configuración. Una vez finalizado, se muestra un mensaje indicando que cualquier archivo CSV subido al proyecto será procesado según las reglas definidas en este asistente (*Any CSV files that you upload into your project will be processed according to the rules you set up here*). Este paso garantiza la uniformidad en el tratamiento de los datos. | <img src="./Imagenes/paso_8.png" width="500"> |
+
+      
+
 5. **Dataset**
    
 </div>
