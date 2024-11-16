@@ -133,10 +133,32 @@
          
              print(f"Archivos CSV generados para: {file_path}\n")
       ```
-   A
+   Se obtuvo la siguiente cantidad de segmentos:
+      | Archivo                              | Nro. de segmentos|
+      |--------------------------------------|------------------|
+      | Estado_Basal_Toma_1_I_deriv.txt      | 6   |
+      | Estado_Basal_Toma_2_I_deriv.txt      | 6   |
+      | Estado_Basal_Toma_3_I_deriv.txt      | 6   |
+      | Estado_Basal_Toma_1_II_deriv.txt     | 6   |
+      | Estado_Basal_Toma_1_III_deriv.txt    | 6   |
+      | Estado_sin_Respiracion_I_deriv.txt   | 2   |
+      | Estado_con_Respiracion_I_deriv.txt   | 3   |
+      | Estado_sin_Respiracion_II_deriv.txt  | 2   |
+      | Estado_con_Respiracion_II_deriv.txt  | 3   |
+      | Estado_sin_Respiracion_III_deriv.txt | 2   |
+      | Estado_con_Respiracion_III_deriv.txt | 3   |
+      | Ejercicio_I_deriv.txt                | 3   |
+      | Ejercicio_II_deriv.txt               | 3   |
+      | Ejercicio_III_deriv.txt              | 3   |
+      | Simulacion_60_bpm.txt                | 2   |
+      | Simulacion_90_bpm.txt                | 2   |
+      | Simulacion_120_bpm.txt               | 2   |
+      | Simulacion_150_bpm.txt               | 2   |
+   
 3. **CSV Wizard**
-   El procedimiento que 
-4. **Dataset**
+   Antes de subir los segmentos al Dataset, se configuro el CSV Wizard para que pueda procesar los archivos de la misma forma.
+   
+5. **Dataset**
    
 </div>
 
