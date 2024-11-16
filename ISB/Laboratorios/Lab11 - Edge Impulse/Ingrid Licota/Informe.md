@@ -6,13 +6,19 @@
 3. [Objetivos](#3-objetivos)
 4. [Metodología](#4-metodología)
 5. [Resultados](#5-resultados)
-6. [Referencias bibliográficas](#6-referencias-bibliográficas)
+
 
 ## 1. Introducción
-</div>
+
+El análisis de señales biomédicas, como las obtenidas mediante electrocardiografía (ECG), es fundamental en el ámbito de la salud para la detección temprana de enfermedades cardiovasculares y el monitoreo de estados fisiológicos. Este proyecto tiene como objetivo principal explorar el procesamiento y análisis de señales de ECG utilizando herramientas modernas de aprendizaje automático, como **Edge Impulse**. 
 
 ## 2. Marco teórico
-</div>
+
+### Señales de ECG
+El electrocardiograma (ECG) es una representación gráfica de la actividad eléctrica del corazón, la cual es generada por la despolarización y repolarización de las células cardíacas. La señal de ECG contiene información crucial para identificar anomalías cardíacas, como arritmias o problemas de conducción eléctrica.
+
+### Edge Impulse
+Edge Impulse es una plataforma que permite desarrollar y entrenar modelos de aprendizaje automático optimizados para dispositivos embebidos. Ofrece herramientas para la adquisición, preprocesamiento y análisis de datos, permitiendo crear modelos personalizados para aplicaciones específicas. Su integración con dispositivos como microcontroladores y sensores lo convierte en una solución innovadora para aplicaciones en tiempo real, como la monitorización médica. En este proyecto, Edge Impulse se utilizó para cargar, procesar y entrenar un modelo basado en señales de ECG.
 
 ## 3. Objetivos
 1. **Procesamiento y análisis de señales biomédicas:**  Adquirir y organizar señales biomédicas de ECG en diferentes estados fisiológicos, aplicando técnicas adecuadas para su análisis.  
@@ -191,4 +197,3 @@
       | Ejercicio | <img src="./Imagenes/paso_16.png" width="500"> |
       | Simulación (ProSim) | <img src="./Imagenes/paso_17.png" width="500"> |
 
-## 6. Referencias bibliográficas
