@@ -182,7 +182,7 @@ Edge Impulse es una plataforma que permite desarrollar y entrenar modelos de apr
 
 ## 5. Resultados
 1. **Link:**
-   https://studio.edgeimpulse.com/studio/55816
+   [https://studio.edgeimpulse.com/studio/55816](https://studio.edgeimpulse.com/public/558161/live)
    
 2. **Tabla de Señales**
       | **Training Dataset** | **Test Dataset** |
