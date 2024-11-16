@@ -18,7 +18,6 @@
 1. **Procesamiento y análisis de señales biomédicas:**  Adquirir y organizar señales biomédicas de ECG en diferentes estados fisiológicos, aplicando técnicas adecuadas para su análisis.  
 
 2. **Uso de herramientas de aprendizaje automático:**  Subir los datos a Edge Impulse para explorar su aplicación en el desarrollo de modelos de aprendizaje automático.
-</div>
 
 ## 4. Metodología
 1. **Preprocesamiento:**
@@ -155,7 +154,7 @@
       | Simulacion_120_bpm.txt               | 2   |
       | Simulacion_150_bpm.txt               | 2   |
    
-3. **CSV Wizard:**
+2. **CSV Wizard:**
    Para garantizar una correcta integración de los segmentos en el dataset, se utilizó la herramienta **CSV Wizard**, configurada para procesar los archivos de manera uniforme. A continuación, se detallan los pasos realizados:
 
       | **Pasos** | **Imágenes** |
@@ -169,18 +168,27 @@
       | **Paso 5:** Indicar la duración de las muestras seleccionando **"Unlimited"** en la opción *How long do you want your samples to be*. Esto permite que las muestras se procesen completas sin restricciones de longitud. | <img src="./Imagenes/paso_7.png" width="500"> |
       | **Paso 6:** Confirmar la configuración. Una vez finalizado, se muestra un mensaje indicando que cualquier archivo CSV subido al proyecto será procesado según las reglas definidas en este asistente (*Any CSV files that you upload into your project will be processed according to the rules you set up here*). Este paso garantiza la uniformidad en el tratamiento de los datos. | <img src="./Imagenes/paso_8.png" width="500"> |
 
-      
-
-5. **Dataset**
-   
-</div>
+3. **Dataset:**
+   Se subieron 6 segmentos de cada tipo de señal al dataset principal (Basal, Ejercicio, ProSim, etc). Los segmentos sobrantes se utilizaron para balancear las proporciones entre las partes de entrenamiento (*training*) y prueba (*testing*) de la base de datos.
+      <div style="text-align: center;">
+        <img src="./Imagenes/paso_10.png" width="500">
+      </div>
 
 ## 5. Resultados
-1. **Link**
+1. **Link:**
+   https://studio.edgeimpulse.com/studio/55816
+   
 2. **Tabla de Señales**
-3. **Training**
-4. **Test**
-</div>
+      | **Training Dataset** | **Test Dataset** |
+      | --- | --- |
+      | <img src="./Imagenes/paso_11.png" width="500"> | <img src="./Imagenes/paso_12.png" width="500"> |
+
+      | **Categoria de señal ECG** | **Señal** |
+      | --- | --- |
+      | Estado Basal |  <img src="./Imagenes/paso_13.png" width="500"> |
+      | Estado con respiración | <img src="./Imagenes/paso_14.png" width="500"> |
+      | Estado sin respiración | <img src="./Imagenes/paso_15.png" width="500"> |
+      | Ejercicio | <img src="./Imagenes/paso_16.png" width="500"> |
+      | Simulación (ProSim) | <img src="./Imagenes/paso_17.png" width="500"> |
 
 ## 6. Referencias bibliográficas
-</div>
