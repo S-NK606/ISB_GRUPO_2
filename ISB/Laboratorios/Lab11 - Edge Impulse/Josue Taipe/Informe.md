@@ -23,8 +23,12 @@ En este informe se detallará el proceso de adquisición de datos y su integraci
 </div>
 
 ## 2. Objetivos
-
-
+1. Organizar y adquirir señales de ECG: Capturar señales de ECG en diferentes estados fisiológicos (reposo, actividad, estrés, etc.) asegurando que estén en un formato adecuado para su uso y análisis posterior.
+2. Procesar y pre-etiquetar las señales: Realizar una limpieza inicial de los datos adquiridos (remoción de ruido, normalización, etc.) y etiquetarlas según los estados fisiológicos correspondientes
+3. Subir y organizar los datos en Edge Impulse: Integrar las señales preprocesadas en la plataforma Edge Impulse, categorizándolas de manera clara y sistemática para facilitar el entrenamiento del modelo.
+4. Diseñar y entrenar un modelo de aprendizaje automático: Utilizar los datos organizados para crear un modelo de machine learning que pueda clasificar o analizar señales de ECG en tiempo real.
+5. Validar y evaluar el modelo: Implementar pruebas para medir la precisión, sensibilidad y especificidad del modelo desarrollado, asegurando que cumpla con los estándares requeridos para aplicaciones biomédicas.
+6. Optimizar el modelo para dispositivos embebidos: Reducir la complejidad del modelo para garantizar su desempeño eficiente en sistemas embebidos.
 ## 3. Metodología
 
 
