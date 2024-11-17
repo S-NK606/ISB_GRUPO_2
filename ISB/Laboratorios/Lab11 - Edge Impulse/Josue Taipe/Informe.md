@@ -12,7 +12,7 @@
 
 
 <div align="center">
-  <img src="ISB/Laboratorios/Lab11 - Edge Impulse/Josue Taipe/Imagenes/imagen1.png"><p>
+  <img src="./Imagenes/imagen1.png"><p>
 
   **Figura 1. Página inicial Edge Impulse**
   </p>
