@@ -16,6 +16,13 @@ Por ello, para una tarea como lo es el análisis y procesamiento de señales bio
 
 En el presente informe se mostrará la adquisición de datos para la plataforma Edge Impulse como inicio de la creación de un proyecto de esta herramienta.
 
+<div align="center">
+  <img src="./imagenes/Imagen1.png"><p>
+
+  **Figura 1. Página inicial del presento proyecto en EdgeImpulse**
+  </p>
+</div>
+
 
 ## 2. Objetivos
 1. Organizar y adquirir señales de ECG en diferentes estados con un formato adecuado para su futuro uso y análisis.
@@ -85,42 +92,21 @@ En el presente informe se mostrará la adquisición de datos para la plataforma 
                 
                 print(f"Segmento creado: {segment_file_name}")
         print("Proceso completado.")
-        ```
-        
-2. **CSV Wizard:**
-   Para garantizar una correcta integración de los segmentos en el dataset, se utilizó la herramienta **CSV Wizard**, configurada para procesar los archivos de manera uniforme. A continuación, se detallan los pasos realizados:
+   ```
+    El resultado fue el siguiente, donde las señales con mayor cantidad de segmentos fue las del estado basal con hasta 6. Los demás estados obtuvieron 3 segmentos a excepción del estado sin respiración que obtuvo 2 segmentos junto con las simulaciones.
+<div align="center">
+  <img src="./imagenes/Imagen2.png" height = "700" width="600"><p>
 
-      | **Pasos** | **Imágenes** |
-      | --- | --- |
-      | **Paso 1:** Cargar un archivo de datos al **CSV Wizard** para iniciar la configuración de los parámetros necesarios. Esto permite establecer las reglas de procesamiento desde el inicio. | <img src="./Imagenes/paso_1.png" width="500"> |
-      | **Paso 2:** Configurar las delimitaciones del archivo: <ul><li>Separador: **Comas**</li><li>Omitir líneas: **Ninguna**</li><li>Encabezado: **"No header row"**</li></ul> Estas configuraciones aseguran que todos los datos sean interpretados correctamente. | <img src="./Imagenes/paso_2.png" width="500"> |
-      | **Paso 3:** Establecer la frecuencia de muestreo a **1000 Hz**, reflejando el intervalo de tiempo con el que los datos fueron registrados. Este paso es crucial para mantener la integridad del análisis de las señales. | <img src="./Imagenes/paso_3.png" width="500"> |
-      |  | <img src="./Imagenes/paso_4.png" width="500"> |
-      | **Paso 4:** Seleccionar la columna de datos correspondiente, especificando la señal o información relevante dentro del archivo CSV. | <img src="./Imagenes/paso_5.png" width="500"> |
-      |  | <img src="./Imagenes/paso_6.png" width="500"> |
-      | **Paso 5:** Indicar la duración de las muestras seleccionando **"Unlimited"** en la opción *How long do you want your samples to be*. Esto permite que las muestras se procesen completas sin restricciones de longitud. | <img src="./Imagenes/paso_7.png" width="500"> |
-      | **Paso 6:** Confirmar la configuración. Una vez finalizado, se muestra un mensaje indicando que cualquier archivo CSV subido al proyecto será procesado según las reglas definidas en este asistente (*Any CSV files that you upload into your project will be processed according to the rules you set up here*). Este paso garantiza la uniformidad en el tratamiento de los datos. | <img src="./Imagenes/paso_8.png" width="500"> |
+  **Figura 2: Archivos segmentados creados con el código**
+  </p>
+</div>
+   
+3. **CSV Wizard:**
+   
 
-3. **Dataset:**
-   Se subieron 6 segmentos de cada tipo de señal al dataset principal (Basal, Ejercicio, ProSim, etc). Los segmentos sobrantes se utilizaron para balancear las proporciones entre las partes de entrenamiento (*training*) y prueba (*testing*) de la base de datos.
-      <div style="text-align: center;">
-        <img src="./Imagenes/paso_10.png" width="500">
-      </div>
-
+ 
 ## 5. Resultados
 1. **Link:**
-   [https://studio.edgeimpulse.com/studio/55816](https://studio.edgeimpulse.com/public/558161/live)
    
-2. **Tabla de Señales**
-      | **Training Dataset** | **Test Dataset** |
-      | --- | --- |
-      | <img src="./Imagenes/paso_11.png" width="500"> | <img src="./Imagenes/paso_12.png" width="500"> |
 
-      | **Categoria de señal ECG** | **Señal** |
-      | --- | --- |
-      | Estado Basal |  <img src="./Imagenes/paso_13.png" width="500"> |
-      | Estado con respiración | <img src="./Imagenes/paso_14.png" width="500"> |
-      | Estado sin respiración | <img src="./Imagenes/paso_15.png" width="500"> |
-      | Ejercicio | <img src="./Imagenes/paso_16.png" width="500"> |
-      | Simulación (ProSim) | <img src="./Imagenes/paso_17.png" width="500"> |
 
