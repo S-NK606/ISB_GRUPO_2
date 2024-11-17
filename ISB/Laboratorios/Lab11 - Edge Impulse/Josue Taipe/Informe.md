@@ -29,7 +29,40 @@ En este informe se detallará el proceso de adquisición de datos y su integraci
 4. Diseñar y entrenar un modelo de aprendizaje automático: Utilizar los datos organizados para crear un modelo de machine learning que pueda clasificar o analizar señales de ECG en tiempo real.
 5. Validar y evaluar el modelo: Implementar pruebas para medir la precisión, sensibilidad y especificidad del modelo desarrollado, asegurando que cumpla con los estándares requeridos para aplicaciones biomédicas.
 6. Optimizar el modelo para dispositivos embebidos: Reducir la complejidad del modelo para garantizar su desempeño eficiente en sistemas embebidos.
+
+
 ## 3. Metodología
+
+# Adquisición de datos y conversión de formato
+
+En este repositorio de GitHub se documentó el proceso de adquisición de señales de ECG bajo diferentes condiciones fisiológicas, detalladas de la siguiente manera:
+
+## Estados registrados
+
+- **Estado basal**  
+  Se registró la actividad del ECG mientras el estudiante se encontraba en reposo, en un estado de calma y relajación.
+
+- **Estado de pausa respiratoria (durante y después)**  
+  El estudiante realizó una pausa respiratoria de 10 segundos, registrándose el ECG durante este intervalo. Posteriormente, se realizó un segundo registro para analizar las variaciones en la señal tras la contención de la respiración.
+
+- **Estado posterior a actividad física**  
+  El ECG se obtuvo después de que el estudiante realizara ejercicios aeróbicos intensos durante aproximadamente 5 minutos, alcanzando un estado de fatiga.
+
+- **Simulación con ProSim 4**  
+  Se incluyeron señales generadas por el ProSim 4, un simulador portátil de signos vitales utilizado para pruebas rápidas con frecuencias cardíacas específicas: 60, 90, 120 y 150 bpm.
+
+## Procesamiento de las señales
+
+Las señales fueron adquiridas utilizando el software **OpenSignals**, que permitió exportarlas en formato **.txt**. 
+
+Para estandarizar los datos y prepararlos para su integración en Edge Impulse, se implementó un código que dividió cada señal en segmentos de 10 segundos. Esta segmentación facilita su manejo y análisis en etapas posteriores del proyecto.
+
+
+
+
+
+
+
 
 
 ## 4. Resultados
