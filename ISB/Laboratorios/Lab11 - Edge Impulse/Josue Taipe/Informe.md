@@ -127,6 +127,28 @@ for file_path in file_paths:
     print(f"Número total 
 ```
 
+## Cantidad de segmentos generados
+
+| Archivo                                    | Nro. de segmentos |
+|--------------------------------------------|-------------------|
+| Ejercicio I deriv.txt                      | 3                 |
+| Ejercicio II deriv.txt                     | 3                 |
+| Ejercicio III deriv.txt                    | 3                 |
+| Estado basal I deriv.txt                   | 6                 |
+| Estado basal III deriv.txt                 | 6                 |
+| Estado basal Toma 1 I deriv.txt            | 6                 |
+| Estado basal Toma 2 I deriv.txt            | 6                 |
+| Estado basal Toma 3 I deriv.txt            | 6                 |
+| Estado con Respiracion I deriv.txt         | 3                 |
+| Estado con Respiracion II deriv.txt        | 3                 |
+| Estado con Respiracion III deriv.txt       | 3                 |
+| Estado sin Respiracion I deriv.txt         | 2                 |
+| Estado sin Respiracion II deriv.txt        | 2                 |
+| Estado sin Respiracion III deriv.txt       | 2                 |
+| Simulacion 60 bpm.txt                      | 2                 |
+| Simulacion 90 bpm.txt                      | 2                 |
+| Simulacion 120 bpm.txt                     | 2                 |
+| Simulacion 150 bpm.txt                     | 2                 |
 
 
 
