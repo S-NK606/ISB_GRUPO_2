@@ -55,7 +55,6 @@ En este repositorio de GitHub se documentó el proceso de adquisición de señal
 
 Las señales fueron adquiridas utilizando el software **OpenSignals**, que permitió exportarlas en formato **.txt**. 
 
-Para estandarizar los datos y prepararlos para su integración en Edge Impulse, se implementó un código que dividió cada señal en segmentos de 10 segundos. Esta segmentación facilita su manejo y análisis en etapas posteriores del proyecto.
 
 
 
