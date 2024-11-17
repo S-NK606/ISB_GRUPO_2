@@ -10,7 +10,11 @@
 
 ## 1. Introducción
 
+Edge Impulse es una plataforma diseñada para desarrollar algoritmos de aprendizaje automático (machine learning) específicamente optimizados para sistemas embebidos y dispositivos que operan en tiempo real. Su principal objetivo es simplificar las etapas de adquisición, procesamiento de datos y generación de modelos de machine learning.
 
+Esta herramienta resulta especialmente útil en aplicaciones como el análisis y procesamiento de señales biomédicas, por ejemplo, el electrocardiograma (ECG), donde se requiere precisión y rapidez en el procesamiento de datos para tareas como el monitoreo continuo y el diagnóstico médico.
+
+En este informe se detallará el proceso de adquisición de datos y su integración con Edge Impulse como punto de partida para la creación de un proyecto completo. La documentación incluirá cada uno de los pasos necesarios, desde la recolección inicial de las señales hasta la configuración y entrenamiento del modelo, buscando optimizar el rendimiento en un entorno embebido y demostrar la utilidad de esta plataforma en el análisis en tiempo real de datos biomédicos.
 <div align="center">
   <img src="./Imagenes/imagen1.png"><p>
 
