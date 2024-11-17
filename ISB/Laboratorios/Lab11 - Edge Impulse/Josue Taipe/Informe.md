@@ -54,6 +54,7 @@ En este repositorio de GitHub se documentó el proceso de adquisición de señal
 ## Procesamiento de las señales
 
 Las señales fueron adquiridas utilizando el software **OpenSignals**, que permitió exportarlas en formato **.txt**. 
+Se utilizo el siguiente codigo para guardar segmentos de 10 segundos de las señales de ECG adquiridas.
 
 
 
