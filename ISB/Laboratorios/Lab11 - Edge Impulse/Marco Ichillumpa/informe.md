@@ -5,7 +5,7 @@
 1. [Introducción](#1-introducción)
 2. [Objetivos](#2-objetivos)
 3. [Metodología](#3-metodología)
-4. [Resultados](#5-resultados)
+4. [Resultados](#4-resultados)
 
 
 ## 1. Introducción
@@ -17,9 +17,9 @@ Por ello, para una tarea como lo es el análisis y procesamiento de señales bio
 En el presente informe se mostrará la adquisición de datos para la plataforma Edge Impulse como inicio de la creación de un proyecto de esta herramienta.
 
 <div align="center">
-  <img src="./imagenes/Imagen1.png"><p>
+  <img src="./imagenes/Imagen0.png"><p>
 
-  **Figura 1. Página inicial del presento proyecto en EdgeImpulse**
+  **Figura 1. Página inicial de creación de un nuevo proyecto en Edge Impulse**
   </p>
 </div>
 
@@ -100,13 +100,92 @@ En el presente informe se mostrará la adquisición de datos para la plataforma 
   **Figura 2: Archivos segmentados creados con el código**
   </p>
 </div>
-   
-3. **CSV Wizard:**
-   
 
- 
-## 5. Resultados
-1. **Link:**
+<br/><br/>
+
+2. **Creación del proyecto y CSV Wizard:**
+   Para la subida de archivos se debe crear un proyecto, en este caso fue creado con el nombre de ECG_DATA.
+   
+   <div align="center">
+       <img src="./imagenes/Imagen1.png" height = "300" width="700"><p>
+
+    **Figura 3. Página inicial del presente proyecto en EdgeImpulse**</p>
+    </div>
+
+  En el apartado de 'Data Acquisition' podemos usar el CSV Wizard que es una herramienta diseñada para facilitar la subida de archivos de un solo tipo. Es un tipo de asistente que permite generalizar un formato único para todos los archivos para que su estructura sea correcta, seleccionando el tipo de separación de los datos, elijiendo que columnas posee la data más importante, etc. A continuación explicaré el uso del CSV Wizard a través de imágenes.
+  
+  <div align="center">
+       <img src="./imagenes/Imagen4.png" height = "300" width="600"><p>
+    
+  **Figura 4. Selección de como está separada la data, en este caso comas** </p>
+    </div>
+
+
+<br/>
+  
+   <div align="center">
+  <img src="./imagenes/Imagen5.png" height = "300" width="600"><p>
+
+  **Figura 5. Elección de formato de los datos, donde se configura que la data recopilada era de series temporales**
+  </p>
+</div>
+
+<br/>
+
+   <div align="center">
+  <img src="./imagenes/Imagen6.png" height = "200" width="400"><p>
+
+  **Figura 6. Al elegir el formato de series temporales se especifica que la frecuencia de muestreo de 1000 Hz**
+  </p>
+</div>
+
+<br/>
+
+   <div align="center">
+  <img src="./imagenes/Imagen8.png" height = "300" width="600"><p>
+
+  **Figura 7. Finalmente se hace elección de cuanta data se debe usar. 
+  Al haberla segmentado anteriormente, selecciono que se lea toda la data**
+</div>
+
+
+ 3. **Subida de la data:**
+    Finalmente, se sube toda la data segmentada. El Edge Impulse permite subir datos para dos secciones 'train' y 'test' conjunto de datos para entrenar y evaluar que tan bien generaliza el modelo, respectivamente. Para ello la misma plataforma recomienda una distribución de que al menos el 80% de los datos de un label sea de entrenamiento y el 20%, de test. Al subir los datos se puede elejir si se desea subir el archivo a alguna sección o que el sistema elija a cuál.
+
+    Cada data se clasifica según su etiqueta (label), entonces cada estado del ECG tendrá su propia etiqueta. Para respetar la proporción recomendada por el Edge Impulse, los siguientes estados: el estado basal, de ejercicio y con respiración, tuvieron la distribución de 6 segmentos para cada estado (2 de cada derivada) para la sección de 'train'. Para la sección de 'test' usé el tercer segmento sobrante de cada derivada, dando así, 3 segmentos para cada estado. Para los estados con menos de 6 muestras, usé la opción en la que el sistema elije en qué sección se suben los datos para respetar la distribución.
+
+  <div align="center">
+    <img src="./imagenes/Imagen9.png" height = "500" width="700"><p>
+  
+  **Figura 8. Menú de opciones de subida de archivos. Permite elejir la sección y clasificarlos por etiqueta**
+    </p>
+  </div>
+  
+  <br/>
+
+## 4. Resultados
+Una vez subidos los datos, se puede observar como quedó la distribución de las dos secciones:
+
+  <div align="center">
+    <img src="./imagenes/Imagen10.png" height = "300" width="600"><p>
+  
+  **Figura 9. Dataset generado de la sección de entrenamiento**
+    </p>
+  </div>
+  
+  <br/>
+
+   <div align="center">
+    <img src="./imagenes/Imagen11.png" height = "300" width="600"><p>
+  
+  **Figura 10. Dataset generado de la sección de testeo**
+    </p>
+  </div>
+  
+  <br/>
+
+El resultado final lo puede ver en el siguiente **link**:
+https://studio.edgeimpulse.com/public/558238/live
    
 
 
