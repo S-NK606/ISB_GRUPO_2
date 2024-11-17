@@ -91,7 +91,7 @@ En el presente informe se mostrará la adquisición de datos para la plataforma 
                 segment.to_csv(segment_output_path, index=False)
                 
                 print(f"Segmento creado: {segment_file_name}")
-        print("Proceso completado.")
+      print("Proceso completado.")
    ```
     El resultado fue el siguiente, donde las señales con mayor cantidad de segmentos fue las del estado basal con hasta 6. Los demás estados obtuvieron 3 segmentos a excepción del estado sin respiración que obtuvo 2 segmentos junto con las simulaciones.
 <div align="center">
