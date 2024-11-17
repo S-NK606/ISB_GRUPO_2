@@ -125,7 +125,7 @@ for file_path in file_paths:
     print(f"Procesando archivo: {file_path}")
     print(f"Frecuencia de muestreo: {Fs} Hz")
     print(f"Número total 
-
+```
 
 
 
