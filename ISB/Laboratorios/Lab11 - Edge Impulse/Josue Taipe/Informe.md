@@ -56,6 +56,75 @@ En este repositorio de GitHub se documentó el proceso de adquisición de señal
 Las señales fueron adquiridas utilizando el software **OpenSignals**, que permitió exportarlas en formato **.txt**. 
 Se utilizo el siguiente codigo para guardar segmentos de 10 segundos de las señales de ECG adquiridas.
 
+## Código para procesar archivos .txt y generar archivos CSV
+
+Este script procesa múltiples archivos de datos en formato `.txt` y genera archivos CSV para cada segmento de 10 segundos de duración.
+
+```python
+import numpy as np
+import csv
+import os
+   
+# Establece la frecuencia de muestreo (Hz)
+Fs = 1000  # Frecuencia de muestreo (Ejemplo: 1000 Hz)
+segment_duration = 10  # Duración de cada segmento en segundos
+samples_per_segment = Fs * segment_duration  # Número de muestras por segmento
+   
+# Ruta de los archivos .txt
+file_paths = [
+    "D:\\UNIV\\Introducción Señales\\lab edgeimpulse\\codigos\\Ejercicio I deriv.txt",
+    "D:\\UNIV\\Introducción Señales\\lab edgeimpulse\\codigos\\Ejercicio II deriv.txt",
+    "D:\\UNIV\\Introducción Señales\\lab edgeimpulse\\codigos\\Ejercicio III deriv.txt",
+    "D:\\UNIV\\Introducción Señales\\lab edgeimpulse\\codigos\\Estado basal I deriv.txt",
+    "D:\\UNIV\\Introducción Señales\\lab edgeimpulse\\codigos\\Estado basal III deriv.txt",
+    "D:\\UNIV\\Introducción Señales\\lab edgeimpulse\\codigos\\Estado basal Toma 1 I deriv.txt",
+    "D:\\UNIV\\Introducción Señales\\lab edgeimpulse\\codigos\\Estado basal Toma 2 I deriv.txt",
+    "D:\\UNIV\\Introducción Señales\\lab edgeimpulse\\codigos\\Estado basal Toma 3 I deriv.txt",
+    "D:\\UNIV\\Introducción Señales\\lab edgeimpulse\\codigos\\Estado con Respiracion I deriv.txt",
+    "D:\\UNIV\\Introducción Señales\\lab edgeimpulse\\codigos\\Estado con Respiracion II deriv.txt",
+    "D:\\UNIV\\Introducción Señales\\lab edgeimpulse\\codigos\\Estado con Respiracion III deriv.txt",
+    "D:\\UNIV\\Introducción Señales\\lab edgeimpulse\\codigos\\Estado sin Respiracion I deriv.txt",
+    "D:\\UNIV\\Introducción Señales\\lab edgeimpulse\\codigos\\Estado sin Respiracion II deriv.txt",
+    "D:\\UNIV\\Introducción Señales\\lab edgeimpulse\\codigos\\Estado sin Respiracion III deriv.txt",
+    "D:\\UNIV\\Introducción Señales\\lab edgeimpulse\\codigos\\Simulacion 60 bpm.txt",
+    "D:\\UNIV\\Introducción Señales\\lab edgeimpulse\\codigos\\Simulacion 90 bpm.txt",
+    "D:\\UNIV\\Introducción Señales\\lab edgeimpulse\\codigos\\Simulacion 120 bpm.txt",
+    "D:\\UNIV\\Introducción Señales\\lab edgeimpulse\\codigos\\Simulacion 150 bpm.txt"
+]
+
+# Carpeta de salida para los archivos CSV
+output_folder = "D:\\UNIV\\Introducción Señales\\lab edgeimpulse"
+
+# Procesar cada archivo .txt
+for file_path in file_paths:
+    # Leer el archivo .txt y encontrar la línea de 'EndOfHeader'
+    with open(file_path, 'r') as file:
+        lines = file.readlines()
+
+    # Buscar la línea que contiene 'EndOfHeader'
+    data_start = None
+    for i, line in enumerate(lines):
+        if 'EndOfHeader' in line:
+            data_start = i + 1
+            break
+
+    if data_start is None:
+        raise ValueError(f"No se encontró 'EndOfHeader' en el archivo {file_path}.")
+
+    # Extraer las líneas de datos (sin la parte del encabezado)
+    data_lines = lines[data_start:]
+
+    # Convertir las líneas de datos a un array de NumPy
+    data = np.array([list(map(float, line.strip().split('\t'))) for line in data_lines])
+
+    # Calcular la duración total de la señal en segundos
+    num_rows = len(data)
+    total_duration_seconds = num_rows / Fs
+
+    # Imprimir información básica
+    print(f"Procesando archivo: {file_path}")
+    print(f"Frecuencia de muestreo: {Fs} Hz")
+    print(f"Número total 
 
 
 
