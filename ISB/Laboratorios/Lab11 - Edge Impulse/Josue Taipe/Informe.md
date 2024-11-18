@@ -211,9 +211,11 @@ Para asegurar una integración adecuada de los segmentos en el conjunto de datos
 
 ## 4. Resultados
 
-      | **Training Dataset** | **Test Dataset** |
-      | --- | --- |
-      | <img src="./Imagenes/training.png" width="500"> | <img src="./Imagenes/test.png" width="500"> |
+  **Training Dataset** 
+  <img src="./Imagenes/training.png" width="500"> 
+  **Test Dataset** 
+  <img src="./Imagenes/test.png" width="500"> 
+      
       
 ## Estado Basal
 
