@@ -13,7 +13,12 @@ La plataforma es especialmente valiosa por su capacidad de realizar procesamient
 
 ## 2. Objetivos
 
-## 2.1. Objetivo General
+# 2.1. Objetivo General
+Clasificar señales EEG mediante un modelo de aprendizaje automático desarrollado en Edge Impulse.
 
+# 2.2. Objetivos Específicos
+- Adquirir y organizar señales EEG según los diferentes ejercicios en un formato compatible para subirlos a Edge Impulse
+- Segmentar y etiquetar las señales EEG según eventos específicos o estados, asegurando compatibilidad con Edge Impulse.
+- Subir las señales preprocesadas a Edge Impulse y organizarlas en categorías claras para entrenamiento.
+- Diseñar y entrenar un modelo de aprendizaje automático en Edge Impulse utilizando técnicas optimizadas para la clasificación de EEG.
 
-## 2.2. Objetivos Específicos
