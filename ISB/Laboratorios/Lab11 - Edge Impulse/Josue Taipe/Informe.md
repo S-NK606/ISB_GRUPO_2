@@ -215,6 +215,7 @@ Para asegurar una integración adecuada de los segmentos en el conjunto de datos
   <img src="./Imagenes/training.png" width="500"> 
   </p>
 </div>
+
 ## Test : 
   <div align="center">
   <img src="./Imagenes/test.png" width="500"> 
