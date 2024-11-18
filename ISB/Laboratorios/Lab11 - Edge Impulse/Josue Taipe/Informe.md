@@ -211,6 +211,52 @@ Para asegurar una integración adecuada de los segmentos en el conjunto de datos
 
 ## 4. Resultados
 
-| Training Dataset | Test Dataset |
+      | **Training Dataset** | **Test Dataset** |
       | --- | --- |
       | <img src="./Imagenes/training.png" width="500"> | <img src="./Imagenes/test.png" width="500"> |
+      
+## Estado Basal
+
+<div align="center">
+  <img src="./Imagenes/estadobasaltoma1.png"><p>
+
+  </p>
+</div>
+<p align="justify">
+
+## Estado con respiración
+
+<div align="center">
+  <img src="./Imagenes/conrespiracion.png"><p>
+
+  </p>
+</div>
+<p align="justify">
+
+## Estado sin respiración
+
+<div align="center">
+  <img src="./Imagenes/sinrespiracion.png"><p>
+
+  </p>
+</div>
+<p align="justify">
+
+## Ejercicio
+
+<div align="center">
+  <img src="./Imagenes/ejercici.png"><p>
+
+  </p>
+</div>
+<p align="justify">
+
+## Simulación ProSim 
+
+<div align="center">
+  <img src="./Imagenes/simulacion.png"><p>
+
+  </p>
+</div>
+<p align="justify">
+      
