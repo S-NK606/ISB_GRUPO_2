@@ -177,6 +177,7 @@ Para asegurar una integración adecuada de los segmentos en el conjunto de datos
 
 
 ## Paso 3:
+<p align="justify">
 
 <div align="center">
   <img src="./Imagenes/paso3.png"><p>
@@ -186,6 +187,7 @@ Para asegurar una integración adecuada de los segmentos en el conjunto de datos
 <p align="justify">
 
 ## Paso 4:
+<p align="justify">
 
 <div align="center">
   <img src="./Imagenes/paso4.png"><p>
@@ -195,6 +197,7 @@ Para asegurar una integración adecuada de los segmentos en el conjunto de datos
 <p align="justify">
 
 ## Paso 5:
+<p align="justify">
 
 <div align="center">
   <img src="./Imagenes/paso5.png"><p>
