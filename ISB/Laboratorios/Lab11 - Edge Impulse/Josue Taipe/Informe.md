@@ -152,6 +152,7 @@ for file_path in file_paths:
 2. **CSV Wizard:**
    
 Para asegurar una integración adecuada de los segmentos en el conjunto de datos, se empleó la herramienta **CSV Wizard**, ajustada para procesar los archivos de forma coherente. A continuación, se describen los pasos llevados a cabo:
+<p align="justify">
 
 ## Paso 1:
 
@@ -160,15 +161,14 @@ Para asegurar una integración adecuada de los segmentos en el conjunto de datos
 
   </p>
 </div>
+<p align="justify">
 
 ## Paso 2:
+<p align="justify">
 
 <div align="center">
   <img src="./Imagenes/paso2.1.png"><p>
 
-  </p>
-
-  <div align="center">
   <img src="./Imagenes/paso2.2.png"><p>
 
   </p>
