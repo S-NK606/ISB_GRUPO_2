@@ -161,6 +161,41 @@ Para asegurar una integración adecuada de los segmentos en el conjunto de datos
   </p>
 </div>
 
+## Paso 2:
+
+<div align="center">
+  <img src="./Imagenes/paso2.1.png"><p>
+
+  </p>
+
+  <div align="center">
+  <img src="./Imagenes/paso2.2.png"><p>
+
+  </p>
+</div>
+
+
+## Paso 3:
+
+<div align="center">
+  <img src="./Imagenes/paso3.png"><p>
+
+  </p>
+</div>
+## Paso 4:
+
+<div align="center">
+  <img src="./Imagenes/paso4.png"><p>
+
+  </p>
+</div>
+## Paso 5:
+
+<div align="center">
+  <img src="./Imagenes/paso5.png"><p>
+
+  </p>
+</div>
 
 
 
