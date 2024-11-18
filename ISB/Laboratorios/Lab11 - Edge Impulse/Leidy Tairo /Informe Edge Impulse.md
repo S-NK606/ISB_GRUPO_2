@@ -241,6 +241,3 @@ Puedes acceder al proyecto completo en Edge Impulse mediante el siguiente enlace
    - Reducir la complejidad de los modelos entrenados para garantizar su implementación en sistemas embebidos con recursos limitados.
 
 ---
-
-Este proyecto establece una base sólida para futuros análisis y desarrollos, destacando la importancia de un dataset bien estructurado y preprocesado en aplicaciones de machine learning biomédico.
-
