@@ -210,11 +210,17 @@ Para asegurar una integración adecuada de los segmentos en el conjunto de datos
 
 
 ## 4. Resultados
-
-  **Training Dataset** 
+## Training : 
+  <div align="center">
   <img src="./Imagenes/training.png" width="500"> 
-  **Test Dataset** 
+  </p>
+</div>
+## Test : 
+  <div align="center">
   <img src="./Imagenes/test.png" width="500"> 
+  </p>
+</div>
+
       
       
 ## Estado Basal
