@@ -70,14 +70,18 @@ Para subir las señales EEG a Edge Impulse, primero creamos un proyecto llamado 
 </div>
 
 
-Una vez creado el proyecto, se accedió a la pestaña "Data Acquisition" y se seleccionó la opción "CSV wizard". Este paso es fundamental para asegurar que los archivos CSV sean compatibles con los requerimientos de la plataforma y estén correctamente formateados.
-
+Una vez creado el proyecto, se accedió a la pestaña "Data Acquisition" para poder subir nuestros datos.
 <div align="center">
-  <img src="./IMAGENES/5.png"><p>
+  <img src="./IMAGENES/2.png"><p>
   </p>
 </div>
 
+Antes de subir los datos, se seleccionó la opción "CSV wizard". Este paso es fundamental para asegurar que los archivos CSV sean compatibles con los requerimientos de la plataforma y estén correctamente formateados.
 
+<div align="center">
+  <img src="./IMAGENES/3.png"><p>
+  </p>
+</div>
 
 Se seleccionaron los archivos CSV generados previamente, cada archivo representando un segmento de 6 segundos de señal EEG, verificando que se subio correctamente.
 
