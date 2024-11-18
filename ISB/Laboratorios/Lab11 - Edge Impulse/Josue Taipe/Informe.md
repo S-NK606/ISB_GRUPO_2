@@ -210,6 +210,9 @@ Para asegurar una integración adecuada de los segmentos en el conjunto de datos
 
 
 ## 4. Resultados
+
+Link del proyecto :    [https://studio.edgeimpulse.com/studio/560482](https://studio.edgeimpulse.com/public/560482/live)
+
 ## Training : 
   <div align="center">
   <img src="./Imagenes/training.png" width="500"> 
