@@ -39,6 +39,23 @@ Las señales de EEG fueron adquiridas durante tres actividades:
 
 Las señales presentaron una frecuencia de muestreo de 1000 Hz, con intervalos de tiempo que variaron entre 30 y 90 segundos, las cuales se exportaron como archivos txt.
 
+## 3.2.Procesamiento de los datos recopilados de la EEG
+
+Las señales de EEG de cada actividad fueron procesadas y segmentadas utilizando un script en Python en fragmentos de 6 segundos, ya que esta es una duración estándar que permite capturar eventos fisiológicos importantes en la señal EEG mientras mantiene el tamaño de los archivos manejable, asegurando que todos los fragmentos tengan la misma longitud, lo cual es clave para entrenar modelos con entradas homogéneas. Posteriormente se realizaron los siguientes pasos:
+- Lee el archivo original que contiene la señal completa.
+- Divide la señal en segmentos de 6 segundos, teniendo en cuenta una frecuencia de muestreo de 1000 Hz
+- Elimina el encabezado de los datos recopilados, ya que Edge Impulse requiere que los datos subidos no incluyan encabezados o metadatos adicionales en los archivos CSV, ya que estos pueden interferir con el procesamiento automatizado de la plataforma.
+- Exporta cada segmento como un archivo CSV independiente, listo para subir a Edge Impulse, ya que este es el formato en el cual trabaja la plataforma, al igual con los archivos de tipo json.
+
+De esta manera se obtuvieron la siguiente cantidad de segmentos para cada señal teniendo en cuenta el tiempo de duración de cada una:
+
+[Aquí ingreso tabla]
+
+## 3.3. Proceso de Subida de Datos a Edge Impulse
+
+
+
+
 
 
 
