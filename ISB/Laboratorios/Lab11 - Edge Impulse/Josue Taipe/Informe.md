@@ -18,7 +18,6 @@ En este informe se detallará el proceso de adquisición de datos y su integraci
 <div align="center">
   <img src="./Imagenes/imagen1.png"><p>
 
-  **Figura 1. Página inicial Edge Impulse**
   </p>
 </div>
 
@@ -150,8 +149,17 @@ for file_path in file_paths:
 | Simulacion 120 bpm.txt                     | 2                 |
 | Simulacion 150 bpm.txt                     | 2                 |
 
+2. **CSV Wizard:**
+   
+Para asegurar una integración adecuada de los segmentos en el conjunto de datos, se empleó la herramienta **CSV Wizard**, ajustada para procesar los archivos de forma coherente. A continuación, se describen los pasos llevados a cabo:
 
+## Paso 1:
 
+<div align="center">
+  <img src="./Imagenes/imagen1.png"><p>
+
+  </p>
+</div>
 
 
 
