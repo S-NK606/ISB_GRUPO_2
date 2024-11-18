@@ -12,7 +12,6 @@ Edge Impulse es una plataforma web diseñada específicamente para desarrollar m
 La plataforma es especialmente valiosa por su capacidad de realizar procesamiento en tiempo real directamente en los dispositivos periféricos, eliminando la necesidad de servicios en la nube, reduciendo la latencia y ahorrando el ancho de banda, que permite una mayor privacidad de los datos. Por último, esta plataforma se utiliza ampliamente en sectores como la sanidad, donde impulsa wearables para la monitorización de la salud, y en el IoT industrial para tareas como el mantenimiento predictivo y el control de calidad
 <div align="center">
   <img src="./IMAGENES/4.png"><p>
-
   </p>
 </div>
 
@@ -43,7 +42,10 @@ Las señales de EEG fueron adquiridas durante tres actividades:
 - Ejercicio de Razonamiento Matemático: Durante esta fase, un compañero del equipo leyó en voz alta una serie de ejercicios matemáticos diseñados para estimular el procesamiento cognitivo. El participante debía resolver mentalmente cada problema mientras mantenía la mirada fija en un punto específico, reduciendo al mínimo los movimientos oculares y posibles artefactos. Este paso tuvo como objetivo evaluar la actividad cerebral durante un estado de concentración cognitiva intensa y compararla con las señales registradas en reposo.
 
 Las señales presentaron una frecuencia de muestreo de 1000 Hz, con intervalos de tiempo que variaron entre 30 y 90 segundos, las cuales se exportaron como archivos txt.
-
+<div align="center">
+  <img src="./IMAGENES/5.png"><p>
+  </p>
+</div>
 ## 3.2.Procesamiento de los datos recopilados de la EEG
 
 Las señales de EEG de cada actividad fueron procesadas y segmentadas utilizando un script en Python en fragmentos de 6 segundos, ya que esta es una duración estándar que permite capturar eventos fisiológicos importantes en la señal EEG mientras mantiene el tamaño de los archivos manejable, asegurando que todos los fragmentos tengan la misma longitud, lo cual es clave para entrenar modelos con entradas homogéneas. Posteriormente se realizaron los siguientes pasos:
