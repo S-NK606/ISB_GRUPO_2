@@ -156,7 +156,7 @@ Para asegurar una integración adecuada de los segmentos en el conjunto de datos
 ## Paso 1:
 
 <div align="center">
-  <img src="./Imagenes/imagen1.png"><p>
+  <img src="./Imagenes/paso1.png"><p>
 
   </p>
 </div>
