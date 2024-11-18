@@ -53,7 +53,24 @@ Las señales de EEG de cada actividad fueron procesadas y segmentadas utilizando
 - Lee el archivo original que contiene la señal completa.
 - Divide la señal en segmentos de 6 segundos, teniendo en cuenta una frecuencia de muestreo de 1000 Hz
 - Elimina el encabezado de los datos recopilados, ya que Edge Impulse requiere que los datos subidos no incluyan encabezados o metadatos adicionales en los archivos CSV, ya que estos pueden interferir con el procesamiento automatizado de la plataforma.
+<div align="center">
+  <img src="./IMAGENES/31.png"><p>
+  </p>
+</div>
+
+<div align="center">
+  <img src="./IMAGENES/32.png"><p>
+  </p>
+</div>
+
 - Exporta cada segmento como un archivo CSV independiente, listo para subir a Edge Impulse, ya que este es el formato en el cual trabaja la plataforma, al igual con los archivos de tipo json.
+
+<div align="center">
+  <img src="./IMAGENES/30.png"><p>
+  </p>
+</div>
+
+
 
 De esta manera se obtuvieron la siguiente cantidad de segmentos para cada señal teniendo en cuenta el tiempo de duración de cada una:
 
@@ -85,6 +102,10 @@ Antes de subir los datos, se seleccionó la opción "CSV wizard". Este paso es f
 
 Se seleccionaron los archivos CSV generados previamente, cada archivo representando un segmento de 6 segundos de señal EEG, verificando que se subio correctamente.
 
+<div align="center">
+  <img src="./IMAGENES/29.png"><p>
+  </p>
+</div>
 
 
 
