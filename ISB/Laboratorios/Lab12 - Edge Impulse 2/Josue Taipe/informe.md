@@ -19,18 +19,47 @@
 
 #### Imagen 1: Arreglo de Data
 <div align="center">
-  <img src="./Imagenes/training.png"><p>
+  <img src="./Imagenes/training2.png"><p>
   <img src="./Imagenes/test.png"><p>
+
+  </p>
+</div>
+
+### 1.2 Create Impulse <a name="id3"></a>
+Creamos el diseño y lo configuramos:
+
+
+<div align="center">
+  <img src="./Imagenes/training.png"><p>
+
+  </p>
+</div>
+#### Imagen 3: Diseño del Impulso
+Configuramos el window size de 1,9seg y un window increase de 1seg, la frecuencia de sampleo es de 1000 Hz, usamos Análisis Espectral y el clasificador.
+
+<div align="center">
+  <img src="./Imagenes/training.png"><p>
 
   </p>
 </div>
 
 
 
-#### Imagen 2: Arreglo de Data
-![Arreglo de Data 2](./Imagenes/Arreglo_data_2.jpeg)
-El objetivo de este modelo es idntificar si la medición se ha realizado en estado:
- - Basal
- - Ejercicio
- - Respiración
- - Post Respiración
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
