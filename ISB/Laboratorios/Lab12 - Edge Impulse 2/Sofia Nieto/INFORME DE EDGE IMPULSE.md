@@ -12,10 +12,6 @@ Edge Impulse es una plataforma web diseñada específicamente para desarrollar m
 En este informe, se detalla el proceso de clasificación de datos EMG utilizando la plataforma Edge Impulse. El objetivo fue analizar y clasificar señales EMG obtenidas en condiciones específicas, aprovechando herramientas de aprendizaje automático integradas en la plataforma.
 
 El estudio se realizó con datos provenientes de grabaciones con un sistema OpenBCI, previamente segmentados y cargados en Edge Impulse para entrenamiento y validación.
-<div align="center">
-  <img src="./EDGE2/4.png"><p>
-  </p>
-</div>
 
 # 2. Objetivos
 
@@ -193,6 +189,7 @@ A. **CASO 1**
 
 | **Configuración de parametros** | 
 |![3](./EDGE2/3.png)| 
+
 | **Configuración de Generación de Características** | 
 |![9](./EDGE2/9.png)| 
 
@@ -206,65 +203,83 @@ Wavelet seleccionado: Se eligió la familia db4 (Daubechies 4), conocida por su 
 
 | **Ploteo de Filtro** | 
 |![5](./EDGE2/5.png)| 
+
 | **Ploteo de wavelet** | 
 |![7](./EDGE2/7.png)| 
 
 
 **Dedo en Reposo**
+
 | **Señal después del Filtro** | 
 |![28](./EDGE2/28.png)| 
+
 | **Señal aproximada con Wavelet** | 
 |![29](./EDGE2/29.png)| 
 
 **Dedo con Leve Oposición**
+
 | **Señal después del Filtro** | 
 |![25](./EDGE2/25.png)| 
+
 | **Señal aproximada con Wavelet** | 
 |![26](./EDGE2/26.png)| 
 
 **Dedo con Oposición Fuerte**
+
 | **Señal después del Filtro** | 
 |![22](./EDGE2/22.png)| 
+
 | **Señal aproximada con Wavelet** | 
 |![23](./EDGE2/23.png)| 
 
 
 
 **Bícep en Reposo**
+
 | **Señal después del Filtro** | 
 |![31](./EDGE2/31.png)| 
+
 | **Señal aproximada con Wavelet** | 
 |![32](./EDGE2/32.png)| 
 
 **Bícep con Leve Oposición**
+
 | **Señal después del Filtro** | 
 |![6](./EDGE2/6.png)| 
+
 | **Señal aproximada con Wavelet** | 
 |![8](./EDGE2/8.png)| 
 
 **Bícep con Oposición Fuerte**
+
 | **Señal después del Filtro** | 
 |![34](./EDGE2/34.png)| 
+
 | **Señal aproximada con Wavelet** | 
 |![35](./EDGE2/35.png)| 
 
 
 
 **Gastrocnemio en Reposo**
+
 | **Señal después del Filtro** | 
 |![12](./EDGE2/12.png)| 
+
 | **Señal aproximada con Wavelet** | 
 |![14](./EDGE2/14.png)| 
 
 **Gastrocnemio con Leve Oposición**
+
 | **Señal después del Filtro** | 
 |![16](./EDGE2/16.png)| 
+
 | **Señal aproximada con Wavelet** | 
 |![17](./EDGE2/17.png)| 
 
 **Gastrocnemio con Oposición Fuerte**
 | **Señal después del Filtro** | 
 |![19](./EDGE2/19.png)| 
+
 | **Señal aproximada con Wavelet** | 
 |![20](./EDGE2/20.png)| 
 
@@ -288,8 +303,10 @@ No se tomó el logaritmo del espectro para mantener una representación directa 
 
 | **Dedo en Reposo** | 
 |![42](./EDGE2/42.png)| 
+
 |**Dedo con Oposición Leve**| 
 |![5](./EDGE2/50.png)| 
+
 | **Dedo con Oposición Fuerte** | 
 |![7](./EDGE2/49.png)| 
 
@@ -297,27 +314,28 @@ No se tomó el logaritmo del espectro para mantener una representación directa 
 
 | **Bícep en Reposo** | 
 |![46](./EDGE2/46.png)| 
+
 |**Bícep con Oposición Leve**| 
 |![45](./EDGE2/45.png)| 
+
 | **Bícep con Oposición Fuerte** | 
 |![47](./EDGE2/47.png)| 
 
 
 | **Gastrocnemio en Reposo** | 
 |![48](./EDGE2/48.png)| 
+
 |**Gastrocnemio con Oposición Leve**| 
 |![43](./EDGE2/43.png)| 
+
 | **Gastrocnemio con Oposición Fuerte** | 
 |![44](./EDGE2/44.png)| 
 
 ## 3.5. Configuración y Entrenamiento de la Red Neuronal para la Clasificación de Señales EMG
 Finalmente, se describe la configuración de la arquitectura y los parámetros de entrenamiento de una red neuronal diseñada para clasificar señales electromiográficas (EMG) en nueve clases, correspondientes a distintas combinaciones de músculos y actividades analizadas. La red neuronal fue optimizada para aprovechar las características espectrales previamente extraídas, maximizando el desempeño del modelo en términos de precisión y eficiencia.
 
-A. **CASO 1**
+**CASO 2**
 
-
-
-B. **CASO 2**
 El entrenamiento del modelo con FFT se configuró cuidadosamente para optimizar la convergencia y minimizar el error, evitando problemas como el sobreajuste o la suboptimización.
 
 B.1. Parámetros principales del entrenamiento
@@ -348,7 +366,7 @@ Estas altas tasas de precisión pueden atribuirse a que las actividades en el de
 
 Por el contrario, las clases con el desempeño más bajo fueron:
 
--Gastro reposo con un acierto del 43.5%, y
+- Gastro reposo con un acierto del 43.5%, y
 - Gastro oposición leve con un acierto del 47.5%.
 
 Estas clases muestran un nivel significativo de confusión con otras actividades del gastrocnemio. Esto podría deberse a que las señales en reposo tienen amplitudes bajas y poca variabilidad espectral, lo que dificulta su diferenciación. Asimismo, las actividades leves podrían generar patrones que se solapan con las actividades de reposo o incluso con las actividades de oposición fuerte, especialmente si las contracciones musculares no son consistentemente intensas entre las repeticiones.
