@@ -190,23 +190,6 @@ Asimismo, se añadió un bloque de procesamiento basado en Análisis Espectral p
 
 - Características Espectrales: Se configuraron para analizar la señal en el eje A1 (dato principal de entrada). Este enfoque permitió transformar las señales crudas en el dominio de frecuencia, identificando patrones representativos de cada actividad muscular. Debido a que las señales EMG contienen información relevante en bandas específicas de frecuencia debido a la activación de fibras musculares, el análisis espectral permite identificar los componentes armónicos, ruido, y patrones que diferencian actividades musculares como reposo, oposición leve y fuerte.
 
-
-Configuración del Impulse
-El Impulse fue diseñado para procesar las señales EMG de manera eficiente, siguiendo los siguientes parámetros:
-
-Ventana de Tiempo (Window Size): Se utilizó un tamaño de ventana de 500 ms, con el fin de segmentar la señal en fragmentos temporales que capturen adecuadamente los patrones musculares relevantes en cada ejercicio. Este valor es ideal para registrar eventos musculares como contracciones y relajaciones rápidas.
-
-Incremento de Ventana (Window Increase): Se configuró un desplazamiento de 250 ms entre ventanas, generando un solapamiento del 50%. Esto permitió aumentar el número de segmentos disponibles para el entrenamiento del modelo y reducir la pérdida de información entre ventanas consecutivas.
-
-Frecuencia de Muestreo: Los datos fueron capturados a una frecuencia de 1000 Hz, asegurando una resolución temporal suficiente para registrar los rápidos cambios en las señales EMG.
-
-Relleno con Ceros (Zero-pad data): Se activó esta opción para garantizar que todas las ventanas sean del mismo tamaño, rellenando con ceros en caso de segmentos incompletos.
-
-Bloque de Procesamiento: Análisis Espectral
-Se añadió un bloque de procesamiento basado en Análisis Espectral para extraer características del dominio de la frecuencia.
-
-Características Espectrales: Se configuraron para analizar la señal en el eje A1 (dato principal de entrada). Este enfoque permitió transformar las señales crudas en el dominio de frecuencia, identificando patrones representativos de cada actividad muscular.
-
 Por último, se añadió un bloque de clasificación para entrenar el modelo y asignar las señales a una de las 9 clases definidas (Bíceps y Dedo en reposo, oposición leve y fuerte, y Gastrocnemio en las mismas categorías).
 
 - Entrada: Este bloque recibió las Características Espectrales generadas en el paso anterior como insumos para el aprendizaje.
@@ -217,92 +200,14 @@ Por último, se añadió un bloque de clasificación para entrenar el modelo y a
 | **Configuración de parametros del Impulse** | 
 |![2](./EDGE2/2.png)| 
 
+## 3.4.  Configuración General del Bloque de Características Espectrales
 
-Una vez creado el proyecto, se accedió a la pestaña "Data Acquisition" para poder subir nuestros datos.
-<div align="center">
-  <img src="./IMAGENES/2.png"><p>
-  </p>
-</div>
-
-Antes de subir los datos, se seleccionó la opción "CSV wizard". Este paso es fundamental para asegurar que los archivos CSV sean compatibles con los requerimientos de la plataforma y estén correctamente formateados.
-
-<div align="center">
-  <img src="./IMAGENES/3.png"><p>
-  </p>
-</div>
-
-Se seleccionaron los archivos CSV generados previamente, cada archivo representando un segmento de 6 segundos de señal EEG, verificando que se subio correctamente.
-
-<div align="center">
-  <img src="./IMAGENES/29.png"><p>
-  </p>
-</div>
-
-Ahora se configura las delimitaciones del archivo, para poder identificar y separar los datos, según su número de secuencia y su valor de amplitud. Como los datos se estan separando por comas, esta se selecciona como separador, además se destaca que al colocar el nuevo encabezado la plataforma logra identificar de mejor manera la columna de cada tipo de dato según su nombre, para garantizar una interpretación uniforme de los datos.
-
-<div align="center">
-  <img src="./IMAGENES/11.png"><p>
-  </p>
-</div>
-
-Una vez configurado la delimitación y los encabezados, continuamos seleccionando "Yes, this is time-series data", debido a que los datos son secuenciales y se registraron a lo largo del tiempo. También se selecciona "Each row contains a reading, and sensor values are columns", ya que esta opción es común cuando cada fila del archivo representa una lectura única, y las columnas contienen varios datos. Esto permite trabajar con datos multivariables registrados simultáneamente. Esto es esencial para proyectos que requieren análisis de patrones en el tiempo, como clasificación de movimientos o procesamiento de señales.
-
-<div align="center">
-  <img src="./IMAGENES/13.png"><p>
-  </p>
-</div>
-
-
-Asimismo, se establece la frecuencia de muestreo en 1000 Hz, correspondiente al intervalo con el que se registraron los datos, asegurando la integridad del análisis.
-<div align="center">
-  <img src="./IMAGENES/14.png"><p>
-  </p>
-</div>
-
-Posteriormente, se selecciona la columna del archivo que contiene los datos relevantes, como las señales o información específica a procesar.
-<div align="center">
-  <img src="./IMAGENES/15.png"><p>
-  </p>
-</div>
-
-Como la duración de las muestras fue definida en el código, ya que la señal fue previemente procesada en segmentos de 6 segundos,  se selecciona la opción "Unlimited" en el campo "How long do you want your samples to be", permitiendo que las muestras se procesen sin restricciones de longitud.
-<div align="center">
-  <img src="./IMAGENES/16.png"><p>
-  </p>
-</div>
-
-
-Confirma la configuración final. Aparecerá un mensaje indicando que cualquier archivo CSV cargado en el proyecto será procesado según las reglas definidas, asegurando la uniformidad en el tratamiento de los datos.
-<div align="center">
-  <img src="./IMAGENES/17.png"><p>
-  </p>
-</div>
-
-
-Ahora vamos a la opción "Upload Data" y subimos el archivo CSV procesado, colocandole un nombre definido en "Label", ya que si los datos contienen varias clases,  incluir etiquetas diferenciadas para cada categoría dentro del archivo CSV, o asignarlas después de subir los datos. De esta manera los datos estarán correctamente organizados y listos para el entrenamiento del modelo, donde se puede evaluar su balance.
-
-<div align="center">
-  <img src="./IMAGENES/20.png"><p>
-  <img src="./IMAGENES/21.png"><p>
-  </p>
-</div>
-
-De esta manera, subimos los segmentos de nuestras señales, los cuales se pueden visualizar en el cuadro derecho. Asimismo, si se requiere renombrar el archivo o cambiar la etiqueta, al seleccionar los tres puntos donde se encuentra el archivo se podrá ver las opciones para realizar los cambios.
-<div align="center">
-  <img src="./IMAGENES/22.png"><p>
-  <img src="./IMAGENES/23.png"><p>
-  <img src="./IMAGENES/24.png"><p>
-  <img src="./IMAGENES/25.png"><p>
-  </p>
-</div>
-
-Finalmente se obtuvieron, los siguientes resultados del balanceo:
-Link de proyecto: https://studio.edgeimpulse.com/public/558174/live
-
-<div align="center">
-  <img src="./IMAGENES/26.png"><p>
-  <img src="./IMAGENES/27.png"><p>
-  <img src="./IMAGENES/28.png"><p>
-  </p>
-</div>
-
+En este apartado se personaliza la extracción de características espectrales para analizar la señal sEMG de reposo del dedo. Los parámetros seleccionados son:
+- Scale axes: Se colocó un valor de 1, lo que significa que no se realiza escalamiento adicional a los datos. Esto garantiza que las características sean representativas de la señal original sin modificaciones externas.
+- Input Decimation Ratio: También se estableció en 1, lo que implica que no se reduce la cantidad de datos de entrada. Este ajuste asegura que no se pierda información relevante durante la extracción de características.
+- Tipo de filtro: Se seleccionó un filtro High-pass filter. Este tipo de filtro elimina componentes de baja frecuencia de la señal, que usualmente corresponden a ruido o artefactos indeseados, como movimiento no intencional del dedo.
+- Frecuencia de corte: La frecuencia de corte se configuró en 15 Hz, permitiendo que solo las frecuencias superiores a este valor se consideren en el análisis, ya que las frecuencias útiles de señales EMG se encuentran de 20-500 Hz.
+- Orden: Se utilizó un filtro de segundo orden (2), lo cual proporciona un buen equilibrio entre la precisión del filtrado y la estabilidad de la señal procesada.
+Método: Se utilizó el análisis Wavelet. Este método es ideal para señales biomédicas, ya que permite analizar tanto el tiempo como la frecuencia simultáneamente.
+Wavelet seleccionado: Se eligió la familia db4 (Daubechies 4), conocida por su capacidad de representar señales con transiciones rápidas, como las presentes en sEMG.
+- Nivel de descomposición: Se configuró en 2, dividiendo la señal en componentes que representan frecuencias más bajas y más altas, útiles para identificar patrones específicos.
