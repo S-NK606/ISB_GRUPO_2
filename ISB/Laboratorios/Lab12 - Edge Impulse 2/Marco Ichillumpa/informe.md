@@ -170,7 +170,7 @@ Aquí los parámetros más importantes son:
    - **Tasa de aprendizaje**: La velocidad con la que el modeloa ajusta sus parámetros en cada ciclo. Donde usé valores desde 0.0001 hasta 0.005.
 
    - **Neural Network Architecture**: Diseño de la red neuronal con diferentes números de capas y cantidad de neuronas en cada una de estas. Donde aumenté hasta tres capas con distintos valores yendo desde 100 hasta 25 neuronas por capa.
-   - 
+     
 Luego de guardar y entrenar estos fueron algunos resultados variando las especificaciones.
 
 |Parámetros Usados|Resultados|
