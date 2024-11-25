@@ -81,6 +81,9 @@ Parámetros elegidos
   </p>
 </div>
 
+Comentarios: 
+El modelo presenta un bajo desempeño con un accuracy de 14.62%, lo que evidencia problemas significativos en la clasificación. Las métricas como precision, recall y F1 Score son muy bajas, y la matriz de confusión muestra que las clases tienen un alto nivel de incertidumbre ("UNCERTAIN") y solapamiento, siendo "BASAL" la única clase con un desempeño moderado (55.3%). Esto se debe  a una insuficiencia de datos, solapamiento entre clases, y características que no capturan adecuadamente las diferencias.
+
 
 
 
