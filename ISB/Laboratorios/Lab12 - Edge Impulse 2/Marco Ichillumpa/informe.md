@@ -180,7 +180,7 @@ Luego de guardar y entrenar estos fueron algunos resultados variando las especif
 |Ciclos = 90, LR = 0.005, Neuronas = 64, 32, 25|<img src="./imagenes/Imagen14.png" height = "500" width="500">|
 
 Donde finalmente usé esta configuración con el siguiente resultado:
-|Mejores parámetros|Mejor Resultado|
+|Parámetros|Mejor Resultado|
 |--|---|
 |<img src="./imagenes/Imagen15.png" height = "500" width="500">|<img src="./imagenes/Imagen16.png" height = "500" width="500">|
 
