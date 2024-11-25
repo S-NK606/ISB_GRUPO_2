@@ -190,6 +190,9 @@ A. **CASO 1**
 | **Configuración de parametros** | 
 |![3](./EDGE2/3.png)| 
 
+| **Configuración de parametros del Impulse** | 
+|![4](./EDGE2/4.png)| 
+
 | **Configuración de Generación de Características** | 
 |![9](./EDGE2/9.png)| 
 
