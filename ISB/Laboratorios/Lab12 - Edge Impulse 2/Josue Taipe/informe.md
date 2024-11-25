@@ -33,6 +33,7 @@ Creamos el diseño y lo configuramos:
 
   </p>
 </div>
+
 #### Imagen 3: Diseño del Impulso
 Configuramos el window size de 1,9seg y un window increase de 1seg, la frecuencia de sampleo es de 1000 Hz, usamos Análisis Espectral y el clasificador.
 
